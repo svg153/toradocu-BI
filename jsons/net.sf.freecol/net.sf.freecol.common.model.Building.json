@@ -1,0 +1,1079 @@
+[
+  {
+    "signature": "Building(net.sf.freecol.common.model.Game game,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.BuildingType type)",
+    "name": "Building",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.BuildingType",
+          "name": "BuildingType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony in which this building is located.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.BuildingType",
+            "name": "BuildingType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The BuildingType of building.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Building(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "Building",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "The object identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getType()",
+    "name": "getType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.BuildingType",
+      "name": "BuildingType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The building type.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLevel()",
+    "name": "getLevel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The building level.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "canBuildNext()",
+    "name": "canBuildNext",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this Building can have a higher level.",
+      "kind": "RETURN",
+      "condition": "target.save(java.io.OutputStream, net.sf.freecol.common.io.FreeColXMLWriter$WriteScope, boolean) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "canBeDamaged()",
+    "name": "canBeDamaged",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this building can be damaged.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "downgrade()",
+    "name": "downgrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of units to eject (usually empty) if the building was downgraded, or null on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "upgrade()",
+    "name": "upgrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of units to eject (usually empty) if the building was upgraded, or null on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "canAddType(net.sf.freecol.common.model.UnitType unitType)",
+    "name": "canAddType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "unitType"
+        },
+        "comment": "The UnitType to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if unit type can be added to this building.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAdjustedProductionInfo(java.util.List inputs,java.util.List outputs)",
+    "name": "getAdjustedProductionInfo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.ProductionInfo",
+      "name": "ProductionInfo",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "inputs"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "outputs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "inputs"
+        },
+        "comment": "The input goods available.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "outputs"
+        },
+        "comment": "The output goods already available in the colony, necessary in order to avoid excess production.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The production information.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getProduction())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluateFor(net.sf.freecol.common.model.Player player)",
+    "name": "evaluateFor",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to evaluate for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A value for the player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocationLabel()",
+    "name": "getLocationLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "up()",
+    "name": "up",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toShortString()",
+    "name": "toShortString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNoAddReason(net.sf.freecol.common.model.Locatable locatable)",
+    "name": "getNoAddReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.UnitLocation.NoAddReason",
+      "name": "NoAddReason",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Locatable",
+          "name": "Locatable",
+          "isArray": false
+        },
+        "name": "locatable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnitCapacity()",
+    "name": "getUnitCapacity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLabel()",
+    "name": "getLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isAvailable()",
+    "name": "isAvailable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isCurrent()",
+    "name": "isCurrent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNoWorkReason()",
+    "name": "getNoWorkReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.UnitLocation.NoAddReason",
+      "name": "NoAddReason",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "canAutoProduce()",
+    "name": "canAutoProduce",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "canProduce(net.sf.freecol.common.model.GoodsType goodsType,net.sf.freecol.common.model.UnitType unitType)",
+    "name": "canProduce",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBaseProduction(net.sf.freecol.common.model.ProductionType productionType,net.sf.freecol.common.model.GoodsType goodsType,net.sf.freecol.common.model.UnitType unitType)",
+    "name": "getBaseProduction",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.ProductionType",
+          "name": "ProductionType",
+          "isArray": false
+        },
+        "name": "productionType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getProductionModifiers(net.sf.freecol.common.model.GoodsType goodsType,net.sf.freecol.common.model.UnitType unitType)",
+    "name": "getProductionModifiers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAvailableProductionTypes(boolean unattended)",
+    "name": "getAvailableProductionTypes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "unattended"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getConsumedGoods()",
+    "name": "getConsumedGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPriority()",
+    "name": "getPriority",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNameKey()",
+    "name": "getNameKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAbilities(java.lang.String id,net.sf.freecol.common.model.FreeColGameObjectType type,net.sf.freecol.common.model.Turn turn)",
+    "name": "getAbilities",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObjectType",
+          "name": "FreeColGameObjectType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Turn",
+          "name": "Turn",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getModifiers(java.lang.String id,net.sf.freecol.common.model.FreeColGameObjectType fcgot,net.sf.freecol.common.model.Turn turn)",
+    "name": "getModifiers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObjectType",
+          "name": "FreeColGameObjectType",
+          "isArray": false
+        },
+        "name": "fcgot"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Turn",
+          "name": "Turn",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "compareTo(net.sf.freecol.common.model.FreeColObject other)",
+    "name": "compareTo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColObject",
+          "name": "FreeColObject",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Building",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"building\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

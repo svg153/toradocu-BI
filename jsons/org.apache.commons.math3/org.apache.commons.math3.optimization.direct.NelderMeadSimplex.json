@@ -1,0 +1,787 @@
+[
+  {
+    "signature": "NelderMeadSimplex(int n)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Dimension of the simplex.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(int n,double sideLength)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sideLength"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Dimension of the simplex.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sideLength"
+        },
+        "comment": "Length of the sides of the default (hypercube) simplex. See AbstractSimplex.AbstractSimplex(int,double).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(int n,double sideLength,double rho,double khi,double gamma,double sigma)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sideLength"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rho"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "khi"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "gamma"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Dimension of the simplex. See AbstractSimplex.AbstractSimplex(int,double).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sideLength"
+        },
+        "comment": "Length of the sides of the default (hypercube) simplex. See AbstractSimplex.AbstractSimplex(int,double).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rho"
+        },
+        "comment": "Reflection coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "khi"
+        },
+        "comment": "Expansion coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "gamma"
+        },
+        "comment": "Contraction coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "Shrinkage coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(int n,double rho,double khi,double gamma,double sigma)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rho"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "khi"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "gamma"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Dimension of the simplex. See AbstractSimplex.AbstractSimplex(int).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rho"
+        },
+        "comment": "Reflection coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "khi"
+        },
+        "comment": "Expansion coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "gamma"
+        },
+        "comment": "Contraction coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "Shrinkage coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(double[] steps)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "steps"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "steps"
+        },
+        "comment": "Steps along the canonical axes representing box edges. They may be negative but not zero. See",
+        "kind": "PARAM",
+        "condition": "target<0 && (target==0) == false"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(double[] steps,double rho,double khi,double gamma,double sigma)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "steps"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rho"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "khi"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "gamma"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "steps"
+        },
+        "comment": "Steps along the canonical axes representing box edges. They may be negative but not zero. See AbstractSimplex.AbstractSimplex(double[]).",
+        "kind": "PARAM",
+        "condition": "target<0 && (target==0) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rho"
+        },
+        "comment": "Reflection coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "khi"
+        },
+        "comment": "Expansion coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "gamma"
+        },
+        "comment": "Contraction coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "Shrinkage coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the steps is zero.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "NelderMeadSimplex(double[][] referenceSimplex)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "referenceSimplex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "referenceSimplex"
+        },
+        "comment": "Reference simplex. See AbstractSimplex.AbstractSimplex(double[][]).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "NelderMeadSimplex(double[][] referenceSimplex,double rho,double khi,double gamma,double sigma)",
+    "name": "NelderMeadSimplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "referenceSimplex"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rho"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "khi"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "gamma"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "referenceSimplex"
+        },
+        "comment": "Reference simplex. See AbstractSimplex.AbstractSimplex(double[][]).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rho"
+        },
+        "comment": "Reflection coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "khi"
+        },
+        "comment": "Expansion coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "gamma"
+        },
+        "comment": "Contraction coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "Shrinkage coefficient.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the reference simplex does not contain at least one point.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a dimension mismatch in the reference simplex.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "iterate(org.apache.commons.math3.analysis.MultivariateFunction evaluationFunction,java.util.Comparator comparator)",
+    "name": "iterate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+      "name": "NelderMeadSimplex",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.NelderMeadSimplex",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "evaluationFunction"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "signature": "probability(double x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the point at which the PMF is evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the probability mass function at point x",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the point at which the PDF is evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the probability density function at point x",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the point at which the CDF is evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the probability that a random variable with this distribution takes a value less than or equal to x",
+      "kind": "RETURN",
+      "condition": "true ?result<={x}"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x0,double x1)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x0"
+        },
+        "comment": "the exclusive lower bound",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x1"
+        },
+        "comment": "the inclusive upper bound",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the probability that a random variable with this distribution takes a value between x0 and x1, excluding the lower and including the upper endpoint",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x0 > x1"
+        ],
+        "comment": "if x0 > x1",
+        "kind": "THROWS",
+        "condition": "args[0]>args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the cumulative probability",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the smallest p-quantile of this distribution (largest 0-quantile for p = 0)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p < 0",
+          "p > 1"
+        ],
+        "comment": "if p < 0 or p > 1",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]>1"
+      }
+    ]
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mean or Double.NaN if it is not defined",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the variance (possibly Double.POSITIVE_INFINITY as for certain cases in TDistribution) or Double.NaN if it is not defined",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (might be Double.NEGATIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (might be Double.POSITIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the lower bound of support is finite and the density function returns a non-NaN, non-infinite value there",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the upper bound of support is finite and the density function returns a non-NaN, non-infinite value there",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the support is connected or not",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reseedRandomGenerator(long seed)",
+    "name": "reseedRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "seed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "seed"
+        },
+        "comment": "the new seed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a random value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample(int sampleSize)",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+      "name": "RealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.RealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "sampleSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "sampleSize"
+        },
+        "comment": "the number of random values to generate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array representing the random sample",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sampleSize"
+        ],
+        "comment": "if sampleSize is not positive",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false"
+      }
+    ]
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "signature": "ChainedClosure(org.apache.commons.collections4.Closure[] closures)",
+    "name": "ChainedClosure",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedClosure",
+      "name": "ChainedClosure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedClosure",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Closure[]",
+          "name": "Closure[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.collections4.Closure",
+            "name": "Closure",
+            "isArray": false
+          }
+        },
+        "name": "closures"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Closure[]",
+            "name": "Closure[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.collections4.Closure",
+              "name": "Closure",
+              "isArray": false
+            }
+          },
+          "name": "closures"
+        },
+        "comment": "the closures to chain, copied, no nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "chainedClosure(org.apache.commons.collections4.Closure[] closures)",
+    "name": "chainedClosure",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedClosure",
+      "name": "ChainedClosure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedClosure",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Closure",
+      "name": "Closure",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Closure[]",
+          "name": "Closure[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.collections4.Closure",
+            "name": "Closure",
+            "isArray": false
+          }
+        },
+        "name": "closures"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Closure[]",
+            "name": "Closure[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.collections4.Closure",
+              "name": "Closure",
+              "isArray": false
+            }
+          },
+          "name": "closures"
+        },
+        "comment": "the closures to chain, copied, no nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the chained closure",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the closures array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any closure in the array is null",
+        "kind": "THROWS",
+        "condition": "java.util.Arrays.stream(args[0]).anyMatch(e -> e==null)"
+      }
+    ]
+  },
+  {
+    "signature": "chainedClosure(java.util.Collection closures)",
+    "name": "chainedClosure",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedClosure",
+      "name": "ChainedClosure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedClosure",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Closure",
+      "name": "Closure",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "closures"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "closures"
+        },
+        "comment": "a collection of closures to chain",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the chained closure",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the closures collection is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any closure in the collection is null",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "execute(java.lang.Object input)",
+    "name": "execute",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedClosure",
+      "name": "ChainedClosure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedClosure",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "input"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "input"
+        },
+        "comment": "the input object passed to each closure",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getClosures()",
+    "name": "getClosures",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedClosure",
+      "name": "ChainedClosure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedClosure",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Closure[]",
+      "name": "Closure[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.collections4.Closure",
+        "name": "Closure",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of the closures",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

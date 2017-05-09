@@ -1,0 +1,918 @@
+[
+  {
+    "signature": "CombatModel()",
+    "name": "CombatModel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsAttackMeasurement(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsAttackMeasurement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if no defender is provided.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsDefenceMeasurement(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsDefenceMeasurement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if no attacker is provided.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsAttack(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsAttack",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the combat is a normal attack.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsSettlementAttack(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsSettlementAttack",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the combat is a client-side attack on a settlement.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsBombard(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsBombard",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the combat is a bombardment.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsAmphibious(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsAmphibious",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the attack is amphibious.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "combatIsWarOfIndependence(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "combatIsWarOfIndependence",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the attack is a war of independence battle for a colony.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMilitaryStrengthComparator()",
+    "name": "getMilitaryStrengthComparator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A suitable unit Comparator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateCombatOdds(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "calculateCombatOdds",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel.CombatOdds",
+      "name": "CombatOdds",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The CombatOdds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOffencePower(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "getOffencePower",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The offensive power.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefencePower(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "getDefencePower",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The defensive power.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOffensiveModifiers(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "getOffensiveModifiers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "All the applicable offensive modifiers.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefensiveModifiers(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "getDefensiveModifiers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "All the applicable defensive modifiers.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "generateAttackResult(java.util.Random random,net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender)",
+    "name": "generateAttackResult",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.CombatModel",
+      "name": "CombatModel",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.CombatModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacker.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defender.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The results of the combat.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

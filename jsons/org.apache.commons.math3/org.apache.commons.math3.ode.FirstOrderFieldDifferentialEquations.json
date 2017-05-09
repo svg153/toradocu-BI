@@ -1,0 +1,203 @@
+[
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+      "name": "FirstOrderFieldDifferentialEquations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the problem",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "init(org.apache.commons.math3.RealFieldElement t0,org.apache.commons.math3.RealFieldElement[] y0,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "init",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+      "name": "FirstOrderFieldDifferentialEquations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t0"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "y0"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "t0"
+        },
+        "comment": "value of the independent time variable at integration start",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "y0"
+        },
+        "comment": "array containing the value of the state vector at integration start",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "finalTime"
+        },
+        "comment": "target time for the integration",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeDerivatives(org.apache.commons.math3.RealFieldElement t,org.apache.commons.math3.RealFieldElement[] y)",
+    "name": "computeDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+      "name": "FirstOrderFieldDifferentialEquations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "current value of the independent time variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "array containing the current value of the state vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "time derivative of the state vector",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "signature": "getComposedGoalDecider(boolean all,net.sf.freecol.common.model.pathfinding.GoalDecider[] gds)",
+    "name": "getComposedGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "all"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider[]",
+          "name": "GoalDecider[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+            "name": "GoalDecider",
+            "isArray": false
+          }
+        },
+        "name": "gds"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "all"
+        },
+        "comment": "If true, all deciders must succeed (and-semantics), if false, any decide may succeed (or-semantics).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider[]",
+            "name": "GoalDecider[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+              "name": "GoalDecider",
+              "isArray": false
+            }
+          },
+          "name": "gds"
+        },
+        "comment": "A series (two minimum) of GoalDeciders to compose.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new GoalDecider composed of the argument goal deciders.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOurClosestSettlementGoalDecider()",
+    "name": "getOurClosestSettlementGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The closest settlement goal decider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getHighSeasGoalDecider()",
+    "name": "getHighSeasGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The high seas goal decider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSimpleHighSeasGoalDecider()",
+    "name": "getSimpleHighSeasGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A GoalDecider that finds the nearest high seas tile.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocationGoalDecider(net.sf.freecol.common.model.Location target)",
+    "name": "getLocationGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A GoalDecider that only succeeds for the target location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAdjacentLocationGoalDecider(net.sf.freecol.common.model.Location target)",
+    "name": "getAdjacentLocationGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A GoalDecider that only succeeds for tiles adjacent to the target location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEnemySettlementGoalDecider(java.util.Collection enemies)",
+    "name": "getEnemySettlementGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "enemies"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "enemies"
+        },
+        "comment": "The list of enemy Players.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A suitable GoalDecider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDisembarkGoalDecider(net.sf.freecol.common.model.Tile target)",
+    "name": "getDisembarkGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A suitable GoalDecider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStealthyGoalDecider(net.sf.freecol.common.model.Player enemy)",
+    "name": "getStealthyGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "enemy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "enemy"
+        },
+        "comment": "The enemy Player to avoid.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A suitable GoalDecider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getReduceHighSeasCountGoalDecider(net.sf.freecol.common.model.Unit unit)",
+    "name": "getReduceHighSeasCountGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to get the goal decider for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A suitable GoalDecider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCornerGoalDecider()",
+    "name": "getCornerGoalDecider",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+      "name": "GoalDeciders",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDeciders",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A suitable goal decider.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

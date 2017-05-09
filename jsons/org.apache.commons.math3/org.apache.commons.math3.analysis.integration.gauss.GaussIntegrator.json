@@ -1,0 +1,321 @@
+[
+  {
+    "signature": "GaussIntegrator(double[] points,double[] weights)",
+    "name": "GaussIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "points"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "weights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "points"
+        },
+        "comment": "Integration points.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "weights"
+        },
+        "comment": "Weights of the corresponding integration nodes.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "points"
+        ],
+        "comment": "if the points are not sorted in increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if points and weights don't have the same length",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "GaussIntegrator(org.apache.commons.math3.util.Pair pointsAndWeights)",
+    "name": "GaussIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.Pair",
+          "name": "Pair",
+          "isArray": false
+        },
+        "name": "pointsAndWeights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.Pair",
+            "name": "Pair",
+            "isArray": false
+          },
+          "name": "pointsAndWeights"
+        },
+        "comment": "Integration points and corresponding weights.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "points"
+        ],
+        "comment": "if the points are not sorted in increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.analysis.UnivariateFunction f)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Function to integrate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the integral of the weighted function.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumberOfPoints()",
+    "name": "getNumberOfPoints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the order of the integration rule (the number of integration points).",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPoint(int index)",
+    "name": "getPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the integration point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the integration point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWeight(int index)",
+    "name": "getWeight",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+      "name": "GaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.GaussIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the integration point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the weight.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

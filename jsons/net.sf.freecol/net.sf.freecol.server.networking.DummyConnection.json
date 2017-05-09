@@ -1,0 +1,318 @@
+[
+  {
+    "signature": "DummyConnection(java.lang.String name,net.sf.freecol.common.networking.MessageHandler incomingMessageHandler)",
+    "name": "DummyConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+          "name": "MessageHandler",
+          "isArray": false
+        },
+        "name": "incomingMessageHandler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+            "name": "MessageHandler",
+            "isArray": false
+          },
+          "name": "incomingMessageHandler"
+        },
+        "comment": "The MessageHandler to call for each message received.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setConnection(net.sf.freecol.server.networking.DummyConnection dc)",
+    "name": "setConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+          "name": "DummyConnection",
+          "isArray": false
+        },
+        "name": "dc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+            "name": "DummyConnection",
+            "isArray": false
+          },
+          "name": "dc"
+        },
+        "comment": "The DummyConnection to connect to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOtherConnection()",
+    "name": "getOtherConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The DummyConnection .",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "close()",
+    "name": "close",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "send(org.w3c.dom.Element element)",
+    "name": "send",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The element (root element in a DOM-parsed XML tree) that holds all the information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If an error occur while sending the message.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sendAndWait(org.w3c.dom.Element element)",
+    "name": "sendAndWait",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The element (root element in a DOM-parsed XML tree) that holds all the information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If an error occur while sending the message.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ask(org.w3c.dom.Element request)",
+    "name": "ask",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "request"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "request"
+        },
+        "comment": "The question for the other peer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The reply from the other peer.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If an error occur while sending the message.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.DummyConnection",
+      "name": "DummyConnection",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.DummyConnection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

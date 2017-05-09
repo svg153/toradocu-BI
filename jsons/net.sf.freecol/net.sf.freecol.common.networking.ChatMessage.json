@@ -1,0 +1,362 @@
+[
+  {
+    "signature": "ChatMessage(net.sf.freecol.common.model.Player player,java.lang.String message,boolean privateChat)",
+    "name": "ChatMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "message"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "privateChat"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The player that is sending the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "The text of the message to send.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "privateChat"
+        },
+        "comment": "Whether this message is private.",
+        "kind": "PARAM",
+        "condition": "target.isPrivate()"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ChatMessage(net.sf.freecol.common.model.Game game,org.w3c.dom.Element element)",
+    "name": "ChatMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this message belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to use to create the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is problem with the senderID.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getPlayer(net.sf.freecol.common.model.Game game)",
+    "name": "getPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game the player is in.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The player that sent this ChatMessage.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMessage()",
+    "name": "getMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The text of this ChatMessage.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isPrivate()",
+    "name": "isPrivate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this ChatMessage is private.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.server.FreeColServer server,net.sf.freecol.common.networking.Connection connection)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "The FreeColServer that handles the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection message was received on.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Null.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The XML representation of this message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ChatMessage",
+      "name": "ChatMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ChatMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"chat\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

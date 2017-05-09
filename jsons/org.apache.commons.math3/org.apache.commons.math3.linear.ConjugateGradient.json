@@ -1,0 +1,266 @@
+[
+  {
+    "signature": "ConjugateGradient(int maxIterations,double delta,boolean check)",
+    "name": "ConjugateGradient",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ConjugateGradient",
+      "name": "ConjugateGradient",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ConjugateGradient",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "delta"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "check"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "delta"
+        },
+        "comment": "the δ parameter for the default stopping criterion",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "check"
+        },
+        "comment": "true if positive definiteness of both matrix and preconditioner should be checked",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ConjugateGradient(org.apache.commons.math3.util.IterationManager manager,double delta,boolean check)",
+    "name": "ConjugateGradient",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ConjugateGradient",
+      "name": "ConjugateGradient",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ConjugateGradient",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.IterationManager",
+          "name": "IterationManager",
+          "isArray": false
+        },
+        "name": "manager"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "delta"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "check"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.IterationManager",
+            "name": "IterationManager",
+            "isArray": false
+          },
+          "name": "manager"
+        },
+        "comment": "the custom iteration manager",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "delta"
+        },
+        "comment": "the δ parameter for the default stopping criterion",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "check"
+        },
+        "comment": "true if positive definiteness of both matrix and preconditioner should be checked",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "manager",
+          "null"
+        ],
+        "comment": "if manager is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getCheck()",
+    "name": "getCheck",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ConjugateGradient",
+      "name": "ConjugateGradient",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ConjugateGradient",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the tests are to be performed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "solveInPlace(org.apache.commons.math3.linear.RealLinearOperator a,org.apache.commons.math3.linear.RealLinearOperator m,org.apache.commons.math3.linear.RealVector b,org.apache.commons.math3.linear.RealVector x0)",
+    "name": "solveInPlace",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ConjugateGradient",
+      "name": "ConjugateGradient",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ConjugateGradient",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+          "name": "RealLinearOperator",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+          "name": "RealLinearOperator",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "x0"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteOperatorException",
+          "name": "NonPositiveDefiniteOperatorException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a",
+          "m"
+        ],
+        "comment": "if a or m is not positive definite",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

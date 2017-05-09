@@ -1,0 +1,646 @@
+[
+  {
+    "signature": "getName()",
+    "name": "getName",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "name of the method",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addStepHandler(org.apache.commons.math3.ode.sampling.FieldStepHandler handler)",
+    "name": "addStepHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+          "name": "FieldStepHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+            "name": "FieldStepHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "handler for the accepted steps",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStepHandlers()",
+    "name": "getStepHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable collection of the added events handlers",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearStepHandlers()",
+    "name": "clearStepHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEventHandler(org.apache.commons.math3.ode.events.FieldEventHandler handler,double maxCheckInterval,double convergence,int maxIterationCount)",
+    "name": "addEventHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.events.FieldEventHandler",
+          "name": "FieldEventHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxCheckInterval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "convergence"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterationCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.events.FieldEventHandler",
+            "name": "FieldEventHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "event handler",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxCheckInterval"
+        },
+        "comment": "maximal time interval between switching function checks (this interval prevents missing sign changes in case the integration steps becomes very large)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "convergence"
+        },
+        "comment": "convergence threshold in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterationCount"
+        },
+        "comment": "upper limit of the iteration count in the event time search events.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEventHandler(org.apache.commons.math3.ode.events.FieldEventHandler handler,double maxCheckInterval,double convergence,int maxIterationCount,org.apache.commons.math3.analysis.solvers.BracketedRealFieldUnivariateSolver solver)",
+    "name": "addEventHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.events.FieldEventHandler",
+          "name": "FieldEventHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxCheckInterval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "convergence"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterationCount"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.solvers.BracketedRealFieldUnivariateSolver",
+          "name": "BracketedRealFieldUnivariateSolver",
+          "isArray": false
+        },
+        "name": "solver"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.events.FieldEventHandler",
+            "name": "FieldEventHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "event handler",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxCheckInterval"
+        },
+        "comment": "maximal time interval between switching function checks (this interval prevents missing sign changes in case the integration steps becomes very large)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "convergence"
+        },
+        "comment": "convergence threshold in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterationCount"
+        },
+        "comment": "upper limit of the iteration count in the event time search events.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.solvers.BracketedRealFieldUnivariateSolver",
+            "name": "BracketedRealFieldUnivariateSolver",
+            "isArray": false
+          },
+          "name": "solver"
+        },
+        "comment": "solver to use to locate the event",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEventHandlers()",
+    "name": "getEventHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable collection of the added events handlers",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearEventHandlers()",
+    "name": "clearEventHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentStepStart()",
+    "name": "getCurrentStepStart",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current value of the state at step start time ti",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentSignedStepsize()",
+    "name": "getCurrentSignedStepsize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current signed value of the stepsize",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMaxEvaluations(int maxEvaluations)",
+    "name": "setMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "maximal number of function evaluations (negative values are silently converted to maximal integer value, thus representing almost unlimited evaluations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxEvaluations()",
+    "name": "getMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "maximal number of functions evaluations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of evaluations of the differential equations function",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.ode.FieldExpandableODE equations,org.apache.commons.math3.ode.FieldODEState initialState,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+      "name": "FirstOrderFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldExpandableODE",
+          "name": "FieldExpandableODE",
+          "isArray": false
+        },
+        "name": "equations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+          "name": "FieldODEState",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldExpandableODE",
+            "name": "FieldExpandableODE",
+            "isArray": false
+          },
+          "name": "equations"
+        },
+        "comment": "differential equations to integrate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+            "name": "FieldODEState",
+            "isArray": false
+          },
+          "name": "initialState"
+        },
+        "comment": "initial state (time, primary and secondary state vectors)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "finalTime"
+        },
+        "comment": "target time for the integration (can be set to a value smaller than t0 for backward integration)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "final state, its time will be the same as finalTime if integration reached its target, but may be different if some FieldEventHandler stops it at some point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if integration step is too small",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoBracketingException",
+          "name": "NoBracketingException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the location of an event cannot be bracketed",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

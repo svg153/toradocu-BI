@@ -1,0 +1,920 @@
+[
+  {
+    "signature": "RateLimiter(com.google.common.util.concurrent.RateLimiter.SleepingStopwatch stopwatch)",
+    "name": "RateLimiter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.RateLimiter.SleepingStopwatch",
+          "name": "SleepingStopwatch",
+          "isArray": false
+        },
+        "name": "stopwatch"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(double permitsPerSecond)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "permitsPerSecond"
+        },
+        "comment": "the rate of the returned RateLimiter, measured in how many permits become available per second",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "permitsPerSecond"
+        ],
+        "comment": "if permitsPerSecond is negative or zero",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "create(com.google.common.util.concurrent.RateLimiter.SleepingStopwatch stopwatch,double permitsPerSecond)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.RateLimiter.SleepingStopwatch",
+          "name": "SleepingStopwatch",
+          "isArray": false
+        },
+        "name": "stopwatch"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(double permitsPerSecond,long warmupPeriod,java.util.concurrent.TimeUnit unit)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "warmupPeriod"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "permitsPerSecond"
+        },
+        "comment": "the rate of the returned RateLimiter, measured in how many permits become available per second",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "warmupPeriod"
+        },
+        "comment": "the duration of the period where the RateLimiter ramps up its rate, before reaching its stable (maximum) rate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the warmupPeriod argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "permitsPerSecond",
+          "warmupPeriod"
+        ],
+        "comment": "if permitsPerSecond is negative or zero or warmupPeriod is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]<0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "create(com.google.common.util.concurrent.RateLimiter.SleepingStopwatch stopwatch,double permitsPerSecond,long warmupPeriod,java.util.concurrent.TimeUnit unit,double coldFactor)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.RateLimiter.SleepingStopwatch",
+          "name": "SleepingStopwatch",
+          "isArray": false
+        },
+        "name": "stopwatch"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "warmupPeriod"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "coldFactor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRate(double permitsPerSecond)",
+    "name": "setRate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "permitsPerSecond"
+        },
+        "comment": "the new stable rate of this RateLimiter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "permitsPerSecond"
+        ],
+        "comment": "if permitsPerSecond is negative or zero",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "doSetRate(double permitsPerSecond,long nowMicros)",
+    "name": "doSetRate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "permitsPerSecond"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nowMicros"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRate()",
+    "name": "getRate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doGetRate()",
+    "name": "doGetRate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "acquire()",
+    "name": "acquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "time spent sleeping to enforce rate, in seconds; 0.0 if not rate-limited",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "acquire(int permits)",
+    "name": "acquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "permits"
+        },
+        "comment": "the number of permits to acquire",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "time spent sleeping to enforce rate, in seconds; 0.0 if not rate-limited",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested number of permits is negative or zero",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "reserve(int permits)",
+    "name": "reserve",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "time in microseconds to wait until the resource can be acquired, never negative",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "tryAcquire(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "tryAcquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait for the permit. Negative values are treated as zero.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the permit was acquired, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested number of permits is negative or zero",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "tryAcquire(int permits)",
+    "name": "tryAcquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "permits"
+        },
+        "comment": "the number of permits to acquire",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the permits were acquired, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested number of permits is negative or zero",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "tryAcquire()",
+    "name": "tryAcquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the permit was acquired, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "tryAcquire(int permits,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "tryAcquire",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "permits"
+        },
+        "comment": "the number of permits to acquire",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait for the permits. Negative values are treated as zero.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the permits were acquired, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested number of permits is negative or zero",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "reserveAndGetWaitLength(int permits,long nowMicros)",
+    "name": "reserveAndGetWaitLength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nowMicros"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the required wait time, never negative",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "queryEarliestAvailable(long nowMicros)",
+    "name": "queryEarliestAvailable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nowMicros"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the time that permits are available, or, if permits are available immediately, an arbitrary past or present time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reserveEarliestAvailable(int permits,long nowMicros)",
+    "name": "reserveEarliestAvailable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nowMicros"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the time that the permits may be used, or, if the permits may be used immediately, an arbitrary past or present time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.RateLimiter",
+      "name": "RateLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.RateLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

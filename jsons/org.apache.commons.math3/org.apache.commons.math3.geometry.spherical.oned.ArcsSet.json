@@ -1,0 +1,482 @@
+[
+  {
+    "signature": "ArcsSet(double tolerance)",
+    "name": "ArcsSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which close sub-arcs are merged together",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ArcsSet(double lower,double upper,double tolerance)",
+    "name": "ArcsSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "upper"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower bound of the arc",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper bound of the arc",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which close sub-arcs are merged together",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if lower is greater than upper",
+        "kind": "THROWS",
+        "condition": "args[0]>args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "ArcsSet(org.apache.commons.math3.geometry.partitioning.BSPTree tree,double tolerance)",
+    "name": "ArcsSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "tree"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "tree"
+        },
+        "comment": "inside/outside BSP tree representing the arcs set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which close sub-arcs are merged together",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet.InconsistentStateAt2PiWrapping",
+          "name": "InconsistentStateAt2PiWrapping",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the tree leaf nodes are not consistent across the \\( 0, 2 \\pi \\) crossing",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ArcsSet(java.util.Collection boundary,double tolerance)",
+    "name": "ArcsSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "boundary"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "boundary"
+        },
+        "comment": "collection of boundary elements",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which close sub-arcs are merged together",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet.InconsistentStateAt2PiWrapping",
+          "name": "InconsistentStateAt2PiWrapping",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the tree leaf nodes are not consistent across the \\( 0, 2 \\pi \\) crossing",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "buildNew(org.apache.commons.math3.geometry.partitioning.BSPTree tree)",
+    "name": "buildNew",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "tree"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeGeometricalProperties()",
+    "name": "computeGeometricalProperties",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "projectToBoundary(org.apache.commons.math3.geometry.Point point)",
+    "name": "projectToBoundary",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BoundaryProjection",
+      "name": "BoundaryProjection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Point",
+          "name": "Point",
+          "isArray": false
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asList()",
+    "name": "asList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new ordered list containing Arc elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "side(org.apache.commons.math3.geometry.spherical.oned.Arc arc)",
+    "name": "side",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Side",
+      "name": "Side",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+          "name": "Arc",
+          "isArray": false
+        },
+        "name": "arc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+            "name": "Arc",
+            "isArray": false
+          },
+          "name": "arc"
+        },
+        "comment": "arc to check instance against",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "one of Side.PLUS, Side.MINUS, Side.BOTH or Side.HYPER",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "split(org.apache.commons.math3.geometry.spherical.oned.Arc arc)",
+    "name": "split",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet.Split",
+      "name": "Split",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+          "name": "Arc",
+          "isArray": false
+        },
+        "name": "arc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+            "name": "Arc",
+            "isArray": false
+          },
+          "name": "arc"
+        },
+        "comment": "splitting arc",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an object containing both the part of the instance on the plus side of the arc and the part of the instance on the minus side of the arc",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

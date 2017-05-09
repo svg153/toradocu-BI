@@ -1,0 +1,1678 @@
+[
+  {
+    "signature": "Ordering()",
+    "name": "Ordering",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "natural()",
+    "name": "natural",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "from(java.util.Comparator comparator)",
+    "name": "from",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the comparator that defines the order",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "comparator itself if it is already an Ordering; otherwise an ordering that wraps that comparator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "from(com.google.common.collect.Ordering ordering)",
+    "name": "from",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Ordering",
+          "name": "Ordering",
+          "isArray": false
+        },
+        "name": "ordering"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "explicit(java.util.List valuesInOrder)",
+    "name": "explicit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "valuesInOrder"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "valuesInOrder"
+        },
+        "comment": "the values that the returned comparator will be able to compare, in the order the comparator should induce",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the comparator described above",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the provided values is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valuesInOrder",
+          "Object.equals(java.lang.Object)"
+        ],
+        "comment": "if valuesInOrder contains any duplicate values (according to Object.equals(java.lang.Object))",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "explicit(java.lang.Object leastValue,java.lang.Object[] remainingValuesInOrder)",
+    "name": "explicit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "leastValue"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "remainingValuesInOrder"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "leastValue"
+        },
+        "comment": "the value which the returned comparator should consider the \"least\" of all values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "remainingValuesInOrder"
+        },
+        "comment": "the rest of the values that the returned comparator will be able to compare, in the order the comparator should follow",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the comparator described above",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the provided values is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Object.equals(Object)"
+        ],
+        "comment": "if any duplicate values (according to Object.equals(Object)) are present among the method arguments",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "allEqual()",
+    "name": "allEqual",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "usingToString()",
+    "name": "usingToString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "arbitrary()",
+    "name": "arbitrary",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "reverse()",
+    "name": "reverse",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "nullsFirst()",
+    "name": "nullsFirst",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "nullsLast()",
+    "name": "nullsLast",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "onResultOf(com.google.common.base.Function function)",
+    "name": "onResultOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "onKeys()",
+    "name": "onKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "compound(java.util.Comparator secondaryComparator)",
+    "name": "compound",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "secondaryComparator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "compound(java.lang.Iterable comparators)",
+    "name": "compound",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "comparators"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "comparators"
+        },
+        "comment": "the comparators to try in order",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "lexicographical()",
+    "name": "lexicographical",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "compare(java.lang.Object left,java.lang.Object right)",
+    "name": "compare",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "left",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "right",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "min(java.util.Iterator iterator)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator whose minimum element is to be determined",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "iterator"
+        ],
+        "comment": "if iterator is empty",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "min(java.lang.Iterable iterable)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "iterable"
+        },
+        "comment": "the iterable whose minimum element is to be determined",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "iterable"
+        ],
+        "comment": "if iterable is empty",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "min(java.lang.Object a,java.lang.Object b)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "b",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a",
+          "nullable": true
+        },
+        "comment": "value to compare, returned if less than or equal to b.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "b",
+          "nullable": true
+        },
+        "comment": "value to compare.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "min(java.lang.Object a,java.lang.Object b,java.lang.Object c,java.lang.Object[] rest)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "b",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "c",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "rest"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a",
+          "nullable": true
+        },
+        "comment": "value to compare, returned if less than or equal to the rest.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "b",
+          "nullable": true
+        },
+        "comment": "value to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "c",
+          "nullable": true
+        },
+        "comment": "value to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "rest"
+        },
+        "comment": "values to compare",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "max(java.util.Iterator iterator)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator whose maximum element is to be determined",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "iterator"
+        ],
+        "comment": "if iterator is empty",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "max(java.lang.Iterable iterable)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "iterable"
+        },
+        "comment": "the iterable whose maximum element is to be determined",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "iterable"
+        ],
+        "comment": "if iterable is empty",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "max(java.lang.Object a,java.lang.Object b)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "b",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a",
+          "nullable": true
+        },
+        "comment": "value to compare, returned if greater than or equal to b.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "b",
+          "nullable": true
+        },
+        "comment": "value to compare.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "max(java.lang.Object a,java.lang.Object b,java.lang.Object c,java.lang.Object[] rest)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "b",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "c",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "rest"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a",
+          "nullable": true
+        },
+        "comment": "value to compare, returned if greater than or equal to the rest.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "b",
+          "nullable": true
+        },
+        "comment": "value to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "c",
+          "nullable": true
+        },
+        "comment": "value to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "rest"
+        },
+        "comment": "values to compare",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not mutually comparable under this ordering.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "leastOf(java.lang.Iterable iterable,int k)",
+    "name": "leastOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an immutable RandomAccess list of the k least elements in ascending order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "leastOf(java.util.Iterator elements,int k)",
+    "name": "leastOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "elements"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an immutable RandomAccess list of the k least elements in ascending order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "greatestOf(java.lang.Iterable iterable,int k)",
+    "name": "greatestOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an immutable RandomAccess list of the k greatest elements in descending order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "greatestOf(java.util.Iterator iterator,int k)",
+    "name": "greatestOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an immutable RandomAccess list of the k greatest elements in descending order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "sortedCopy(java.lang.Iterable elements)",
+    "name": "sortedCopy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "elements"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "immutableSortedCopy(java.lang.Iterable elements)",
+    "name": "immutableSortedCopy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableList",
+      "name": "ImmutableList",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "elements"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "elements",
+          "elements"
+        ],
+        "comment": "if any of elements (or elements itself) is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "isOrdered(java.lang.Iterable iterable)",
+    "name": "isOrdered",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isStrictlyOrdered(java.lang.Iterable iterable)",
+    "name": "isStrictlyOrdered",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "binarySearch(java.util.List sortedList,java.lang.Object key)",
+    "name": "binarySearch",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Ordering",
+      "name": "Ordering",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Ordering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "sortedList"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "sortedList"
+        },
+        "comment": "the list to be searched",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key",
+          "nullable": true
+        },
+        "comment": "the key to be searched for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

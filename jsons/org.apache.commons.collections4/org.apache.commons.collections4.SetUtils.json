@@ -1,0 +1,1354 @@
+[
+  {
+    "signature": "emptySet()",
+    "name": "emptySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an empty Set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "emptySortedSet()",
+    "name": "emptySortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an empty sorted Set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "emptyIfNull(java.util.Set set)",
+    "name": "emptyIfNull",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set, possibly null",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an empty set if the argument is null",
+      "kind": "RETURN",
+      "condition": "args[0]==null ? result.equals(org.apache.commons.collections4.SetUtils.emptySet())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEqualSet(java.util.Collection set1,java.util.Collection set2)",
+    "name": "isEqualSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "set1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "set2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "set1"
+        },
+        "comment": "the first set, may be null",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "set2"
+        },
+        "comment": "the second set, may be null",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "whether the sets are equal by value comparison",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCodeForSet(java.util.Collection set)",
+    "name": "hashCodeForSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to calculate the hash code for, may be null",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the hash code",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newIdentityHashSet()",
+    "name": "newIdentityHashSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new identity hash set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedSet(java.util.Set set)",
+    "name": "synchronizedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to synchronize, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "unmodifiableSet(java.util.Set set)",
+    "name": "unmodifiableSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to make unmodifiable, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedSet(java.util.Set set,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to predicate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate for the set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a predicated set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "transformedSet(java.util.Set set,org.apache.commons.collections4.Transformer transformer)",
+    "name": "transformedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to transform, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "transformer"
+        },
+        "comment": "the transformer for the set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a transformed set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or transformer is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "orderedSet(java.util.Set set)",
+    "name": "orderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to order, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an ordered set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "synchronizedSortedSet(java.util.SortedSet set)",
+    "name": "synchronizedSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the sorted set to synchronize, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "unmodifiableSortedSet(java.util.SortedSet set)",
+    "name": "unmodifiableSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the sorted set to make unmodifiable, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedSortedSet(java.util.SortedSet set,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the sorted set to predicate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate for the sorted set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a predicated sorted set backed by the given sorted set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "transformedSortedSet(java.util.SortedSet set,org.apache.commons.collections4.Transformer transformer)",
+    "name": "transformedSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to transform, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "transformer"
+        },
+        "comment": "the transformer for the set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a transformed set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or transformer is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "unmodifiableNavigableSet(java.util.NavigableSet set)",
+    "name": "unmodifiableNavigableSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableSet",
+          "name": "NavigableSet",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.NavigableSet",
+            "name": "NavigableSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the navigable set to make unmodifiable, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedNavigableSet(java.util.NavigableSet set,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedNavigableSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableSet",
+          "name": "NavigableSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.NavigableSet",
+            "name": "NavigableSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the navigable set to predicate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate for the navigable set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a predicated navigable set backed by the given navigable set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "transformedNavigableSet(java.util.NavigableSet set,org.apache.commons.collections4.Transformer transformer)",
+    "name": "transformedNavigableSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableSet",
+          "name": "NavigableSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.NavigableSet",
+            "name": "NavigableSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the navigable set to transform, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "transformer"
+        },
+        "comment": "the transformer for the set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a transformed set backed by the given set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set or transformer is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "union(java.util.Set a,java.util.Set b)",
+    "name": "union",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils.SetView",
+      "name": "SetView",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the first set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the second set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a view of the union of the two set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either input set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "difference(java.util.Set a,java.util.Set b)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils.SetView",
+      "name": "SetView",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the set to subtract from, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the set to subtract, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a view of the relative complement of of the two sets",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "intersection(java.util.Set a,java.util.Set b)",
+    "name": "intersection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils.SetView",
+      "name": "SetView",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the first set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the second set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a view of the intersection of the two sets",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "disjunction(java.util.Set a,java.util.Set b)",
+    "name": "disjunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils",
+      "name": "SetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.SetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.SetUtils.SetView",
+      "name": "SetView",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the first set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the second set, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a view of the symmetric difference of the two sets",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

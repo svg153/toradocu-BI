@@ -1,0 +1,1127 @@
+[
+  {
+    "signature": "copy(java.io.InputStream from,java.io.OutputStream to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.OutputStream",
+          "name": "OutputStream",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the input stream to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.OutputStream",
+            "name": "OutputStream",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the output stream to write to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of bytes copied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy(java.nio.channels.ReadableByteChannel from,java.nio.channels.WritableByteChannel to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.nio.channels.ReadableByteChannel",
+          "name": "ReadableByteChannel",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.channels.WritableByteChannel",
+          "name": "WritableByteChannel",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.channels.ReadableByteChannel",
+            "name": "ReadableByteChannel",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the readable channel to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.channels.WritableByteChannel",
+            "name": "WritableByteChannel",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the writable channel to write to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of bytes copied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toByteArray(java.io.InputStream in)",
+    "name": "toByteArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to read from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a byte array containing all the bytes from the stream",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toByteArray(java.io.InputStream in,int expectedSize)",
+    "name": "toByteArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedSize"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newDataInput(byte[] bytes)",
+    "name": "newDataInput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataInput",
+      "name": "ByteArrayDataInput",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newDataInput(byte[] bytes,int start)",
+    "name": "newDataInput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataInput",
+      "name": "ByteArrayDataInput",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "start"
+        ],
+        "comment": "if start is negative or greater than the length of the array",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "newDataInput(java.io.ByteArrayInputStream byteArrayInputStream)",
+    "name": "newDataInput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataInput",
+      "name": "ByteArrayDataInput",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ByteArrayInputStream",
+          "name": "ByteArrayInputStream",
+          "isArray": false
+        },
+        "name": "byteArrayInputStream"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newDataOutput()",
+    "name": "newDataOutput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataOutput",
+      "name": "ByteArrayDataOutput",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newDataOutput(int size)",
+    "name": "newDataOutput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataOutput",
+      "name": "ByteArrayDataOutput",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "newDataOutput(java.io.ByteArrayOutputStream byteArrayOutputSteam)",
+    "name": "newDataOutput",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteArrayDataOutput",
+      "name": "ByteArrayDataOutput",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ByteArrayOutputStream",
+          "name": "ByteArrayOutputStream",
+          "isArray": false
+        },
+        "name": "byteArrayOutputSteam"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "nullOutputStream()",
+    "name": "nullOutputStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.OutputStream",
+      "name": "OutputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "limit(java.io.InputStream in,long limit)",
+    "name": "limit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.InputStream",
+      "name": "InputStream",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "limit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to be wrapped",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "limit"
+        },
+        "comment": "the maximum number of bytes to be read",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a length-limited InputStream",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "readFully(java.io.InputStream in,byte[] b)",
+    "name": "readFully",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "b"
+        },
+        "comment": "the buffer into which the data is read.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.EOFException",
+          "name": "EOFException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this stream reaches the end before reading all the bytes.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readFully(java.io.InputStream in,byte[] b,int off,int len)",
+    "name": "readFully",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "b"
+        },
+        "comment": "the buffer into which the data is read.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "off"
+        },
+        "comment": "an int specifying the offset into the data.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "an int specifying the number of bytes to read.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.EOFException",
+          "name": "EOFException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this stream reaches the end before reading all the bytes.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "skipFully(java.io.InputStream in,long n)",
+    "name": "skipFully",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the number of bytes to skip",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.EOFException",
+          "name": "EOFException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this stream reaches the end before skipping all the bytes",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs, or the stream does not support skipping",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "skipUpTo(java.io.InputStream in,long n)",
+    "name": "skipUpTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readBytes(java.io.InputStream input,com.google.common.io.ByteProcessor processor)",
+    "name": "readBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "input"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteProcessor",
+          "name": "ByteProcessor",
+          "isArray": false
+        },
+        "name": "processor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "input"
+        },
+        "comment": "the input stream to process",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.ByteProcessor",
+            "name": "ByteProcessor",
+            "isArray": false
+          },
+          "name": "processor"
+        },
+        "comment": "the object to which to pass the bytes of the stream",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result of the byte processor",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "read(java.io.InputStream in,byte[] b,int off,int len)",
+    "name": "read",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteStreams",
+      "name": "ByteStreams",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteStreams",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "b"
+        },
+        "comment": "the buffer into which the data is read",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "off"
+        },
+        "comment": "an int specifying the offset into the data",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "an int specifying the number of bytes to read",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of bytes read",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

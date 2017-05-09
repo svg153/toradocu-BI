@@ -1,0 +1,215 @@
+[
+  {
+    "signature": "AbstractDifferentiableOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker checker)",
+    "name": "AbstractDifferentiableOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+      "name": "AbstractDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeObjectiveGradient(double[] evaluationPoint)",
+    "name": "computeObjectiveGradient",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+      "name": "AbstractDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "evaluationPoint"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "evaluationPoint"
+        },
+        "comment": "Point at which the gradient must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the gradient at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimizeInternal(int maxEval,org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction f,org.apache.commons.math3.optimization.GoalType goalType,double[] startPoint)",
+    "name": "optimizeInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+      "name": "AbstractDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+          "name": "MultivariateDifferentiableFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "optimizeInternal(int maxEval,org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction f,org.apache.commons.math3.optimization.GoalType goalType,org.apache.commons.math3.optimization.OptimizationData[] optData)",
+    "name": "optimizeInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+      "name": "AbstractDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractDifferentiableOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+          "name": "MultivariateDifferentiableFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

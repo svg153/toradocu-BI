@@ -1,0 +1,459 @@
+[
+  {
+    "signature": "RungeKuttaFieldIntegrator(org.apache.commons.math3.Field field,java.lang.String name,org.apache.commons.math3.RealFieldElement step)",
+    "name": "RungeKuttaFieldIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+      "name": "RungeKuttaFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "step"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "name of the method",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "step"
+        },
+        "comment": "integration step",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "fraction(int p,int q)",
+    "name": "fraction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+      "name": "RungeKuttaFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "q"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "numerator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "q"
+        },
+        "comment": "denominator",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p/q computed in the instance field",
+      "kind": "RETURN",
+      "condition": "true ? result==args[0]/args[1]"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createInterpolator(boolean forward,org.apache.commons.math3.RealFieldElement[][] yDotK,org.apache.commons.math3.ode.FieldODEStateAndDerivative globalPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative globalCurrentState,org.apache.commons.math3.ode.FieldEquationsMapper mapper)",
+    "name": "createInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+      "name": "RungeKuttaFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "forward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+          "name": "RealFieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "yDotK"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "globalPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "globalCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+          "name": "FieldEquationsMapper",
+          "isArray": false
+        },
+        "name": "mapper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "forward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+            "name": "RealFieldElement[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "yDotK"
+        },
+        "comment": "slopes at the intermediate points",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "globalPreviousState"
+        },
+        "comment": "start of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "globalCurrentState"
+        },
+        "comment": "end of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+            "name": "FieldEquationsMapper",
+            "isArray": false
+          },
+          "name": "mapper"
+        },
+        "comment": "equations mapper for the all equations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "external weights for the high order method from Butcher array",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[1])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.ode.FieldExpandableODE equations,org.apache.commons.math3.ode.FieldODEState initialState,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+      "name": "RungeKuttaFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldExpandableODE",
+          "name": "FieldExpandableODE",
+          "isArray": false
+        },
+        "name": "equations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+          "name": "FieldODEState",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "singleStep(org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations equations,org.apache.commons.math3.RealFieldElement t0,org.apache.commons.math3.RealFieldElement[] y0,org.apache.commons.math3.RealFieldElement t)",
+    "name": "singleStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+      "name": "RungeKuttaFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+          "name": "FirstOrderFieldDifferentialEquations",
+          "isArray": false
+        },
+        "name": "equations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t0"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "y0"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FirstOrderFieldDifferentialEquations",
+            "name": "FirstOrderFieldDifferentialEquations",
+            "isArray": false
+          },
+          "name": "equations"
+        },
+        "comment": "differential equations to integrate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "t0"
+        },
+        "comment": "initial time",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "y0"
+        },
+        "comment": "initial value of the state vector at t0",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "target time for the integration (can be set to a value smaller than t0 for backward integration)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "state vector at t",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[3])"
+    },
+    "throwsTags": []
+  }
+]

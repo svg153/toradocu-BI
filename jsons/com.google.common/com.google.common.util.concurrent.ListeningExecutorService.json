@@ -1,0 +1,273 @@
+[
+  {
+    "signature": "submit(java.util.concurrent.Callable task)",
+    "name": "submit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListeningExecutorService",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFuture",
+      "name": "ListenableFuture",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Callable",
+          "name": "Callable",
+          "isArray": false
+        },
+        "name": "task"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a ListenableFuture representing pending completion of the task",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "submit(java.lang.Runnable task)",
+    "name": "submit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListeningExecutorService",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFuture",
+      "name": "ListenableFuture",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "task"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a ListenableFuture representing pending completion of the task",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "submit(java.lang.Runnable task,java.lang.Object result)",
+    "name": "submit",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListeningExecutorService",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFuture",
+      "name": "ListenableFuture",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "task"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "result"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a ListenableFuture representing pending completion of the task",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "invokeAll(java.util.Collection tasks)",
+    "name": "invokeAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListeningExecutorService",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "tasks"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of ListenableFuture instances representing the tasks, in the same sequential order as produced by the iterator for the given task list, each of which has completed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any task is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "invokeAll(java.util.Collection tasks,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "invokeAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListeningExecutorService",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "tasks"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a list of ListenableFuture instances representing the tasks, in the same sequential order as produced by the iterator for the given task list. If the operation did not time out, each task will have completed. If it did time out, some of these tasks will not have completed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any task is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

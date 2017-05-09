@@ -1,0 +1,2124 @@
+[
+  {
+    "signature": "newReader(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "newReader",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.BufferedReader",
+      "name": "BufferedReader",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the buffered reader",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newWriter(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "newWriter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.BufferedWriter",
+      "name": "BufferedWriter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to write to",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to encode the output stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the buffered writer",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "asByteSource(java.io.File file)",
+    "name": "asByteSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readFile(java.io.InputStream in,long expectedSize)",
+    "name": "readFile",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "expectedSize"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asByteSink(java.io.File file,com.google.common.io.FileWriteMode[] modes)",
+    "name": "asByteSink",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.FileWriteMode[]",
+          "name": "FileWriteMode[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "com.google.common.io.FileWriteMode",
+            "name": "FileWriteMode",
+            "isArray": false
+          }
+        },
+        "name": "modes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asCharSource(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "asCharSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asCharSink(java.io.File file,java.nio.charset.Charset charset,com.google.common.io.FileWriteMode[] modes)",
+    "name": "asCharSink",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSink",
+      "name": "CharSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.FileWriteMode[]",
+          "name": "FileWriteMode[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "com.google.common.io.FileWriteMode",
+            "name": "FileWriteMode",
+            "isArray": false
+          }
+        },
+        "name": "modes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toByteArray(java.io.File file)",
+    "name": "toByteArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a byte array containing all the bytes from file",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the file is bigger than the largest possible byte array (2^31 - 1)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toString(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a string containing all the characters from the file",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "write(byte[] from,java.io.File to)",
+    "name": "write",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "from"
+        },
+        "comment": "the bytes to write",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the destination file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy(java.io.File from,java.io.OutputStream to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.OutputStream",
+          "name": "OutputStream",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the source file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.OutputStream",
+            "name": "OutputStream",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the output stream",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy(java.io.File from,java.io.File to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the source file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the destination file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "from.equals(to)"
+        ],
+        "comment": "if from.equals(to)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "write(java.lang.CharSequence from,java.io.File to,java.nio.charset.Charset charset)",
+    "name": "write",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "to"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.CharSequence",
+            "name": "CharSequence",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the character sequence to write",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the destination file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to encode the output stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "append(java.lang.CharSequence from,java.io.File to,java.nio.charset.Charset charset)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "to"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.CharSequence",
+            "name": "CharSequence",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the character sequence to append",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the destination file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to encode the output stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy(java.io.File from,java.nio.charset.Charset charset,java.lang.Appendable to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Appendable",
+          "name": "Appendable",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the source file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Appendable",
+            "name": "Appendable",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the appendable object",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "equal(java.io.File file1,java.io.File file2)",
+    "name": "equal",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file2"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createTempDir()",
+    "name": "createTempDir",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.File",
+      "name": "File",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the newly-created directory",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the directory could not be created",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "touch(java.io.File file)",
+    "name": "touch",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to create or update",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createParentDirs(java.io.File file)",
+    "name": "createParentDirs",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs, or if any necessary but nonexistent parent directories of the specified file could not be created.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "move(java.io.File from,java.io.File to)",
+    "name": "move",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the source file",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the destination file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "from.equals(to)"
+        ],
+        "comment": "if from.equals(to)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readFirstLine(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "readFirstLine",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the first line, or null if the file is empty",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines(java.io.File file,java.nio.charset.Charset charset)",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a mutable List containing all the lines",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines(java.io.File file,java.nio.charset.Charset charset,com.google.common.io.LineProcessor callback)",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.LineProcessor",
+          "name": "LineProcessor",
+          "isArray": false
+        },
+        "name": "callback"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.LineProcessor",
+            "name": "LineProcessor",
+            "isArray": false
+          },
+          "name": "callback"
+        },
+        "comment": "the LineProcessor to use to handle the lines",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the output of processing the lines",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readBytes(java.io.File file,com.google.common.io.ByteProcessor processor)",
+    "name": "readBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteProcessor",
+          "name": "ByteProcessor",
+          "isArray": false
+        },
+        "name": "processor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.ByteProcessor",
+            "name": "ByteProcessor",
+            "isArray": false
+          },
+          "name": "processor"
+        },
+        "comment": "the object to which the bytes of the file are passed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result of the byte processor",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hash(java.io.File file,com.google.common.hash.HashFunction hashFunction)",
+    "name": "hash",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.hash.HashFunction",
+          "name": "HashFunction",
+          "isArray": false
+        },
+        "name": "hashFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to read",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.hash.HashFunction",
+            "name": "HashFunction",
+            "isArray": false
+          },
+          "name": "hashFunction"
+        },
+        "comment": "the hash function to use to hash the data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the HashCode of all of the bytes in the file",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "map(java.io.File file)",
+    "name": "map",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.nio.MappedByteBuffer",
+      "name": "MappedByteBuffer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a read-only buffer reflecting file",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.FileNotFoundException",
+          "name": "FileNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [
+          "file"
+        ],
+        "comment": "if the file does not exist",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "map(java.io.File file,java.nio.channels.FileChannel.MapMode mode)",
+    "name": "map",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.nio.MappedByteBuffer",
+      "name": "MappedByteBuffer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.channels.FileChannel.MapMode",
+          "name": "MapMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to map",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.channels.FileChannel.MapMode",
+            "name": "MapMode",
+            "isArray": false
+          },
+          "name": "mode"
+        },
+        "comment": "the mode to use when mapping file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a buffer reflecting file",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.FileNotFoundException",
+          "name": "FileNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [
+          "file"
+        ],
+        "comment": "if the file does not exist",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "map(java.io.File file,java.nio.channels.FileChannel.MapMode mode,long size)",
+    "name": "map",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.nio.MappedByteBuffer",
+      "name": "MappedByteBuffer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.channels.FileChannel.MapMode",
+          "name": "MapMode",
+          "isArray": false
+        },
+        "name": "mode"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "the file to map",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.channels.FileChannel.MapMode",
+            "name": "MapMode",
+            "isArray": false
+          },
+          "name": "mode"
+        },
+        "comment": "the mode to use when mapping file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a buffer reflecting file",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "simplifyPath(java.lang.String pathname)",
+    "name": "simplifyPath",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "pathname"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getFileExtension(java.lang.String fullName)",
+    "name": "getFileExtension",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "fullName"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNameWithoutExtension(java.lang.String file)",
+    "name": "getNameWithoutExtension",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The name of the file to trim the extension from. This can be either a fully qualified file name (including a path) or just a file name.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The file name without its path or extension.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "fileTreeTraverser()",
+    "name": "fileTreeTraverser",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.TreeTraverser",
+      "name": "TreeTraverser",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isDirectory()",
+    "name": "isDirectory",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Predicate",
+      "name": "Predicate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isFile()",
+    "name": "isFile",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Files",
+      "name": "Files",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Files",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Predicate",
+      "name": "Predicate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

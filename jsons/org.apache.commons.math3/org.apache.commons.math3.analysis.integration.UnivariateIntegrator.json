@@ -1,0 +1,306 @@
+[
+  {
+    "signature": "getRelativeAccuracy()",
+    "name": "getRelativeAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the accuracy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAbsoluteAccuracy()",
+    "name": "getAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the accuracy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMinimalIterationCount()",
+    "name": "getMinimalIterationCount",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the actual min limit",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaximalIterationCount()",
+    "name": "getMaximalIterationCount",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the actual upper limit",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "integrate(int maxEval,org.apache.commons.math3.analysis.UnivariateFunction f,double min,double max)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "the integrand function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "the lower bound for the interval",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "the upper bound for the interval",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of integral",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[1])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum number of function evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum iteration count is exceeded or the integrator detects convergence problems otherwise",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min > max"
+        ],
+        "comment": "if min > max or the endpoints do not satisfy the requirements specified by the integrator",
+        "kind": "THROWS",
+        "condition": "args[2]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "f",
+          "null"
+        ],
+        "comment": "if f is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of function evaluations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getIterations()",
+    "name": "getIterations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+      "name": "UnivariateIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.UnivariateIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of iterations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

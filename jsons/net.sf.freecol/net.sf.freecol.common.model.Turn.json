@@ -1,0 +1,737 @@
+[
+  {
+    "signature": "Turn(int turn)",
+    "name": "Turn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The numeric value of the turn.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "initialize(int newStartingYear,int newSeasonYear,int newSeasonNumber)",
+    "name": "initialize",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newStartingYear"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newSeasonYear"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newSeasonNumber"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newStartingYear"
+        },
+        "comment": "The starting year for the game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newSeasonYear"
+        },
+        "comment": "The year at which the seasons split.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newSeasonNumber"
+        },
+        "comment": "The number of seasons in the year.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStartingYear()",
+    "name": "getStartingYear",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The numeric value of the starting year.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeasonYear()",
+    "name": "getSeasonYear",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The numeric value of the season year.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeasonNumber()",
+    "name": "getSeasonNumber",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of seasons.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getNumber())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "yearToTurn(int year)",
+    "name": "yearToTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "year"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "year"
+        },
+        "comment": "The year to convert.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The integer value of the corresponding turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "yearToTurn(int year,int season)",
+    "name": "yearToTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "year"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "season"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "year"
+        },
+        "comment": "The year to convert.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "season"
+        },
+        "comment": "The season index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The integer value of the corresponding turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumber()",
+    "name": "getNumber",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of turns.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getYear()",
+    "name": "getYear",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The calculated year based on the turn number.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getYear(int turn)",
+    "name": "getYear",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The calculated year based on the turn number.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeason(int turn)",
+    "name": "getSeason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The turn number to calculate from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The season index corresponding to the turn number or negative if before the season year.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeason()",
+    "name": "getSeason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The season index corresponding to the current turn number, or negative if before the season year.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLabel()",
+    "name": "getLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A StringTemplate describing the turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLabel(int turn)",
+    "name": "getLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The integer value of the turn to describe.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A StringTemplate describing the turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isFirstTurn()",
+    "name": "isFirstTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this turn is the first turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isFirstSeasonTurn()",
+    "name": "isFirstSeasonTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this turn is the season year.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSaveGameSuffix()",
+    "name": "getSaveGameSuffix",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The save game suffix.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTurnsText(int turns)",
+    "name": "getTurnsText",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "The number of turns.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A descriptive string.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object o)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Turn",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

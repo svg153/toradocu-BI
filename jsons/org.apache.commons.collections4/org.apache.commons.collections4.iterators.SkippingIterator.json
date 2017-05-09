@@ -1,0 +1,121 @@
+[
+  {
+    "signature": "SkippingIterator(java.util.Iterator iterator,long offset)",
+    "name": "SkippingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SkippingIterator",
+      "name": "SkippingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SkippingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "offset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator to be decorated",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "offset"
+        },
+        "comment": "the index of the first element of the decorated iterator to return",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if iterator is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if offset is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SkippingIterator",
+      "name": "SkippingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SkippingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SkippingIterator",
+      "name": "SkippingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SkippingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

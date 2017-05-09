@@ -1,0 +1,255 @@
+[
+  {
+    "signature": "JoinColonyMessage(net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.Unit builder)",
+    "name": "JoinColonyMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.JoinColonyMessage",
+      "name": "JoinColonyMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.JoinColonyMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "builder"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "a Colony value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "builder"
+        },
+        "comment": "The Unit to do the building.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "JoinColonyMessage(net.sf.freecol.common.model.Game game,org.w3c.dom.Element element)",
+    "name": "JoinColonyMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.JoinColonyMessage",
+      "name": "JoinColonyMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.JoinColonyMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this message belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to use to create the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.server.FreeColServer server,net.sf.freecol.common.model.Player player,net.sf.freecol.common.networking.Connection connection)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.JoinColonyMessage",
+      "name": "JoinColonyMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.JoinColonyMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "The FreeColServer handling the request.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player building the colony.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection the message is from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An update Element defining the new colony and updating its surrounding tiles, or an error Element on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.JoinColonyMessage",
+      "name": "JoinColonyMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.JoinColonyMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The XML representation of this message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.JoinColonyMessage",
+      "name": "JoinColonyMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.JoinColonyMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"joinColony\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

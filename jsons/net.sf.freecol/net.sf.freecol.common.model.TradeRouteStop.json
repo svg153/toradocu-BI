@@ -1,0 +1,857 @@
+[
+  {
+    "signature": "TradeRouteStop(net.sf.freecol.common.model.Game game,net.sf.freecol.common.model.Location location)",
+    "name": "TradeRouteStop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "location"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "location"
+        },
+        "comment": "The Location of this stop.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "TradeRouteStop(net.sf.freecol.common.model.TradeRouteStop other)",
+    "name": "TradeRouteStop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+          "name": "TradeRouteStop",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+            "name": "TradeRouteStop",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other TradeRouteStop.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "TradeRouteStop(net.sf.freecol.common.model.Game game,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "TradeRouteStop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The FreeColXMLReader to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading the stream.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getLocation()",
+    "name": "getLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Location of this stop.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTradeLocation()",
+    "name": "getTradeLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeLocation",
+      "name": "TradeLocation",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The TradeLocation for this stop.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid(net.sf.freecol.common.model.Player player)",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the stop is valid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCargo()",
+    "name": "getCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of cargo GoodsTypes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setCargo(java.util.List newCargo)",
+    "name": "setCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "newCargo"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "newCargo"
+        },
+        "comment": "A list of GoodsType defining the cargo.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addCargo(net.sf.freecol.common.model.GoodsType newCargo)",
+    "name": "addCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "newCargo"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "newCargo"
+        },
+        "comment": "The GoodsType to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCompactCargo()",
+    "name": "getCompactCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of AbstractGoods to load.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLabelFor(java.lang.String key,net.sf.freecol.common.model.Player player)",
+    "name": "getLabelFor",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "A message key.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player who will see the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A StringTemplate for this stop.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidStopLabel(net.sf.freecol.common.model.Player player)",
+    "name": "invalidStopLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player who will see the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A StringTemplate for this stop.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasWork(net.sf.freecol.common.model.Unit unit,int turns)",
+    "name": "hasWork",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to test.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "Account for production from this many turns.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if this unit should load or unload cargo at the stop.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGoodsCount(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getGoodsCount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getExportAmount(net.sf.freecol.common.model.GoodsType goodsType,int turns)",
+    "name": "getExportAmount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getImportAmount(net.sf.freecol.common.model.GoodsType goodsType,int turns)",
+    "name": "getImportAmount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "What getXMLElementTagName does.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRouteStop",
+      "name": "TradeRouteStop",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.TradeRouteStop",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"tradeRouteStop\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

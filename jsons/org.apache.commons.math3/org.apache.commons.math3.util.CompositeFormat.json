@@ -1,0 +1,492 @@
+[
+  {
+    "signature": "getDefaultNumberFormat()",
+    "name": "getDefaultNumberFormat",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.text.NumberFormat",
+      "name": "NumberFormat",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the default number format.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefaultNumberFormat(java.util.Locale locale)",
+    "name": "getDefaultNumberFormat",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.text.NumberFormat",
+      "name": "NumberFormat",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Locale",
+          "name": "Locale",
+          "isArray": false
+        },
+        "name": "locale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Locale",
+            "name": "Locale",
+            "isArray": false
+          },
+          "name": "locale"
+        },
+        "comment": "the specific locale used by the format.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the default number format specific to the given locale.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "parseAndIgnoreWhitespace(java.lang.String source,java.text.ParsePosition pos)",
+    "name": "parseAndIgnoreWhitespace",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.ParsePosition",
+          "name": "ParsePosition",
+          "isArray": false
+        },
+        "name": "pos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "the string to parse",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.ParsePosition",
+            "name": "ParsePosition",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "input/output parsing parameter. On output, pos holds the index of the next non-whitespace character.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "parseNextCharacter(java.lang.String source,java.text.ParsePosition pos)",
+    "name": "parseNextCharacter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char",
+      "name": "char",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.ParsePosition",
+          "name": "ParsePosition",
+          "isArray": false
+        },
+        "name": "pos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "the string to parse",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.ParsePosition",
+            "name": "ParsePosition",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "input/output parsing parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the first non-whitespace character.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "parseNumber(java.lang.String source,java.text.NumberFormat format,java.text.ParsePosition pos)",
+    "name": "parseNumber",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Number",
+      "name": "Number",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.NumberFormat",
+          "name": "NumberFormat",
+          "isArray": false
+        },
+        "name": "format"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.ParsePosition",
+          "name": "ParsePosition",
+          "isArray": false
+        },
+        "name": "pos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "the string to parse",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.NumberFormat",
+            "name": "NumberFormat",
+            "isArray": false
+          },
+          "name": "format"
+        },
+        "comment": "the number format used to parse normal, numeric values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.ParsePosition",
+            "name": "ParsePosition",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "input/output parsing parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the parsed number.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "parseFixedstring(java.lang.String source,java.lang.String expected,java.text.ParsePosition pos)",
+    "name": "parseFixedstring",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.ParsePosition",
+          "name": "ParsePosition",
+          "isArray": false
+        },
+        "name": "pos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "the string to parse",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "expected"
+        },
+        "comment": "expected string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.ParsePosition",
+            "name": "ParsePosition",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "input/output parsing parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the expected string was there",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "formatDouble(double value,java.text.NumberFormat format,java.lang.StringBuffer toAppendTo,java.text.FieldPosition pos)",
+    "name": "formatDouble",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CompositeFormat",
+      "name": "CompositeFormat",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CompositeFormat",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.StringBuffer",
+      "name": "StringBuffer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.NumberFormat",
+          "name": "NumberFormat",
+          "isArray": false
+        },
+        "name": "format"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.StringBuffer",
+          "name": "StringBuffer",
+          "isArray": false
+        },
+        "name": "toAppendTo"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.text.FieldPosition",
+          "name": "FieldPosition",
+          "isArray": false
+        },
+        "name": "pos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the double to format.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.NumberFormat",
+            "name": "NumberFormat",
+            "isArray": false
+          },
+          "name": "format"
+        },
+        "comment": "the format used.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.StringBuffer",
+            "name": "StringBuffer",
+            "isArray": false
+          },
+          "name": "toAppendTo"
+        },
+        "comment": "where the text is to be appended",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.text.FieldPosition",
+            "name": "FieldPosition",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "On input: an alignment field, if desired. On output: the offsets of the alignment field",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value passed in as toAppendTo.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

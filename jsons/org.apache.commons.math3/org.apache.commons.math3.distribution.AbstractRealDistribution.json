@@ -1,0 +1,384 @@
+[
+  {
+    "signature": "AbstractRealDistribution()",
+    "name": "AbstractRealDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractRealDistribution(org.apache.commons.math3.random.RandomGenerator rng)",
+    "name": "AbstractRealDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x0,double x1)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(double x0,double x1)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x0"
+        },
+        "comment": "Lower bound (excluded).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x1"
+        },
+        "comment": "Upper bound (included).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the probability that a random variable with this distribution takes a value between x0 and x1, excluding the lower and including the upper endpoint.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x0 > x1",
+          "P(x0 < X <= x1) = P(X <= x1) - P(X <= x0)"
+        ],
+        "comment": "if x0 > x1. The default implementation uses the identity P(x0 < X <= x1) = P(X <= x1) - P(X <= x0)",
+        "kind": "THROWS",
+        "condition": "args[0]>args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the maximum absolute error in inverse cumulative probability estimates",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reseedRandomGenerator(long seed)",
+    "name": "reseedRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "seed"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample(int sampleSize)",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "sampleSize"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(double x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "zero.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "logDensity(double x)",
+    "name": "logDensity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+      "name": "AbstractRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the point at which the PDF is evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the logarithm of the value of the probability density function at point x",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

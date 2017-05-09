@@ -1,0 +1,530 @@
+[
+  {
+    "signature": "CircularFifoQueue()",
+    "name": "CircularFifoQueue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "CircularFifoQueue(int size)",
+    "name": "CircularFifoQueue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of the queue (cannot be changed)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the size is < 1",
+        "kind": "THROWS",
+        "condition": "args[0]<1"
+      }
+    ]
+  },
+  {
+    "signature": "CircularFifoQueue(java.util.Collection coll)",
+    "name": "CircularFifoQueue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection to copy into the queue, may not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the collection is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this queue's size",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if this queue is empty",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isFull()",
+    "name": "isFull",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "always returns false",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isAtFullCapacity()",
+    "name": "isAtFullCapacity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the capacity limit has been reached, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "maxSize()",
+    "name": "maxSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the maximum number of elements the collection can hold",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(java.lang.Object element)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "the element to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true, always",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the given element is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "get(int index)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the position of the element in the queue",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the element at position index",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.element())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested position is outside the range [0, size)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "offer(java.lang.Object element)",
+    "name": "offer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "the element to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true, always",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the given element is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "poll()",
+    "name": "poll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "element()",
+    "name": "element",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "peek()",
+    "name": "peek",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "name": "CircularFifoQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.CircularFifoQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an iterator over this queue's elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

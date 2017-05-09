@@ -1,0 +1,102 @@
+[
+  {
+    "signature": "compute(double[] a,double[] b)",
+    "name": "compute",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+      "name": "DistanceMeasure",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "a"
+        },
+        "comment": "the first vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "b"
+        },
+        "comment": "the second vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the distance between the two vectors",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths differ.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

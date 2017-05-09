@@ -1,0 +1,123 @@
+[
+  {
+    "signature": "SchurTransformer(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "SchurTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SchurTransformer",
+      "name": "SchurTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SchurTransformer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "matrix to transform",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getP()",
+    "name": "getP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SchurTransformer",
+      "name": "SchurTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SchurTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the P matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPT()",
+    "name": "getPT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SchurTransformer",
+      "name": "SchurTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SchurTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the transpose of the P matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getP())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getT()",
+    "name": "getT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SchurTransformer",
+      "name": "SchurTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SchurTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the T matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "signature": "PiecewiseBicubicSplineInterpolatingFunction(double[] x,double[] y,double[][] f)",
+    "name": "PiecewiseBicubicSplineInterpolatingFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+      "name": "PiecewiseBicubicSplineInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "Sample values of the x-coordinate, in increasing order.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "Sample values of the y-coordinate, in increasing order.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "Values of the function on every grid point. the expected number of elements.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x or y are not strictly increasing.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the arguments are null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null || args[2]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the arrays has zero length.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0 || args[1].length==0 || args[2].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the length of x and y don't match the row, column height of f",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double x,double y)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+      "name": "PiecewiseBicubicSplineInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isValidPoint(double x,double y)",
+    "name": "isValidPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+      "name": "PiecewiseBicubicSplineInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "First coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "Second coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if (x, y) is a valid point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

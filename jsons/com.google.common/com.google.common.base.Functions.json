@@ -1,0 +1,311 @@
+[
+  {
+    "signature": "toStringFunction()",
+    "name": "toStringFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "identity()",
+    "name": "identity",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "forMap(java.util.Map map)",
+    "name": "forMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "forMap(java.util.Map map,java.lang.Object defaultValue)",
+    "name": "forMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "defaultValue",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "source map that determines the function behavior",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "defaultValue",
+          "nullable": true
+        },
+        "comment": "the value to return for inputs that aren't map keys",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "function that returns map.get(a) when a is a key, or defaultValue otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "compose(com.google.common.base.Function g,com.google.common.base.Function f)",
+    "name": "compose",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "g"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "f"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "g"
+        },
+        "comment": "the second function to apply",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "the first function to apply",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the composition of f and g",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "forPredicate(com.google.common.base.Predicate predicate)",
+    "name": "forPredicate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "constant(java.lang.Object value)",
+    "name": "constant",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value",
+          "nullable": true
+        },
+        "comment": "the constant value for the function to return",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a function that always returns value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "forSupplier(com.google.common.base.Supplier supplier)",
+    "name": "forSupplier",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Functions",
+      "name": "Functions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Functions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "supplier"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,3990 @@
+[
+  {
+    "signature": "ServerPlayer(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "ServerPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ServerPlayer(net.sf.freecol.common.model.Game game,boolean admin,net.sf.freecol.common.model.Nation nation,java.net.Socket socket,net.sf.freecol.common.networking.Connection connection)",
+    "name": "ServerPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "admin"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Nation",
+          "name": "Nation",
+          "isArray": false
+        },
+        "name": "nation"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.net.Socket",
+          "name": "Socket",
+          "isArray": false
+        },
+        "name": "socket"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this object belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "admin"
+        },
+        "comment": "Whether the player is the game administrator or not.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Nation",
+            "name": "Nation",
+            "isArray": false
+          },
+          "name": "nation"
+        },
+        "comment": "The nation of the Player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Socket",
+            "name": "Socket",
+            "isArray": false
+          },
+          "name": "socket"
+        },
+        "comment": "The socket to the player's client.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection for the socket.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isConnected()",
+    "name": "isConnected",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this player is currently connected to the server.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setConnected(boolean connected)",
+    "name": "setConnected",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "connected"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "connected"
+        },
+        "comment": "Should be true if this player is currently connected to the server and false otherwise.",
+        "kind": "PARAM",
+        "condition": "target.isConnected() && target==false || args[0]==true"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSocket()",
+    "name": "getSocket",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Socket",
+      "name": "Socket",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Socket.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConnection()",
+    "name": "getConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.networking.Connection",
+      "name": "Connection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Connection.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setConnection(net.sf.freecol.common.networking.Connection connection)",
+    "name": "setConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "send(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "send",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "The ChangeSet to send.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "updateCurrentFather(net.sf.freecol.common.model.FoundingFather ff)",
+    "name": "updateCurrentFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+          "name": "FoundingFather",
+          "isArray": false
+        },
+        "name": "ff"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+            "name": "FoundingFather",
+            "isArray": false
+          },
+          "name": "ff"
+        },
+        "comment": "The FoundingFather to recruit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addExtraTrade(net.sf.freecol.common.model.AbstractGoods ag)",
+    "name": "addExtraTrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.AbstractGoods",
+          "name": "AbstractGoods",
+          "isArray": false
+        },
+        "name": "ag"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.AbstractGoods",
+            "name": "AbstractGoods",
+            "isArray": false
+          },
+          "name": "ag"
+        },
+        "comment": "The AbstractGoods describing the sale.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "flushExtraTrades(java.util.Random random)",
+    "name": "flushExtraTrades",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "randomizeGame(java.util.Random random)",
+    "name": "randomizeGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkForDeath()",
+    "name": "checkForDeath",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Negative if the player is dead, zero if they are ok, positive non-zero if the server should auto-recruit colonist units to keep this player alive.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "checkForREFDefeat()",
+    "name": "checkForREFDefeat",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this REF player has been defeated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csKill(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csKill",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csWithdraw(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csWithdraw",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRemainingEmigrants()",
+    "name": "getRemainingEmigrants",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRemainingEmigrants(int emigrants)",
+    "name": "setRemainingEmigrants",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "emigrants"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkFoundingFather()",
+    "name": "checkFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+      "name": "FoundingFather",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The new founding father, or null if none available or ready.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "canRecruitFoundingFather()",
+    "name": "canRecruitFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if a new father should be chosen.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomFoundingFathers(java.util.Random random)",
+    "name": "getRandomFoundingFathers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of FoundingFathers.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addHistory(net.sf.freecol.common.model.HistoryEvent event)",
+    "name": "addHistory",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+          "name": "HistoryEvent",
+          "isArray": false
+        },
+        "name": "event"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+            "name": "HistoryEvent",
+            "isArray": false
+          },
+          "name": "event"
+        },
+        "comment": "The HistoryEvent to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "updateScore()",
+    "name": "updateScore",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the player score changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasExplored(net.sf.freecol.common.model.Tile tile)",
+    "name": "hasExplored",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the Tile has been explored and false otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreTile(net.sf.freecol.common.model.Tile tile)",
+    "name": "exploreTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the tile is newly explored by this action.",
+      "kind": "RETURN",
+      "condition": "args[0].isExplored() ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreTiles(java.util.Collection tiles)",
+    "name": "exploreTiles",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "tiles"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "tiles"
+        },
+        "comment": "A list of Tiles.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of newly explored Tiles.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreForSettlement(net.sf.freecol.common.model.Settlement settlement)",
+    "name": "exploreForSettlement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of newly explored Tiles.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreForUnit(net.sf.freecol.common.model.Unit unit)",
+    "name": "exploreForUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of newly explored Tiles.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreMap(boolean reveal)",
+    "name": "exploreMap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "reveal"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "reveal"
+        },
+        "comment": "If true, reveal the map, if false, hide it.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of tiles whose visibility changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createUnits(java.util.List abstractUnits,net.sf.freecol.common.model.Location location)",
+    "name": "createUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "abstractUnits"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "location"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "abstractUnits"
+        },
+        "comment": "The list of AbstractUnits to create.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "location"
+        },
+        "comment": "The Location where the units will be created.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of units created.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "loadShips(java.util.List landUnits,java.util.List navalUnits,java.util.Random random)",
+    "name": "loadShips",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "landUnits"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "navalUnits"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "landUnits"
+        },
+        "comment": "A list of land units to put on ships.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "navalUnits"
+        },
+        "comment": "A list of ships to put land units on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list of units left over",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "priceMercenaries(java.util.List mercenaries)",
+    "name": "priceMercenaries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "mercenaries"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "mercenaries"
+        },
+        "comment": "A list of mercenaries to price.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The price.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csFlushMarket(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csFlushMarket",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the market has changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csFlushMarket(net.sf.freecol.common.model.GoodsType type,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csFlushMarket",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the market price had changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "buy(net.sf.freecol.common.model.GoodsContainer container,net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "buy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsContainer",
+          "name": "GoodsContainer",
+          "isArray": false
+        },
+        "name": "container"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsContainer",
+            "name": "GoodsContainer",
+            "isArray": false
+          },
+          "name": "container"
+        },
+        "comment": "The GoodsContainer to carry the goods.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to buy.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to buy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The amount actually removed from the market, or negative on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sell(net.sf.freecol.common.model.GoodsContainer container,net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "sell",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsContainer",
+          "name": "GoodsContainer",
+          "isArray": false
+        },
+        "name": "container"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsContainer",
+            "name": "GoodsContainer",
+            "isArray": false
+          },
+          "name": "container"
+        },
+        "comment": "An optional GoodsContainer carrying the goods.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to sell.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to sell.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The amount actually added to the market, or negative on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addStanceChange(net.sf.freecol.server.model.ServerPlayer other)",
+    "name": "addStanceChange",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The ServerPlayer to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csChangeStance(net.sf.freecol.common.model.Stance stance,net.sf.freecol.server.model.ServerPlayer otherPlayer,boolean symmetric,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csChangeStance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Stance",
+          "name": "Stance",
+          "isArray": false
+        },
+        "name": "stance"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "otherPlayer"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "symmetric"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Stance",
+            "name": "Stance",
+            "isArray": false
+          },
+          "name": "stance"
+        },
+        "comment": "The new Stance.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "otherPlayer"
+        },
+        "comment": "The Player wrt which the stance changes.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "symmetric"
+        },
+        "comment": "If true, change the otherPlayer stance as well.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if there was a change in stance at all.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csModifyTension(net.sf.freecol.common.model.Player player,int add,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csModifyTension",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "add"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "add"
+        },
+        "comment": "The amount to add to the current tension level.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csModifyTension(net.sf.freecol.common.model.Player player,int add,net.sf.freecol.common.model.Settlement origin,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csModifyTension",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "add"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "origin"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "add"
+        },
+        "comment": "The amount to add to the current tension level.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "origin"
+        },
+        "comment": "A Settlement where the alarming event occurred.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csNewTurn(java.util.Random random,net.sf.freecol.common.util.LogBuilder lb,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csNewTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csPayUpkeep(java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csPayUpkeep",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "csNaturalDisasters(java.util.Random random,net.sf.freecol.server.control.ChangeSet cs,int probability)",
+    "name": "csNaturalDisasters",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "probability"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "csApplyDisaster(java.util.Random random,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.Disaster disaster,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csApplyDisaster",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Disaster",
+          "name": "Disaster",
+          "isArray": false
+        },
+        "name": "disaster"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "A Colony, or null.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Disaster",
+            "name": "Disaster",
+            "isArray": false
+          },
+          "name": "disaster"
+        },
+        "comment": "A Disaster value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of ModelMessages, possibly empty.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBuildingForEffect(net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.Effect effect,java.util.Random random)",
+    "name": "getBuildingForEffect",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Building",
+      "name": "Building",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Effect",
+          "name": "Effect",
+          "isArray": false
+        },
+        "name": "effect"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnitForEffect(net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.Effect effect,java.util.Random random)",
+    "name": "getUnitForEffect",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Unit",
+      "name": "Unit",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Effect",
+          "name": "Effect",
+          "isArray": false
+        },
+        "name": "effect"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "propagateToEuropeanMarkets(net.sf.freecol.common.model.GoodsType type,int amount,java.util.Random random)",
+    "name": "propagateToEuropeanMarkets",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type of goods that was traded.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods that was traded.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csYearlyGoodsAdjust(java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csYearlyGoodsAdjust",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csStartTurn(java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csStartTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csAddFoundingFather(net.sf.freecol.common.model.FoundingFather father,java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csAddFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+          "name": "FoundingFather",
+          "isArray": false
+        },
+        "name": "father"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+            "name": "FoundingFather",
+            "isArray": false
+          },
+          "name": "father"
+        },
+        "comment": "The FoundingFather to add.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getFreeBuildingTypes()",
+    "name": "getFreeBuildingTypes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of free BuildingTypes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csClaimLand(net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.Settlement settlement,int price,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csClaimLand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "price"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to claim.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement to claim for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "price"
+        },
+        "comment": "The price to pay for the land, which must agree with the owner valuation, unless negative which denotes stealing.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csEmigrate(int slot,net.sf.freecol.common.model.Europe.MigrationType type,java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csEmigrate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "slot"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Europe.MigrationType",
+          "name": "MigrationType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "slot"
+        },
+        "comment": "The slot within Europe to select the unit from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Europe.MigrationType",
+            "name": "MigrationType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type of migration occurring.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csCombat(net.sf.freecol.common.model.FreeColGameObject attacker,net.sf.freecol.common.model.FreeColGameObject defender,java.util.List crs,java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csCombat",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "defender"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "crs"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The FreeColGameObject that is attacking.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The FreeColGameObject that is defending.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "crs"
+        },
+        "comment": "A list of CombatResults defining the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csDisposeSettlement(net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csDisposeSettlement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement under attack.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csLoseLocation(net.sf.freecol.common.model.Location loc,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csLoseLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The Location that was lost.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csSeeNewTiles(java.util.Collection newTiles,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csSeeNewTiles",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "newTiles"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "newTiles"
+        },
+        "comment": "A list of Tiles to update.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "makeTeaPartyModifier()",
+    "name": "makeTeaPartyModifier",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Modifier",
+      "name": "Modifier",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A tea party Modifier.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getTax())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csRaiseTax(int tax,net.sf.freecol.common.model.Goods goods,boolean accepted,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csRaiseTax",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "tax"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "accepted"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "tax"
+        },
+        "comment": "The new tax rate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The Goods to use in a goods party.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "accepted"
+        },
+        "comment": "Whether the tax raise was accepted.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ignoreTax(int tax,net.sf.freecol.common.model.Goods goods,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "ignoreTax",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "tax"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "tax"
+        },
+        "comment": "The new tax rate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The Goods to use in a goods party.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ignoreMercenaries(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "ignoreMercenaries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csSetTax(int tax,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csSetTax",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "tax"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "tax"
+        },
+        "comment": "The new tax rate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csAddMercenaries(java.util.List mercs,int price,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csAddMercenaries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "mercs"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "price"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "mercs"
+        },
+        "comment": "A list of mercenaries.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "price"
+        },
+        "comment": "The price to be charged for them.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csContact(net.sf.freecol.server.model.ServerPlayer other,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csContact",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "other"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other ServerPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if this was a first contact.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csNativeFirstContact(net.sf.freecol.server.model.ServerPlayer other,net.sf.freecol.common.model.Tile tile,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csNativeFirstContact",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "other"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The native ServerPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile contact is made at if this is a first landing in the new world and it is owned by the other player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csEuropeanFirstContact(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Unit otherUnit,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csEuropeanFirstContact",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "otherUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit making contact.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement being contacted.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "otherUnit"
+        },
+        "comment": "The Unit being contacted.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csChangeOwner(net.sf.freecol.common.model.Unit unit,net.sf.freecol.server.model.ServerPlayer newOwner,net.sf.freecol.common.model.UnitTypeChange.ChangeType change,net.sf.freecol.common.model.Location loc,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csChangeOwner",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "newOwner"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitTypeChange.ChangeType",
+          "name": "ChangeType",
+          "isArray": false
+        },
+        "name": "change"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to change ownership of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "newOwner"
+        },
+        "comment": "The new owning ServerPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitTypeChange.ChangeType",
+            "name": "ChangeType",
+            "isArray": false
+          },
+          "name": "change"
+        },
+        "comment": "An optional accompanying ChangeType.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "A optional new Location for the unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the new owner can have this unit.",
+      "kind": "RETURN",
+      "condition": "args[1].save(java.io.OutputStream, net.sf.freecol.common.io.FreeColXMLWriter$WriteScope, boolean) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerXMLElementTagName()",
+    "name": "getServerXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"serverPlayer\"",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

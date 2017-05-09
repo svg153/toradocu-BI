@@ -1,0 +1,199 @@
+[
+  {
+    "signature": "UnivariatePeriodicInterpolator(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator interpolator,double period,int extend)",
+    "name": "UnivariatePeriodicInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+      "name": "UnivariatePeriodicInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator",
+          "name": "UnivariateInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "period"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "extend"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator",
+            "name": "UnivariateInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "Interpolator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "period"
+        },
+        "comment": "Period.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "extend"
+        },
+        "comment": "Number of points to be appended at the beginning and end of the sample arrays in order to avoid interpolation failure at the (periodic) boundaries of the orginal interval. The value is the number of sample points which the original interpolator needs on each side of the interpolated point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "UnivariatePeriodicInterpolator(org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator interpolator,double period)",
+    "name": "UnivariatePeriodicInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+      "name": "UnivariatePeriodicInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator",
+          "name": "UnivariateInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "period"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariateInterpolator",
+            "name": "UnivariateInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "Interpolator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "period"
+        },
+        "comment": "Period.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "interpolate(double[] xval,double[] yval)",
+    "name": "interpolate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+      "name": "UnivariatePeriodicInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.UnivariatePeriodicInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+      "name": "UnivariateFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "xval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yval"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "xval"
+        ],
+        "comment": "if the number of extension points is larger than the size of xval.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,2413 @@
+[
+  {
+    "signature": "sendTrivial(net.sf.freecol.common.networking.Connection connection,java.lang.String tag,java.lang.String[] attributes)",
+    "name": "sendTrivial",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "tag"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[]",
+          "name": "String[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "attributes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection to send on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "tag"
+        },
+        "comment": "The tag of the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[]",
+            "name": "String[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "attributes"
+        },
+        "comment": "Attributes to add to the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "makeTrivial(java.lang.String tag,java.lang.String[] attributes)",
+    "name": "makeTrivial",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "tag"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[]",
+          "name": "String[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "attributes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "tag"
+        },
+        "comment": "The tag of the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[]",
+            "name": "String[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "attributes"
+        },
+        "comment": "Attributes to add to the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Element encapsulating the message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askAttack(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Direction direction)",
+    "name": "askAttack",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to attack with.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to attack in.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askBuildColony(net.sf.freecol.server.ai.AIUnit aiUnit,java.lang.String name)",
+    "name": "askBuildColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to build the colony.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name of the colony.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askCashInTreasureTrain(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askCashInTreasureTrain",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit cashing in.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askChangeState(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Unit.UnitState state)",
+    "name": "askChangeState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit.UnitState",
+          "name": "UnitState",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to change the state of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit.UnitState",
+            "name": "UnitState",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "The new UnitState.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askChangeWorkType(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.GoodsType type)",
+    "name": "askChangeWorkType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to change the work type of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to produce.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askChangeWorkImprovementType(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.TileImprovementType type)",
+    "name": "askChangeWorkImprovementType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TileImprovementType",
+          "name": "TileImprovementType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to change the work type of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TileImprovementType",
+            "name": "TileImprovementType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The TileImprovementType to produce.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askClaimLand(net.sf.freecol.common.model.Tile tile,net.sf.freecol.server.ai.AIObject claimant,int price)",
+    "name": "askClaimLand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+          "name": "AIObject",
+          "isArray": false
+        },
+        "name": "claimant"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "price"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to claim.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+            "name": "AIObject",
+            "isArray": false
+          },
+          "name": "claimant"
+        },
+        "comment": "The AIUnit or AIColony that is claiming.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "price"
+        },
+        "comment": "The price to pay.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askClearSpeciality(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askClearSpeciality",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to clear.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askCloseTransaction(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Settlement settlement)",
+    "name": "askCloseTransaction",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that closes the transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The target Settlement.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askDeliverGift(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Goods goods)",
+    "name": "askDeliverGift",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit delivering the gift.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement to give to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The Goods to give.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askDisband(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askDisband",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to disband.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askDisembark(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askDisembark",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit disembarking.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askEmbark(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Direction direction)",
+    "name": "askEmbark",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that is embarking.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to embark in (may be null).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askEmigrate(net.sf.freecol.server.ai.AIPlayer aiPlayer,int slot)",
+    "name": "askEmigrate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "aiPlayer"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "slot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "aiPlayer"
+        },
+        "comment": "The AIPlayer requiring emigration.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "slot"
+        },
+        "comment": "The slot to emigrate from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askEndTurn(net.sf.freecol.server.ai.AIPlayer aiPlayer)",
+    "name": "askEndTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "aiPlayer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "aiPlayer"
+        },
+        "comment": "The AIPlayer ending the turn.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askEquipForRole(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Role role,int roleCount)",
+    "name": "askEquipForRole",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Role",
+          "name": "Role",
+          "isArray": false
+        },
+        "name": "role"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "roleCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to equip.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Role",
+            "name": "Role",
+            "isArray": false
+          },
+          "name": "role"
+        },
+        "comment": "The Role to equip for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "roleCount"
+        },
+        "comment": "The role count.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askEstablishMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Direction direction,boolean denounce)",
+    "name": "askEstablishMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "denounce"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit establishing the mission.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to move the unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "denounce"
+        },
+        "comment": "Is this a denunciation?",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askGetNationSummary(net.sf.freecol.server.ai.AIPlayer owner,net.sf.freecol.common.model.Player player)",
+    "name": "askGetNationSummary",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.NationSummary",
+      "name": "NationSummary",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "owner"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "owner"
+        },
+        "comment": "The AIPlayer making the inquiry.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to summarize.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A NationSummary if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askGetTransaction(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Settlement settlement)",
+    "name": "askGetTransaction",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that gets a transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The target Settlement.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askIndianDemand(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "askIndianDemand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is demanding.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony to demand of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to demand.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to demand.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, a non-error reply returned, and the demand was accepted.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askLoadGoods(net.sf.freecol.common.model.Location loc,net.sf.freecol.common.model.GoodsType type,int amount,net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askLoadGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The Location where the goods are.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to load.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to load.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is loading.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askLoot(net.sf.freecol.server.ai.AIUnit aiUnit,java.lang.String defenderId,java.util.List goods)",
+    "name": "askLoot",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "defenderId"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is looting.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "defenderId"
+        },
+        "comment": "The object identifier of the defending unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "A list of Goods to loot.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askMove(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Direction direction)",
+    "name": "askMove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to move.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to move the unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askMoveTo(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location destination)",
+    "name": "askMoveTo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "destination"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to move.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "destination"
+        },
+        "comment": "The Location to move to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askPutOutsideColony(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askPutOutsideColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to put out.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askRearrangeColony(net.sf.freecol.server.ai.AIColony aiColony,java.util.List workers,net.sf.freecol.common.model.Colony scratch)",
+    "name": "askRearrangeColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+          "name": "AIColony",
+          "isArray": false
+        },
+        "name": "aiColony"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "workers"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "scratch"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+            "name": "AIColony",
+            "isArray": false
+          },
+          "name": "aiColony"
+        },
+        "comment": "The AIColony to rearrange.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "workers"
+        },
+        "comment": "A list of worker Units that may change.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "scratch"
+        },
+        "comment": "A copy of the underlying Colony with the workers arranged as required.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askScoutSpeakToChief(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Direction direction)",
+    "name": "askScoutSpeakToChief",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is scouting.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to move.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askSetBuildQueue(net.sf.freecol.server.ai.AIColony aiColony,java.util.List queue)",
+    "name": "askSetBuildQueue",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+          "name": "AIColony",
+          "isArray": false
+        },
+        "name": "aiColony"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "queue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+            "name": "AIColony",
+            "isArray": false
+          },
+          "name": "aiColony"
+        },
+        "comment": "The AIColony that is building.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "queue"
+        },
+        "comment": "The list of BuildableTypes to build.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askTrainUnitInEurope(net.sf.freecol.server.ai.AIPlayer aiPlayer,net.sf.freecol.common.model.UnitType type)",
+    "name": "askTrainUnitInEurope",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "aiPlayer"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "aiPlayer"
+        },
+        "comment": "The AIPlayer requiring training.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The UnitType to train.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askUnloadGoods(net.sf.freecol.common.model.GoodsType type,int amount,net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "askUnloadGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to unload.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to unload.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is unloading.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askWork(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.WorkLocation workLocation)",
+    "name": "askWork",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMessage",
+      "name": "AIMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "workLocation"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to work.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "workLocation"
+        },
+        "comment": "The WorkLocation to work in.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent, and a non-error reply returned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

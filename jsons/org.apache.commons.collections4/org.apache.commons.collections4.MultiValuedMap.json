@@ -1,0 +1,979 @@
+[
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the total size of the map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if this map contains no key-value mappings",
+      "kind": "RETURN",
+      "condition": "target.containsMapping(java.lang.Object, java.lang.Object) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "containsKey(java.lang.Object key)",
+    "name": "containsKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "key whose presence in this map is to be tested",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this map contains a mapping for the specified key",
+      "kind": "RETURN",
+      "condition": "target.containsMapping(args[0]) ? result == true"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified key is null and this map does not permit null keys (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "containsValue(java.lang.Object value)",
+    "name": "containsValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to search for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map contains the value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the value is null and null values are not supported by the used collection types (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "containsMapping(java.lang.Object key,java.lang.Object value)",
+    "name": "containsMapping",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to search for",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to search for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map contains the value",
+      "kind": "RETURN",
+      "condition": "target.containsValue(args[0],args[1]) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to retrieve",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the Collection of values, implementations should return an empty collection for no mapping",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the key is null and null keys are invalid (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to store against",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to add to the collection at the key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map changed as a result of this put operation, or false if the map already contained the key-value mapping and the collection type does not allow duplicate values, e.g. when using a Set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the put operation is not supported by this multi-valued map, e.g. if it is unmodifiable",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the key or value is null and null is invalid (optional)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if some aspect of the specified key or value prevents it from being stored in this multi-valued map",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "putAll(java.lang.Object key,java.lang.Iterable values)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to store against",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "the values to add to the collection at the key, may not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified iterable is null, or if this map does not permit null keys or values, and the specified key or values contain null (optional)",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "putAll(java.util.Map map)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "mappings to be stored in this map, may not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "putAll"
+        ],
+        "comment": "if the putAll operation is not supported by this map",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified map is null, or if this map does not permit null keys or values, and the specified map contains null keys or values (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if some property of a key or value in the specified map prevents it from being stored in this map",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "putAll(org.apache.commons.collections4.MultiValuedMap map)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+          "name": "MultiValuedMap",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+            "name": "MultiValuedMap",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "mappings to be stored in this map, may not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "putAll"
+        ],
+        "comment": "if the putAll operation is not supported by this map",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified map is null, or if this map does not permit null keys or values, and the specified map contains null keys or values (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if some property of a key or value in the specified map prevents it from being stored in this map",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove(java.lang.Object key)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to remove values from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the values that were removed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is unmodifiable",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the key is null and null keys are invalid (optional)",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "removeMapping(java.lang.Object key,java.lang.Object item)",
+    "name": "removeMapping",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "item"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to remove from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "item"
+        },
+        "comment": "the item to remove",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the mapping was removed, false otherwise",
+      "kind": "RETURN",
+      "condition": "target.get(args[0],args[1]) ? result == true : result == false"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is unmodifiable",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the key or value is null and null is invalid (optional)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is unmodifiable",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "entries()",
+    "name": "entries",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a set view of the mappings contained in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "keys()",
+    "name": "keys",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSet",
+      "name": "MultiSet",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a multiset view of the keys contained in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "keySet()",
+    "name": "keySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a set view of the keys contained in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a collection view of the values contained in this multi-valued map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap()",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a map view of the mappings in this multi-valued map",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "mapIterator()",
+    "name": "mapIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiValuedMap",
+      "name": "MultiValuedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiValuedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MapIterator",
+      "name": "MapIterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a map iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

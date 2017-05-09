@@ -1,0 +1,219 @@
+[
+  {
+    "signature": "ListenableFutureTask(java.util.concurrent.Callable callable)",
+    "name": "ListenableFutureTask",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Callable",
+          "name": "Callable",
+          "isArray": false
+        },
+        "name": "callable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ListenableFutureTask(java.lang.Runnable runnable,java.lang.Object result)",
+    "name": "ListenableFutureTask",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "runnable"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "result",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(java.util.concurrent.Callable callable)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Callable",
+          "name": "Callable",
+          "isArray": false
+        },
+        "name": "callable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Callable",
+            "name": "Callable",
+            "isArray": false
+          },
+          "name": "callable"
+        },
+        "comment": "the callable task",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(java.lang.Runnable runnable,java.lang.Object result)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "runnable"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "result",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Runnable",
+            "name": "Runnable",
+            "isArray": false
+          },
+          "name": "runnable"
+        },
+        "comment": "the runnable task",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "result",
+          "nullable": true
+        },
+        "comment": "the result to return on successful completion. If you don't need a particular result, consider using constructions of the form: ListenableFuture<?> f = ListenableFutureTask.create(runnable, null)",
+        "kind": "PARAM",
+        "condition": "target.get()==target.create"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addListener(java.lang.Runnable listener,java.util.concurrent.Executor exec)",
+    "name": "addListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "listener"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Executor",
+          "name": "Executor",
+          "isArray": false
+        },
+        "name": "exec"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "done()",
+    "name": "done",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFutureTask",
+      "name": "ListenableFutureTask",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFutureTask",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

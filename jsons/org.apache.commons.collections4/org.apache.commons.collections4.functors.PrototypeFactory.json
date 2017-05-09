@@ -1,0 +1,61 @@
+[
+  {
+    "signature": "prototypeFactory(java.lang.Object prototype)",
+    "name": "prototypeFactory",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.PrototypeFactory",
+      "name": "PrototypeFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.PrototypeFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Factory",
+      "name": "Factory",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "prototype"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "prototype"
+        },
+        "comment": "the object to clone each time in the factory",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the prototype factory, or a ConstantFactory.NULL_INSTANCE if the prototype is null",
+      "kind": "RETURN",
+      "condition": "args[0]==null ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the prototype cannot be cloned",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

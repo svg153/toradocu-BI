@@ -1,0 +1,713 @@
+[
+  {
+    "signature": "PolynomialFunction(double[] c)",
+    "name": "PolynomialFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "c"
+        },
+        "comment": "Polynomial coefficients.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c",
+          "null"
+        ],
+        "comment": "if c is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c"
+        ],
+        "comment": "if c is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "value(double x)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Argument for which the function value should be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the polynomial at the given point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "degree()",
+    "name": "degree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the degree of the polynomial.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCoefficients()",
+    "name": "getCoefficients",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a fresh copy of the coefficients array.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(double[] coefficients,double argument)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "coefficients"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "argument"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "coefficients"
+        },
+        "comment": "Coefficients of the polynomial to evaluate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "argument"
+        },
+        "comment": "Input value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the polynomial.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.value(double))"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients"
+        ],
+        "comment": "if coefficients is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients",
+          "null"
+        ],
+        "comment": "if coefficients is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure t)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+      "name": "DerivativeStructure",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+          "name": "DerivativeStructure",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients"
+        ],
+        "comment": "if coefficients is empty.",
+        "kind": "THROWS",
+        "condition": "target.getCoefficients().length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients",
+          "null"
+        ],
+        "comment": "if coefficients is null.",
+        "kind": "THROWS",
+        "condition": "target.getCoefficients()==null"
+      }
+    ]
+  },
+  {
+    "signature": "add(org.apache.commons.math3.analysis.polynomials.PolynomialFunction p)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+          "name": "PolynomialFunction",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+            "name": "PolynomialFunction",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Polynomial to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new polynomial which is the sum of the instance and p.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.analysis.polynomials.PolynomialFunction p)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+          "name": "PolynomialFunction",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+            "name": "PolynomialFunction",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Polynomial to subtract.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new polynomial which is the instance minus p.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "negate()",
+    "name": "negate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new polynomial with all coefficients negated",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.analysis.polynomials.PolynomialFunction p)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+          "name": "PolynomialFunction",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+            "name": "PolynomialFunction",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Polynomial to multiply by.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new polynomial equal to this times p",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "differentiate(double[] coefficients)",
+    "name": "differentiate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "coefficients"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "coefficients"
+        },
+        "comment": "Coefficients of the polynomial to differentiate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the coefficients of the derivative or null if coefficients has length 1.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients"
+        ],
+        "comment": "if coefficients is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "coefficients",
+          "null"
+        ],
+        "comment": "if coefficients is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "polynomialDerivative()",
+    "name": "polynomialDerivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the derivative polynomial.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "derivative()",
+    "name": "derivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+      "name": "UnivariateFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the derivative function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string representation of the polynomial.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object obj)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+      "name": "PolynomialFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

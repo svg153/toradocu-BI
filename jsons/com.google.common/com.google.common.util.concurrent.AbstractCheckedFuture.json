@@ -1,0 +1,153 @@
+[
+  {
+    "signature": "AbstractCheckedFuture(com.google.common.util.concurrent.ListenableFuture delegate)",
+    "name": "AbstractCheckedFuture",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.AbstractCheckedFuture",
+      "name": "AbstractCheckedFuture",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.AbstractCheckedFuture",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.ListenableFuture",
+          "name": "ListenableFuture",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapException(java.lang.Exception e)",
+    "name": "mapException",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.AbstractCheckedFuture",
+      "name": "AbstractCheckedFuture",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.AbstractCheckedFuture",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "X",
+      "name": "X",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Exception",
+          "name": "Exception",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkedGet()",
+    "name": "checkedGet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.AbstractCheckedFuture",
+      "name": "AbstractCheckedFuture",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.AbstractCheckedFuture",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "X",
+          "name": "X",
+          "isArray": false
+        },
+        "codeTags": [
+          "ForwardingFuture.get()",
+          "InterruptedException",
+          "CancellationException",
+          "ExecutionException"
+        ],
+        "comment": "if ForwardingFuture.get() throws an InterruptedException, CancellationException, or ExecutionException",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkedGet(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "checkedGet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.AbstractCheckedFuture",
+      "name": "AbstractCheckedFuture",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.AbstractCheckedFuture",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "X",
+          "name": "X",
+          "isArray": false
+        },
+        "codeTags": [
+          "ForwardingFuture.get()",
+          "InterruptedException",
+          "CancellationException",
+          "ExecutionException"
+        ],
+        "comment": "if ForwardingFuture.get() throws an InterruptedException, CancellationException, or ExecutionException",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if retrieving the result timed out.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

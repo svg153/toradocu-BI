@@ -1,0 +1,209 @@
+[
+  {
+    "signature": "getRowDimension()",
+    "name": "getRowDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RealLinearOperator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of rows of the underlying matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumnDimension()",
+    "name": "getColumnDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RealLinearOperator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of columns of the underlying matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "operate(org.apache.commons.math3.linear.RealVector x)",
+    "name": "operate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RealLinearOperator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the vector to operate on",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the product of this instance with x",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the column dimension does not match the size of x",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "operateTranspose(org.apache.commons.math3.linear.RealVector x)",
+    "name": "operateTranspose",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RealLinearOperator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the vector to operate on",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the product of the transpose of this instance with x",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the row dimension does not match the size of x",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "this"
+        ],
+        "comment": "if this operation is not supported by this operator",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isTransposable()",
+    "name": "isTransposable",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RealLinearOperator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "false",
+      "kind": "RETURN",
+      "condition": "true ? result==false"
+    },
+    "throwsTags": []
+  }
+]

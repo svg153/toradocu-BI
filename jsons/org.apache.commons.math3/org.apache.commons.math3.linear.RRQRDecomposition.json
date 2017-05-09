@@ -1,0 +1,317 @@
+[
+  {
+    "signature": "RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "RRQRDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "The matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "RRQRDecomposition(org.apache.commons.math3.linear.RealMatrix matrix,double threshold)",
+    "name": "RRQRDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "The matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "Singularity threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "decompose(double[][] qrt)",
+    "name": "decompose",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "qrt"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "qrt"
+        },
+        "comment": "transposed matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "performHouseholderReflection(int minor,double[][] qrt)",
+    "name": "performHouseholderReflection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "minor"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "qrt"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "minor"
+        },
+        "comment": "minor index",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "qrt"
+        },
+        "comment": "transposed matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getP()",
+    "name": "getP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a permutation matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getQ())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRank(double dropThreshold)",
+    "name": "getRank",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "dropThreshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "dropThreshold"
+        },
+        "comment": "threshold triggering rank computation",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "effective numerical matrix rank",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolver()",
+    "name": "getSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.RRQRDecomposition",
+      "name": "RRQRDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.RRQRDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DecompositionSolver",
+      "name": "DecompositionSolver",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a solver",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getP())"
+    },
+    "throwsTags": []
+  }
+]

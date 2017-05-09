@@ -1,0 +1,73 @@
+[
+  {
+    "signature": "value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure[] point)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+      "name": "MultivariateDifferentiableFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+      "name": "DerivativeStructure",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure[]",
+          "name": "DerivativeStructure[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+            "name": "DerivativeStructure",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure[]",
+            "name": "DerivativeStructure[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+              "name": "DerivativeStructure",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "Point at which the function must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the function value for the given point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "point"
+        ],
+        "comment": "if point does not satisfy the function's constraints (wrong dimension, argument out of bound, or unsupported derivative order for example)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

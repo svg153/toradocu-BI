@@ -1,0 +1,255 @@
+[
+  {
+    "signature": "SetBuildQueueMessage(net.sf.freecol.common.model.Colony colony,java.util.List queue)",
+    "name": "SetBuildQueueMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+      "name": "SetBuildQueueMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "queue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony where the queue is.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "queue"
+        },
+        "comment": "A list of BuildableTypes to build.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "SetBuildQueueMessage(net.sf.freecol.common.model.Game game,org.w3c.dom.Element element)",
+    "name": "SetBuildQueueMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+      "name": "SetBuildQueueMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this message belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to use to create the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.server.FreeColServer server,net.sf.freecol.common.model.Player player,net.sf.freecol.common.networking.Connection connection)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+      "name": "SetBuildQueueMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "The FreeColServer handling the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player the message applies to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection message was received on.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An update containing the new queue or an error Element on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+      "name": "SetBuildQueueMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The XML representation of this message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+      "name": "SetBuildQueueMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.SetBuildQueueMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"setBuildQueue\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

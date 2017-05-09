@@ -1,0 +1,201 @@
+[
+  {
+    "signature": "Clusterer(org.apache.commons.math3.ml.distance.DistanceMeasure measure)",
+    "name": "Clusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterer",
+      "name": "Clusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.Clusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "measure"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "measure"
+        },
+        "comment": "the distance measure to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "cluster(java.util.Collection points)",
+    "name": "cluster",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterer",
+      "name": "Clusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.Clusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "points"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "the set of Clusterable instances",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a List of clusters",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if points are null or the number of data points is not compatible with this clusterer",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm has not yet converged after the maximum number of iterations has been exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getDistanceMeasure()",
+    "name": "getDistanceMeasure",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterer",
+      "name": "Clusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.Clusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+      "name": "DistanceMeasure",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the distance measure",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "distance(org.apache.commons.math3.ml.clustering.Clusterable p1,org.apache.commons.math3.ml.clustering.Clusterable p2)",
+    "name": "distance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterer",
+      "name": "Clusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.Clusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterable",
+          "name": "Clusterable",
+          "isArray": false
+        },
+        "name": "p1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterable",
+          "name": "Clusterable",
+          "isArray": false
+        },
+        "name": "p2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterable",
+            "name": "Clusterable",
+            "isArray": false
+          },
+          "name": "p1"
+        },
+        "comment": "the first clusterable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.clustering.Clusterable",
+            "name": "Clusterable",
+            "isArray": false
+          },
+          "name": "p2"
+        },
+        "comment": "the second clusterable",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the distance between the two clusterables",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

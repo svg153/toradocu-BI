@@ -1,0 +1,210 @@
+[
+  {
+    "signature": "TriDiagonalTransformer(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "TriDiagonalTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Symmetrical matrix to transform.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getQ()",
+    "name": "getQ",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the Q matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getQT()",
+    "name": "getQT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the Q matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getT()",
+    "name": "getT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the T matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getHouseholderVectorsRef()",
+    "name": "getHouseholderVectorsRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the main diagonal elements of the B matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getQ())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMainDiagonalRef()",
+    "name": "getMainDiagonalRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the main diagonal elements of the T matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getQ())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSecondaryDiagonalRef()",
+    "name": "getSecondaryDiagonalRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+      "name": "TriDiagonalTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.TriDiagonalTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the secondary diagonal elements of the T matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getQ())"
+    },
+    "throwsTags": []
+  }
+]

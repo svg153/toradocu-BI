@@ -1,0 +1,124 @@
+[
+  {
+    "signature": "interpolate(double[] x,double[] y)",
+    "name": "interpolate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.NevilleInterpolator",
+      "name": "NevilleInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.NevilleInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "Interpolating points.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "Interpolating values.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a function which interpolates the data set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths are different.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of points is less than 2.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if two abscissae have the same value.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

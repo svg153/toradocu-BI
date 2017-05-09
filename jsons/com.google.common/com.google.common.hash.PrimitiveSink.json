@@ -1,0 +1,481 @@
+[
+  {
+    "signature": "putByte(byte b)",
+    "name": "putByte",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte",
+          "name": "byte",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "a byte",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this instance",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "putBytes(byte[] bytes)",
+    "name": "putBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "bytes"
+        },
+        "comment": "a byte array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "putBytes(byte[] bytes,int off,int len)",
+    "name": "putBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "bytes"
+        },
+        "comment": "a byte array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "off"
+        },
+        "comment": "the start offset in the array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "the number of bytes to write",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "off < 0",
+          "off + len > bytes.length",
+          "len < 0"
+        ],
+        "comment": "if off < 0 or off + len > bytes.length or len < 0",
+        "kind": "THROWS",
+        "condition": "args[1]<0 || args[1]>args[0].length || args[2]<0 || args[2]<0"
+      }
+    ]
+  },
+  {
+    "signature": "putShort(short s)",
+    "name": "putShort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "short",
+          "name": "short",
+          "isArray": false
+        },
+        "name": "s"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putInt(int i)",
+    "name": "putInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putLong(long l)",
+    "name": "putLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "l"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putFloat(float f)",
+    "name": "putFloat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "f"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putDouble(double d)",
+    "name": "putDouble",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putBoolean(boolean b)",
+    "name": "putBoolean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putChar(char c)",
+    "name": "putChar",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putUnencodedChars(java.lang.CharSequence charSequence)",
+    "name": "putUnencodedChars",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "charSequence"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putString(java.lang.CharSequence charSequence,java.nio.charset.Charset charset)",
+    "name": "putString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.PrimitiveSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.PrimitiveSink",
+      "name": "PrimitiveSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "charSequence"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,616 @@
+[
+  {
+    "signature": "ConnectController(net.sf.freecol.client.FreeColClient freeColClient)",
+    "name": "ConnectController",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.client.FreeColClient",
+          "name": "FreeColClient",
+          "isArray": false
+        },
+        "name": "freeColClient"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.client.FreeColClient",
+            "name": "FreeColClient",
+            "isArray": false
+          },
+          "name": "freeColClient"
+        },
+        "comment": "The FreeColClient for the game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "login(java.lang.String user,java.lang.String host,int port)",
+    "name": "login",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "user"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "user"
+        },
+        "comment": "The name of the player to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "The name of the machine running the FreeColServer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The port to use when connecting to the host.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the login succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "startMultiplayerGame(net.sf.freecol.common.model.Specification specification,boolean publicServer,int port)",
+    "name": "startMultiplayerGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "publicServer"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification for the game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "publicServer"
+        },
+        "comment": "Whether to make the server public.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The port in which the server should listen for new clients.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the game is started successfully.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "joinMultiplayerGame(java.lang.String host,int port)",
+    "name": "joinMultiplayerGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "The name of the machine running the server.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The port to use when connecting to the host.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the game starts successfully.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "startSinglePlayerGame(net.sf.freecol.common.model.Specification spec,boolean skip)",
+    "name": "startSinglePlayerGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "spec"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "skip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "spec"
+        },
+        "comment": "The Specification for the game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "skip"
+        },
+        "comment": "Skip the start game panel.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the game starts successfully.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "startSavedGame(java.io.File file,java.lang.String userMsg)",
+    "name": "startSavedGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "userMsg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The saved game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "userMsg"
+        },
+        "comment": "An optional message key to be displayed early.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the game starts successully.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reconnect()",
+    "name": "reconnect",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the reconnection succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "logout(boolean notifyServer)",
+    "name": "logout",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "notifyServer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "notifyServer"
+        },
+        "comment": "Whether or not the server should be notified of the logout. For example: if the server kicked us out then we don't need to confirm with a logout message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "quitGame(boolean stopServer,boolean notifyServer)",
+    "name": "quitGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "stopServer"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "notifyServer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "stopServer"
+        },
+        "comment": "Whether to stop the server.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "notifyServer"
+        },
+        "comment": "Whether or not the server should be notified of the logout. For example: if the server kicked us out then we don't need to confirm with a logout message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "quitGame(boolean stopServer)",
+    "name": "quitGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "stopServer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "stopServer"
+        },
+        "comment": "Indicates whether or not a server that was started through this client should be stopped.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerList()",
+    "name": "getServerList",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.ConnectController",
+      "name": "ConnectController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.ConnectController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of ServerInfo objects.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

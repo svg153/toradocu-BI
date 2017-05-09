@@ -1,0 +1,496 @@
+[
+  {
+    "signature": "LittleEndianDataInputStream(java.io.InputStream in)",
+    "name": "LittleEndianDataInputStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the stream to delegate to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "readLine()",
+    "name": "readLine",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readFully(byte[] b)",
+    "name": "readFully",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readFully(byte[] b,int off,int len)",
+    "name": "readFully",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "skipBytes(int n)",
+    "name": "skipBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readUnsignedByte()",
+    "name": "readUnsignedByte",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readUnsignedShort()",
+    "name": "readUnsignedShort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next two bytes of the input stream, interpreted as an unsigned 16-bit integer in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readInt()",
+    "name": "readInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next four bytes of the input stream, interpreted as an int in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLong()",
+    "name": "readLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next eight bytes of the input stream, interpreted as a long in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readFloat()",
+    "name": "readFloat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next four bytes of the input stream, interpreted as a float in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readDouble()",
+    "name": "readDouble",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next eight bytes of the input stream, interpreted as a double in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readUTF()",
+    "name": "readUTF",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readShort()",
+    "name": "readShort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "short",
+      "name": "short",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next two bytes of the input stream, interpreted as a short in little-endian byte order.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readChar()",
+    "name": "readChar",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char",
+      "name": "char",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next two bytes of the input stream, interpreted as a char in little-endian byte order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readByte()",
+    "name": "readByte",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte",
+      "name": "byte",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readBoolean()",
+    "name": "readBoolean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LittleEndianDataInputStream",
+      "name": "LittleEndianDataInputStream",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LittleEndianDataInputStream",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

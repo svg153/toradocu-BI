@@ -1,0 +1,294 @@
+[
+  {
+    "signature": "MultivariateFunctionMappingAdapter(org.apache.commons.math3.analysis.MultivariateFunction bounded,double[] lower,double[] upper)",
+    "name": "MultivariateFunctionMappingAdapter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+      "name": "MultivariateFunctionMappingAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "bounded"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+            "name": "MultivariateFunction",
+            "isArray": false
+          },
+          "name": "bounded"
+        },
+        "comment": "bounded function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "lower"
+        },
+        "comment": "lower bounds for each element of the input parameters array (some elements may be set to Double.NEGATIVE_INFINITY for unbounded values)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "upper"
+        },
+        "comment": "upper bounds for each element of the input parameters array (some elements may be set to Double.POSITIVE_INFINITY for unbounded values)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if lower and upper bounds are not consistent, either according to dimension or to values",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "unboundedToBounded(double[] point)",
+    "name": "unboundedToBounded",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+      "name": "MultivariateFunctionMappingAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "Unbounded values.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the bounded values.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "boundedToUnbounded(double[] point)",
+    "name": "boundedToUnbounded",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+      "name": "MultivariateFunctionMappingAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "Bounded values.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the unbounded values.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "value(double[] point)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+      "name": "MultivariateFunctionMappingAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "unbounded value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "underlying function value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

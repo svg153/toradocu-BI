@@ -1,0 +1,3866 @@
+[
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field,int size)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "Field to which the elements belong.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "Size of the vector.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ArrayFieldVector(int size,org.apache.commons.math3.FieldElement preset)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "preset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "Size of the vector.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          },
+          "name": "preset"
+        },
+        "comment": "All entries will be set with this value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] d)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Array.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field,org.apache.commons.math3.FieldElement[] d)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "Field to which the elements belong.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Array.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] d,boolean copyArray)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for the new vector.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyArray"
+        },
+        "comment": "If true, the input array will be copied, otherwise it will be referenced.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field,org.apache.commons.math3.FieldElement[] d,boolean copyArray)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "Field to which the elements belong.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for the new vector.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyArray"
+        },
+        "comment": "If true, the input array will be copied, otherwise it will be referenced.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] d,int pos,int size)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "pos"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "Position of the first entry.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "Number of entries to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "pos + size"
+        ],
+        "comment": "if the size of d is less than pos + size.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field,org.apache.commons.math3.FieldElement[] d,int pos,int size)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "pos"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "Field to which the elements belong.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "pos"
+        },
+        "comment": "Position of the first entry.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "Number of entries to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "pos + size"
+        ],
+        "comment": "if the size of d is less than pos + size.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "Vector to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "null"
+        ],
+        "comment": "if v is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "Vector to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "null"
+        ],
+        "comment": "if v is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector v,boolean deep)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "deep"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "Vector to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "deep"
+        },
+        "comment": "If true perform a deep copy, otherwise perform a shallow copy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "null"
+        ],
+        "comment": "if v is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector v1,org.apache.commons.math3.linear.ArrayFieldVector v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.FieldVector v1,org.apache.commons.math3.linear.FieldVector v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.ArrayFieldVector v1,org.apache.commons.math3.FieldElement[] v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.linear.FieldVector v1,org.apache.commons.math3.FieldElement[] v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] v1,org.apache.commons.math3.linear.ArrayFieldVector v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] v1,org.apache.commons.math3.linear.FieldVector v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.FieldElement[] v1,org.apache.commons.math3.FieldElement[] v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if both arrays are empty.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ArrayFieldVector(org.apache.commons.math3.Field field,org.apache.commons.math3.FieldElement[] v1,org.apache.commons.math3.FieldElement[] v2)",
+    "name": "ArrayFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "v2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "Field to which the elements belong.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v1"
+        },
+        "comment": "First vector (will be put in front of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "v2"
+        },
+        "comment": "Second vector (will be put at back of the new vector).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v1",
+          "v2",
+          "null"
+        ],
+        "comment": "if v1 or v2 is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if both arrays are empty.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getField()",
+    "name": "getField",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.Field",
+      "name": "Field",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector to be added",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this + v",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector to be subtracted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this - v",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "mapAdd(org.apache.commons.math3.FieldElement d)",
+    "name": "mapAdd",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapAddToSelf(org.apache.commons.math3.FieldElement d)",
+    "name": "mapAddToSelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapSubtract(org.apache.commons.math3.FieldElement d)",
+    "name": "mapSubtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapSubtractToSelf(org.apache.commons.math3.FieldElement d)",
+    "name": "mapSubtractToSelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapMultiply(org.apache.commons.math3.FieldElement d)",
+    "name": "mapMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapMultiplyToSelf(org.apache.commons.math3.FieldElement d)",
+    "name": "mapMultiplyToSelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapDivide(org.apache.commons.math3.FieldElement d)",
+    "name": "mapDivide",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapDivideToSelf(org.apache.commons.math3.FieldElement d)",
+    "name": "mapDivideToSelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapInv()",
+    "name": "mapInv",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mapInvToSelf()",
+    "name": "mapInvToSelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ebeMultiply(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "ebeMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ebeMultiply(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "ebeMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector by which instance elements must be multiplied",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a vector containing this[i] * v[i] for all i",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ebeDivide(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "ebeDivide",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ebeDivide(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "ebeDivide",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector by which instance elements must be divided",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a vector containing this[i] / v[i] for all i",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v"
+        ],
+        "comment": "if one entry of v is zero.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getData()",
+    "name": "getData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDataRef()",
+    "name": "getDataRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "array of entries",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.toArray())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "dotProduct(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "dotProduct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "dotProduct(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "dotProduct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector with which dot product should be computed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the scalar dot product of this and v",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "projection(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "projection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "projection(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "projection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector onto which this must be projected",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "projection of this onto v",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v",
+          "this"
+        ],
+        "comment": "if v is not the same size as this",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v"
+        ],
+        "comment": "if v is the null vector.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "outerProduct(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "outerProduct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "outerProduct(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "outerProduct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector with which outer product should be computed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the matrix outer product between instance and v",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEntry(int index)",
+    "name": "getEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "append(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "append(org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector to append to this one.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new vector",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "append(org.apache.commons.math3.FieldElement in)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSubVector(int index,int n)",
+    "name": "getSubVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEntry(int index,org.apache.commons.math3.FieldElement value)",
+    "name": "setEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setSubVector(int index,org.apache.commons.math3.linear.FieldVector v)",
+    "name": "setSubVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "set(int index,org.apache.commons.math3.linear.ArrayFieldVector v)",
+    "name": "set",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+          "name": "ArrayFieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of first element to be set.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+            "name": "ArrayFieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector containing the values to set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the index is invalid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "set(org.apache.commons.math3.FieldElement value)",
+    "name": "set",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement",
+          "name": "FieldElement",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toArray()",
+    "name": "toArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkVectorDimensions(org.apache.commons.math3.linear.FieldVector v)",
+    "name": "checkVectorDimensions",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "vector to compare instance with",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the vectors do not have the same dimensions",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkVectorDimensions(int n)",
+    "name": "checkVectorDimensions",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Expected dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "this"
+        ],
+        "comment": "if the dimension is not equal to the size of this vector.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor visitor)",
+    "name": "walkInDefaultOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+          "name": "FieldVectorPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+            "name": "FieldVectorPreservingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "the visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorPreservingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor visitor,int start,int end)",
+    "name": "walkInDefaultOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+          "name": "FieldVectorPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+            "name": "FieldVectorPreservingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the index of the first entry to be visited",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "the index of the last entry to be visited (inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorPreservingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "end < start"
+        ],
+        "comment": "if end < start.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the indices are not valid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor visitor)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+          "name": "FieldVectorPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+            "name": "FieldVectorPreservingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "the visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorPreservingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorPreservingVisitor visitor,int start,int end)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+          "name": "FieldVectorPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorPreservingVisitor",
+            "name": "FieldVectorPreservingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the index of the first entry to be visited",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "the index of the last entry to be visited (inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorPreservingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "end < start"
+        ],
+        "comment": "if end < start.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the indices are not valid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor visitor)",
+    "name": "walkInDefaultOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+          "name": "FieldVectorChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+            "name": "FieldVectorChangingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "the visitor to be used to process and modify the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorChangingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor visitor,int start,int end)",
+    "name": "walkInDefaultOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+          "name": "FieldVectorChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+            "name": "FieldVectorChangingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the index of the first entry to be visited",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "the index of the last entry to be visited (inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorChangingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "end < start"
+        ],
+        "comment": "if end < start.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the indices are not valid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor visitor)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+          "name": "FieldVectorChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+            "name": "FieldVectorChangingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "the visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorChangingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.FieldVectorChangingVisitor visitor,int start,int end)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+          "name": "FieldVectorChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVectorChangingVisitor",
+            "name": "FieldVectorChangingVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "visitor to be used to process the entries of this vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the index of the first entry to be visited",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "the index of the last entry to be visited (inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value returned by FieldVectorChangingVisitor.end() at the end of the walk",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "end < start"
+        ],
+        "comment": "if end < start.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the indices are not valid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "equals(java.lang.Object other)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "Object to test for equality.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if two vector objects are equal, false otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.ArrayFieldVector",
+      "name": "ArrayFieldVector",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.ArrayFieldVector",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a hash code value for this object",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

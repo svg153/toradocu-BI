@@ -1,0 +1,207 @@
+[
+  {
+    "signature": "NewtonSolver()",
+    "name": "NewtonSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+      "name": "NewtonSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "NewtonSolver(double absoluteAccuracy)",
+    "name": "NewtonSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+      "name": "NewtonSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "absoluteAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "absoluteAccuracy"
+        },
+        "comment": "Absolute accuracy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "solve(int maxEval,org.apache.commons.math3.analysis.DifferentiableUnivariateFunction f,double min,double max)",
+    "name": "solve",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+      "name": "NewtonSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.DifferentiableUnivariateFunction",
+          "name": "DifferentiableUnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.DifferentiableUnivariateFunction",
+            "name": "DifferentiableUnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Function to solve.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "Lower bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "Upper bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value where the function is zero.",
+      "kind": "RETURN",
+      "condition": "true ?result==0"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum evaluation count is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min >= max"
+        ],
+        "comment": "if min >= max.",
+        "kind": "THROWS",
+        "condition": "args[2]>=args[0]"
+      }
+    ]
+  },
+  {
+    "signature": "doSolve()",
+    "name": "doSolve",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+      "name": "NewtonSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.solvers.NewtonSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,5121 @@
+[
+  {
+    "signature": "InGameController(net.sf.freecol.client.FreeColClient freeColClient)",
+    "name": "InGameController",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.client.FreeColClient",
+          "name": "FreeColClient",
+          "isArray": false
+        },
+        "name": "freeColClient"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.client.FreeColClient",
+            "name": "FreeColClient",
+            "isArray": false
+          },
+          "name": "freeColClient"
+        },
+        "comment": "The FreeColClient for the game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "displayTurnReportMessages()",
+    "name": "displayTurnReportMessages",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "displayModelMessages(boolean allMessages,boolean endOfTurn)",
+    "name": "displayModelMessages",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "allMessages"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "endOfTurn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "allMessages"
+        },
+        "comment": "Display all messages or just the undisplayed ones.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "endOfTurn"
+        },
+        "comment": "Use a turn report panel if necessary.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if any messages were displayed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "moveDirection(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Direction direction,boolean interactive)",
+    "name": "moveDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "interactive"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to move.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to move in.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "interactive"
+        },
+        "comment": "Interactive mode: play sounds and emit errors.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit can possibly move further.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "abandonColony(net.sf.freecol.common.model.Colony colony)",
+    "name": "abandonColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony to be abandoned.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the colony was abandoned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "animateAttack(net.sf.freecol.common.model.Unit attacker,net.sf.freecol.common.model.Unit defender,net.sf.freecol.common.model.Tile attackerTile,net.sf.freecol.common.model.Tile defenderTile,boolean success)",
+    "name": "animateAttack",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "defender"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "attackerTile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "defenderTile"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "success"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacking Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "defender"
+        },
+        "comment": "The defending Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "attackerTile"
+        },
+        "comment": "The Tile the attack originates from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "defenderTile"
+        },
+        "comment": "The Tile the defence takes place on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "success"
+        },
+        "comment": "True if the attack succeeds.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "animateMove(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Tile oldTile,net.sf.freecol.common.model.Tile newTile)",
+    "name": "animateMove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "oldTile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "newTile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that moves.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "oldTile"
+        },
+        "comment": "The Tile the move begins at.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "newTile"
+        },
+        "comment": "The Tile the move ends at.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "assignTeacher(net.sf.freecol.common.model.Unit student,net.sf.freecol.common.model.Unit teacher)",
+    "name": "assignTeacher",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "student"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "teacher"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "student"
+        },
+        "comment": "The student Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "teacher"
+        },
+        "comment": "The teacher Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the student was assigned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "assignTradeRoute(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.TradeRoute tradeRoute)",
+    "name": "assignTradeRoute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TradeRoute",
+          "name": "TradeRoute",
+          "isArray": false
+        },
+        "name": "tradeRoute"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to assign a trade route to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TradeRoute",
+            "name": "TradeRoute",
+            "isArray": false
+          },
+          "name": "tradeRoute"
+        },
+        "comment": "The TradeRoute to assign.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the route was successfully assigned.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "boardShip(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Unit carrier)",
+    "name": "boardShip",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit which is to board the carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The carrier to board.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit boards the carrier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "buildColony(net.sf.freecol.common.model.Unit unit)",
+    "name": "buildColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to build the colony.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if a colony was built.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "buyGoods(net.sf.freecol.common.model.GoodsType type,int amount,net.sf.freecol.common.model.Unit carrier)",
+    "name": "buyGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type of goods to buy.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods to buy.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The Unit acting as carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the purchase succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "chat(net.sf.freecol.common.model.Player player,java.lang.String message,boolean pri)",
+    "name": "chat",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "message"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "pri"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to chat with.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "What to say.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "pri"
+        },
+        "comment": "If true, the message is private.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "changeState(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Unit.UnitState state)",
+    "name": "changeState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit.UnitState",
+          "name": "UnitState",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit.UnitState",
+            "name": "UnitState",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "The state of the unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the state was changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "changeWorkImprovementType(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.TileImprovementType improvementType)",
+    "name": "changeWorkImprovementType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TileImprovementType",
+          "name": "TileImprovementType",
+          "isArray": false
+        },
+        "name": "improvementType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TileImprovementType",
+            "name": "TileImprovementType",
+            "isArray": false
+          },
+          "name": "improvementType"
+        },
+        "comment": "a TileImprovementType value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the improvement was changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "changeWorkType(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.GoodsType workType)",
+    "name": "changeWorkType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "workType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "workType"
+        },
+        "comment": "The new GoodsType to produce.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the work type was changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "checkCashInTreasureTrain(net.sf.freecol.common.model.Unit unit)",
+    "name": "checkCashInTreasureTrain",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to be checked.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit was cashed in (and disposed).",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "chooseFoundingFather(java.util.List ffs,net.sf.freecol.common.model.FoundingFather ff)",
+    "name": "chooseFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "ffs"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+          "name": "FoundingFather",
+          "isArray": false
+        },
+        "name": "ff"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "ffs"
+        },
+        "comment": "A list of FoundingFathers to choose from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+            "name": "FoundingFather",
+            "isArray": false
+          },
+          "name": "ff"
+        },
+        "comment": "The chosen FoundingFather (may be null).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if a father was chosen.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "chooseFoundingFather(java.util.List ffs)",
+    "name": "chooseFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "ffs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "ffs"
+        },
+        "comment": "A list of FoundingFathers to choose from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "claimTile(net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.FreeColGameObject claimant)",
+    "name": "claimTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "claimant"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to claim.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "claimant"
+        },
+        "comment": "The Unit or Colony claiming.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the claim succeeded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearGotoOrders(net.sf.freecol.common.model.Unit unit)",
+    "name": "clearGotoOrders",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to clear the destination for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit has no destination.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearOrders(net.sf.freecol.common.model.Unit unit)",
+    "name": "clearOrders",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to clear the orders of",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "boolean true if the orders were cleared",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearSpeciality(net.sf.freecol.common.model.Unit unit)",
+    "name": "clearSpeciality",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to clear the speciality of.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the speciality was cleared.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "closeMenus()",
+    "name": "closeMenus",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "declareIndependence()",
+    "name": "declareIndependence",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if independence was declared.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "diplomacy(net.sf.freecol.common.model.FreeColGameObject our,net.sf.freecol.common.model.FreeColGameObject other,net.sf.freecol.common.model.DiplomaticTrade agreement)",
+    "name": "diplomacy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+      "name": "DiplomaticTrade",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "our"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "other"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+          "name": "DiplomaticTrade",
+          "isArray": false
+        },
+        "name": "agreement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "our"
+        },
+        "comment": "Our FreeColGameObject that is negotiating.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other FreeColGameObject.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+            "name": "DiplomaticTrade",
+            "isArray": false
+          },
+          "name": "agreement"
+        },
+        "comment": "The DiplomaticTrade agreement.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A counter agreement, a rejected agreement, or null if the original agreement was already decided.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "disbandUnit(net.sf.freecol.common.model.Unit unit)",
+    "name": "disbandUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to disband.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit was disbanded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "displayHighScores(java.lang.Boolean high)",
+    "name": "displayHighScores",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Boolean",
+          "name": "Boolean",
+          "isArray": false
+        },
+        "name": "high"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Boolean",
+            "name": "Boolean",
+            "isArray": false
+          },
+          "name": "high"
+        },
+        "comment": "A Boolean whose values indicates whether a new high score has been achieved, or no information if null.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True, the high scores were displayed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "displayModelMessages(boolean allMessages)",
+    "name": "displayModelMessages",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "allMessages"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "allMessages"
+        },
+        "comment": "Display all messages or just the undisplayed ones.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if any messages were displayed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "emigrate(net.sf.freecol.common.model.Player player,int slot,int n,boolean foY)",
+    "name": "emigrate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "slot"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "foY"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player that owns the unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "slot"
+        },
+        "comment": "The slot to emigrate from, [0..RECRUIT_COUNT].",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "The number of remaining units known to be eligible to migrate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "foY"
+        },
+        "comment": "True if this migration is due to a fountain of youth event.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "endTurn(boolean showDialog)",
+    "name": "endTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "showDialog"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "showDialog"
+        },
+        "comment": "If false, suppress showing the end turn dialog.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the turn was ended.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equipUnitForRole(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Role role,int roleCount)",
+    "name": "equipUnitForRole",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Role",
+          "name": "Role",
+          "isArray": false
+        },
+        "name": "role"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "roleCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Role",
+            "name": "Role",
+            "isArray": false
+          },
+          "name": "role"
+        },
+        "comment": "The Role to assume.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "roleCount"
+        },
+        "comment": "The role count.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the role is taken.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "error(java.lang.String messageId,java.lang.String message)",
+    "name": "error",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "messageId"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "message"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "messageId"
+        },
+        "comment": "The i18n-keyname of the error message to display.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "An alternative (possibly non-i18n) message to display if the resource specified by messageId is unavailable.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "executeGotoOrders()",
+    "name": "executeGotoOrders",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if all goto orders have been performed and no units reached their destination and are free to move again.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "firstContact(net.sf.freecol.common.model.Player player,net.sf.freecol.common.model.Player other,net.sf.freecol.common.model.Tile tile,boolean result)",
+    "name": "firstContact",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "result"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player making contact.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The native Player being contacted.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "An optional Tile to offer the player if they have made a first landing.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "result"
+        },
+        "comment": "Whether the initial treaty was accepted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if first contact occurs.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "firstContact(net.sf.freecol.common.model.Player player,net.sf.freecol.common.model.Player other,net.sf.freecol.common.model.Tile tile,int n)",
+    "name": "firstContact",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player making contact.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The native Player being contacted.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "An optional Tile to offer the player if they have made a first landing.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "The number of settlements claimed by the native player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "fountainOfYouth(int n)",
+    "name": "fountainOfYouth",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "The number of migrants available for selection.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNationSummary(net.sf.freecol.common.model.Player player)",
+    "name": "getNationSummary",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.NationSummary",
+      "name": "NationSummary",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to summarize.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A summary of that nation, or null on error.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNewTradeRoute(net.sf.freecol.common.model.Player player)",
+    "name": "getNewTradeRoute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.TradeRoute",
+      "name": "TradeRoute",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to get a new trade route for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new TradeRoute.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getREFUnits()",
+    "name": "getREFUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a List value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerStatistics()",
+    "name": "getServerStatistics",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A Map containing the server statistics.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "goToTile(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Tile tile)",
+    "name": "goToTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to move.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to move to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the destination change was successful.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "ignoreMessage(net.sf.freecol.common.model.ModelMessage message,boolean flag)",
+    "name": "ignoreMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.ModelMessage",
+          "name": "ModelMessage",
+          "isArray": false
+        },
+        "name": "message"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "flag"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.ModelMessage",
+            "name": "ModelMessage",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "a ModelMessage value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "flag"
+        },
+        "comment": "whether to ignore the ModelMessage or not",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True, ignore message status changes can not fail.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indianDemand(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "indianDemand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The native Unit making the demand.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony demanded of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType demanded (null means gold).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods/gold demanded.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Whether the demand was accepted or not.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "leaveShip(net.sf.freecol.common.model.Unit unit)",
+    "name": "leaveShip",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit which is to leave the ship.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit left the ship.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "loadCargo(net.sf.freecol.common.model.Goods goods,net.sf.freecol.common.model.Unit carrier)",
+    "name": "loadCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The Goods which are going aboard the carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The Unit acting as carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "loadGame()",
+    "name": "loadGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "lootCargo(net.sf.freecol.common.model.Unit unit,java.util.List goods,java.lang.String defenderId)",
+    "name": "lootCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "defenderId"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that is looting.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "A list of Goods to choose from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "defenderId"
+        },
+        "comment": "The identifier of the defender unit (may have sunk).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if looting occurs.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "loot(net.sf.freecol.common.model.Unit unit,java.util.List goods,java.lang.String defenderId)",
+    "name": "loot",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "defenderId"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that is looting.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "A list of Goods to choose from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "defenderId"
+        },
+        "comment": "The identifier of the defender unit (may have sunk).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "monarchAction(net.sf.freecol.common.model.Monarch.MonarchAction action,boolean accept)",
+    "name": "monarchAction",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Monarch.MonarchAction",
+          "name": "MonarchAction",
+          "isArray": false
+        },
+        "name": "action"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "accept"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Monarch.MonarchAction",
+            "name": "MonarchAction",
+            "isArray": false
+          },
+          "name": "action"
+        },
+        "comment": "The MonarchAction performed.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "accept"
+        },
+        "comment": "If true, accept the action.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the monarch was answered.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "monarch(net.sf.freecol.common.model.Monarch.MonarchAction action,net.sf.freecol.common.model.StringTemplate template,java.lang.String monarchKey)",
+    "name": "monarch",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Monarch.MonarchAction",
+          "name": "MonarchAction",
+          "isArray": false
+        },
+        "name": "action"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+          "name": "StringTemplate",
+          "isArray": false
+        },
+        "name": "template"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "monarchKey"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Monarch.MonarchAction",
+            "name": "MonarchAction",
+            "isArray": false
+          },
+          "name": "action"
+        },
+        "comment": "The MonarchAction to perform.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+            "name": "StringTemplate",
+            "isArray": false
+          },
+          "name": "template"
+        },
+        "comment": "A StringTemplate describing the action.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "monarchKey"
+        },
+        "comment": "A key for the monarch involved.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "moveTo(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Location destination)",
+    "name": "moveTo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "destination"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to be moved.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "destination"
+        },
+        "comment": "The Location to be moved to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit can possibly move further.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "moveUnit(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Direction direction)",
+    "name": "moveUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to move.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction in which to move the active unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit may move further.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "moveTileCursor(net.sf.freecol.common.model.Direction direction)",
+    "name": "moveTileCursor",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to move the tile cursor.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the tile cursor is moved.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nameNewLand(net.sf.freecol.common.model.Unit unit,java.lang.String name)",
+    "name": "nameNewLand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that landed.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the new land was named.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nameNewRegion(net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Region region,java.lang.String name)",
+    "name": "nameNewRegion",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile within the region.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that has discovered the region.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region"
+        },
+        "comment": "The Region to name.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name to offer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the new region was named.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newLandName(java.lang.String defaultName,net.sf.freecol.common.model.Unit unit)",
+    "name": "newLandName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "defaultName"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "defaultName"
+        },
+        "comment": "The default name to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that has landed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "newRegionName(net.sf.freecol.common.model.Region region,java.lang.String defaultName,net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.Unit unit)",
+    "name": "newRegionName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "defaultName"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region"
+        },
+        "comment": "The Region to name.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "defaultName"
+        },
+        "comment": "The default name to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile the unit landed at.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that has landed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "newTurn(int turn)",
+    "name": "newTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The turn number.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the new turn occurs.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nextActiveUnit()",
+    "name": "nextActiveUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True unless it was not our turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nextModelMessage()",
+    "name": "nextModelMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if any messages were displayed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "payArrears(net.sf.freecol.common.model.GoodsType type)",
+    "name": "payArrears",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type of goods for which to pay arrears.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the arrears were paid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "payForBuilding(net.sf.freecol.common.model.Colony colony)",
+    "name": "payForBuilding",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony where the building should be bought.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the building was bought.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "putOutsideColony(net.sf.freecol.common.model.Unit unit)",
+    "name": "putOutsideColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit was successfully put outside the colony.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reconnect()",
+    "name": "reconnect",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "recruitUnitInEurope(int index)",
+    "name": "recruitUnitInEurope",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "The index in Europe to recruit from, [0..RECRUIT_COUNT).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if a unit was recruited.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(java.util.List objects,net.sf.freecol.common.model.FreeColGameObject divert)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "objects"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "divert"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "objects"
+        },
+        "comment": "A list of FreeColGameObjects to remove.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "rename(net.sf.freecol.common.model.Nameable object)",
+    "name": "rename",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Nameable",
+          "name": "Nameable",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Nameable",
+            "name": "Nameable",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "The object to rename.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the object was renamed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "saveGame()",
+    "name": "saveGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the game was saved.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "selectDestination(net.sf.freecol.common.model.Unit unit)",
+    "name": "selectDestination",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The unit for which to select a destination.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the destination change succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sellGoods(net.sf.freecol.common.model.Goods goods)",
+    "name": "sellGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The goods to be sold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the sale succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sendChat(java.lang.String chat)",
+    "name": "sendChat",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "chat"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "chat"
+        },
+        "comment": "The text of the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the message was sent.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setBuildQueue(net.sf.freecol.common.model.Colony colony,java.util.List buildQueue)",
+    "name": "setBuildQueue",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "buildQueue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "buildQueue"
+        },
+        "comment": "List of BuildableType",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the build queue was changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setCurrentPlayer(net.sf.freecol.common.model.Player player)",
+    "name": "setCurrentPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to be the new current player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the current player changes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDead(net.sf.freecol.common.model.Player dead)",
+    "name": "setDead",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "dead"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "dead"
+        },
+        "comment": "The dead Player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the player is marked as dead.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setGameConnected()",
+    "name": "setGameConnected",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setGoodsLevels(net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "setGoodsLevels",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The colony with the custom house.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The goods for which to set the settings.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the levels were set.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setInDebugMode()",
+    "name": "setInDebugMode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True, always succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setStance(net.sf.freecol.common.model.Stance stance,net.sf.freecol.common.model.Player first,net.sf.freecol.common.model.Player second)",
+    "name": "setStance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Stance",
+          "name": "Stance",
+          "isArray": false
+        },
+        "name": "stance"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "first"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "second"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Stance",
+            "name": "Stance",
+            "isArray": false
+          },
+          "name": "stance"
+        },
+        "comment": "The changed Stance.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "first"
+        },
+        "comment": "The first Player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "second"
+        },
+        "comment": "The second Player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the stance change succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setTradeRoutes(java.util.List routes)",
+    "name": "setTradeRoutes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "routes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "routes"
+        },
+        "comment": "The trade routes to set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the trade routes were set.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "spyColony(net.sf.freecol.common.model.Tile tile,java.lang.Runnable recover)",
+    "name": "spyColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "recover"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to find the colony on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Runnable",
+            "name": "Runnable",
+            "isArray": false
+          },
+          "name": "recover"
+        },
+        "comment": "A Runnable to restore the normal player view of the tile when the spying colony panel is closed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "trainUnitInEurope(net.sf.freecol.common.model.UnitType unitType)",
+    "name": "trainUnitInEurope",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "unitType"
+        },
+        "comment": "The type of unit to be trained.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if a new unit was trained.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unload(net.sf.freecol.common.model.Unit unit)",
+    "name": "unload",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that is dumping.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit unloaded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unloadCargo(net.sf.freecol.common.model.Goods goods,boolean dump)",
+    "name": "unloadCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "dump"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The Goods to unload.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "dump"
+        },
+        "comment": "If true, dump the goods.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unload succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "updateTradeRoute(net.sf.freecol.common.model.TradeRoute route)",
+    "name": "updateTradeRoute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TradeRoute",
+          "name": "TradeRoute",
+          "isArray": false
+        },
+        "name": "route"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TradeRoute",
+            "name": "TradeRoute",
+            "isArray": false
+          },
+          "name": "route"
+        },
+        "comment": "The trade route to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the trade route was updated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "victory(java.lang.String score)",
+    "name": "victory",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "score"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "score"
+        },
+        "comment": "If \"true\", a new high score was reached.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "victory(java.lang.Boolean quit)",
+    "name": "victory",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Boolean",
+          "name": "Boolean",
+          "isArray": false
+        },
+        "name": "quit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Boolean",
+            "name": "Boolean",
+            "isArray": false
+          },
+          "name": "quit"
+        },
+        "comment": "If true, leave this game and start a new one.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True.",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "waitUnit()",
+    "name": "waitUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True, this can not fail.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "work(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.WorkLocation workLocation)",
+    "name": "work",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.client.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.client.control.InGameController",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "workLocation"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "workLocation"
+        },
+        "comment": "The new WorkLocation.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit is now working at the new work location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

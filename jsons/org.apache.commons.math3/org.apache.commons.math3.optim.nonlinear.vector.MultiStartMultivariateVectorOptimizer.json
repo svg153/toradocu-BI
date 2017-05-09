@@ -1,0 +1,181 @@
+[
+  {
+    "signature": "MultiStartMultivariateVectorOptimizer(org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer optimizer,int starts,org.apache.commons.math3.random.RandomVectorGenerator generator)",
+    "name": "MultiStartMultivariateVectorOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+      "name": "MultiStartMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+          "name": "MultivariateVectorOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "starts"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomVectorGenerator",
+          "name": "RandomVectorGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+            "name": "MultivariateVectorOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Single-start optimizer to wrap.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "starts"
+        },
+        "comment": "Number of starts to perform. If starts == 1, the result will be same as if optimizer is called directly.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomVectorGenerator",
+            "name": "RandomVectorGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "Random vector generator to use for restarts.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "optimizer",
+          "generator",
+          "null"
+        ],
+        "comment": "if optimizer or generator is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[2]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "starts < 1"
+        ],
+        "comment": "if starts < 1.",
+        "kind": "THROWS",
+        "condition": "args[1]<1"
+      }
+    ]
+  },
+  {
+    "signature": "getOptima()",
+    "name": "getOptima",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+      "name": "MultiStartMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.PointVectorValuePair[]",
+      "name": "PointVectorValuePair[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.optim.PointVectorValuePair",
+        "name": "PointVectorValuePair",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "store(org.apache.commons.math3.optim.PointVectorValuePair optimum)",
+    "name": "store",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+      "name": "MultiStartMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.PointVectorValuePair",
+          "name": "PointVectorValuePair",
+          "isArray": false
+        },
+        "name": "optimum"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+      "name": "MultiStartMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

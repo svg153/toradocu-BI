@@ -1,0 +1,272 @@
+[
+  {
+    "signature": "newProxy(java.lang.Object target,java.lang.Class interfaceType,long timeoutDuration,java.util.concurrent.TimeUnit timeoutUnit)",
+    "name": "newProxy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.TimeLimiter",
+      "name": "TimeLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.TimeLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "target"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "interfaceType"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeoutDuration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeoutUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "the object to proxy",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "interfaceType"
+        },
+        "comment": "the interface you wish the returned proxy to implement",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeoutDuration"
+        },
+        "comment": "with timeoutUnit, the maximum length of time that callers are willing to wait on each method call to the proxy",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeoutUnit"
+        },
+        "comment": "with timeoutDuration, the maximum length of time that callers are willing to wait on each method call to the proxy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a time-limiting proxy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "interfaceType"
+        ],
+        "comment": "if interfaceType is a regular class, enum, or annotation type, rather than an interface",
+        "kind": "THROWS",
+        "condition": "args[1].isEnum()"
+      }
+    ]
+  },
+  {
+    "signature": "callWithTimeout(java.util.concurrent.Callable callable,long timeoutDuration,java.util.concurrent.TimeUnit timeoutUnit,boolean interruptible)",
+    "name": "callWithTimeout",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.TimeLimiter",
+      "name": "TimeLimiter",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.TimeLimiter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Callable",
+          "name": "Callable",
+          "isArray": false
+        },
+        "name": "callable"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeoutDuration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeoutUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "interruptible"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Callable",
+            "name": "Callable",
+            "isArray": false
+          },
+          "name": "callable"
+        },
+        "comment": "the Callable to execute",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeoutDuration"
+        },
+        "comment": "with timeoutUnit, the maximum length of time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeoutUnit"
+        },
+        "comment": "with timeoutDuration, the maximum length of time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "interruptible"
+        },
+        "comment": "whether to respond to thread interruption by aborting the operation and throwing InterruptedException; if false, the operation is allowed to complete or time out, and the current thread's interrupt status is re-asserted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result returned by the Callable",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [
+          "interruptible"
+        ],
+        "comment": "if interruptible is true and our thread is interrupted during execution",
+        "kind": "THROWS",
+        "condition": "args[3]==true"
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.UncheckedTimeoutException",
+          "name": "UncheckedTimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the time limit is reached",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.Exception",
+          "name": "Exception",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

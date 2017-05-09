@@ -1,0 +1,348 @@
+[
+  {
+    "signature": "KMeansPlusPlusClusterer(java.util.Random random)",
+    "name": "KMeansPlusPlusClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+      "name": "KMeansPlusPlusClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "random generator to use for choosing initial centers",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "KMeansPlusPlusClusterer(java.util.Random random,org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy emptyStrategy)",
+    "name": "KMeansPlusPlusClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+      "name": "KMeansPlusPlusClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy",
+          "name": "EmptyClusterStrategy",
+          "isArray": false
+        },
+        "name": "emptyStrategy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "random generator to use for choosing initial centers",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy",
+            "name": "EmptyClusterStrategy",
+            "isArray": false
+          },
+          "name": "emptyStrategy"
+        },
+        "comment": "strategy to use for handling empty clusters that may appear during algorithm iterations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "cluster(java.util.Collection points,int k,int numTrials,int maxIterationsPerTrial)",
+    "name": "cluster",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+      "name": "KMeansPlusPlusClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "points"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterationsPerTrial"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "the points to cluster",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of clusters to split the data into",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numTrials"
+        },
+        "comment": "number of trial runs",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterationsPerTrial"
+        },
+        "comment": "the maximum number of iterations to run the algorithm for at each trial run. If negative, no maximum will be used",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list of clusters containing the points",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the data points are null or the number of clusters is larger than the number of data points",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "emptyStrategy",
+          "ERROR"
+        ],
+        "comment": "if an empty cluster is encountered and the emptyStrategy is set to ERROR",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cluster(java.util.Collection points,int k,int maxIterations)",
+    "name": "cluster",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+      "name": "KMeansPlusPlusClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "points"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "the points to cluster",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of clusters to split the data into",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations to run the algorithm for. If negative, no maximum will be used",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list of clusters containing the points",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the data points are null or the number of clusters is larger than the number of data points",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "emptyStrategy",
+          "ERROR"
+        ],
+        "comment": "if an empty cluster is encountered and the emptyStrategy is set to ERROR",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

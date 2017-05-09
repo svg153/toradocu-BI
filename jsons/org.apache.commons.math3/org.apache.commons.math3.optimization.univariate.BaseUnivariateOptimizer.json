@@ -1,0 +1,370 @@
+[
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.UnivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,double min,double max)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+      "name": "BaseUnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Function to optimize.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Type of optimization goal: either GoalType.MAXIMIZE or GoalType.MINIMIZE.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "Lower bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "Upper bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of function evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a (point, value) pair where the function is optimum.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum evaluation count is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the optimizer detects a convergence problem.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min > max"
+        ],
+        "comment": "if min > max or the endpoints do not satisfy the requirements specified by the optimizer.",
+        "kind": "THROWS",
+        "condition": "args[3]>args[0]"
+      }
+    ]
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.UnivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,double min,double max,double startValue)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+      "name": "BaseUnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "startValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Function to optimize.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Type of optimization goal: either GoalType.MAXIMIZE or GoalType.MINIMIZE.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "Lower bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "Upper bound for the interval.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "startValue"
+        },
+        "comment": "Start value to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of function evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a (point, value) pair where the function is optimum.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum evaluation count is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the optimizer detects a convergence problem.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min > max"
+        ],
+        "comment": "if min > max or the endpoints do not satisfy the requirements specified by the optimizer.",
+        "kind": "THROWS",
+        "condition": "args[3]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if any argument is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      }
+    ]
+  }
+]

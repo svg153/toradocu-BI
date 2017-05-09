@@ -1,0 +1,88 @@
+[
+  {
+    "signature": "addListener(java.lang.Runnable listener,java.util.concurrent.Executor executor)",
+    "name": "addListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ListenableFuture",
+      "name": "ListenableFuture",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ListenableFuture",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "listener"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Executor",
+          "name": "Executor",
+          "isArray": false
+        },
+        "name": "executor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Runnable",
+            "name": "Runnable",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "the listener to run when the computation is complete",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Executor",
+            "name": "Executor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor to run the listener in",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the executor or listener was null",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.RejectedExecutionException",
+          "name": "RejectedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if we tried to execute the listener immediately but the executor rejected it.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

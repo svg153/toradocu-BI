@@ -1,0 +1,374 @@
+[
+  {
+    "signature": "AdamsBashforthFieldIntegrator(org.apache.commons.math3.Field field,int nSteps,double minStep,double maxStep,double scalAbsoluteTolerance,double scalRelativeTolerance)",
+    "name": "AdamsBashforthFieldIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+      "name": "AdamsBashforthFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nSteps"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "minStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scalAbsoluteTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scalRelativeTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nSteps"
+        },
+        "comment": "number of steps of the method excluding the one being computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "minStep"
+        },
+        "comment": "minimal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxStep"
+        },
+        "comment": "maximal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scalAbsoluteTolerance"
+        },
+        "comment": "allowed absolute error",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scalRelativeTolerance"
+        },
+        "comment": "allowed relative error",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if order is 1 or less",
+        "kind": "THROWS",
+        "condition": "args[1]==1"
+      }
+    ]
+  },
+  {
+    "signature": "AdamsBashforthFieldIntegrator(org.apache.commons.math3.Field field,int nSteps,double minStep,double maxStep,double[] vecAbsoluteTolerance,double[] vecRelativeTolerance)",
+    "name": "AdamsBashforthFieldIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+      "name": "AdamsBashforthFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nSteps"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "minStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "vecAbsoluteTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "vecRelativeTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nSteps"
+        },
+        "comment": "number of steps of the method excluding the one being computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "minStep"
+        },
+        "comment": "minimal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxStep"
+        },
+        "comment": "maximal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "vecAbsoluteTolerance"
+        },
+        "comment": "allowed absolute error",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "vecRelativeTolerance"
+        },
+        "comment": "allowed relative error",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if order is 1 or less",
+        "kind": "THROWS",
+        "condition": "args[1]==1"
+      }
+    ]
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.ode.FieldExpandableODE equations,org.apache.commons.math3.ode.FieldODEState initialState,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+      "name": "AdamsBashforthFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsBashforthFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldExpandableODE",
+          "name": "FieldExpandableODE",
+          "isArray": false
+        },
+        "name": "equations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+          "name": "FieldODEState",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

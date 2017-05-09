@@ -1,0 +1,234 @@
+[
+  {
+    "signature": "DisembarkMessage(net.sf.freecol.common.model.Unit unit)",
+    "name": "DisembarkMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.DisembarkMessage",
+      "name": "DisembarkMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.DisembarkMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit that is disembarking.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "DisembarkMessage(net.sf.freecol.common.model.Game game,org.w3c.dom.Element element)",
+    "name": "DisembarkMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.DisembarkMessage",
+      "name": "DisembarkMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.DisembarkMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this message belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to use to create the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.server.FreeColServer server,net.sf.freecol.common.model.Player player,net.sf.freecol.common.networking.Connection connection)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.DisembarkMessage",
+      "name": "DisembarkMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.DisembarkMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "The FreeColServer handling the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player the message applies to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection message was received on.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An update containing the disembarked unit, or an error Element on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.DisembarkMessage",
+      "name": "DisembarkMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.DisembarkMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The XML representation of this message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.DisembarkMessage",
+      "name": "DisembarkMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.DisembarkMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"disembark\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

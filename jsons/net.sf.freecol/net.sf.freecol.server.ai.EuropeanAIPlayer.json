@@ -1,0 +1,2597 @@
+[
+  {
+    "signature": "EuropeanAIPlayer(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.model.ServerPlayer player)",
+    "name": "EuropeanAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-class.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The player that should be associated with this AIPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "EuropeanAIPlayer(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "EuropeanAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a problem was encountered during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "initializeFromSpecification(net.sf.freecol.common.model.Specification spec)",
+    "name": "initializeFromSpecification",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "spec"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "spec"
+        },
+        "comment": "The Specification to initialize from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBadlyDefended()",
+    "name": "getBadlyDefended",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of AIColonys that were badly defended at the start of this turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cheatGold(int amount,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "cheatGold",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The minimum amount of gold required.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "allocateTransportables(java.util.List transportables,java.util.List missions,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "allocateTransportables",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "transportables"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "missions"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "transportables"
+        },
+        "comment": "A list of TransportableAIObjects to allocated transport for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "missions"
+        },
+        "comment": "A list of TransportMissions to potentially assign more transportables to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "buildTipMap(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "buildTipMap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestPlan(net.sf.freecol.common.model.Tile tile)",
+    "name": "getBestPlan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.TileImprovementPlan",
+      "name": "TileImprovementPlan",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to lookup.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best plan for a tile.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestPlanTile(net.sf.freecol.common.model.Colony colony)",
+    "name": "getBestPlanTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The tile with the best plan for a colony, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeTileImprovementPlan(net.sf.freecol.server.ai.TileImprovementPlan plan)",
+    "name": "removeTileImprovementPlan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TileImprovementPlan",
+          "name": "TileImprovementPlan",
+          "isArray": false
+        },
+        "name": "plan"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "updateTransport(net.sf.freecol.server.ai.AIUnit aiu,net.sf.freecol.common.model.Location oldTarget,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "updateTransport",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiu"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "oldTarget"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiu"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "oldTarget"
+        },
+        "comment": "The old target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeededWagons(net.sf.freecol.common.model.Tile tile)",
+    "name": "getNeededWagons",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to derive the contiguity from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The number of wagons needed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getUrgentTransportables()",
+    "name": "getUrgentTransportables",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The most urgent 10% of the available transportables.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "claimTransportable(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "claimTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject being claimed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the transportable was claimed from the supply map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWorkerWishesAt(net.sf.freecol.common.model.Location loc,net.sf.freecol.common.model.UnitType type)",
+    "name": "getWorkerWishesAt",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The Location to look for wishes at.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The UnitType to look for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of WorkerWishes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGoodsWishesAt(net.sf.freecol.common.model.Location loc,net.sf.freecol.common.model.GoodsType type)",
+    "name": "getGoodsWishesAt",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The Location to look for wishes at.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to look for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of GoodsWishes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestWorkerWish(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.UnitType unitType)",
+    "name": "getBestWorkerWish",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkerWish",
+      "name": "WorkerWish",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The carrier AIUnit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "unitType"
+        },
+        "comment": "The UnitType to find a wish for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best worker wish for the unit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestGoodsWish(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getBestGoodsWish",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.GoodsWish",
+      "name": "GoodsWish",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The carrier AIUnit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to wish for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best GoodsWish for the unit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "completeWish(net.sf.freecol.server.ai.Wish w)",
+    "name": "completeWish",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Wish",
+          "name": "Wish",
+          "isArray": false
+        },
+        "name": "w"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Wish",
+            "name": "Wish",
+            "isArray": false
+          },
+          "name": "w"
+        },
+        "comment": "The Wish to complete.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "consumeWorkerWish(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.server.ai.WorkerWish ww)",
+    "name": "consumeWorkerWish",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.WorkerWish",
+          "name": "WorkerWish",
+          "isArray": false
+        },
+        "name": "ww"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.WorkerWish",
+            "name": "WorkerWish",
+            "isArray": false
+          },
+          "name": "ww"
+        },
+        "comment": "The WorkerWish to consume.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "consumeGoodsWish(net.sf.freecol.server.ai.AIGoods aig,net.sf.freecol.server.ai.GoodsWish gw)",
+    "name": "consumeGoodsWish",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIGoods",
+          "name": "AIGoods",
+          "isArray": false
+        },
+        "name": "aig"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.GoodsWish",
+          "name": "GoodsWish",
+          "isArray": false
+        },
+        "name": "gw"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIGoods",
+            "name": "AIGoods",
+            "isArray": false
+          },
+          "name": "aig"
+        },
+        "comment": "The AIGoods to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.GoodsWish",
+            "name": "GoodsWish",
+            "isArray": false
+          },
+          "name": "gw"
+        },
+        "comment": "The GoodsWish to consume.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "buildersNeeded()",
+    "name": "buildersNeeded",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The desired number of colony builders for this player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "pioneersNeeded()",
+    "name": "pioneersNeeded",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The desired number of pioneers for this player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "scoutsNeeded()",
+    "name": "scoutsNeeded",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The desired number of scouts for this player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "recruitAIUnitInEurope(int slot)",
+    "name": "recruitAIUnitInEurope",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+      "name": "AIUnit",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "slot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "slot"
+        },
+        "comment": "The migration slot to recruit from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new AIUnit created by this action or null on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "trainAIUnitInEurope(net.sf.freecol.common.model.UnitType unitType)",
+    "name": "trainAIUnitInEurope",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+      "name": "AIUnit",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the new AIUnit created by this action. May be null.",
+      "kind": "RETURN",
+      "condition": "true ?result==null"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWishes()",
+    "name": "getWishes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of wishes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNationSummary(net.sf.freecol.common.model.Player other)",
+    "name": "getNationSummary",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.NationSummary",
+      "name": "NationSummary",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other Player to get the summary for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current NationSummary for a player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStrengthRatio(net.sf.freecol.common.model.Player other)",
+    "name": "getStrengthRatio",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other Player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The strength ratio (strength/sum(strengths)).",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNavalStrengthRatio()",
+    "name": "getNavalStrengthRatio",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The naval strength ratio, or negative if there are no other European colonial nations.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "giveNormalMissions(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "giveNormalMissions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSimpleMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getSimpleMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to choose for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A suitable Mission, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBuildColonyMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location target)",
+    "name": "getBuildColonyMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "An optional target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCashInTreasureTrainMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getCashInTreasureTrainMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefendSettlementMission(net.sf.freecol.server.ai.AIUnit aiUnit,boolean relaxed)",
+    "name": "getDefendSettlementMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "relaxed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "relaxed"
+        },
+        "comment": "Use a relaxed cost decider to choose the target.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMissionaryMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getMissionaryMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPioneeringMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location target)",
+    "name": "getPioneeringMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "An optional target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPrivateerMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location target)",
+    "name": "getPrivateerMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "An optional target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getScoutingMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getScoutingMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getTransportMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWishRealizationMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.server.ai.WorkerWish wish)",
+    "name": "getWishRealizationMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.WorkerWish",
+          "name": "WorkerWish",
+          "isArray": false
+        },
+        "name": "wish"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.WorkerWish",
+            "name": "WorkerWish",
+            "isArray": false
+          },
+          "name": "wish"
+        },
+        "comment": "An optional WorkerWish to realize.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWorkInsideColonyMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.server.ai.AIColony aiColony)",
+    "name": "getWorkInsideColonyMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+          "name": "AIColony",
+          "isArray": false
+        },
+        "name": "aiColony"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+            "name": "AIColony",
+            "isArray": false
+          },
+          "name": "aiColony"
+        },
+        "comment": "An optional AIColony to work at.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "determineStance(net.sf.freecol.common.model.Player other)",
+    "name": "determineStance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Stance",
+      "name": "Stance",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAIColony(net.sf.freecol.server.ai.AIColony aic)",
+    "name": "removeAIColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+          "name": "AIColony",
+          "isArray": false
+        },
+        "name": "aic"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "startWorking()",
+    "name": "startWorking",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doMissions(java.util.List aiUnits,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "doMissions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "aiUnits"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "adjustMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.PathNode path,java.lang.Class type,int value)",
+    "name": "adjustMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.PathNode",
+          "name": "PathNode",
+          "isArray": false
+        },
+        "name": "path"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "indianDemand(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.GoodsType goods,int gold)",
+    "name": "indianDemand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "gold"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptDiplomaticTrade(net.sf.freecol.common.model.DiplomaticTrade agreement)",
+    "name": "acceptDiplomaticTrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade.TradeStatus",
+      "name": "TradeStatus",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+          "name": "DiplomaticTrade",
+          "isArray": false
+        },
+        "name": "agreement"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "registerSellGoods(net.sf.freecol.common.model.Goods goods)",
+    "name": "registerSellGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "buyProposition(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Goods goods,int gold)",
+    "name": "buyProposition",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "gold"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sellProposition(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Goods goods,int gold)",
+    "name": "sellProposition",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "gold"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptTax(int tax)",
+    "name": "acceptTax",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "tax"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptMercenaries()",
+    "name": "acceptMercenaries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "selectFoundingFather(java.util.List ffs)",
+    "name": "selectFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+      "name": "FoundingFather",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "ffs"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

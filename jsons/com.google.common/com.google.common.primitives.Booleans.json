@@ -1,0 +1,863 @@
+[
+  {
+    "signature": "hashCode(boolean value)",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "a primitive boolean value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a hash code for the value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "compare(boolean a,boolean b)",
+    "name": "compare",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the first boolean to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the second boolean to compare",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a positive number if only a is true, a negative number if only b is true, or zero if a == b",
+      "kind": "RETURN",
+      "condition": "args[0]==true ? result.equals(args[0]) : result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "contains(boolean[] array,boolean target)",
+    "name": "contains",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "an array of boolean values, possibly empty",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "a primitive boolean value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if array[i] == target for some value of i",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indexOf(boolean[] array,boolean target)",
+    "name": "indexOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "an array of boolean values, possibly empty",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "a primitive boolean value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the least index i for which array[i] == target, or -1 if no such index exists.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indexOf(boolean[] array,boolean[] target)",
+    "name": "indexOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "the array to search for the sequence target",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "target"
+        },
+        "comment": "the array to search for as a sub-sequence of array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "lastIndexOf(boolean[] array,boolean target)",
+    "name": "lastIndexOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "an array of boolean values, possibly empty",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "a primitive boolean value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the greatest index i for which array[i] == target, or -1 if no such index exists.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "concat(boolean[][] arrays)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "boolean[]",
+      "name": "boolean[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "boolean",
+        "name": "boolean",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[][]",
+          "name": "boolean[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "arrays"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[][]",
+            "name": "boolean[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "arrays"
+        },
+        "comment": "zero or more boolean arrays",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a single array containing all the values from the source arrays, in order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "ensureCapacity(boolean[] array,int minLength,int padding)",
+    "name": "ensureCapacity",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean[]",
+      "name": "boolean[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "boolean",
+        "name": "boolean",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "minLength"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "padding"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "the source array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "minLength"
+        },
+        "comment": "the minimum length the returned array must guarantee",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "padding"
+        },
+        "comment": "an extra amount to \"grow\" the array by if growth is necessary",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array containing the values of array, with guaranteed minimum length minLength",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "minLength",
+          "padding"
+        ],
+        "comment": "if minLength or padding is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0 || args[2]<0"
+      }
+    ]
+  },
+  {
+    "signature": "join(java.lang.String separator,boolean[] array)",
+    "name": "join",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "separator"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "separator"
+        },
+        "comment": "the text that should appear between consecutive values in the resulting string (but not at the start or end)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "array"
+        },
+        "comment": "an array of boolean values, possibly empty",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "lexicographicalComparator()",
+    "name": "lexicographicalComparator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toArray(java.util.Collection collection)",
+    "name": "toArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean[]",
+      "name": "boolean[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "boolean",
+        "name": "boolean",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "collection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "collection"
+        },
+        "comment": "a collection of Boolean objects",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array containing the same values as collection, in the same order, converted to primitives",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "collection"
+        ],
+        "comment": "if collection or any of its elements is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "asList(boolean[] backingArray)",
+    "name": "asList",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "backingArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "backingArray"
+        },
+        "comment": "the array to back the list",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list view of the array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "countTrue(boolean[] values)",
+    "name": "countTrue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.Booleans",
+      "name": "Booleans",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.Booleans",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

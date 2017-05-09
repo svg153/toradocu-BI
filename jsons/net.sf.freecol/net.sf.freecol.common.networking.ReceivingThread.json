@@ -1,0 +1,177 @@
+[
+  {
+    "signature": "ReceivingThread(net.sf.freecol.common.networking.Connection connection,java.io.InputStream in,java.lang.String threadName)",
+    "name": "ReceivingThread",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ReceivingThread",
+      "name": "ReceivingThread",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ReceivingThread",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "in"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "threadName"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection this ReceivingThread belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "The stream to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNextNetworkReplyId()",
+    "name": "getNextNetworkReplyId",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ReceivingThread",
+      "name": "ReceivingThread",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ReceivingThread",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The next available network reply identifier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "waitForNetworkReply(int networkReplyId)",
+    "name": "waitForNetworkReply",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ReceivingThread",
+      "name": "ReceivingThread",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ReceivingThread",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.networking.NetworkReplyObject",
+      "name": "NetworkReplyObject",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "networkReplyId"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "networkReplyId"
+        },
+        "comment": "The identifier of the message the calling thread should wait for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The NetworkReplyObject containing the network message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "askToStop()",
+    "name": "askToStop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ReceivingThread",
+      "name": "ReceivingThread",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ReceivingThread",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "run()",
+    "name": "run",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ReceivingThread",
+      "name": "ReceivingThread",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ReceivingThread",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

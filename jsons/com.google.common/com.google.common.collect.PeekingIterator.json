@@ -1,0 +1,88 @@
+[
+  {
+    "signature": "peek()",
+    "name": "peek",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.PeekingIterator",
+      "name": "PeekingIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.PeekingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Iterator.hasNext()"
+        ],
+        "comment": "if the iteration has no more elements according to Iterator.hasNext()",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.PeekingIterator",
+      "name": "PeekingIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.PeekingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.PeekingIterator",
+      "name": "PeekingIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.PeekingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "peek()",
+          "next()"
+        ],
+        "comment": "if there has been a call to peek() since the most recent call to next() and this implementation does not support this sequence of calls (optional)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

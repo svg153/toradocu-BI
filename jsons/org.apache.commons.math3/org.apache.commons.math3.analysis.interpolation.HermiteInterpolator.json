@@ -1,0 +1,281 @@
+[
+  {
+    "signature": "HermiteInterpolator()",
+    "name": "HermiteInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+      "name": "HermiteInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addSamplePoint(double x,double[][] value)",
+    "name": "addSamplePoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+      "name": "HermiteInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "abscissa of the sample point",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "value"
+        },
+        "comment": "value and derivatives of the sample point (if only one row is passed, it is the value, if two rows are passed the first one is the value and the second the derivative and so on)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the abscissa difference between added point and a previous point is zero (i.e. the two points are at same abscissa)",
+        "kind": "THROWS",
+        "condition": "args[0]==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of derivatives is larger than 20, which prevents computation of a factorial",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getPolynomials()",
+    "name": "getPolynomials",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+      "name": "HermiteInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]",
+      "name": "PolynomialFunction[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+        "name": "PolynomialFunction",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "interpolation polynomials array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if sample is empty",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double x)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+      "name": "HermiteInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "interpolation abscissa",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "interpolated value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if sample is empty",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure x)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+      "name": "HermiteInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.HermiteInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure[]",
+      "name": "DerivativeStructure[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+        "name": "DerivativeStructure",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+          "name": "DerivativeStructure",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+            "name": "DerivativeStructure",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "interpolation abscissa",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "interpolated value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if sample is empty",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

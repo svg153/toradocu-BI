@@ -1,0 +1,67 @@
+[
+  {
+    "signature": "getVertices()",
+    "name": "getVertices",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.hull.ConvexHull",
+      "name": "ConvexHull",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.hull.ConvexHull",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "P[]",
+      "name": "P[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "P",
+        "name": "P",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "vertices of the convex hull",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createRegion()",
+    "name": "createRegion",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.hull.ConvexHull",
+      "name": "ConvexHull",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.hull.ConvexHull",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the region enclosed by the convex hull",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of vertices is not enough to build a region in the respective space",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

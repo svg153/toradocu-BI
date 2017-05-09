@@ -1,0 +1,912 @@
+[
+  {
+    "signature": "ValueServer()",
+    "name": "ValueServer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ValueServer(org.apache.commons.math3.random.RandomDataImpl randomData)",
+    "name": "ValueServer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomDataImpl",
+          "name": "RandomDataImpl",
+          "isArray": false
+        },
+        "name": "randomData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomDataImpl",
+            "name": "RandomDataImpl",
+            "isArray": false
+          },
+          "name": "randomData"
+        },
+        "comment": "the RandomDataImpl instance used to source random data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ValueServer(org.apache.commons.math3.random.RandomGenerator generator)",
+    "name": "ValueServer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "source of random data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNext()",
+    "name": "getNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "generated value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in REPLAY_MODE if a file I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if mode is not recognized",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the underlying random generator thwrows one",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fill(double[] values)",
+    "name": "fill",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "array to be filled",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in REPLAY_MODE if a file I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if mode is not recognized",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the underlying random generator thwrows one",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fill(int length)",
+    "name": "fill",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "length"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "length"
+        },
+        "comment": "length of output array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "array of generated values",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in REPLAY_MODE if a file I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if mode is not recognized",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the underlying random generator thwrows one",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeDistribution()",
+    "name": "computeDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs reading the input file",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valuesFileURL"
+        ],
+        "comment": "if the valuesFileURL has not been set",
+        "kind": "THROWS",
+        "condition": "(target.getValuesFileURL()!=null) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if URL contains no data",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeDistribution(int binCount)",
+    "name": "computeDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "binCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "binCount"
+        },
+        "comment": "the number of bins used in computing the empirical distribution",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valuesFileURL"
+        ],
+        "comment": "if the valuesFileURL has not been set",
+        "kind": "THROWS",
+        "condition": "(target.getValuesFileURL()!=null) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs reading the input file",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if URL contains no data",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getMode()",
+    "name": "getMode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Value of property mode.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMode(int mode)",
+    "name": "setMode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "mode"
+        },
+        "comment": "New value of the data generation mode.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getValuesFileURL()",
+    "name": "getValuesFileURL",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.URL",
+      "name": "URL",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Values file URL.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setValuesFileURL(java.lang.String url)",
+    "name": "setValuesFileURL",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "url"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "String representation for new valuesFileURL.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.net.MalformedURLException",
+          "name": "MalformedURLException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if url is not well formed",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setValuesFileURL(java.net.URL url)",
+    "name": "setValuesFileURL",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "URL of the values file.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEmpiricalDistribution()",
+    "name": "getEmpiricalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.random.EmpiricalDistribution",
+      "name": "EmpiricalDistribution",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "EmpircalDistribution built by computeDistribution()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "resetReplayFile()",
+    "name": "resetReplayFile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs opening the file",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valuesFileURL"
+        ],
+        "comment": "if the valuesFileURL has not been set.",
+        "kind": "THROWS",
+        "condition": "(target.getValuesFileURL()!=null) == false"
+      }
+    ]
+  },
+  {
+    "signature": "closeReplayFile()",
+    "name": "closeReplayFile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs closing the file",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getMu()",
+    "name": "getMu",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Mean used in data generation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMu(double mu)",
+    "name": "setMu",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mu"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "new Mean value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSigma()",
+    "name": "getSigma",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Standard deviation used when operating in GAUSSIAN_MODE.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setSigma(double sigma)",
+    "name": "setSigma",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "New standard deviation.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "reSeed(long seed)",
+    "name": "reSeed",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.ValueServer",
+      "name": "ValueServer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.ValueServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "seed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "seed"
+        },
+        "comment": "Value with which to reseed the RandomDataImpl used to generate random data.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

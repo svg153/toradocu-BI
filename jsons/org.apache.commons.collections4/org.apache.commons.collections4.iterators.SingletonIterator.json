@@ -1,0 +1,222 @@
+[
+  {
+    "signature": "SingletonIterator(java.lang.Object object)",
+    "name": "SingletonIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the single object to return from the iterator",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "SingletonIterator(java.lang.Object object,boolean removeAllowed)",
+    "name": "SingletonIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "removeAllowed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the single object to return from the iterator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "removeAllowed"
+        },
+        "comment": "true if remove is allowed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the single object hasn't been returned yet",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the single object",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the single object has already been returned",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next",
+          "remove",
+          "next"
+        ],
+        "comment": "if the next method has not yet been called, or the remove method has already been called after the last call to the next method.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if remove is not supported",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "reset()",
+    "name": "reset",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "name": "SingletonIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.SingletonIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

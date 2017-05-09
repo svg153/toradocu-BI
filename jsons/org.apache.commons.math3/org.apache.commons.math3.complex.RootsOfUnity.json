@@ -1,0 +1,276 @@
+[
+  {
+    "signature": "RootsOfUnity()",
+    "name": "RootsOfUnity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isCounterClockWise()",
+    "name": "isCounterClockWise",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the roots of unity are stored in counter-clockwise order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no roots of unity have been computed yet",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeRoots(int n)",
+    "name": "computeRoots",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the (signed) number of roots of unity to be computed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n = 0"
+        ],
+        "comment": "if n = 0",
+        "kind": "THROWS",
+        "condition": "args[0]==0"
+      }
+    ]
+  },
+  {
+    "signature": "getReal(int k)",
+    "name": "getReal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "index of the n-th root of unity",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "real part of the k-th n-th root of unity",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no roots of unity have been computed yet",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is out of range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getImaginary(int k)",
+    "name": "getImaginary",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "index of the n-th root of unity",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "imaginary part of the k-th n-th root of unity",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no roots of unity have been computed yet",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k"
+        ],
+        "comment": "if k is out of range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNumberOfRoots()",
+    "name": "getNumberOfRoots",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.RootsOfUnity",
+      "name": "RootsOfUnity",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.RootsOfUnity",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of roots of unity currently stored",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

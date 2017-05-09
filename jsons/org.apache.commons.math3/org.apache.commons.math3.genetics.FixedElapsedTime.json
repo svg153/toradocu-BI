@@ -1,0 +1,168 @@
+[
+  {
+    "signature": "FixedElapsedTime(long maxTime)",
+    "name": "FixedElapsedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.FixedElapsedTime",
+      "name": "FixedElapsedTime",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.FixedElapsedTime",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "maxTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "maxTime"
+        },
+        "comment": "maximum number of seconds generations are allowed to evolve",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the provided time is < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "FixedElapsedTime(long maxTime,java.util.concurrent.TimeUnit unit)",
+    "name": "FixedElapsedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.FixedElapsedTime",
+      "name": "FixedElapsedTime",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.FixedElapsedTime",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "maxTime"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "maxTime"
+        },
+        "comment": "maximum time generations are allowed to evolve",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "TimeUnit of the maxTime argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the provided time is < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "isSatisfied(org.apache.commons.math3.genetics.Population population)",
+    "name": "isSatisfied",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.FixedElapsedTime",
+      "name": "FixedElapsedTime",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.FixedElapsedTime",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Population",
+          "name": "Population",
+          "isArray": false
+        },
+        "name": "population"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.Population",
+            "name": "Population",
+            "isArray": false
+          },
+          "name": "population"
+        },
+        "comment": "ignored (no impact on result)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true IFF the maximum allowed time period has elapsed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

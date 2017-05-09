@@ -1,0 +1,1024 @@
+[
+  {
+    "signature": "DiagonalMatrix(int dimension)",
+    "name": "DiagonalMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "Number of rows and columns in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension is not positive.",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "DiagonalMatrix(double[] d)",
+    "name": "DiagonalMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "DiagonalMatrix(double[] d,boolean copyArray)",
+    "name": "DiagonalMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyArray"
+        },
+        "comment": "if true, the input array will be copied, otherwise it will be referenced.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if d is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createMatrix(int rowDimension,int columnDimension)",
+    "name": "createMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rowDimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columnDimension"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the requested dimensions are not equal.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.DiagonalMatrix m)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+          "name": "DiagonalMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+            "name": "DiagonalMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be added.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this + m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m",
+          "this"
+        ],
+        "comment": "if m is not the same size as this.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.DiagonalMatrix m)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+          "name": "DiagonalMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+            "name": "DiagonalMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be subtracted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this - m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m",
+          "this"
+        ],
+        "comment": "if m is not the same size as this.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.linear.DiagonalMatrix m)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+          "name": "DiagonalMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+            "name": "DiagonalMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "matrix to postmultiply by",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this * m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnDimension(this) != rowDimension(m)"
+        ],
+        "comment": "if columnDimension(this) != rowDimension(m)",
+        "kind": "THROWS",
+        "condition": "target.getColumnDimension()!=target.getRowDimension()"
+      }
+    ]
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.linear.RealMatrix m)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "matrix to postmultiply by",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this * m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnDimension(this) != rowDimension(m)"
+        ],
+        "comment": "if columnDimension(this) != rowDimension(m)",
+        "kind": "THROWS",
+        "condition": "target.getColumnDimension()!=target.getRowDimension()"
+      }
+    ]
+  },
+  {
+    "signature": "getData()",
+    "name": "getData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDataRef()",
+    "name": "getDataRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "1-dimensional array of entries.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEntry(int row,int column)",
+    "name": "getEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEntry(int row,int column,double value)",
+    "name": "setEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "row != column"
+        ],
+        "comment": "if row != column and value is non-zero.",
+        "kind": "THROWS",
+        "condition": "target.getRow(int)!=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "addToEntry(int row,int column,double increment)",
+    "name": "addToEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "increment"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "row != column"
+        ],
+        "comment": "if row != column and increment is non-zero.",
+        "kind": "THROWS",
+        "condition": "target.getRow(int)!=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "multiplyEntry(int row,int column,double factor)",
+    "name": "multiplyEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "factor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRowDimension()",
+    "name": "getRowDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumnDimension()",
+    "name": "getColumnDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "operate(double[] v)",
+    "name": "operate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "preMultiply(double[] v)",
+    "name": "preMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "preMultiply(org.apache.commons.math3.linear.RealVector v)",
+    "name": "preMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inverse()",
+    "name": "inverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the inverse of m",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is singular",
+        "kind": "THROWS",
+        "condition": "target.isSingular(double)"
+      }
+    ]
+  },
+  {
+    "signature": "inverse(double threshold)",
+    "name": "inverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "Singularity threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the inverse of m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.inverse())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is singular",
+        "kind": "THROWS",
+        "condition": "target.isSingular(args[0])"
+      }
+    ]
+  },
+  {
+    "signature": "isSingular(double threshold)",
+    "name": "isSingular",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.DiagonalMatrix",
+      "name": "DiagonalMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.DiagonalMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "Singularity threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the matrix is singular, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

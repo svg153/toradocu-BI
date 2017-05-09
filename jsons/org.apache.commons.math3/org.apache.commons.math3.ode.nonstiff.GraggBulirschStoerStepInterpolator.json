@@ -1,0 +1,528 @@
+[
+  {
+    "signature": "GraggBulirschStoerStepInterpolator()",
+    "name": "GraggBulirschStoerStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "GraggBulirschStoerStepInterpolator(double[] y,double[] y0Dot,double[] y1,double[] y1Dot,double[][] yMidDots,boolean forward,org.apache.commons.math3.ode.EquationsMapper primaryMapper,org.apache.commons.math3.ode.EquationsMapper[] secondaryMappers)",
+    "name": "GraggBulirschStoerStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y0Dot"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y1"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y1Dot"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yMidDots"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "forward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+          "name": "EquationsMapper",
+          "isArray": false
+        },
+        "name": "primaryMapper"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+          "name": "EquationsMapper[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          }
+        },
+        "name": "secondaryMappers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "reference to the integrator array holding the current state",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y0Dot"
+        },
+        "comment": "reference to the integrator array holding the slope at the beginning of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y1"
+        },
+        "comment": "reference to the integrator array holding the state at the end of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y1Dot"
+        },
+        "comment": "reference to the integrator array holding the slope at the end of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yMidDots"
+        },
+        "comment": "reference to the integrator array holding the derivatives at the middle point of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "forward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          },
+          "name": "primaryMapper"
+        },
+        "comment": "equations mapper for the primary equations set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+            "name": "EquationsMapper[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+              "name": "EquationsMapper",
+              "isArray": false
+            }
+          },
+          "name": "secondaryMappers"
+        },
+        "comment": "equations mappers for the secondary equations sets",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "GraggBulirschStoerStepInterpolator(org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator interpolator)",
+    "name": "GraggBulirschStoerStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+          "name": "GraggBulirschStoerStepInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+            "name": "GraggBulirschStoerStepInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "interpolator to copy from. The copy is a deep copy: its arrays are separated from the original arrays of the instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "doCopy()",
+    "name": "doCopy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeCoefficients(int mu,double h)",
+    "name": "computeCoefficients",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "mu"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "h"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "degree of the interpolation polynomial",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "h"
+        },
+        "comment": "current step",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateError(double[] scale)",
+    "name": "estimateError",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "scale"
+        },
+        "comment": "scaling array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "estimate of the interpolation error",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeInterpolatedStateAndDerivatives(double theta,double oneMinusThetaH)",
+    "name": "computeInterpolatedStateAndDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "theta"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "oneMinusThetaH"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeExternal(java.io.ObjectOutput out)",
+    "name": "writeExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutput",
+          "name": "ObjectOutput",
+          "isArray": false
+        },
+        "name": "out"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readExternal(java.io.ObjectInput in)",
+    "name": "readExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+      "name": "GraggBulirschStoerStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInput",
+          "name": "ObjectInput",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

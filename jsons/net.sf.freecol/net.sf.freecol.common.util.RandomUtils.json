@@ -1,0 +1,641 @@
+[
+  {
+    "signature": "randomInt(java.util.logging.Logger logger,java.lang.String logMe,java.util.Random random,int range)",
+    "name": "randomInt",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "range"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "range"
+        },
+        "comment": "The exclusive maximum integer to return.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A pseudo-random integer r, 0 <= r < range.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomInts(java.util.logging.Logger logger,java.lang.String logMe,java.util.Random random,int range,int n)",
+    "name": "randomInts",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "range"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "range"
+        },
+        "comment": "The exclusive maximum integer to return.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "The number of randoms.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A vector of pseudo-random integers r, 0 <= r < range.",
+      "kind": "RETURN",
+      "condition": "true ?result<{range}"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomFloat(java.util.logging.Logger logger,java.lang.String logMe,java.util.Random random)",
+    "name": "randomFloat",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A pseudo-random double r, 0 <= r < 1.0.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomDouble(java.util.logging.Logger logger,java.lang.String logMe,java.util.Random random)",
+    "name": "randomDouble",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A pseudo-random double r, 0 <= r < 1.0.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomMember(java.util.logging.Logger logger,java.lang.String logMe,java.util.List list,java.util.Random random)",
+    "name": "getRandomMember",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "The list.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A random member from the list.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[3])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomShuffle(java.util.logging.Logger logger,java.lang.String logMe,java.util.List list,java.util.Random random)",
+    "name": "randomShuffle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.RandomUtils",
+      "name": "RandomUtils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.RandomUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "The Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the result.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "The list.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "signature": "BinomialDistribution(int trials,double p)",
+    "name": "BinomialDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "trials"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "trials"
+        },
+        "comment": "Number of trials.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Probability of success.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "trials < 0"
+        ],
+        "comment": "if trials < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p < 0",
+          "p > 1"
+        ],
+        "comment": "if p < 0 or p > 1.",
+        "kind": "THROWS",
+        "condition": "args[1]<0 || args[1]>1"
+      }
+    ]
+  },
+  {
+    "signature": "BinomialDistribution(org.apache.commons.math3.random.RandomGenerator rng,int trials,double p)",
+    "name": "BinomialDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "trials"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "trials"
+        },
+        "comment": "Number of trials.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Probability of success.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "trials < 0"
+        ],
+        "comment": "if trials < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p < 0",
+          "p > 1"
+        ],
+        "comment": "if p < 0 or p > 1.",
+        "kind": "THROWS",
+        "condition": "args[2]<0 || args[2]>1"
+      }
+    ]
+  },
+  {
+    "signature": "getNumberOfTrials()",
+    "name": "getNumberOfTrials",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of trials.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getProbabilityOfSuccess()",
+    "name": "getProbabilityOfSuccess",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the probability of success.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(int x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logProbability(int x)",
+    "name": "logProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (0 or the number of trials)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (number of trials or 0)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.BinomialDistribution",
+      "name": "BinomialDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.BinomialDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  }
+]

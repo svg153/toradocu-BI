@@ -1,0 +1,202 @@
+[
+  {
+    "signature": "LineSearch(org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer optimizer,double relativeTolerance,double absoluteTolerance,double initialBracketingRange)",
+    "name": "LineSearch",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.LineSearch",
+      "name": "LineSearch",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.LineSearch",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer",
+          "name": "MultivariateOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "relativeTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "absoluteTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "initialBracketingRange"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateOptimizer",
+            "name": "MultivariateOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Optimizer on behalf of which the line search be performed. Its computeObjectiveValue method will be called by the search method.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "relativeTolerance"
+        },
+        "comment": "Search will stop when the function relative difference between successive iterations is below this value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "absoluteTolerance"
+        },
+        "comment": "Search will stop when the function absolute difference between successive iterations is below this value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "initialBracketingRange"
+        },
+        "comment": "Extent of the initial interval used to find an interval that brackets the optimum. If the optimized function varies a lot in the vicinity of the optimum, it may be necessary to provide a value lower than the distance between successive local minima.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "search(double[] startPoint,double[] direction)",
+    "name": "search",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.LineSearch",
+      "name": "LineSearch",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.LineSearch",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "startPoint"
+        },
+        "comment": "Starting point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "direction"
+        },
+        "comment": "Search direction.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the optimum.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

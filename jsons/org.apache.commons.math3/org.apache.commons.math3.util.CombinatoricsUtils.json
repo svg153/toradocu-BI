@@ -1,0 +1,821 @@
+[
+  {
+    "signature": "binomialCoefficient(int n,int k)",
+    "name": "binomialCoefficient",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the size of the set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the size of the subsets to be counted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n choose k",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the result is too large to be represented by a long integer.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "binomialCoefficientDouble(int n,int k)",
+    "name": "binomialCoefficientDouble",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the size of the set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the size of the subsets to be counted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n choose k",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the result is too large to be represented by a long integer.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "binomialCoefficientLog(int n,int k)",
+    "name": "binomialCoefficientLog",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the size of the set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the size of the subsets to be counted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n choose k",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the result is too large to be represented by a long integer.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "factorial(int n)",
+    "name": "factorial",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n!",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "long"
+        ],
+        "comment": "if the result is too large to be represented by a long.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n > 20",
+          "long"
+        ],
+        "comment": "if n > 20: The factorial value is too large to fit in a long.",
+        "kind": "THROWS",
+        "condition": "args[0]>20"
+      }
+    ]
+  },
+  {
+    "signature": "factorialDouble(int n)",
+    "name": "factorialDouble",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Argument.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n!",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "factorialLog(int n)",
+    "name": "factorialLog",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Argument.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n!",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "stirlingS2(int n,int k)",
+    "name": "stirlingS2",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the size of the set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of non-empty subsets",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "S(n,k)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k < 0"
+        ],
+        "comment": "if k < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if some overflow happens, typically for n exceeding 25 and k between 20 and n-2 (S(n,n-1) is handled specifically and does not overflow)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "combinationsIterator(int n,int k)",
+    "name": "combinationsIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Size of the set from which subsets are selected.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "Size of the subsets to be enumerated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an iterator over the k-sets in n.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      }
+    ]
+  },
+  {
+    "signature": "checkBinomial(int n,int k)",
+    "name": "checkBinomial",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.CombinatoricsUtils",
+      "name": "CombinatoricsUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.CombinatoricsUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Size of the set.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "Size of the subsets to be counted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      }
+    ]
+  }
+]

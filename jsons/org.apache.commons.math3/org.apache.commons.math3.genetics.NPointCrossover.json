@@ -1,0 +1,170 @@
+[
+  {
+    "signature": "NPointCrossover(int crossoverPoints)",
+    "name": "NPointCrossover",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.NPointCrossover",
+      "name": "NPointCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.NPointCrossover",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "crossoverPoints"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "crossoverPoints"
+        },
+        "comment": "the number of crossover points",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "crossoverPoints"
+        ],
+        "comment": "if the number of crossoverPoints is not strictly positive",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getCrossoverPoints()",
+    "name": "getCrossoverPoints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.NPointCrossover",
+      "name": "NPointCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.NPointCrossover",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of crossover points",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "crossover(org.apache.commons.math3.genetics.Chromosome first,org.apache.commons.math3.genetics.Chromosome second)",
+    "name": "crossover",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.NPointCrossover",
+      "name": "NPointCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.NPointCrossover",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ChromosomePair",
+      "name": "ChromosomePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+          "name": "Chromosome",
+          "isArray": false
+        },
+        "name": "first"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+          "name": "Chromosome",
+          "isArray": false
+        },
+        "name": "second"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+            "name": "Chromosome",
+            "isArray": false
+          },
+          "name": "first"
+        },
+        "comment": "first parent (p1)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+            "name": "Chromosome",
+            "isArray": false
+          },
+          "name": "second"
+        },
+        "comment": "second parent (p2)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "pair of two children (c1,c2)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.wait())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "AbstractListChromosome"
+        ],
+        "comment": "iff one of the chromosomes is not an instance of AbstractListChromosome",
+        "kind": "THROWS",
+        "condition": "(args[0] instanceof AbstractListChromosome) == false || (args[1] instanceof AbstractListChromosome) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the length of the two chromosomes is different",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

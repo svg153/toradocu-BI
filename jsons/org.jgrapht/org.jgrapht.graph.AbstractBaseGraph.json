@@ -1,0 +1,932 @@
+[
+  {
+    "signature": "AbstractBaseGraph(org.jgrapht.EdgeFactory ef,boolean allowMultipleEdges,boolean allowLoops)",
+    "name": "AbstractBaseGraph",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.EdgeFactory",
+          "name": "EdgeFactory",
+          "isArray": false
+        },
+        "name": "ef"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "allowMultipleEdges"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "allowLoops"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.EdgeFactory",
+            "name": "EdgeFactory",
+            "isArray": false
+          },
+          "name": "ef"
+        },
+        "comment": "the edge factory of the new graph.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "allowMultipleEdges"
+        },
+        "comment": "whether to allow multiple edges or not.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "allowLoops"
+        },
+        "comment": "whether to allow edges that are self-loops or not.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the specified edge factory is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getAllEdges(java.lang.Object sourceVertex,java.lang.Object targetVertex)",
+    "name": "getAllEdges",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "sourceVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "targetVertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isAllowingLoops()",
+    "name": "isAllowingLoops",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if and only if graph loops are allowed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isAllowingMultipleEdges()",
+    "name": "isAllowingMultipleEdges",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if and only if multiple edges are allowed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex)",
+    "name": "getEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "sourceVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "targetVertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdgeFactory()",
+    "name": "getEdgeFactory",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.EdgeFactory",
+      "name": "EdgeFactory",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEdgeSetFactory(org.jgrapht.graph.EdgeSetFactory edgeSetFactory)",
+    "name": "setEdgeSetFactory",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.graph.EdgeSetFactory",
+          "name": "EdgeSetFactory",
+          "isArray": false
+        },
+        "name": "edgeSetFactory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.graph.EdgeSetFactory",
+            "name": "EdgeSetFactory",
+            "isArray": false
+          },
+          "name": "edgeSetFactory"
+        },
+        "comment": "factory to use for subsequently created edge sets (this call has no effect on existing edge sets)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex)",
+    "name": "addEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "sourceVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "targetVertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex,java.lang.Object e)",
+    "name": "addEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "sourceVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "targetVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addVertex(java.lang.Object v)",
+    "name": "addVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdgeSource(java.lang.Object e)",
+    "name": "getEdgeSource",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdgeTarget(java.lang.Object e)",
+    "name": "getEdgeTarget",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "clone()",
+    "name": "clone",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object",
+      "name": "Object",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a shallow copy of this set.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.RuntimeException",
+          "name": "RuntimeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "containsEdge(java.lang.Object e)",
+    "name": "containsEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsVertex(java.lang.Object v)",
+    "name": "containsVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "degreeOf(java.lang.Object vertex)",
+    "name": "degreeOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "edgeSet()",
+    "name": "edgeSet",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "edgesOf(java.lang.Object vertex)",
+    "name": "edgesOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inDegreeOf(java.lang.Object vertex)",
+    "name": "inDegreeOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "incomingEdgesOf(java.lang.Object vertex)",
+    "name": "incomingEdgesOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "outDegreeOf(java.lang.Object vertex)",
+    "name": "outDegreeOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "outgoingEdgesOf(java.lang.Object vertex)",
+    "name": "outgoingEdgesOf",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex)",
+    "name": "removeEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "sourceVertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "targetVertex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeEdge(java.lang.Object e)",
+    "name": "removeEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeVertex(java.lang.Object v)",
+    "name": "removeVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "vertexSet()",
+    "name": "vertexSet",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdgeWeight(java.lang.Object e)",
+    "name": "getEdgeWeight",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEdgeWeight(java.lang.Object e,double weight)",
+    "name": "setEdgeWeight",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "weight"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "createUndirectedSpecifics()",
+    "name": "createUndirectedSpecifics",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph.UndirectedSpecifics",
+      "name": "UndirectedSpecifics",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "createDirectedSpecifics()",
+    "name": "createDirectedSpecifics",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph",
+      "name": "AbstractBaseGraph",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.graph.AbstractBaseGraph",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.graph.AbstractBaseGraph.DirectedSpecifics",
+      "name": "DirectedSpecifics",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

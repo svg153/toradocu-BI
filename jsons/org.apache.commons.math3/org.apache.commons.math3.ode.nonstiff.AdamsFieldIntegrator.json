@@ -1,0 +1,676 @@
+[
+  {
+    "signature": "AdamsFieldIntegrator(org.apache.commons.math3.Field field,java.lang.String name,int nSteps,int order,double minStep,double maxStep,double scalAbsoluteTolerance,double scalRelativeTolerance)",
+    "name": "AdamsFieldIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nSteps"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "order"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "minStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scalAbsoluteTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scalRelativeTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "name of the method",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nSteps"
+        },
+        "comment": "number of steps of the method excluding the one being computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "order"
+        },
+        "comment": "order of the method",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "minStep"
+        },
+        "comment": "minimal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxStep"
+        },
+        "comment": "maximal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scalAbsoluteTolerance"
+        },
+        "comment": "allowed absolute error",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scalRelativeTolerance"
+        },
+        "comment": "allowed relative error",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if order is 1 or less",
+        "kind": "THROWS",
+        "condition": "args[3]==1"
+      }
+    ]
+  },
+  {
+    "signature": "AdamsFieldIntegrator(org.apache.commons.math3.Field field,java.lang.String name,int nSteps,int order,double minStep,double maxStep,double[] vecAbsoluteTolerance,double[] vecRelativeTolerance)",
+    "name": "AdamsFieldIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nSteps"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "order"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "minStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxStep"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "vecAbsoluteTolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "vecRelativeTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "name of the method",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nSteps"
+        },
+        "comment": "number of steps of the method excluding the one being computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "order"
+        },
+        "comment": "order of the method",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "minStep"
+        },
+        "comment": "minimal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxStep"
+        },
+        "comment": "maximal step (sign is irrelevant, regardless of integration direction, forward or backward), the last step can be smaller than this",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "vecAbsoluteTolerance"
+        },
+        "comment": "allowed absolute error",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "vecRelativeTolerance"
+        },
+        "comment": "allowed relative error",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if order is 1 or less",
+        "kind": "THROWS",
+        "condition": "args[3]==1"
+      }
+    ]
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.ode.FieldExpandableODE equations,org.apache.commons.math3.ode.FieldODEState initialState,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldExpandableODE",
+          "name": "FieldExpandableODE",
+          "isArray": false
+        },
+        "name": "equations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+          "name": "FieldODEState",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "initializeHighOrderDerivatives(org.apache.commons.math3.RealFieldElement h,org.apache.commons.math3.RealFieldElement[] t,org.apache.commons.math3.RealFieldElement[][] y,org.apache.commons.math3.RealFieldElement[][] yDot)",
+    "name": "initializeHighOrderDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+      "name": "Array2DRowFieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "h"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+          "name": "RealFieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+          "name": "RealFieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "updateHighOrderDerivativesPhase1(org.apache.commons.math3.linear.Array2DRowFieldMatrix highOrder)",
+    "name": "updateHighOrderDerivativesPhase1",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+      "name": "Array2DRowFieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+          "name": "Array2DRowFieldMatrix",
+          "isArray": false
+        },
+        "name": "highOrder"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+            "name": "Array2DRowFieldMatrix",
+            "isArray": false
+          },
+          "name": "highOrder"
+        },
+        "comment": "high order scaled derivatives (h2/2 y'', ... hk/k! y(k))",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "updated high order derivatives",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "updateHighOrderDerivativesPhase2(org.apache.commons.math3.RealFieldElement[] start,org.apache.commons.math3.RealFieldElement[] end,org.apache.commons.math3.linear.Array2DRowFieldMatrix highOrder)",
+    "name": "updateHighOrderDerivativesPhase2",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+      "name": "AdamsFieldIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.AdamsFieldIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "end"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+          "name": "Array2DRowFieldMatrix",
+          "isArray": false
+        },
+        "name": "highOrder"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "start"
+        },
+        "comment": "first order scaled derivatives at step start",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "end"
+        },
+        "comment": "first order scaled derivatives at step end",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.Array2DRowFieldMatrix",
+            "name": "Array2DRowFieldMatrix",
+            "isArray": false
+          },
+          "name": "highOrder"
+        },
+        "comment": "high order scaled derivatives, will be modified (h2/2 y'', ... hk/k! y(k))",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

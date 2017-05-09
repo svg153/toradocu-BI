@@ -1,0 +1,298 @@
+[
+  {
+    "signature": "EquationsMapper(int firstIndex,int dimension)",
+    "name": "EquationsMapper",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.EquationsMapper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "firstIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "firstIndex"
+        },
+        "comment": "index of the first equation element in complete state arrays",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "dimension of the secondary state parameters",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getFirstIndex()",
+    "name": "getFirstIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.EquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "index of the first equation element in complete state arrays",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.EquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the secondary state parameters",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "extractEquationData(double[] complete,double[] equationData)",
+    "name": "extractEquationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.EquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "complete"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "equationData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "complete"
+        },
+        "comment": "complete state or derivative array from which equation data should be retrieved",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "equationData"
+        },
+        "comment": "placeholder where to put equation data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the equation data does not match the mapper dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "insertEquationData(double[] equationData,double[] complete)",
+    "name": "insertEquationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.EquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "equationData"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "complete"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "equationData"
+        },
+        "comment": "equation data to be inserted into the complete array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "complete"
+        },
+        "comment": "placeholder where to put equation data (only the part corresponding to the equation will be overwritten)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the equation data does not match the mapper dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

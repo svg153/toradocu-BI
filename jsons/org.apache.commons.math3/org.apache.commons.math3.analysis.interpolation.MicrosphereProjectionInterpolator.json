@@ -1,0 +1,413 @@
+[
+  {
+    "signature": "MicrosphereProjectionInterpolator(int dimension,int elements,double maxDarkFraction,double darkThreshold,double background,double exponent,boolean sharedSphere,double noInterpolationTolerance)",
+    "name": "MicrosphereProjectionInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+      "name": "MicrosphereProjectionInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "elements"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxDarkFraction"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "darkThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "background"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "exponent"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "sharedSphere"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "noInterpolationTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "Space dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "elements"
+        },
+        "comment": "Number of surface elements of the microsphere.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "exponent"
+        },
+        "comment": "Exponent used in the power law that computes the",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxDarkFraction"
+        },
+        "comment": "Maximum fraction of the facets that can be dark. If the fraction of \"non-illuminated\" facets is larger, no estimation of the value will be performed, and the background value will be returned instead.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "darkThreshold"
+        },
+        "comment": "Value of the illumination below which a facet is considered dark.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "background"
+        },
+        "comment": "Value returned when the maxDarkFraction threshold is exceeded.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "sharedSphere"
+        },
+        "comment": "Whether the sphere can be shared among the interpolating function instances. If true, the instances will share the same data, and thus will not be thread-safe.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "noInterpolationTolerance"
+        },
+        "comment": "When the distance between an interpolated point and one of the sample points is less than this value, no interpolation will be performed (the value of the sample will be returned).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "dimension <= 0",
+          "elements <= 0"
+        ],
+        "comment": "if dimension <= 0 or elements <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "exponent < 0"
+        ],
+        "comment": "if exponent < 0.",
+        "kind": "THROWS",
+        "condition": "args[5]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "darkThreshold < 0"
+        ],
+        "comment": "if darkThreshold < 0.",
+        "kind": "THROWS",
+        "condition": "args[3]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "maxDarkFraction",
+          "[0, 1]"
+        ],
+        "comment": "if maxDarkFraction does not belong to the interval [0, 1].",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "MicrosphereProjectionInterpolator(org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere microsphere,double exponent,boolean sharedSphere,double noInterpolationTolerance)",
+    "name": "MicrosphereProjectionInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+      "name": "MicrosphereProjectionInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere",
+          "name": "InterpolatingMicrosphere",
+          "isArray": false
+        },
+        "name": "microsphere"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "exponent"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "sharedSphere"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "noInterpolationTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere",
+            "name": "InterpolatingMicrosphere",
+            "isArray": false
+          },
+          "name": "microsphere"
+        },
+        "comment": "Microsphere.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "exponent"
+        },
+        "comment": "Exponent used in the power law that computes the weights (distance dimming factor) of the sample data.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "sharedSphere"
+        },
+        "comment": "Whether the sphere can be shared among the interpolating function instances. If true, the instances will share the same data, and thus will not be thread-safe.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "noInterpolationTolerance"
+        },
+        "comment": "When the distance between an interpolated point and one of the sample points is less than this value, no interpolation will be performed (the value of the sample will be returned).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "exponent < 0"
+        ],
+        "comment": "if exponent < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "interpolate(double[][] xval,double[] yval)",
+    "name": "interpolate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+      "name": "MicrosphereProjectionInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.MicrosphereProjectionInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+      "name": "MultivariateFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "xval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yval"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the space dimension of the given samples does not match the space dimension of the microsphere.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

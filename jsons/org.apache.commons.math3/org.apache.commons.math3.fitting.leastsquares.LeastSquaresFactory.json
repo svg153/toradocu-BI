@@ -1,0 +1,1075 @@
+[
+  {
+    "signature": "create(org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction model,org.apache.commons.math3.linear.RealVector observed,org.apache.commons.math3.linear.RealVector start,org.apache.commons.math3.linear.RealMatrix weight,org.apache.commons.math3.optim.ConvergenceChecker checker,int maxEvaluations,int maxIterations,boolean lazyEvaluation,org.apache.commons.math3.fitting.leastsquares.ParameterValidator paramValidator)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+          "name": "MultivariateJacobianFunction",
+          "isArray": false
+        },
+        "name": "model"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "weight"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "lazyEvaluation"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.ParameterValidator",
+          "name": "ParameterValidator",
+          "isArray": false
+        },
+        "name": "paramValidator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+            "name": "MultivariateJacobianFunction",
+            "isArray": false
+          },
+          "name": "model"
+        },
+        "comment": "the model function. Produces the computed values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "observed"
+        },
+        "comment": "the observed (target) values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the initial guess.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "weight"
+        },
+        "comment": "the weight matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "convergence checker",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "the maximum number of times to evaluate the model",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number to times to iterate in the algorithm",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "lazyEvaluation"
+        },
+        "comment": "Whether the call to LeastSquaresProblem.evaluate(RealVector) will defer the evaluation until access to the value is requested.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.ParameterValidator",
+            "name": "ParameterValidator",
+            "isArray": false
+          },
+          "name": "paramValidator"
+        },
+        "comment": "Model parameters validator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the specified General Least Squares problem.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "create(org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction model,org.apache.commons.math3.linear.RealVector observed,org.apache.commons.math3.linear.RealVector start,org.apache.commons.math3.optim.ConvergenceChecker checker,int maxEvaluations,int maxIterations)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+          "name": "MultivariateJacobianFunction",
+          "isArray": false
+        },
+        "name": "model"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+            "name": "MultivariateJacobianFunction",
+            "isArray": false
+          },
+          "name": "model"
+        },
+        "comment": "the model function. Produces the computed values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "observed"
+        },
+        "comment": "the observed (target) values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the initial guess.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "convergence checker",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "the maximum number of times to evaluate the model",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number to times to iterate in the algorithm",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the specified General Least Squares problem.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "create(org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction model,org.apache.commons.math3.linear.RealVector observed,org.apache.commons.math3.linear.RealVector start,org.apache.commons.math3.linear.RealMatrix weight,org.apache.commons.math3.optim.ConvergenceChecker checker,int maxEvaluations,int maxIterations)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+          "name": "MultivariateJacobianFunction",
+          "isArray": false
+        },
+        "name": "model"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "weight"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+            "name": "MultivariateJacobianFunction",
+            "isArray": false
+          },
+          "name": "model"
+        },
+        "comment": "the model function. Produces the computed values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "observed"
+        },
+        "comment": "the observed (target) values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "the initial guess.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "weight"
+        },
+        "comment": "the weight matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "convergence checker",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "the maximum number of times to evaluate the model",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number to times to iterate in the algorithm",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the specified General Least Squares problem.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "create(org.apache.commons.math3.analysis.MultivariateVectorFunction model,org.apache.commons.math3.analysis.MultivariateMatrixFunction jacobian,double[] observed,double[] start,org.apache.commons.math3.linear.RealMatrix weight,org.apache.commons.math3.optim.ConvergenceChecker checker,int maxEvaluations,int maxIterations)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+          "name": "MultivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "model"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateMatrixFunction",
+          "name": "MultivariateMatrixFunction",
+          "isArray": false
+        },
+        "name": "jacobian"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "weight"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+            "name": "MultivariateVectorFunction",
+            "isArray": false
+          },
+          "name": "model"
+        },
+        "comment": "the model function. Produces the computed values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateMatrixFunction",
+            "name": "MultivariateMatrixFunction",
+            "isArray": false
+          },
+          "name": "jacobian"
+        },
+        "comment": "the jacobian of the model with respect to the parameters",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "the observed (target) values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "start"
+        },
+        "comment": "the initial guess.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "weight"
+        },
+        "comment": "the weight matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "convergence checker",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "the maximum number of times to evaluate the model",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number to times to iterate in the algorithm",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the specified General Least Squares problem.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "weightMatrix(org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem problem,org.apache.commons.math3.linear.RealMatrix weights)",
+    "name": "weightMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+          "name": "LeastSquaresProblem",
+          "isArray": false
+        },
+        "name": "problem"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "weights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+            "name": "LeastSquaresProblem",
+            "isArray": false
+          },
+          "name": "problem"
+        },
+        "comment": "the unweighted problem",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "weights"
+        },
+        "comment": "the matrix of weights",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new LeastSquaresProblem with the weights applied. The original problem is not modified.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "weightDiagonal(org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem problem,org.apache.commons.math3.linear.RealVector weights)",
+    "name": "weightDiagonal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+          "name": "LeastSquaresProblem",
+          "isArray": false
+        },
+        "name": "problem"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "weights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+            "name": "LeastSquaresProblem",
+            "isArray": false
+          },
+          "name": "problem"
+        },
+        "comment": "the unweighted problem",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "weights"
+        },
+        "comment": "the diagonal of the weight matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new LeastSquaresProblem with the weights applied. The original problem is not modified.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "countEvaluations(org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem problem,org.apache.commons.math3.util.Incrementor counter)",
+    "name": "countEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+      "name": "LeastSquaresProblem",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+          "name": "LeastSquaresProblem",
+          "isArray": false
+        },
+        "name": "problem"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.Incrementor",
+          "name": "Incrementor",
+          "isArray": false
+        },
+        "name": "counter"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem",
+            "name": "LeastSquaresProblem",
+            "isArray": false
+          },
+          "name": "problem"
+        },
+        "comment": "the problem to track.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.Incrementor",
+            "name": "Incrementor",
+            "isArray": false
+          },
+          "name": "counter"
+        },
+        "comment": "the counter to increment.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a least squares problem that tracks evaluations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluationChecker(org.apache.commons.math3.optim.ConvergenceChecker checker)",
+    "name": "evaluationChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+      "name": "ConvergenceChecker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "the convergence checker to adapt.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a convergence checker that delegates to checker.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "model(org.apache.commons.math3.analysis.MultivariateVectorFunction value,org.apache.commons.math3.analysis.MultivariateMatrixFunction jacobian)",
+    "name": "model",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+      "name": "LeastSquaresFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.fitting.leastsquares.MultivariateJacobianFunction",
+      "name": "MultivariateJacobianFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+          "name": "MultivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "value"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateMatrixFunction",
+          "name": "MultivariateMatrixFunction",
+          "isArray": false
+        },
+        "name": "jacobian"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+            "name": "MultivariateVectorFunction",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the vector value function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateMatrixFunction",
+            "name": "MultivariateMatrixFunction",
+            "isArray": false
+          },
+          "name": "jacobian"
+        },
+        "comment": "the Jacobian function",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a function that computes both at the same time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

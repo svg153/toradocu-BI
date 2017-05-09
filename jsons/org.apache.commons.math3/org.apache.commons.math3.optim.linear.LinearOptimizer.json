@@ -1,0 +1,209 @@
+[
+  {
+    "signature": "LinearOptimizer()",
+    "name": "LinearOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isRestrictedToNonNegative()",
+    "name": "isRestrictedToNonNegative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the variables are restricted to non-negative values.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFunction()",
+    "name": "getFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearObjectiveFunction",
+      "name": "LinearObjectiveFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the optimization type.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConstraints()",
+    "name": "getConstraints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the optimization type.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. In addition to those documented in MultivariateOptimizer, this method will register the following data: LinearObjectiveFunction LinearConstraintSet NonNegativeConstraint",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a point/value pair that satisfies the convergence criteria.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyIterationsException",
+          "name": "TooManyIterationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of iterations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "parseOptimizationData(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "parseOptimizationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.linear.LinearOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: LinearObjectiveFunction LinearConstraintSet NonNegativeConstraint",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

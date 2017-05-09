@@ -1,0 +1,319 @@
+[
+  {
+    "signature": "LeastSquaresConverter(org.apache.commons.math3.analysis.MultivariateVectorFunction function,double[] observations)",
+    "name": "LeastSquaresConverter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+      "name": "LeastSquaresConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+          "name": "MultivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "function"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "observations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+            "name": "MultivariateVectorFunction",
+            "isArray": false
+          },
+          "name": "function"
+        },
+        "comment": "vectorial residuals function to wrap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "observations"
+        },
+        "comment": "observations to be compared to objective function to compute residuals",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "LeastSquaresConverter(org.apache.commons.math3.analysis.MultivariateVectorFunction function,double[] observations,double[] weights)",
+    "name": "LeastSquaresConverter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+      "name": "LeastSquaresConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+          "name": "MultivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "function"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "observations"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "weights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+            "name": "MultivariateVectorFunction",
+            "isArray": false
+          },
+          "name": "function"
+        },
+        "comment": "vectorial residuals function to wrap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "observations"
+        },
+        "comment": "observations to be compared to objective function to compute residuals",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "weights"
+        },
+        "comment": "weights to apply to the residuals",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "value(double[])"
+        ],
+        "comment": "if the observations vector and the weights vector dimensions do not match (objective function dimension is checked only when the value(double[]) method is called)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "LeastSquaresConverter(org.apache.commons.math3.analysis.MultivariateVectorFunction function,double[] observations,org.apache.commons.math3.linear.RealMatrix scale)",
+    "name": "LeastSquaresConverter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+      "name": "LeastSquaresConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+          "name": "MultivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "function"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "observations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateVectorFunction",
+            "name": "MultivariateVectorFunction",
+            "isArray": false
+          },
+          "name": "function"
+        },
+        "comment": "vectorial residuals function to wrap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "observations"
+        },
+        "comment": "observations to be compared to objective function to compute residuals",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "scaling matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "value(double[])"
+        ],
+        "comment": "if the observations vector and the scale matrix dimensions do not match (objective function dimension is checked only when the value(double[]) method is called)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double[] point)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+      "name": "LeastSquaresConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.LeastSquaresConverter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

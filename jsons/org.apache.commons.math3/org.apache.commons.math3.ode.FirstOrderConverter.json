@@ -1,0 +1,167 @@
+[
+  {
+    "signature": "FirstOrderConverter(org.apache.commons.math3.ode.SecondOrderDifferentialEquations equations)",
+    "name": "FirstOrderConverter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderConverter",
+      "name": "FirstOrderConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderConverter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.SecondOrderDifferentialEquations",
+          "name": "SecondOrderDifferentialEquations",
+          "isArray": false
+        },
+        "name": "equations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.SecondOrderDifferentialEquations",
+            "name": "SecondOrderDifferentialEquations",
+            "isArray": false
+          },
+          "name": "equations"
+        },
+        "comment": "second order equations set to convert",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderConverter",
+      "name": "FirstOrderConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderConverter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the problem",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeDerivatives(double t,double[] y,double[] yDot)",
+    "name": "computeDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderConverter",
+      "name": "FirstOrderConverter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FirstOrderConverter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "current value of the independent time variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "array containing the current value of the state vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yDot"
+        },
+        "comment": "placeholder array where to put the time derivative of the state vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

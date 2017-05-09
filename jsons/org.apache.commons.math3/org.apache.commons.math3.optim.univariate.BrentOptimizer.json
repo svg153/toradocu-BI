@@ -1,0 +1,212 @@
+[
+  {
+    "signature": "BrentOptimizer(double rel,double abs,org.apache.commons.math3.optim.ConvergenceChecker checker)",
+    "name": "BrentOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+      "name": "BrentOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Additional, user-defined, convergence checking procedure.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "BrentOptimizer(double rel,double abs)",
+    "name": "BrentOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+      "name": "BrentOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "doOptimize()",
+    "name": "doOptimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+      "name": "BrentOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BrentOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "signature": "getFileDigest(java.lang.String filename,java.security.MessageDigest md)",
+    "name": "getFileDigest",
+    "containingClass": {
+      "qualifiedName": "plume.Digest",
+      "name": "Digest",
+      "isArray": false
+    },
+    "targetClass": "plume.Digest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "filename"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.security.MessageDigest",
+          "name": "MessageDigest",
+          "isArray": false
+        },
+        "name": "md"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "filename"
+        },
+        "comment": "the file to read",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.security.MessageDigest",
+            "name": "MessageDigest",
+            "isArray": false
+          },
+          "name": "md"
+        },
+        "comment": "the MessageDigest",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the message digest",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading the file",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hexEncode(byte[] bytes)",
+    "name": "hexEncode",
+    "containingClass": {
+      "qualifiedName": "plume.Digest",
+      "name": "Digest",
+      "isArray": false
+    },
+    "targetClass": "plume.Digest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "bytes"
+        },
+        "comment": "the bytes to convert to a String",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a String representation of the input bytes",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.toString())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hexDecode(java.lang.String s)",
+    "name": "hexDecode",
+    "containingClass": {
+      "qualifiedName": "plume.Digest",
+      "name": "Digest",
+      "isArray": false
+    },
+    "targetClass": "plume.Digest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "s"
+        },
+        "comment": "the String to convert to an array of bytes",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the bytes equivalent to the input String",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

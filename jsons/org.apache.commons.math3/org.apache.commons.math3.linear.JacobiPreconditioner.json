@@ -1,0 +1,221 @@
+[
+  {
+    "signature": "JacobiPreconditioner(double[] diag,boolean deep)",
+    "name": "JacobiPreconditioner",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "diag"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "deep"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "diag"
+        },
+        "comment": "the diagonal coefficients of the linear operator to be preconditioned",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "deep"
+        },
+        "comment": "true if a deep copy of the above array should be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(org.apache.commons.math3.linear.RealLinearOperator a)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+          "name": "RealLinearOperator",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+            "name": "RealLinearOperator",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the linear operator for which the preconditioner should be built",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the diagonal preconditioner made of the inverse of the diagonal coefficients of the specified linear operator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareOperatorException",
+          "name": "NonSquareOperatorException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a"
+        ],
+        "comment": "if a is not square",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getColumnDimension()",
+    "name": "getColumnDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRowDimension()",
+    "name": "getRowDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "operate(org.apache.commons.math3.linear.RealVector x)",
+    "name": "operate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sqrt()",
+    "name": "sqrt",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.JacobiPreconditioner",
+      "name": "JacobiPreconditioner",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.JacobiPreconditioner",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealLinearOperator",
+      "name": "RealLinearOperator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the square root of this preconditioner",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

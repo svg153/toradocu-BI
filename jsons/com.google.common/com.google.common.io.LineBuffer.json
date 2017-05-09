@@ -1,0 +1,214 @@
+[
+  {
+    "signature": "add(char[] cbuf,int off,int len)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LineBuffer",
+      "name": "LineBuffer",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LineBuffer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char[]",
+          "name": "char[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          }
+        },
+        "name": "cbuf"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char[]",
+            "name": "char[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "char",
+              "name": "char",
+              "isArray": false
+            }
+          },
+          "name": "cbuf"
+        },
+        "comment": "the character buffer to process",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "off"
+        },
+        "comment": "the offset into the buffer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "the number of characters to process",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "finish()",
+    "name": "finish",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LineBuffer",
+      "name": "LineBuffer",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LineBuffer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "handleLine(java.lang.String line,java.lang.String end)",
+    "name": "handleLine",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.LineBuffer",
+      "name": "LineBuffer",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.LineBuffer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "line"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "line"
+        },
+        "comment": "a line of text (possibly empty), without any line separators",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "the line separator; one of \"\\r\", \"\\n\", \"\\r\\n\", or \"\"",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "signature": "getC()",
+    "name": "getC",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+      "name": "FieldButcherArrayProvider",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "time steps from Butcher array (without the first zero",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getA()",
+    "name": "getA",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+      "name": "FieldButcherArrayProvider",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[][]",
+      "name": "T[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "internal weights from Butcher array (without the first empty row)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getB())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getB()",
+    "name": "getB",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+      "name": "FieldButcherArrayProvider",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.FieldButcherArrayProvider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "external weights for the high order method from Butcher array",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getC())"
+    },
+    "throwsTags": []
+  }
+]

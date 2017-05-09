@@ -1,0 +1,177 @@
+[
+  {
+    "signature": "PercentEscaper(java.lang.String safeChars,boolean plusForSpace)",
+    "name": "PercentEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.PercentEscaper",
+      "name": "PercentEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.PercentEscaper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "safeChars"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "plusForSpace"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "safeChars"
+        },
+        "comment": "a non null string specifying additional safe characters for this escaper (the ranges 0..9, a..z and A..Z are always safe and should not be specified here)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "plusForSpace"
+        },
+        "comment": "true if ASCII space should be escaped to + rather than %20",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the parameters were invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "nextEscapeIndex(java.lang.CharSequence csq,int index,int end)",
+    "name": "nextEscapeIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.PercentEscaper",
+      "name": "PercentEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.PercentEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "csq"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(java.lang.String s)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.PercentEscaper",
+      "name": "PercentEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.PercentEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(int cp)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.PercentEscaper",
+      "name": "PercentEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.PercentEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char[]",
+      "name": "char[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "char",
+        "name": "char",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "cp"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

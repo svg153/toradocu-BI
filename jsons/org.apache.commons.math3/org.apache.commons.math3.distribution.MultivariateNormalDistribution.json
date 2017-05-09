@@ -1,0 +1,386 @@
+[
+  {
+    "signature": "MultivariateNormalDistribution(double[] means,double[][] covariances)",
+    "name": "MultivariateNormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "means"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "covariances"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "means"
+        },
+        "comment": "Vector of means.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "covariances"
+        },
+        "comment": "Covariance matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays length are inconsistent.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the eigenvalue decomposition cannot be performed on the provided covariance matrix.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the eigenvalues is negative.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "MultivariateNormalDistribution(org.apache.commons.math3.random.RandomGenerator rng,double[] means,double[][] covariances)",
+    "name": "MultivariateNormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "means"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "covariances"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random Number Generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "means"
+        },
+        "comment": "Vector of means.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "covariances"
+        },
+        "comment": "Covariance matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays length are inconsistent.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the eigenvalue decomposition cannot be performed on the provided covariance matrix.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the eigenvalues is negative.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getMeans()",
+    "name": "getMeans",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mean vector.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCovariances()",
+    "name": "getCovariances",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the covariance matrix.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double[] vals)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "vals"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStandardDeviations()",
+    "name": "getStandardDeviations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the standard deviations.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+      "name": "MultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

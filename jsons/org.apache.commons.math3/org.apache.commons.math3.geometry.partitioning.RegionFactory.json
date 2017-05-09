@@ -1,0 +1,392 @@
+[
+  {
+    "signature": "RegionFactory()",
+    "name": "RegionFactory",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "buildConvex(org.apache.commons.math3.geometry.partitioning.Hyperplane[] hyperplanes)",
+    "name": "buildConvex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane[]",
+          "name": "Hyperplane[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+            "name": "Hyperplane",
+            "isArray": false
+          }
+        },
+        "name": "hyperplanes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane[]",
+            "name": "Hyperplane[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+              "name": "Hyperplane",
+              "isArray": false
+            }
+          },
+          "name": "hyperplanes"
+        },
+        "comment": "collection of bounding hyperplanes",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new convex region, or null if the collection is empty",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "union(org.apache.commons.math3.geometry.partitioning.Region region1,org.apache.commons.math3.geometry.partitioning.Region region2)",
+    "name": "union",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region1"
+        },
+        "comment": "first region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region2"
+        },
+        "comment": "second region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new region, result of region1 union region2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "intersection(org.apache.commons.math3.geometry.partitioning.Region region1,org.apache.commons.math3.geometry.partitioning.Region region2)",
+    "name": "intersection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region1"
+        },
+        "comment": "first region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region2"
+        },
+        "comment": "second region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new region, result of region1 intersection region2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "xor(org.apache.commons.math3.geometry.partitioning.Region region1,org.apache.commons.math3.geometry.partitioning.Region region2)",
+    "name": "xor",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region1"
+        },
+        "comment": "first region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region2"
+        },
+        "comment": "second region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new region, result of region1 xor region2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "difference(org.apache.commons.math3.geometry.partitioning.Region region1,org.apache.commons.math3.geometry.partitioning.Region region2)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region1"
+        },
+        "comment": "first region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region2"
+        },
+        "comment": "second region (will be unusable after the operation as parts of it will be reused in the new region)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new region, result of region1 minus region2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getComplement(org.apache.commons.math3.geometry.partitioning.Region region)",
+    "name": "getComplement",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+      "name": "RegionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.RegionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region"
+        },
+        "comment": "region to complement, it will not modified, a new region independent region will be built",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new region, complement of the specified one",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

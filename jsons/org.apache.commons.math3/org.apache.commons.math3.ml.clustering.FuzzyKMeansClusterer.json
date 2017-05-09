@@ -1,0 +1,647 @@
+[
+  {
+    "signature": "FuzzyKMeansClusterer(int k,double fuzziness)",
+    "name": "FuzzyKMeansClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "fuzziness"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of clusters to split the data into",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "fuzziness"
+        },
+        "comment": "the fuzziness factor, must be > 1.0",
+        "kind": "PARAM",
+        "condition": "args[1]>1.0"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "fuzziness <= 1.0"
+        ],
+        "comment": "if fuzziness <= 1.0",
+        "kind": "THROWS",
+        "condition": "args[1]<=1.0"
+      }
+    ]
+  },
+  {
+    "signature": "FuzzyKMeansClusterer(int k,double fuzziness,int maxIterations,org.apache.commons.math3.ml.distance.DistanceMeasure measure)",
+    "name": "FuzzyKMeansClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "fuzziness"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "measure"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of clusters to split the data into",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "fuzziness"
+        },
+        "comment": "the fuzziness factor, must be > 1.0",
+        "kind": "PARAM",
+        "condition": "args[1]>1.0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations to run the algorithm for. If negative, no maximum will be used.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "measure"
+        },
+        "comment": "the distance measure to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "fuzziness <= 1.0"
+        ],
+        "comment": "if fuzziness <= 1.0",
+        "kind": "THROWS",
+        "condition": "args[1]<=1.0"
+      }
+    ]
+  },
+  {
+    "signature": "FuzzyKMeansClusterer(int k,double fuzziness,int maxIterations,org.apache.commons.math3.ml.distance.DistanceMeasure measure,double epsilon,org.apache.commons.math3.random.RandomGenerator random)",
+    "name": "FuzzyKMeansClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "fuzziness"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "measure"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "epsilon"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the number of clusters to split the data into",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "fuzziness"
+        },
+        "comment": "the fuzziness factor, must be > 1.0",
+        "kind": "PARAM",
+        "condition": "args[1]>1.0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations to run the algorithm for. If negative, no maximum will be used.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "measure"
+        },
+        "comment": "the distance measure to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "epsilon"
+        },
+        "comment": "the convergence criteria (default is 1e-3)",
+        "kind": "PARAM",
+        "condition": "args[0]==1"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "random generator to use for choosing initial centers",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "fuzziness <= 1.0"
+        ],
+        "comment": "if fuzziness <= 1.0",
+        "kind": "THROWS",
+        "condition": "args[1]<=1.0"
+      }
+    ]
+  },
+  {
+    "signature": "getK()",
+    "name": "getK",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of clusters",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFuzziness()",
+    "name": "getFuzziness",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the fuzziness factor",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getK())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxIterations()",
+    "name": "getMaxIterations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the maximum number of iterations, or -1 if no maximum is set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEpsilon()",
+    "name": "getEpsilon",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the convergence criteria",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getK())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomGenerator()",
+    "name": "getRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+      "name": "RandomGenerator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the random generator",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getK())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMembershipMatrix()",
+    "name": "getMembershipMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the membership matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "cluster(Collection)"
+        ],
+        "comment": "if cluster(Collection) has not been called before",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getDataPoints()",
+    "name": "getDataPoints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the list of data points, or null if cluster(Collection) has not been called before.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getClusters()",
+    "name": "getClusters",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the list of clusters, or null if cluster(Collection) has not been called before.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getObjectiveFunctionValue()",
+    "name": "getObjectiveFunctionValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the objective function evaluation as double value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "cluster(Collection)"
+        ],
+        "comment": "if cluster(Collection) has not been called before",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cluster(java.util.Collection dataPoints)",
+    "name": "cluster",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+      "name": "FuzzyKMeansClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.FuzzyKMeansClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "dataPoints"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "dataPoints"
+        },
+        "comment": "the points to cluster",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of clusters",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getK())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the data points are null or the number of clusters is larger than the number of data points",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

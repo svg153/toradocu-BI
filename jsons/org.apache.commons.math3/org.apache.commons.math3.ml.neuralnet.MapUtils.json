@@ -1,0 +1,713 @@
+[
+  {
+    "signature": "findBest(double[] features,java.lang.Iterable neurons,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "findBest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+      "name": "Neuron",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "features"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "features"
+        },
+        "comment": "Data.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "List of neurons to scan. If the list is empty null will be returned.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance function. The neuron's features are passed as the first argument to DistanceMeasure.compute(double[],double[]).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neuron whose features are closest to the given data.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the size of the input is not compatible with the neurons features size.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "findBestAndSecondBest(double[] features,java.lang.Iterable neurons,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "findBestAndSecondBest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.Pair",
+      "name": "Pair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "features"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "features"
+        },
+        "comment": "Data.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "List of neurons to scan. If the list is empty null will be returned.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance function. The neuron's features are passed as the first argument to DistanceMeasure.compute(double[],double[]).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the two neurons whose features are closest to the given data.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the size of the input is not compatible with the neurons features size.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sort(double[] features,java.lang.Iterable neurons,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "sort",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron[]",
+      "name": "Neuron[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+        "name": "Neuron",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "features"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "features"
+        },
+        "comment": "Data.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "List of neurons to scan. If it is empty, an empty array will be returned.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance function.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neurons, sorted in increasing order of distance in data space.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the size of the input is not compatible with the neurons features size.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeU(org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D map,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "computeU",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+          "name": "NeuronSquareMesh2D",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+            "name": "NeuronSquareMesh2D",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "Network.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Function to use for computing the average distance from a neuron to its neighbours.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the matrix of average distances.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeHitHistogram(java.lang.Iterable data,org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D map,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "computeHitHistogram",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[][]",
+      "name": "int[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+          "name": "NeuronSquareMesh2D",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "data"
+        },
+        "comment": "Feature vectors.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+            "name": "NeuronSquareMesh2D",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "Network.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Function to use for determining the best matching unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of hits for each neuron in the map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeQuantizationError(java.lang.Iterable data,java.lang.Iterable neurons,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "computeQuantizationError",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "data"
+        },
+        "comment": "Feature vectors.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "List of neurons to scan.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance function.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the error.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is empty.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeTopographicError(java.lang.Iterable data,org.apache.commons.math3.ml.neuralnet.Network net,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "computeTopographicError",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+      "name": "MapUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.MapUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+          "name": "Network",
+          "isArray": false
+        },
+        "name": "net"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "data"
+        },
+        "comment": "Feature vectors.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+            "name": "Network",
+            "isArray": false
+          },
+          "name": "net"
+        },
+        "comment": "Network.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance function.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the error.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is empty.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,441 @@
+[
+  {
+    "signature": "MultivariateNormalMixtureExpectationMaximization(double[][] data)",
+    "name": "MultivariateNormalMixtureExpectationMaximization",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "Data to use in fitting procedure",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if data has no rows",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if rows of data have different numbers of columns",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of columns in the data is less than 2",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fit(org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution initialMixture,int maxIterations,double threshold)",
+    "name": "fit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+          "name": "MixtureMultivariateNormalDistribution",
+          "isArray": false
+        },
+        "name": "initialMixture"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+            "name": "MixtureMultivariateNormalDistribution",
+            "isArray": false
+          },
+          "name": "initialMixture"
+        },
+        "comment": "Model containing initial values of weights and multivariate normals",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "Maximum iterations allowed for fit",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "Convergence threshold computed as difference in logLikelihoods between successive iterations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any component's covariance matrix is singular during fitting",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if numComponents is less than one or threshold is less than Double.MIN_VALUE",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if initialMixture mean vector and data number of columns are not equal",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fit(org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution initialMixture)",
+    "name": "fit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+          "name": "MixtureMultivariateNormalDistribution",
+          "isArray": false
+        },
+        "name": "initialMixture"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+            "name": "MixtureMultivariateNormalDistribution",
+            "isArray": false
+          },
+          "name": "initialMixture"
+        },
+        "comment": "Model containing initial values of weights and multivariate normals",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any component's covariance matrix is singular during fitting",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if numComponents is less than one or threshold is less than Double.MIN_VALUE",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "estimate(double[][] data,int numComponents)",
+    "name": "estimate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+      "name": "MixtureMultivariateNormalDistribution",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numComponents"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "Data to estimate distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numComponents"
+        },
+        "comment": "Number of components for estimated mixture",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Multivariate normal mixture model estimated from the data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numComponents"
+        ],
+        "comment": "if numComponents is greater than the number of data rows.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numComponents < 2"
+        ],
+        "comment": "if numComponents < 2.",
+        "kind": "THROWS",
+        "condition": "args[1]<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if data has less than 2 rows",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if rows of data have different numbers of columns",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getLogLikelihood()",
+    "name": "getLogLikelihood",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Log likelihood of data or zero of no data has been fit",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFittedModel()",
+    "name": "getFittedModel",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+      "name": "MultivariateNormalMixtureExpectationMaximization",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+      "name": "MixtureMultivariateNormalDistribution",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "fitted model or null if no fit has been performed yet.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "signature": "BaseMultiStartMultivariateOptimizer(org.apache.commons.math3.optim.BaseMultivariateOptimizer optimizer,int starts,org.apache.commons.math3.random.RandomVectorGenerator generator)",
+    "name": "BaseMultiStartMultivariateOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.BaseMultivariateOptimizer",
+          "name": "BaseMultivariateOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "starts"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomVectorGenerator",
+          "name": "RandomVectorGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.BaseMultivariateOptimizer",
+            "name": "BaseMultivariateOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Single-start optimizer to wrap.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "starts"
+        },
+        "comment": "Number of starts to perform. If starts == 1, the optimize will return the same solution as the given optimizer would return.",
+        "kind": "PARAM",
+        "condition": "args[1]==1"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomVectorGenerator",
+            "name": "RandomVectorGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "Random vector generator to use for restarts.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "starts < 1"
+        ],
+        "comment": "if starts < 1.",
+        "kind": "THROWS",
+        "condition": "args[1]<1"
+      }
+    ]
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOptima()",
+    "name": "getOptima",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "PAIR[]",
+      "name": "PAIR[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "PAIR",
+        "name": "PAIR",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an array containing the optima sorted from best to worst.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "PAIR",
+      "name": "PAIR",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "optData",
+          "MaxEval",
+          "InitialGuess"
+        ],
+        "comment": "if optData does not contain an instance of MaxEval or InitialGuess.",
+        "kind": "THROWS",
+        "condition": "(args[0] instanceof MaxEval) == false"
+      }
+    ]
+  },
+  {
+    "signature": "doOptimize()",
+    "name": "doOptimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "PAIR",
+      "name": "PAIR",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "store(java.lang.Object optimum)",
+    "name": "store",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "optimum"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "optimum"
+        },
+        "comment": "Result of an optimization run.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+      "name": "BaseMultiStartMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.BaseMultiStartMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

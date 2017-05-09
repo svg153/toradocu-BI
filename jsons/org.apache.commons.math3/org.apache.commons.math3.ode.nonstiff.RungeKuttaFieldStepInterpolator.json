@@ -1,0 +1,654 @@
+[
+  {
+    "signature": "RungeKuttaFieldStepInterpolator(org.apache.commons.math3.Field field,boolean forward,org.apache.commons.math3.RealFieldElement[][] yDotK,org.apache.commons.math3.ode.FieldODEStateAndDerivative globalPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative globalCurrentState,org.apache.commons.math3.ode.FieldODEStateAndDerivative softPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative softCurrentState,org.apache.commons.math3.ode.FieldEquationsMapper mapper)",
+    "name": "RungeKuttaFieldStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "forward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+          "name": "RealFieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "yDotK"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "globalPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "globalCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "softPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "softCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+          "name": "FieldEquationsMapper",
+          "isArray": false
+        },
+        "name": "mapper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "forward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+            "name": "RealFieldElement[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "yDotK"
+        },
+        "comment": "slopes at the intermediate points",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "globalPreviousState"
+        },
+        "comment": "start of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "globalCurrentState"
+        },
+        "comment": "end of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "softPreviousState"
+        },
+        "comment": "start of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "softCurrentState"
+        },
+        "comment": "end of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+            "name": "FieldEquationsMapper",
+            "isArray": false
+          },
+          "name": "mapper"
+        },
+        "comment": "equations mapper for the all equations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(boolean newForward,org.apache.commons.math3.ode.FieldODEStateAndDerivative newGlobalPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newGlobalCurrentState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newSoftPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newSoftCurrentState,org.apache.commons.math3.ode.FieldEquationsMapper newMapper)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "newForward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newGlobalPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newGlobalCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newSoftPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newSoftCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+          "name": "FieldEquationsMapper",
+          "isArray": false
+        },
+        "name": "newMapper"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(org.apache.commons.math3.Field newField,boolean newForward,org.apache.commons.math3.RealFieldElement[][] newYDotK,org.apache.commons.math3.ode.FieldODEStateAndDerivative newGlobalPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newGlobalCurrentState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newSoftPreviousState,org.apache.commons.math3.ode.FieldODEStateAndDerivative newSoftCurrentState,org.apache.commons.math3.ode.FieldEquationsMapper newMapper)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "newField"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "newForward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+          "name": "RealFieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "newYDotK"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newGlobalPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newGlobalCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newSoftPreviousState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "newSoftCurrentState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+          "name": "FieldEquationsMapper",
+          "isArray": false
+        },
+        "name": "newMapper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "newField"
+        },
+        "comment": "field to which the time and state vector elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "newForward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[][]",
+            "name": "RealFieldElement[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "newYDotK"
+        },
+        "comment": "slopes at the intermediate points",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "newGlobalPreviousState"
+        },
+        "comment": "start of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "newGlobalCurrentState"
+        },
+        "comment": "end of the global step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "newSoftPreviousState"
+        },
+        "comment": "start of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "newSoftCurrentState"
+        },
+        "comment": "end of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+            "name": "FieldEquationsMapper",
+            "isArray": false
+          },
+          "name": "newMapper"
+        },
+        "comment": "equations mapper for the all equations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new instance",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[2])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "previousStateLinearCombination(org.apache.commons.math3.RealFieldElement[] coefficients)",
+    "name": "previousStateLinearCombination",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "coefficients"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "coefficients"
+        },
+        "comment": "coefficients to apply to the method staged derivatives",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "combined state",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "currentStateLinearCombination(org.apache.commons.math3.RealFieldElement[] coefficients)",
+    "name": "currentStateLinearCombination",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "coefficients"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "coefficients"
+        },
+        "comment": "coefficients to apply to the method staged derivatives",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "combined state",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "derivativeLinearCombination(org.apache.commons.math3.RealFieldElement[] coefficients)",
+    "name": "derivativeLinearCombination",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+      "name": "RungeKuttaFieldStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.nonstiff.RungeKuttaFieldStepInterpolator",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "coefficients"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "coefficients"
+        },
+        "comment": "coefficients to apply to the method staged derivatives",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "combined state",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,607 @@
+[
+  {
+    "signature": "CharSource()",
+    "name": "CharSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "openStream()",
+    "name": "openStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.Reader",
+      "name": "Reader",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the reader",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "openBufferedStream()",
+    "name": "openBufferedStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.BufferedReader",
+      "name": "BufferedReader",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the reader",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "lengthIfKnown()",
+    "name": "lengthIfKnown",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Optional",
+      "name": "Optional",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "length()",
+    "name": "length",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading the length of this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copyTo(java.lang.Appendable appendable)",
+    "name": "copyTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Appendable",
+          "name": "Appendable",
+          "isArray": false
+        },
+        "name": "appendable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "appendable"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or writing to appendable",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copyTo(com.google.common.io.CharSink sink)",
+    "name": "copyTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.CharSink",
+          "name": "CharSink",
+          "isArray": false
+        },
+        "name": "sink"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sink"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or writing to sink",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "read()",
+    "name": "read",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading from this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readFirstLine()",
+    "name": "readFirstLine",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading from this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines()",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableList",
+      "name": "ImmutableList",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading from this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines(com.google.common.io.LineProcessor processor)",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.LineProcessor",
+          "name": "LineProcessor",
+          "isArray": false
+        },
+        "name": "processor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "processor",
+          "IOException"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or if processor throws an IOException",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "concat(java.lang.Iterable sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a CharSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "concat(java.util.Iterator sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a CharSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sources",
+          "null"
+        ],
+        "comment": "if any of sources is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "concat(com.google.common.io.CharSource[] sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.CharSource[]",
+          "name": "CharSource[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "com.google.common.io.CharSource",
+            "name": "CharSource",
+            "isArray": false
+          }
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.CharSource[]",
+            "name": "CharSource[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "com.google.common.io.CharSource",
+              "name": "CharSource",
+              "isArray": false
+            }
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a CharSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sources",
+          "null"
+        ],
+        "comment": "if any of sources is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "wrap(java.lang.CharSequence charSequence)",
+    "name": "wrap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "charSequence"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "empty()",
+    "name": "empty",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.CharSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

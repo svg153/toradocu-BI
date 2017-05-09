@@ -1,0 +1,1121 @@
+[
+  {
+    "signature": "g(double[] expected,long[] observed)",
+    "name": "g",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "G-Test statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths do not match or are less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2 || args[1].length<2"
+      }
+    ]
+  },
+  {
+    "signature": "gTest(double[] expected,long[] observed)",
+    "name": "gTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths do not match or are less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2 || args[1].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "gTestIntrinsic(double[] expected,long[] observed)",
+    "name": "gTestIntrinsic",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths do not match or are less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2 || args[1].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "gTest(double[] expected,long[] observed,double alpha)",
+    "name": "gTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths do not match or are less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2 || args[1].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if alpha is not strictly greater than zero and less than or equal to 0.5",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "gDataSetsComparison(long[] observed1,long[] observed2)",
+    "name": "gDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "G-Test statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the lengths of the arrays do not match or their common length is less than 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any entry in observed1 or observed2 is negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at the same index is zero for both arrays.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "rootLogLikelihoodRatio(long k11,long k12,long k21,long k22)",
+    "name": "rootLogLikelihoodRatio",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "k11"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "k12"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "k21"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "k22"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "k11"
+        },
+        "comment": "number of times the two events occurred together (AB)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "k12"
+        },
+        "comment": "number of times the second event occurred WITHOUT the first event (notA,B)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "k21"
+        },
+        "comment": "number of times the first event occurred WITHOUT the second event (A, notB)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "k22"
+        },
+        "comment": "number of times something else occurred (i.e. was neither of these events (notA, notB)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "root log-likelihood ratio",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "gTestDataSetsComparison(long[] observed1,long[] observed2)",
+    "name": "gTestDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the length of the arrays does not match or their common length is less than 2",
+        "kind": "THROWS",
+        "condition": "args[0].length<2 || args[1].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any of the entries in observed1 or observed2 are negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at some index is zero for both arrays",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "gTestDataSetsComparison(long[] observed1,long[] observed2,double alpha)",
+    "name": "gTestDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.GTest",
+      "name": "GTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.GTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the length of the arrays does not match",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any of the entries in observed1 or observed2 are negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at some index is zero for both arrays",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha"
+        ],
+        "comment": "if alpha is not in the range (0, 0.5]",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs performing the test",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

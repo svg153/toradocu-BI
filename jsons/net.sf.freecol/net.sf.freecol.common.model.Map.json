@@ -1,0 +1,3807 @@
+[
+  {
+    "signature": "Map(net.sf.freecol.common.model.Game game,int width,int height)",
+    "name": "Map",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "width"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "height"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "width"
+        },
+        "comment": "The map width.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "height"
+        },
+        "comment": "The map height.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Map(net.sf.freecol.common.model.Game game,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "Map",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a problem was encountered during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Map(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "Map",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "The object identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid(int x,int y,int width,int height)",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "width"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "height"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The x-coordinate of the position.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The y-coordinate of the position.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "width"
+        },
+        "comment": "The width of the map.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "height"
+        },
+        "comment": "The height of the map.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the given position is within the bounds of the map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid(int x,int y)",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The X coordinate to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The Y coordinate to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the coordinates are valid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid(net.sf.freecol.common.model.Map.Position position)",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Map.Position",
+          "name": "Position",
+          "isArray": false
+        },
+        "name": "position"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Map.Position",
+            "name": "Position",
+            "isArray": false
+          },
+          "name": "position"
+        },
+        "comment": "The Position to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the position is valid.",
+      "kind": "RETURN",
+      "condition": "args[0].isValid(int, int) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTile(int x,int y)",
+    "name": "getTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The x-coordinate of the Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The y-coordinate of the Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Tile at (x, y), or null if the position is invalid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTile(net.sf.freecol.common.model.Map.Position p)",
+    "name": "getTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Map.Position",
+          "name": "Position",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Map.Position",
+            "name": "Position",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "The Position to query.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Tile at the given position.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setTile(net.sf.freecol.common.model.Tile tile,int x,int y)",
+    "name": "setTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The x-coordinate of the Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The y-coordinate of the Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getWidth()",
+    "name": "getWidth",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The width of this map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getHeight()",
+    "name": "getHeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The height of this map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLayer()",
+    "name": "getLayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Map.Layer",
+      "name": "Layer",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setLayer(net.sf.freecol.common.model.Map.Layer newLayer)",
+    "name": "setLayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Map.Layer",
+          "name": "Layer",
+          "isArray": false
+        },
+        "name": "newLayer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMinimumLatitude()",
+    "name": "getMinimumLatitude",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The minimum latitude of this map.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getMaximumLatitude())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMinimumLatitude(int newMinimumLatitude)",
+    "name": "setMinimumLatitude",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newMinimumLatitude"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaximumLatitude()",
+    "name": "getMaximumLatitude",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The maximum latitude of this map.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getMinimumLatitude())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMaximumLatitude(int newMaximumLatitude)",
+    "name": "setMaximumLatitude",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newMaximumLatitude"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLatitudePerRow()",
+    "name": "getLatitudePerRow",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The latitude change between rows.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLatitude(int row)",
+    "name": "getLatitude",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "row"
+        },
+        "comment": "The row to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The row latitude.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRow(int latitude)",
+    "name": "getRow",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "latitude"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "latitude"
+        },
+        "comment": "The latitude to find.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The row closest to the supplied latitude.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRegions()",
+    "name": "getRegions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "All the regions in this map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFixedRegions()",
+    "name": "getFixedRegions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A map of the fixed regions.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRegionByKey(java.lang.String key)",
+    "name": "getRegionByKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "The name key to lookup the region with.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The region with the given name key, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRegionByName(java.lang.String name)",
+    "name": "getRegionByName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The region name.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Region with the given name, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addRegion(net.sf.freecol.common.model.Region region)",
+    "name": "addRegion",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "region"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "region"
+        },
+        "comment": "The Region to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSameLocation(net.sf.freecol.common.model.Location l1,net.sf.freecol.common.model.Location l2)",
+    "name": "isSameLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "l1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "l2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "l1"
+        },
+        "comment": "The first Location.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "l2"
+        },
+        "comment": "The second Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the locations are the same or at the same tile.",
+      "kind": "RETURN",
+      "condition": "target.save(java.io.OutputStream, net.sf.freecol.common.io.FreeColXMLWriter$WriteScope, boolean) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSameContiguity(net.sf.freecol.common.model.Location l1,net.sf.freecol.common.model.Location l2)",
+    "name": "isSameContiguity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "l1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "l2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "l1"
+        },
+        "comment": "The first Location.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "l2"
+        },
+        "comment": "The second Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the locations are the same or in the same land/sea-mass.",
+      "kind": "RETURN",
+      "condition": "target.save(java.io.OutputStream, net.sf.freecol.common.io.FreeColXMLWriter$WriteScope, boolean) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isPolar(net.sf.freecol.common.model.Tile tile)",
+    "name": "isPolar",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to examine.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the tile is in a polar region.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDirection(net.sf.freecol.common.model.Tile t1,net.sf.freecol.common.model.Tile t2)",
+    "name": "getDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "t1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "t2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "t1"
+        },
+        "comment": "The tile to move from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "t2"
+        },
+        "comment": "The target tile if moving from t1 in the direction returned by this method.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The direction you need to move from t1 in order to reach t2, or null if the two specified tiles are not neighbours.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRoughDirection(net.sf.freecol.common.model.Tile src,net.sf.freecol.common.model.Tile dst)",
+    "name": "getRoughDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "src"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "dst"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "src"
+        },
+        "comment": "The source Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "dst"
+        },
+        "comment": "The destination Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The approximate direction from source to direction, or null if source and destination are the same.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAdjacentTile(int x,int y,net.sf.freecol.common.model.Direction direction)",
+    "name": "getAdjacentTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The x coordinate to work from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The y coordinate to work from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The adjacent Tile in the specified direction, or null if invalid.",
+      "kind": "RETURN",
+      "condition": "args[0]"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAdjacentTile(net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.Direction direction)",
+    "name": "getAdjacentTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The starting Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "The Direction to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The adjacent Tile in the specified direction, or null if invalid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDistance(net.sf.freecol.common.model.Tile t1,net.sf.freecol.common.model.Tile t2)",
+    "name": "getDistance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "t1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "t2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "t1"
+        },
+        "comment": "The first Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "t2"
+        },
+        "comment": "The second Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The distance between the tiles.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getClosestTile(net.sf.freecol.common.model.Tile tile,java.util.Collection tiles)",
+    "name": "getClosestTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "tiles"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to start from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "tiles"
+        },
+        "comment": "The list of Tiles to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The closest tile found (may be null if the list is empty).",
+      "kind": "RETURN",
+      "condition": "args[1].isEmpty() ? result==null"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomLandTile(java.util.Random random)",
+    "name": "getRandomLandTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A random land tile, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestEntryTile(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.Unit carrier,net.sf.freecol.common.model.pathfinding.CostDecider costDecider)",
+    "name": "getBestEntryTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+          "name": "CostDecider",
+          "isArray": false
+        },
+        "name": "costDecider"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The target Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "An optional carrier Unitto use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+            "name": "CostDecider",
+            "isArray": false
+          },
+          "name": "costDecider"
+        },
+        "comment": "An optional CostDecider to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best entry location tile to arrive on the map at, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "findPath(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Location start,net.sf.freecol.common.model.Location end,net.sf.freecol.common.model.Unit carrier,net.sf.freecol.common.model.pathfinding.CostDecider costDecider,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "findPath",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "end"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+          "name": "CostDecider",
+          "isArray": false
+        },
+        "name": "costDecider"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to find the path for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "The Location in which the path starts from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "The Location at the end of the path.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "An optional naval carrier Unit to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+            "name": "CostDecider",
+            "isArray": false
+          },
+          "name": "costDecider"
+        },
+        "comment": "An optional CostDecider for determining the movement costs (uses default cost deciders for the unit/s if not provided).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "An optional LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A path starting at the start location and ending at the end location, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "findRealStart(net.sf.freecol.common.model.Unit, net.sf.freecol.common.model.Location, net.sf.freecol.common.model.Unit)"
+        ],
+        "comment": "For many reasons, see findRealStart(net.sf.freecol.common.model.Unit, net.sf.freecol.common.model.Location, net.sf.freecol.common.model.Unit).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "search(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Location start,net.sf.freecol.common.model.pathfinding.GoalDecider goalDecider,net.sf.freecol.common.model.pathfinding.CostDecider costDecider,int maxTurns,net.sf.freecol.common.model.Unit carrier,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "search",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+          "name": "GoalDecider",
+          "isArray": false
+        },
+        "name": "goalDecider"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+          "name": "CostDecider",
+          "isArray": false
+        },
+        "name": "costDecider"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxTurns"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to find a path for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "The Location to start the search from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+            "name": "GoalDecider",
+            "isArray": false
+          },
+          "name": "goalDecider"
+        },
+        "comment": "The object responsible for determining whether a given PathNode is a goal or not.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+            "name": "CostDecider",
+            "isArray": false
+          },
+          "name": "costDecider"
+        },
+        "comment": "An optional CostDecider responsible for determining the path cost.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxTurns"
+        },
+        "comment": "The maximum number of turns the given Unit is allowed to move. This is the maximum search range for a goal.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "An optional naval carrier Unit to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "An optional LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The path to a goal, or null if none can be found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If the unit is null, or the start location does not make sense, or the carrier/unit combination is bogus.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getSearchTrace()",
+    "name": "getSearchTrace",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The search tracing status.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setSearchTrace(boolean trace)",
+    "name": "setSearchTrace",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "trace"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "trace"
+        },
+        "comment": "The new search tracing status.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The original search tracing status.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "searchCircle(net.sf.freecol.common.model.Tile start,net.sf.freecol.common.model.pathfinding.GoalDecider goalDecider,int radius)",
+    "name": "searchCircle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+          "name": "GoalDecider",
+          "isArray": false
+        },
+        "name": "goalDecider"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radius"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "The starting Tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+            "name": "GoalDecider",
+            "isArray": false
+          },
+          "name": "goalDecider"
+        },
+        "comment": "A GoalDecider that chooses the goal, which must be capable of tolerating a null unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "radius"
+        },
+        "comment": "The maximum radius of tiles to search from the start.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The goal tile as determined by the, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCircleIterator(net.sf.freecol.common.model.Tile center,boolean isFilled,int radius)",
+    "name": "getCircleIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "center"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isFilled"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radius"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "center"
+        },
+        "comment": "The center Tile to iterate around.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isFilled"
+        },
+        "comment": "True to get all of the positions in the circle.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "radius"
+        },
+        "comment": "The radius of circle.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The circle iterator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCircleTiles(net.sf.freecol.common.model.Tile center,boolean isFilled,int radius)",
+    "name": "getCircleTiles",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Iterable",
+      "name": "Iterable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "center"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isFilled"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radius"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "center"
+        },
+        "comment": "The center Tile to iterate around.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isFilled"
+        },
+        "comment": "True to get all of the positions in the circle.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "radius"
+        },
+        "comment": "The radius of circle.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An Iterable for a circle of tiles.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWholeMapIterator()",
+    "name": "getWholeMapIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An Iterator for the whole map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAllTiles()",
+    "name": "getAllTiles",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Iterable",
+      "name": "Iterable",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An Iterable for all tiles of the map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLandWithinDistance(int x,int y,int distance)",
+    "name": "getLandWithinDistance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "X-component of the position to search from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "Y-component of the position to search from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "The radius in tiles that should be searched for land.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The first land tile found within the radius, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "forSubMap(int x,int y,int w,int h,java.util.function.Consumer consumer)",
+    "name": "forSubMap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "w"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "h"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.function.Consumer",
+          "name": "Consumer",
+          "isArray": false
+        },
+        "name": "consumer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "X-component of the position of first tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "Y-component of the position of first tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "w"
+        },
+        "comment": "Width of the rectangle.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "h"
+        },
+        "comment": "Height of the rectangle.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.function.Consumer",
+            "name": "Consumer",
+            "isArray": false
+          },
+          "name": "consumer"
+        },
+        "comment": "Provides a function to call for each tile.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "floodFill(boolean[][] boolmap,int x,int y)",
+    "name": "floodFill",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean[][]",
+      "name": "boolean[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "boolean",
+        "name": "boolean",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[][]",
+          "name": "boolean[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "boolmap"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[][]",
+            "name": "boolean[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "boolmap"
+        },
+        "comment": "The connectivity information for this floodfill.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The starting x coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The starting y coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A boolean[][] of the same size as boolmap, where \"true\" means the fill succeeded at that location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "floodFill(boolean[][] boolmap,int x,int y,int limit)",
+    "name": "floodFill",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean[][]",
+      "name": "boolean[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "boolean",
+        "name": "boolean",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[][]",
+          "name": "boolean[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "boolmap"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "limit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[][]",
+            "name": "boolean[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "boolmap"
+        },
+        "comment": "The connectivity information for this floodfill.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The starting x coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The starting y coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "limit"
+        },
+        "comment": "Limit to stop flood fill at.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A boolean[][] of the same size as boolmap, where \"true\" means the fill succeeded at that location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "resetContiguity()",
+    "name": "resetContiguity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "resetHighSeas(int distToLandFromHighSeas,int maxDistanceToEdge)",
+    "name": "resetHighSeas",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "distToLandFromHighSeas"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxDistanceToEdge"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "distToLandFromHighSeas"
+        },
+        "comment": "The distance between the land and the high seas (given in tiles).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxDistanceToEdge"
+        },
+        "comment": "The maximum distance a high sea tile can have from the edge of the map.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "resetHighSeasCount()",
+    "name": "resetHighSeasCount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "resetLayers()",
+    "name": "resetLayers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fixupRegions()",
+    "name": "fixupRegions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTile()",
+    "name": "getTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Null.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocationLabel()",
+    "name": "getLocationLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocationLabelFor(net.sf.freecol.common.model.Player player)",
+    "name": "getLocationLabelFor",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(net.sf.freecol.common.model.Locatable locatable)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Locatable",
+          "name": "Locatable",
+          "isArray": false
+        },
+        "name": "locatable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(net.sf.freecol.common.model.Locatable locatable)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Locatable",
+          "name": "Locatable",
+          "isArray": false
+        },
+        "name": "locatable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "contains(net.sf.freecol.common.model.Locatable locatable)",
+    "name": "contains",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Locatable",
+          "name": "Locatable",
+          "isArray": false
+        },
+        "name": "locatable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "canAdd(net.sf.freecol.common.model.Locatable locatable)",
+    "name": "canAdd",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Locatable",
+          "name": "Locatable",
+          "isArray": false
+        },
+        "name": "locatable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnitCount()",
+    "name": "getUnitCount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnitList()",
+    "name": "getUnitList",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnitIterator()",
+    "name": "getUnitIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGoodsContainer()",
+    "name": "getGoodsContainer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.GoodsContainer",
+      "name": "GoodsContainer",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSettlement()",
+    "name": "getSettlement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Settlement",
+      "name": "Settlement",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColony()",
+    "name": "getColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Colony",
+      "name": "Colony",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getIndianSettlement()",
+    "name": "getIndianSettlement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.IndianSettlement",
+      "name": "IndianSettlement",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "up()",
+    "name": "up",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRank()",
+    "name": "getRank",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toShortString()",
+    "name": "toShortString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkIntegrity(boolean fix)",
+    "name": "checkIntegrity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "fix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Map",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"map\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

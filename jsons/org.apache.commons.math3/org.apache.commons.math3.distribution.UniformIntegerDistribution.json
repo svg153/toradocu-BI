@@ -1,0 +1,352 @@
+[
+  {
+    "signature": "UniformIntegerDistribution(int lower,int upper)",
+    "name": "UniformIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "Lower bound (inclusive) of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "Upper bound (inclusive) of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "UniformIntegerDistribution(org.apache.commons.math3.random.RandomGenerator rng,int lower,int upper)",
+    "name": "UniformIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "Lower bound (inclusive) of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "Upper bound (inclusive) of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower > upper"
+        ],
+        "comment": "if lower > upper.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[2]"
+      }
+    ]
+  },
+  {
+    "signature": "probability(int x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+      "name": "UniformIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.UniformIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

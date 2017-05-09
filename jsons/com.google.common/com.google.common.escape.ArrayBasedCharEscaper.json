@@ -1,0 +1,273 @@
+[
+  {
+    "signature": "ArrayBasedCharEscaper(java.util.Map replacementMap,char safeMin,char safeMax)",
+    "name": "ArrayBasedCharEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.ArrayBasedCharEscaper",
+      "name": "ArrayBasedCharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.ArrayBasedCharEscaper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "replacementMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "safeMin"
+      },
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "safeMax"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "replacementMap"
+        },
+        "comment": "a map of characters to their escaped representations",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "safeMin"
+        },
+        "comment": "the lowest character value in the safe range",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "safeMax"
+        },
+        "comment": "the highest character value in the safe range",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ArrayBasedCharEscaper(com.google.common.escape.ArrayBasedEscaperMap escaperMap,char safeMin,char safeMax)",
+    "name": "ArrayBasedCharEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.ArrayBasedCharEscaper",
+      "name": "ArrayBasedCharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.ArrayBasedCharEscaper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.escape.ArrayBasedEscaperMap",
+          "name": "ArrayBasedEscaperMap",
+          "isArray": false
+        },
+        "name": "escaperMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "safeMin"
+      },
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "safeMax"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.escape.ArrayBasedEscaperMap",
+            "name": "ArrayBasedEscaperMap",
+            "isArray": false
+          },
+          "name": "escaperMap"
+        },
+        "comment": "the mapping of characters to be escaped",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "safeMin"
+        },
+        "comment": "the lowest character value in the safe range",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "safeMax"
+        },
+        "comment": "the highest character value in the safe range",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(java.lang.String s)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.ArrayBasedCharEscaper",
+      "name": "ArrayBasedCharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.ArrayBasedCharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(char c)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.ArrayBasedCharEscaper",
+      "name": "ArrayBasedCharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.ArrayBasedCharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char[]",
+      "name": "char[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "char",
+        "name": "char",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escapeUnsafe(char c)",
+    "name": "escapeUnsafe",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.ArrayBasedCharEscaper",
+      "name": "ArrayBasedCharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.ArrayBasedCharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char[]",
+      "name": "char[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "char",
+        "name": "char",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the character to escape",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the replacement characters, or null if no escaping was required",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

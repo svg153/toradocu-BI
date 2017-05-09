@@ -1,0 +1,213 @@
+[
+  {
+    "signature": "ParameterJacobianWrapper(org.apache.commons.math3.ode.FirstOrderDifferentialEquations fode,org.apache.commons.math3.ode.ParameterizedODE pode,org.apache.commons.math3.ode.ParameterConfiguration[] paramsAndSteps)",
+    "name": "ParameterJacobianWrapper",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+      "name": "ParameterJacobianWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+          "name": "FirstOrderDifferentialEquations",
+          "isArray": false
+        },
+        "name": "fode"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ParameterizedODE",
+          "name": "ParameterizedODE",
+          "isArray": false
+        },
+        "name": "pode"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ParameterConfiguration[]",
+          "name": "ParameterConfiguration[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ode.ParameterConfiguration",
+            "name": "ParameterConfiguration",
+            "isArray": false
+          }
+        },
+        "name": "paramsAndSteps"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+            "name": "FirstOrderDifferentialEquations",
+            "isArray": false
+          },
+          "name": "fode"
+        },
+        "comment": "main first order differential equations set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ParameterizedODE",
+            "name": "ParameterizedODE",
+            "isArray": false
+          },
+          "name": "pode"
+        },
+        "comment": "secondary problem, without parameter Jacobian computation skill",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ParameterConfiguration[]",
+            "name": "ParameterConfiguration[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ode.ParameterConfiguration",
+              "name": "ParameterConfiguration",
+              "isArray": false
+            }
+          },
+          "name": "paramsAndSteps"
+        },
+        "comment": "parameters and steps to compute the Jacobians df/dp",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getParametersNames()",
+    "name": "getParametersNames",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+      "name": "ParameterJacobianWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupported(java.lang.String name)",
+    "name": "isSupported",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+      "name": "ParameterJacobianWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeParameterJacobian(double t,double[] y,double[] yDot,java.lang.String paramName,double[] dFdP)",
+    "name": "computeParameterJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+      "name": "ParameterJacobianWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterJacobianWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "paramName"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dFdP"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

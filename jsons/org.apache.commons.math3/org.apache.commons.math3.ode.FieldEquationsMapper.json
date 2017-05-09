@@ -1,0 +1,555 @@
+[
+  {
+    "signature": "FieldEquationsMapper(org.apache.commons.math3.ode.FieldEquationsMapper mapper,int dimension)",
+    "name": "FieldEquationsMapper",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+          "name": "FieldEquationsMapper",
+          "isArray": false
+        },
+        "name": "mapper"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+            "name": "FieldEquationsMapper",
+            "isArray": false
+          },
+          "name": "mapper"
+        },
+        "comment": "former mapper, with one equation less (null for first equation)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "dimension of the equation state vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumberOfEquations()",
+    "name": "getNumberOfEquations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of equations mapped",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTotalDimension()",
+    "name": "getTotalDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the complete set of equations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "mapState(org.apache.commons.math3.ode.FieldODEState state)",
+    "name": "mapState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+          "name": "FieldODEState",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEState",
+            "name": "FieldODEState",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "state to map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "flat array containing the mapped state, including primary and secondary components",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "mapDerivative(org.apache.commons.math3.ode.FieldODEStateAndDerivative state)",
+    "name": "mapDerivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "state to map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "flat array containing the mapped state derivative, including primary and secondary components",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "mapStateAndDerivative(org.apache.commons.math3.RealFieldElement t,org.apache.commons.math3.RealFieldElement[] y,org.apache.commons.math3.RealFieldElement[] yDot)",
+    "name": "mapStateAndDerivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "time",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "state array to map, including primary and secondary components",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "yDot"
+        },
+        "comment": "state derivative array to map, including primary and secondary components",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "mapped state",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an array does not match total dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "extractEquationData(int index,org.apache.commons.math3.RealFieldElement[] complete)",
+    "name": "extractEquationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "complete"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the equation, must be between 0 included and getNumberOfEquations() (excluded)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "complete"
+        },
+        "comment": "complete state or derivative array from which equation data should be retrieved",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "equation data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if index is out of range",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if complete state has not enough elements",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "insertEquationData(int index,org.apache.commons.math3.RealFieldElement[] equationData,org.apache.commons.math3.RealFieldElement[] complete)",
+    "name": "insertEquationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldEquationsMapper",
+      "name": "FieldEquationsMapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.FieldEquationsMapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "equationData"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+          "name": "RealFieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          }
+        },
+        "name": "complete"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the equation, must be between 0 included and getNumberOfEquations() (excluded)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "equationData"
+        },
+        "comment": "equation data to be inserted into the complete array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement[]",
+            "name": "RealFieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+              "name": "RealFieldElement",
+              "isArray": false
+            }
+          },
+          "name": "complete"
+        },
+        "comment": "placeholder where to put equation data (only the part corresponding to the equation will be overwritten)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either array has not enough elements",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "signature": "getGoal()",
+    "name": "getGoal",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The PathNode where the Tile returned by pathNode.getTile() is the goal.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasSubGoals()",
+    "name": "hasSubGoals",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if there are any sub goals and false otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "check(net.sf.freecol.common.model.Unit u,net.sf.freecol.common.model.PathNode pathNode)",
+    "name": "check",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+      "name": "GoalDecider",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "u"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.PathNode",
+          "name": "PathNode",
+          "isArray": false
+        },
+        "name": "pathNode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "The Unit which we are trying to find a path for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.PathNode",
+            "name": "PathNode",
+            "isArray": false
+          },
+          "name": "pathNode"
+        },
+        "comment": "The PathNode where the Tile returned by pathNode.getTile() is the tile to be checked.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the PathNode was either a goal or a sub goal and false otherwise. The goal should be returned by getGoal() right after a call to this method, if this method returns true and hasSubGoals() returns false.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

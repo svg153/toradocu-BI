@@ -1,0 +1,129 @@
+[
+  {
+    "signature": "SZAResource(java.net.URI resourceLocator)",
+    "name": "SZAResource",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.SZAResource",
+      "name": "SZAResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.SZAResource",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URI",
+          "name": "URI",
+          "isArray": false
+        },
+        "name": "resourceLocator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URI",
+            "name": "URI",
+            "isArray": false
+          },
+          "name": "resourceLocator"
+        },
+        "comment": "The URI used when loading this resource.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "preload()",
+    "name": "preload",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.SZAResource",
+      "name": "SZAResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.SZAResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSimpleZippedAnimation()",
+    "name": "getSimpleZippedAnimation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.SZAResource",
+      "name": "SZAResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.SZAResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.io.sza.SimpleZippedAnimation",
+      "name": "SimpleZippedAnimation",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The SimpleZippedAnimation in it's original size.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSimpleZippedAnimation(float scale)",
+    "name": "getSimpleZippedAnimation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.SZAResource",
+      "name": "SZAResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.SZAResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.io.sza.SimpleZippedAnimation",
+      "name": "SimpleZippedAnimation",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "The size of the requested animation (with 1 being normal size, 2 twice the size, 0.5 half the size etc). Rescaling will be performed unless using 1.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The SimpleZippedAnimation.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getSimpleZippedAnimation())"
+    },
+    "throwsTags": []
+  }
+]

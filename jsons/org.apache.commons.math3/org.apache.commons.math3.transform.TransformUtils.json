@@ -1,0 +1,365 @@
+[
+  {
+    "signature": "scaleArray(double[] f,double d)",
+    "name": "scaleArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.TransformUtils",
+      "name": "TransformUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.TransformUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "the real array to be scaled",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "the real scaling coefficient",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a reference to the scaled array",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "scaleArray(org.apache.commons.math3.complex.Complex[] f,double d)",
+    "name": "scaleArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.TransformUtils",
+      "name": "TransformUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.TransformUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+          "name": "Complex[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex",
+            "name": "Complex",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+            "name": "Complex[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.complex.Complex",
+              "name": "Complex",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "the complex array to be scaled",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "the real scaling coefficient",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a reference to the scaled array",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createRealImaginaryArray(org.apache.commons.math3.complex.Complex[] dataC)",
+    "name": "createRealImaginaryArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.TransformUtils",
+      "name": "TransformUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.TransformUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+          "name": "Complex[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex",
+            "name": "Complex",
+            "isArray": false
+          }
+        },
+        "name": "dataC"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+            "name": "Complex[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.complex.Complex",
+              "name": "Complex",
+              "isArray": false
+            }
+          },
+          "name": "dataC"
+        },
+        "comment": "the array of Complex data to be transformed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a two dimensional array filled with the real and imaginary parts of the specified complex input",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createComplexArray(double[][] dataRI)",
+    "name": "createComplexArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.TransformUtils",
+      "name": "TransformUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.TransformUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dataRI"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dataRI"
+        },
+        "comment": "the array of real and imaginary parts to be transformed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array of Complex with specified real and imaginary parts.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of rows of the specified array is not two, or the array is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "exactLog2(int n)",
+    "name": "exactLog2",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.TransformUtils",
+      "name": "TransformUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.TransformUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the int whose base-2 logarithm is to be evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the base-2 logarithm of n",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n"
+        ],
+        "comment": "if n is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

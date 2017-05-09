@@ -1,0 +1,222 @@
+[
+  {
+    "signature": "MultivariateFunctionPenaltyAdapter(org.apache.commons.math3.analysis.MultivariateFunction bounded,double[] lower,double[] upper,double offset,double[] scale)",
+    "name": "MultivariateFunctionPenaltyAdapter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapter",
+      "name": "MultivariateFunctionPenaltyAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "bounded"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "upper"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "offset"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+            "name": "MultivariateFunction",
+            "isArray": false
+          },
+          "name": "bounded"
+        },
+        "comment": "bounded function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "lower"
+        },
+        "comment": "lower bounds for each element of the input parameters array (some elements may be set to Double.NEGATIVE_INFINITY for unbounded values)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "upper"
+        },
+        "comment": "upper bounds for each element of the input parameters array (some elements may be set to Double.POSITIVE_INFINITY for unbounded values)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "offset"
+        },
+        "comment": "base offset of the penalty function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "scale"
+        },
+        "comment": "scale of the penalty function",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if lower bounds, upper bounds and scales are not consistent, either according to dimension or to bounadary values",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double[] point)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapter",
+      "name": "MultivariateFunctionPenaltyAdapter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "unbounded point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "either underlying function value or penalty function value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

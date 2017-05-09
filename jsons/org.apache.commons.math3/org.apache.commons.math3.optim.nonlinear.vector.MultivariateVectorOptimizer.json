@@ -1,0 +1,322 @@
+[
+  {
+    "signature": "MultivariateVectorOptimizer(org.apache.commons.math3.optim.ConvergenceChecker checker)",
+    "name": "MultivariateVectorOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeObjectiveValue(double[] params)",
+    "name": "computeObjectiveValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "params"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "params"
+        },
+        "comment": "Point at which the objective function must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the objective function value at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations (of the model vector function) is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.PointVectorValuePair",
+      "name": "PointVectorValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. In addition to those documented in BaseMultivariateOptimizer, this method will register the following data: Target Weight ModelFunction",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a point/value pair that satisfies the convergence criteria.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the initial guess, target, and weight arguments have inconsistent dimensions.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getWeight()",
+    "name": "getWeight",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the weight matrix.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTarget()",
+    "name": "getTarget",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the target values.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTargetSize()",
+    "name": "getTargetSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the length of the target vector.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "parseOptimizationData(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "parseOptimizationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+      "name": "MultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.MultivariateVectorOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: Target Weight ModelFunction",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

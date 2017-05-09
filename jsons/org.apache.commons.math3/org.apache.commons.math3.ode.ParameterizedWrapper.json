@@ -1,0 +1,301 @@
+[
+  {
+    "signature": "ParameterizedWrapper(org.apache.commons.math3.ode.FirstOrderDifferentialEquations ode)",
+    "name": "ParameterizedWrapper",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+          "name": "FirstOrderDifferentialEquations",
+          "isArray": false
+        },
+        "name": "ode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+            "name": "FirstOrderDifferentialEquations",
+            "isArray": false
+          },
+          "name": "ode"
+        },
+        "comment": "original first order differential equations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the underlying FODE",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeDerivatives(double t,double[] y,double[] yDot)",
+    "name": "computeDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "current value of the independent time variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "array containing the current value of the state vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yDot"
+        },
+        "comment": "placeholder array where to put the time derivative of the state vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if arrays dimensions do not match equations settings",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getParametersNames()",
+    "name": "getParametersNames",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupported(java.lang.String name)",
+    "name": "isSupported",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getParameter(java.lang.String name)",
+    "name": "getParameter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setParameter(java.lang.String name,double value)",
+    "name": "setParameter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ParameterizedWrapper",
+      "name": "ParameterizedWrapper",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ParameterizedWrapper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

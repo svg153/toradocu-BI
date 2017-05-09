@@ -1,0 +1,756 @@
+[
+  {
+    "signature": "CollatingIterator()",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "CollatingIterator(java.util.Comparator comp)",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the comparator to use to sort; must not be null, unless you'll be invoking setComparator(Comparator) later on.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "CollatingIterator(java.util.Comparator comp,int initIterCapacity)",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "initIterCapacity"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the comparator to use to sort; must not be null, unless you'll be invoking setComparator(Comparator) later on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "initIterCapacity"
+        },
+        "comment": "the initial capacity for the internal list of child iterators",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "CollatingIterator(java.util.Comparator comp,java.util.Iterator a,java.util.Iterator b)",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the comparator to use to sort; must not be null, unless you'll be invoking setComparator(Comparator) later on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the first child ordered iterator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "the second child ordered iterator",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either iterator is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      }
+    ]
+  },
+  {
+    "signature": "CollatingIterator(java.util.Comparator comp,java.util.Iterator[] iterators)",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator[]",
+          "name": "Iterator[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          }
+        },
+        "name": "iterators"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the comparator to use to sort; must not be null, unless you'll be invoking setComparator(Comparator) later on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator[]",
+            "name": "Iterator[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.util.Iterator",
+              "name": "Iterator",
+              "isArray": false
+            }
+          },
+          "name": "iterators"
+        },
+        "comment": "the array of iterators",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if iterators array is or contains null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "CollatingIterator(java.util.Comparator comp,java.util.Collection iterators)",
+    "name": "CollatingIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "iterators"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the comparator to use to sort; must not be null, unless you'll be invoking setComparator(Comparator) later on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "iterators"
+        },
+        "comment": "the collection of iterators",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the iterators collection is or contains null",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[1].contains(null)"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Iterator"
+        ],
+        "comment": "if the iterators collection contains an element that's not an Iterator",
+        "kind": "THROWS",
+        "condition": "args[1].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "addIterator(java.util.Iterator iterator)",
+    "name": "addIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator to add to the collation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if iteration has started",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the iterator is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "setIterator(int index,java.util.Iterator iterator)",
+    "name": "setIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the Iterator to replace",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "Iterator to place at the given index",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if index < 0 or index > size()",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if iteration has started",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the iterator is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getIterators()",
+    "name": "getIterators",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the unmodifiable list of iterators added",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getComparator()",
+    "name": "getComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the Comparator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setComparator(java.util.Comparator comp)",
+    "name": "setComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comp"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comp"
+        },
+        "comment": "the Comparator to set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if iteration has started",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if this iterator has remaining elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next ordered element",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no child iterator has any more elements",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is no last returned element, or if the last returned element has already been removed",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getIteratorIndex()",
+    "name": "getIteratorIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.CollatingIterator",
+      "name": "CollatingIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.CollatingIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the index of the iterator that returned the last element",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is no last returned element",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

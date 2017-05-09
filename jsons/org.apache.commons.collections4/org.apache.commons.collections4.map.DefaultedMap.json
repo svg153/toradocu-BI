@@ -1,0 +1,414 @@
+[
+  {
+    "signature": "DefaultedMap(java.lang.Object defaultValue)",
+    "name": "DefaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "defaultValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "defaultValue"
+        },
+        "comment": "the default value to return when the key is not found",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "DefaultedMap(org.apache.commons.collections4.Transformer defaultValueTransformer)",
+    "name": "DefaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "defaultValueTransformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "defaultValueTransformer"
+        },
+        "comment": "transformer to use to generate missing values.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "DefaultedMap(java.util.Map map,org.apache.commons.collections4.Transformer defaultValueTransformer)",
+    "name": "DefaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "defaultValueTransformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "defaultValueTransformer"
+        },
+        "comment": "the value transformer to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if map or transformer is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "defaultedMap(java.util.Map map,java.lang.Object defaultValue)",
+    "name": "defaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "defaultValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "defaultValue"
+        },
+        "comment": "the default value to return when the key is not found",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new defaulting map",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.get(java.lang.Object))"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if map is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "defaultedMap(java.util.Map map,org.apache.commons.collections4.Factory factory)",
+    "name": "defaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Factory",
+          "name": "Factory",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Factory",
+            "name": "Factory",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "the factory to use to create entries, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new defaulting map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if map or factory is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "defaultedMap(java.util.Map map,org.apache.commons.collections4.Transformer transformer)",
+    "name": "defaultedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "transformer"
+        },
+        "comment": "the transformer to use as a factory to create entries, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new defaulting map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if map or factory is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.DefaultedMap",
+      "name": "DefaultedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.DefaultedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

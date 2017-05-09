@@ -1,0 +1,116 @@
+[
+  {
+    "signature": "SmoothedDataHistogram(int smoothingBins,org.apache.commons.math3.ml.distance.DistanceMeasure distance)",
+    "name": "SmoothedDataHistogram",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.util.SmoothedDataHistogram",
+      "name": "SmoothedDataHistogram",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.util.SmoothedDataHistogram",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "smoothingBins"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "distance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "smoothingBins"
+        },
+        "comment": "Number of bins.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "distance"
+        },
+        "comment": "Distance.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeImage(org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D map,java.lang.Iterable data)",
+    "name": "computeImage",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.util.SmoothedDataHistogram",
+      "name": "SmoothedDataHistogram",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.util.SmoothedDataHistogram",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+          "name": "NeuronSquareMesh2D",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "map",
+          "smoothing bins"
+        ],
+        "comment": "if the size of the map is smaller than the number of smoothing bins.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

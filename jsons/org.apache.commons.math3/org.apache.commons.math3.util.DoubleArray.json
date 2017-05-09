@@ -1,0 +1,354 @@
+[
+  {
+    "signature": "getNumElements()",
+    "name": "getNumElements",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getElement(int index)",
+    "name": "getElement",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index to fetch a value from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "value stored at the specified index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArrayIndexOutOfBoundsException",
+          "name": "ArrayIndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "getNumElements() - 1"
+        ],
+        "comment": "if index is less than zero or is greater than getNumElements() - 1.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "setElement(int index,double value)",
+    "name": "setElement",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index to store a value in",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "value to store at the specified index",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArrayIndexOutOfBoundsException",
+          "name": "ArrayIndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index"
+        ],
+        "comment": "if index is less than zero.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "addElement(double value)",
+    "name": "addElement",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "to be added to end of array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addElements(double[] values)",
+    "name": "addElements",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "to be added to end of array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addElementRolling(double value)",
+    "name": "addElementRolling",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to be added to the array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value which has been discarded or \"pushed\" out of the array by this rolling insert",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getElements()",
+    "name": "getElements",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "all elements added to the array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.DoubleArray",
+      "name": "DoubleArray",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.DoubleArray",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

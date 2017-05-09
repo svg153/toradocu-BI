@@ -1,0 +1,460 @@
+[
+  {
+    "signature": "GeneticAlgorithm(org.apache.commons.math3.genetics.CrossoverPolicy crossoverPolicy,double crossoverRate,org.apache.commons.math3.genetics.MutationPolicy mutationPolicy,double mutationRate,org.apache.commons.math3.genetics.SelectionPolicy selectionPolicy)",
+    "name": "GeneticAlgorithm",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.CrossoverPolicy",
+          "name": "CrossoverPolicy",
+          "isArray": false
+        },
+        "name": "crossoverPolicy"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "crossoverRate"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.MutationPolicy",
+          "name": "MutationPolicy",
+          "isArray": false
+        },
+        "name": "mutationPolicy"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mutationRate"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.SelectionPolicy",
+          "name": "SelectionPolicy",
+          "isArray": false
+        },
+        "name": "selectionPolicy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.CrossoverPolicy",
+            "name": "CrossoverPolicy",
+            "isArray": false
+          },
+          "name": "crossoverPolicy"
+        },
+        "comment": "The CrossoverPolicy",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "crossoverRate"
+        },
+        "comment": "The crossover rate as a percentage (0-1 inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.MutationPolicy",
+            "name": "MutationPolicy",
+            "isArray": false
+          },
+          "name": "mutationPolicy"
+        },
+        "comment": "The MutationPolicy",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mutationRate"
+        },
+        "comment": "The mutation rate as a percentage (0-1 inclusive)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.SelectionPolicy",
+            "name": "SelectionPolicy",
+            "isArray": false
+          },
+          "name": "selectionPolicy"
+        },
+        "comment": "The SelectionPolicy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the crossover or mutation rate is outside the [0, 1] range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setRandomGenerator(org.apache.commons.math3.random.RandomGenerator random)",
+    "name": "setRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "random generator",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomGenerator()",
+    "name": "getRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+      "name": "RandomGenerator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the static random generator shared by GA implementation classes",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evolve(org.apache.commons.math3.genetics.Population initial,org.apache.commons.math3.genetics.StoppingCondition condition)",
+    "name": "evolve",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.Population",
+      "name": "Population",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Population",
+          "name": "Population",
+          "isArray": false
+        },
+        "name": "initial"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.StoppingCondition",
+          "name": "StoppingCondition",
+          "isArray": false
+        },
+        "name": "condition"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.Population",
+            "name": "Population",
+            "isArray": false
+          },
+          "name": "initial"
+        },
+        "comment": "the initial, seed population.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.StoppingCondition",
+            "name": "StoppingCondition",
+            "isArray": false
+          },
+          "name": "condition"
+        },
+        "comment": "the stopping condition used to stop evolution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the population that satisfies the stopping condition.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nextGeneration(org.apache.commons.math3.genetics.Population current)",
+    "name": "nextGeneration",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.Population",
+      "name": "Population",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Population",
+          "name": "Population",
+          "isArray": false
+        },
+        "name": "current"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.genetics.Population",
+            "name": "Population",
+            "isArray": false
+          },
+          "name": "current"
+        },
+        "comment": "the current population.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the population for the next generation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCrossoverPolicy()",
+    "name": "getCrossoverPolicy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.CrossoverPolicy",
+      "name": "CrossoverPolicy",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "crossover policy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCrossoverRate()",
+    "name": "getCrossoverRate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "crossover rate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMutationPolicy()",
+    "name": "getMutationPolicy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.MutationPolicy",
+      "name": "MutationPolicy",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "mutation policy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMutationRate()",
+    "name": "getMutationRate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "mutation rate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSelectionPolicy()",
+    "name": "getSelectionPolicy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.SelectionPolicy",
+      "name": "SelectionPolicy",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "selection policy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGenerationsEvolved()",
+    "name": "getGenerationsEvolved",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+      "name": "GeneticAlgorithm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.GeneticAlgorithm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of generations evolved",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

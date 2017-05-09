@@ -1,0 +1,308 @@
+[
+  {
+    "signature": "ImageResource(java.net.URI resourceLocator)",
+    "name": "ImageResource",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URI",
+          "name": "URI",
+          "isArray": false
+        },
+        "name": "resourceLocator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URI",
+            "name": "URI",
+            "isArray": false
+          },
+          "name": "resourceLocator"
+        },
+        "comment": "The URI used when loading this resource.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "preload()",
+    "name": "preload",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "clean()",
+    "name": "clean",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getImage()",
+    "name": "getImage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.awt.image.BufferedImage",
+      "name": "BufferedImage",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The image in it's original size.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getImage(float scale)",
+    "name": "getImage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.awt.image.BufferedImage",
+      "name": "BufferedImage",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "The size of the requested image (with 1 being normal size, 2 twice the size, 0.5 half the size etc).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The scaled BufferedImage.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getImage(java.awt.Dimension d)",
+    "name": "getImage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.awt.image.BufferedImage",
+      "name": "BufferedImage",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.awt.Dimension",
+          "name": "Dimension",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.awt.Dimension",
+            "name": "Dimension",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "The Dimension of the requested image. Rescaling will be performed if necessary.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The BufferedImage with the required dimension.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGrayscaleImage(java.awt.Dimension d)",
+    "name": "getGrayscaleImage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.awt.image.BufferedImage",
+      "name": "BufferedImage",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.awt.Dimension",
+          "name": "Dimension",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.awt.Dimension",
+            "name": "Dimension",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "The requested size.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The BufferedImage.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGrayscaleImage(float scale)",
+    "name": "getGrayscaleImage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.awt.image.BufferedImage",
+      "name": "BufferedImage",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "The size of the requested image (with 1 being normal size, 2 twice the size, 0.5 half the size etc). Rescaling will be performed unless using 1.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The BufferedImage.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCount()",
+    "name": "getCount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.resources.ImageResource",
+      "name": "ImageResource",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.resources.ImageResource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

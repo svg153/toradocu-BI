@@ -1,0 +1,218 @@
+[
+  {
+    "signature": "StorelessBivariateCovariance()",
+    "name": "StorelessBivariateCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "StorelessBivariateCovariance(boolean biasCorrection)",
+    "name": "StorelessBivariateCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "biasCorrection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "biasCorrection"
+        },
+        "comment": "if true the covariance estimate is corrected for bias, i.e. n-1 in the denominator, otherwise there is no bias correction, i.e. n in the denominator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "increment(double x,double y)",
+    "name": "increment",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the x value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "the y value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "append(org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance cov)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+          "name": "StorelessBivariateCovariance",
+          "isArray": false
+        },
+        "name": "cov"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+            "name": "StorelessBivariateCovariance",
+            "isArray": false
+          },
+          "name": "cov"
+        },
+        "comment": "StorelessBivariateCovariance instance to append.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of observations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getResult()",
+    "name": "getResult",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+      "name": "StorelessBivariateCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessBivariateCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the current covariance",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of observations is < 2",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "signature": "nullEscaper()",
+    "name": "nullEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escapers",
+      "name": "Escapers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escapers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.escape.Escaper",
+      "name": "Escaper",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "builder()",
+    "name": "builder",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escapers",
+      "name": "Escapers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escapers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.escape.Escapers.Builder",
+      "name": "Builder",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asUnicodeEscaper(com.google.common.escape.Escaper escaper)",
+    "name": "asUnicodeEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escapers",
+      "name": "Escapers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escapers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.escape.UnicodeEscaper",
+      "name": "UnicodeEscaper",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.escape.Escaper",
+          "name": "Escaper",
+          "isArray": false
+        },
+        "name": "escaper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.escape.Escaper",
+            "name": "Escaper",
+            "isArray": false
+          },
+          "name": "escaper"
+        },
+        "comment": "the instance to be wrapped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a UnicodeEscaper with the same behavior as the given instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if escaper is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if escaper is not a UnicodeEscaper or a CharEscaper",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeReplacement(com.google.common.escape.CharEscaper escaper,char c)",
+    "name": "computeReplacement",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escapers",
+      "name": "Escapers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escapers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.escape.CharEscaper",
+          "name": "CharEscaper",
+          "isArray": false
+        },
+        "name": "escaper"
+      },
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the character to escape if necessary",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the replacement string, or null if no escaping was needed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeReplacement(com.google.common.escape.UnicodeEscaper escaper,int cp)",
+    "name": "computeReplacement",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escapers",
+      "name": "Escapers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escapers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.escape.UnicodeEscaper",
+          "name": "UnicodeEscaper",
+          "isArray": false
+        },
+        "name": "escaper"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "cp"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "cp"
+        },
+        "comment": "the Unicode code point to escape if necessary",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the replacement string, or null if no escaping was needed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

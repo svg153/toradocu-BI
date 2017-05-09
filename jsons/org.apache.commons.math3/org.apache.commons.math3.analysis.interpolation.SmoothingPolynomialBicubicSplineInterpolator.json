@@ -1,0 +1,194 @@
+[
+  {
+    "signature": "SmoothingPolynomialBicubicSplineInterpolator()",
+    "name": "SmoothingPolynomialBicubicSplineInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+      "name": "SmoothingPolynomialBicubicSplineInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "SmoothingPolynomialBicubicSplineInterpolator(int degree)",
+    "name": "SmoothingPolynomialBicubicSplineInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+      "name": "SmoothingPolynomialBicubicSplineInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "degree"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "degree"
+        },
+        "comment": "Degree of the polynomial fitting functions.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if degree is not positive",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "SmoothingPolynomialBicubicSplineInterpolator(int xDegree,int yDegree)",
+    "name": "SmoothingPolynomialBicubicSplineInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+      "name": "SmoothingPolynomialBicubicSplineInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "xDegree"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "yDegree"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "xDegree"
+        },
+        "comment": "Degree of the polynomial fitting functions along the x-dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "yDegree"
+        },
+        "comment": "Degree of the polynomial fitting functions along the y-dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if degrees are not positive",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false || (args[1]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "interpolate(double[] xval,double[] yval,double[][] fval)",
+    "name": "interpolate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+      "name": "SmoothingPolynomialBicubicSplineInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.BicubicSplineInterpolatingFunction",
+      "name": "BicubicSplineInterpolatingFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "xval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "fval"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

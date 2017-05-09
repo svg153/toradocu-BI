@@ -1,0 +1,270 @@
+[
+  {
+    "signature": "LUDecomposition(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "LUDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "LUDecomposition(org.apache.commons.math3.linear.RealMatrix matrix,double singularityThreshold)",
+    "name": "LUDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "singularityThreshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "The matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "singularityThreshold"
+        },
+        "comment": "threshold (based on partial row norm) under which a matrix is considered singular",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getL()",
+    "name": "getL",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the L matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getU()",
+    "name": "getU",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the U matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getP()",
+    "name": "getP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the P rows permutation matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPivot()",
+    "name": "getPivot",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the pivot permutation vector",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDeterminant()",
+    "name": "getDeterminant",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "determinant of the matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolver()",
+    "name": "getSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.LUDecomposition",
+      "name": "LUDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.LUDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DecompositionSolver",
+      "name": "DecompositionSolver",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a solver",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  }
+]

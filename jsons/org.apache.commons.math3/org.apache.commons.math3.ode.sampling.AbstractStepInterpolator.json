@@ -1,0 +1,1079 @@
+[
+  {
+    "signature": "AbstractStepInterpolator()",
+    "name": "AbstractStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractStepInterpolator(double[] y,boolean forward,org.apache.commons.math3.ode.EquationsMapper primaryMapper,org.apache.commons.math3.ode.EquationsMapper[] secondaryMappers)",
+    "name": "AbstractStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "forward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+          "name": "EquationsMapper",
+          "isArray": false
+        },
+        "name": "primaryMapper"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+          "name": "EquationsMapper[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          }
+        },
+        "name": "secondaryMappers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "reference to the integrator array holding the state at the end of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "forward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          },
+          "name": "primaryMapper"
+        },
+        "comment": "equations mapper for the primary equations set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+            "name": "EquationsMapper[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+              "name": "EquationsMapper",
+              "isArray": false
+            }
+          },
+          "name": "secondaryMappers"
+        },
+        "comment": "equations mappers for the secondary equations sets",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractStepInterpolator(org.apache.commons.math3.ode.sampling.AbstractStepInterpolator interpolator)",
+    "name": "AbstractStepInterpolator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+          "name": "AbstractStepInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+            "name": "AbstractStepInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "interpolator to copy from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "reinitialize(double[] y,boolean isForward,org.apache.commons.math3.ode.EquationsMapper primary,org.apache.commons.math3.ode.EquationsMapper[] secondary)",
+    "name": "reinitialize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isForward"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+          "name": "EquationsMapper",
+          "isArray": false
+        },
+        "name": "primary"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+          "name": "EquationsMapper[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          }
+        },
+        "name": "secondary"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "reference to the integrator array holding the state at the end of the step",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isForward"
+        },
+        "comment": "integration direction indicator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+            "name": "EquationsMapper",
+            "isArray": false
+          },
+          "name": "primary"
+        },
+        "comment": "equations mapper for the primary equations set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+            "name": "EquationsMapper[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+              "name": "EquationsMapper",
+              "isArray": false
+            }
+          },
+          "name": "secondary"
+        },
+        "comment": "equations mappers for the secondary equations sets",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doCopy()",
+    "name": "doCopy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of the finalized instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "shift()",
+    "name": "shift",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "storeTime(double t)",
+    "name": "storeTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "current time",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setSoftPreviousTime(double softPreviousTime)",
+    "name": "setSoftPreviousTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "softPreviousTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "softPreviousTime"
+        },
+        "comment": "start of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setSoftCurrentTime(double softCurrentTime)",
+    "name": "setSoftCurrentTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "softCurrentTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "softCurrentTime"
+        },
+        "comment": "end of the restricted step",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGlobalPreviousTime()",
+    "name": "getGlobalPreviousTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "previous global grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGlobalCurrentTime()",
+    "name": "getGlobalCurrentTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current global grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPreviousTime()",
+    "name": "getPreviousTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "previous soft grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentTime()",
+    "name": "getCurrentTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current soft grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedTime()",
+    "name": "getInterpolatedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setInterpolatedTime(double time)",
+    "name": "setInterpolatedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "time"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isForward()",
+    "name": "isForward",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeInterpolatedStateAndDerivatives(double theta,double oneMinusThetaH)",
+    "name": "computeInterpolatedStateAndDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "theta"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "oneMinusThetaH"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "theta"
+        },
+        "comment": "normalized interpolation abscissa within the step (theta is zero at the previous time step and one at the current time step)",
+        "kind": "PARAM",
+        "condition": "args[0]==0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "oneMinusThetaH"
+        },
+        "comment": "time gap between the interpolated time and the current time",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInterpolatedState()",
+    "name": "getInterpolatedState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedDerivatives()",
+    "name": "getInterpolatedDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedSecondaryState(int index)",
+    "name": "getInterpolatedSecondaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedSecondaryDerivatives(int index)",
+    "name": "getInterpolatedSecondaryDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "finalizeStep()",
+    "name": "finalizeStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "doFinalize()",
+    "name": "doFinalize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "writeExternal(java.io.ObjectOutput out)",
+    "name": "writeExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutput",
+          "name": "ObjectOutput",
+          "isArray": false
+        },
+        "name": "out"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readExternal(java.io.ObjectInput in)",
+    "name": "readExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInput",
+          "name": "ObjectInput",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeBaseExternal(java.io.ObjectOutput out)",
+    "name": "writeBaseExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutput",
+          "name": "ObjectOutput",
+          "isArray": false
+        },
+        "name": "out"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectOutput",
+            "name": "ObjectOutput",
+            "isArray": false
+          },
+          "name": "out"
+        },
+        "comment": "stream where to save the state",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in case of write error",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readBaseExternal(java.io.ObjectInput in)",
+    "name": "readBaseExternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+      "name": "AbstractStepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.AbstractStepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInput",
+          "name": "ObjectInput",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectInput",
+            "name": "ObjectInput",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "stream where to read the state from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "interpolated time to be set later by the caller",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in case of read error",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassNotFoundException",
+          "name": "ClassNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an equation mapper class cannot be found",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

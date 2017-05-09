@@ -1,0 +1,396 @@
+[
+  {
+    "signature": "add(java.lang.Object a)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "element to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new element representing this + a",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a",
+          "null"
+        ],
+        "comment": "if a is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "subtract(java.lang.Object a)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "element to subtract",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new element representing this - a",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a",
+          "null"
+        ],
+        "comment": "if a is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "negate()",
+    "name": "negate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the opposite of this.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "multiply(int n)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Number of times this must be added to itself.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new element representing n × this.",
+      "kind": "RETURN",
+      "condition": "true ?result==target"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "multiply(java.lang.Object a)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "element to multiply",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new element representing this × a",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a",
+          "null"
+        ],
+        "comment": "if a is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "divide(java.lang.Object a)",
+    "name": "divide",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "element to divide by",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new element representing this ÷ a",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a",
+          "null"
+        ],
+        "comment": "if a is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a"
+        ],
+        "comment": "if a is zero",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "reciprocal()",
+    "name": "reciprocal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the inverse of this.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "this"
+        ],
+        "comment": "if this is zero",
+        "kind": "THROWS",
+        "condition": "target==0"
+      }
+    ]
+  },
+  {
+    "signature": "getField()",
+    "name": "getField",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.FieldElement",
+      "name": "FieldElement",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.FieldElement",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.Field",
+      "name": "Field",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Field to which the instance belongs",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

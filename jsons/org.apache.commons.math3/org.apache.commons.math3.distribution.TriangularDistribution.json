@@ -1,0 +1,512 @@
+[
+  {
+    "signature": "TriangularDistribution(double a,double c,double b)",
+    "name": "TriangularDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "c"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "Lower limit of this distribution (inclusive).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "Upper limit of this distribution (inclusive).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "Mode of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a >= b",
+          "c > b"
+        ],
+        "comment": "if a >= b or if c > b.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[2]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c < a"
+        ],
+        "comment": "if c < a.",
+        "kind": "THROWS",
+        "condition": "args[1]<args[0]"
+      }
+    ]
+  },
+  {
+    "signature": "TriangularDistribution(org.apache.commons.math3.random.RandomGenerator rng,double a,double c,double b)",
+    "name": "TriangularDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "c"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "Lower limit of this distribution (inclusive).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "Upper limit of this distribution (inclusive).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "Mode of this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a >= b",
+          "c > b"
+        ],
+        "comment": "if a >= b or if c > b.",
+        "kind": "THROWS",
+        "condition": "args[2]>args[3]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c < a"
+        ],
+        "comment": "if c < a.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "getMode()",
+    "name": "getMode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mode c of this distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.TriangularDistribution",
+      "name": "TriangularDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.TriangularDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

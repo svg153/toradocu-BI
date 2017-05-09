@@ -1,0 +1,868 @@
+[
+  {
+    "signature": "PathNode(net.sf.freecol.common.model.Location location,int movesLeft,int turns,boolean onCarrier,net.sf.freecol.common.model.PathNode previous,net.sf.freecol.common.model.PathNode next)",
+    "name": "PathNode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "location"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "movesLeft"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "onCarrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.PathNode",
+          "name": "PathNode",
+          "isArray": false
+        },
+        "name": "previous"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.PathNode",
+          "name": "PathNode",
+          "isArray": false
+        },
+        "name": "next"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "location"
+        },
+        "comment": "The Location this PathNode represents in the path.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "movesLeft"
+        },
+        "comment": "The number of moves remaining at this point in the path.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "The number of turns it takes to reach this PathNode's Tile from the start of the path.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "onCarrier"
+        },
+        "comment": "Whether the path is still using a carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.PathNode",
+            "name": "PathNode",
+            "isArray": false
+          },
+          "name": "previous"
+        },
+        "comment": "The previous PathNode in the path.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.PathNode",
+            "name": "PathNode",
+            "isArray": false
+          },
+          "name": "next"
+        },
+        "comment": "The next PathNode in the path.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocation()",
+    "name": "getLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Location.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTile()",
+    "name": "getTile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Tile this PathNode represents in the path, if any.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMovesLeft()",
+    "name": "getMovesLeft",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of moves remaining. -1 is returned if the number of moves left has not been calculated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMovesLeft(int movesLeft)",
+    "name": "setMovesLeft",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "movesLeft"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "movesLeft"
+        },
+        "comment": "The number of moves remaining.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTurns()",
+    "name": "getTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of turns, using zero for the first move. -1 is returned if the number of turns has not been calculated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setTurns(int turns)",
+    "name": "setTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "The new number of turns.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addTurns(int turns)",
+    "name": "addTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "The number of turns to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isOnCarrier()",
+    "name": "isOnCarrier",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the unit is still onboard a carrier when using this path.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setOnCarrier(boolean onCarrier)",
+    "name": "setOnCarrier",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "onCarrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "onCarrier"
+        },
+        "comment": "Should be set to true in order to indicate that the unit using this path is still onboard the carrier on this path node.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLength()",
+    "name": "getLength",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of nodes in the path.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDirection()",
+    "name": "getDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The direction to move on the map in order to get to the Tile returned by this PathNode's getTile(), or null if there is no previous node or either this or the previous node location is not on the map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportDropNode()",
+    "name": "getTransportDropNode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The node where the unit leaves the carrier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFirstNode()",
+    "name": "getFirstNode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The first PathNode.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLastNode()",
+    "name": "getLastNode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The last PathNode.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTotalTurns()",
+    "name": "getTotalTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of turns, using zero for the first move.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportDropTurns()",
+    "name": "getTransportDropTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of turns in takes to get to the node where the unit using this path should leave it's transport.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCost(int turns,int movesLeft)",
+    "name": "getCost",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "movesLeft"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "The number of turns taken.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "movesLeft"
+        },
+        "comment": "The number of moves left for the moving unit.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The cost of moving to a PathNode.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCost()",
+    "name": "getCost",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The cost of moving to this PathNode.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCarrierMove()",
+    "name": "getCarrierMove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The first node along the path which is a carrier move, or null if the path does not use a carrier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "usesCarrier()",
+    "name": "usesCarrier",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if there is an onCarrier move in this path.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "embarkedThisTurn(int turns)",
+    "name": "embarkedThisTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "turns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "turns"
+        },
+        "comment": "Paths with fewer turns than this are previous turns.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if there was a non-carrier move in the last turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "convertToGoodsDeliveryPath()",
+    "name": "convertToGoodsDeliveryPath",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ensureDisembark()",
+    "name": "ensureDisembark",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fullPathToString()",
+    "name": "fullPathToString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.PathNode",
+      "name": "PathNode",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.PathNode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A string describing the whole path.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

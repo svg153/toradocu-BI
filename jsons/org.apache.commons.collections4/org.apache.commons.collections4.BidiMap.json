@@ -1,0 +1,316 @@
+[
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.BidiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to store",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to store",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the previous value mapped to this key",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "put"
+        ],
+        "comment": "if the put method is not supported",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the type of the value and the specified value is inappropriate",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the values in some way and the value was invalid",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the values to non-null and null was specified",
+        "kind": "THROWS",
+        "condition": "target.values()!=null || target.values()!=null || target.values()!=null && target.values()==null || target.values()==null || target.values()==null"
+      }
+    ]
+  },
+  {
+    "signature": "getKey(java.lang.Object value)",
+    "name": "getKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.BidiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to find the key for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the mapped key, or null if not found",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the type of the value and the specified value is inappropriate",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the values to non-null and null was specified",
+        "kind": "THROWS",
+        "condition": "target.values()!=null || target.values()!=null || target.values()!=null && target.values()==null || target.values()==null || target.values()==null"
+      }
+    ]
+  },
+  {
+    "signature": "removeValue(java.lang.Object value)",
+    "name": "removeValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.BidiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to find the key-value pair for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the key that was removed, null if nothing removed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the type of the value and the specified value is inappropriate",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "(optional) if the map limits the values to non-null and null was specified",
+        "kind": "THROWS",
+        "condition": "target.values()!=null || target.values()!=null || target.values()!=null && target.values()==null || target.values()==null || target.values()==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this method is not supported by the implementation",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "inverseBidiMap()",
+    "name": "inverseBidiMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.BidiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an inverted bidirectional map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.BidiMap",
+      "name": "BidiMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.BidiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a set view of the values contained in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

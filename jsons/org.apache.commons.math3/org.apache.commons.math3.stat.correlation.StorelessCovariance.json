@@ -1,0 +1,405 @@
+[
+  {
+    "signature": "StorelessCovariance(int dim)",
+    "name": "StorelessCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dim"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dim"
+        },
+        "comment": "the dimension of the square covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "StorelessCovariance(int dim,boolean biasCorrected)",
+    "name": "StorelessCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dim"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "biasCorrected"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dim"
+        },
+        "comment": "the dimension of the covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "biasCorrected"
+        },
+        "comment": "if true the covariance estimate is corrected for bias, i.e. n-1 in the denominator, otherwise there is no bias correction, i.e. n in the denominator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCovariance(int xIndex,int yIndex)",
+    "name": "getCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "xIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "yIndex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "xIndex"
+        },
+        "comment": "row index in the covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "yIndex"
+        },
+        "comment": "column index in the covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the covariance of the given element",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of observations in the cell is < 2",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "increment(double[] data)",
+    "name": "increment",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "array representing one row of data.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rowData"
+        ],
+        "comment": "if the length of rowData does not match with the covariance matrix",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "append(org.apache.commons.math3.stat.correlation.StorelessCovariance sc)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+          "name": "StorelessCovariance",
+          "isArray": false
+        },
+        "name": "sc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+            "name": "StorelessCovariance",
+            "isArray": false
+          },
+          "name": "sc"
+        },
+        "comment": "externally computed StorelessCovariance to add to this",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of sc does not match this",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getCovarianceMatrix()",
+    "name": "getCovarianceMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of observations in a cell is < 2",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getData()",
+    "name": "getData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a two-dimensional double array of covariance values",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of observations for a cell is < 2",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+      "name": "StorelessCovariance",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.StorelessCovariance",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "nothing as this implementation always throws a MathUnsupportedOperationException",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathUnsupportedOperationException",
+          "name": "MathUnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "in all cases",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

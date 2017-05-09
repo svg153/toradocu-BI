@@ -1,0 +1,74 @@
+[
+  {
+    "signature": "generate(java.util.Collection points)",
+    "name": "generate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.hull.ConvexHullGenerator",
+      "name": "ConvexHullGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.hull.ConvexHullGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.hull.ConvexHull",
+      "name": "ConvexHull",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "points"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "the set of input points",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the convex hull",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the input collection is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if generator fails to generate a convex hull for the given set of input points",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

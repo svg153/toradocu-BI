@@ -1,0 +1,171 @@
+[
+  {
+    "signature": "close(java.io.Closeable closeable,boolean swallowIOException)",
+    "name": "close",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Closeables",
+      "name": "Closeables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Closeables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Closeable",
+          "name": "Closeable",
+          "isArray": false
+        },
+        "name": "closeable",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "swallowIOException"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.Closeable",
+            "name": "Closeable",
+            "isArray": false
+          },
+          "name": "closeable",
+          "nullable": true
+        },
+        "comment": "the Closeable object to be closed, or null, in which case this method does nothing",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "swallowIOException"
+        },
+        "comment": "if true, don't propagate IO exceptions thrown by the close methods",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "swallowIOException",
+          "close",
+          "IOException"
+        ],
+        "comment": "if swallowIOException is false and close throws an IOException.",
+        "kind": "THROWS",
+        "condition": "args[1]==false"
+      }
+    ]
+  },
+  {
+    "signature": "closeQuietly(java.io.InputStream inputStream)",
+    "name": "closeQuietly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Closeables",
+      "name": "Closeables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Closeables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "inputStream",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "inputStream",
+          "nullable": true
+        },
+        "comment": "the input stream to be closed, or null in which case this method does nothing",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "closeQuietly(java.io.Reader reader)",
+    "name": "closeQuietly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Closeables",
+      "name": "Closeables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Closeables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Reader",
+          "name": "Reader",
+          "isArray": false
+        },
+        "name": "reader",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.Reader",
+            "name": "Reader",
+            "isArray": false
+          },
+          "name": "reader",
+          "nullable": true
+        },
+        "comment": "the reader to be closed, or null in which case this method does nothing",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "signature": "FiniteDifferencesDifferentiator(int nbPoints,double stepSize)",
+    "name": "FiniteDifferencesDifferentiator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nbPoints"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "stepSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nbPoints"
+        },
+        "comment": "number of points to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "stepSize"
+        },
+        "comment": "step size (gap between each point)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "stepsize <= 0",
+          "NotPositiveException",
+          "NumberIsTooSmallException"
+        ],
+        "comment": "if stepsize <= 0 (note that NotPositiveException extends NumberIsTooSmallException)",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "nbPoint <= 1"
+        ],
+        "comment": "nbPoint <= 1",
+        "kind": "THROWS",
+        "condition": "args[0]<=1"
+      }
+    ]
+  },
+  {
+    "signature": "FiniteDifferencesDifferentiator(int nbPoints,double stepSize,double tLower,double tUpper)",
+    "name": "FiniteDifferencesDifferentiator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nbPoints"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "stepSize"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tLower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tUpper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nbPoints"
+        },
+        "comment": "number of points to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "stepSize"
+        },
+        "comment": "step size (gap between each point)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tLower"
+        },
+        "comment": "lower bound for independent variable (may be Double.NEGATIVE_INFINITY if there are no lower bounds)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tUpper"
+        },
+        "comment": "upper bound for independent variable (may be Double.POSITIVE_INFINITY if there are no upper bounds)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "stepsize <= 0",
+          "NotPositiveException",
+          "NumberIsTooSmallException"
+        ],
+        "comment": "if stepsize <= 0 (note that NotPositiveException extends NumberIsTooSmallException)",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "nbPoint <= 1"
+        ],
+        "comment": "nbPoint <= 1",
+        "kind": "THROWS",
+        "condition": "args[0]<=1"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "stepSize * (nbPoints - 1) >= tUpper - tLower"
+        ],
+        "comment": "stepSize * (nbPoints - 1) >= tUpper - tLower",
+        "kind": "THROWS",
+        "condition": "args[1]>=args[3]"
+      }
+    ]
+  },
+  {
+    "signature": "getNbPoints()",
+    "name": "getNbPoints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of points to use",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStepSize()",
+    "name": "getStepSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "step size",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "differentiate(org.apache.commons.math3.analysis.UnivariateFunction function)",
+    "name": "differentiate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableFunction",
+      "name": "UnivariateDifferentiableFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "differentiate(org.apache.commons.math3.analysis.UnivariateVectorFunction function)",
+    "name": "differentiate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableVectorFunction",
+      "name": "UnivariateDifferentiableVectorFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateVectorFunction",
+          "name": "UnivariateVectorFunction",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "differentiate(org.apache.commons.math3.analysis.UnivariateMatrixFunction function)",
+    "name": "differentiate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+      "name": "FiniteDifferencesDifferentiator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.UnivariateDifferentiableMatrixFunction",
+      "name": "UnivariateDifferentiableMatrixFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateMatrixFunction",
+          "name": "UnivariateMatrixFunction",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

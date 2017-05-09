@@ -1,0 +1,1404 @@
+[
+  {
+    "signature": "checkArgument(boolean expression)",
+    "name": "checkArgument",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      }
+    ]
+  },
+  {
+    "signature": "checkArgument(boolean expression,java.lang.Object errorMessage)",
+    "name": "checkArgument",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "errorMessage",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "errorMessage",
+          "nullable": true
+        },
+        "comment": "the exception message to use if the check fails; will be converted to a string using String.valueOf(Object)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      }
+    ]
+  },
+  {
+    "signature": "checkArgument(boolean expression,java.lang.String errorMessageTemplate,java.lang.Object[] errorMessageArgs)",
+    "name": "checkArgument",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "errorMessageTemplate",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "errorMessageArgs",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "errorMessageTemplate",
+          "nullable": true
+        },
+        "comment": "a template for the exception message should the check fail. The message is formed by replacing each %s placeholder in the template with an argument. These are matched by position - the first %s gets errorMessageArgs[0], etc. Unmatched arguments will be appended to the formatted message in square braces. Unmatched placeholders will be left as-is.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "errorMessageArgs",
+          "nullable": true
+        },
+        "comment": "the arguments to be substituted into the message template. Arguments are converted to strings using String.valueOf(Object).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "errorMessageTemplate",
+          "errorMessageArgs"
+        ],
+        "comment": "if the check fails and either errorMessageTemplate or errorMessageArgs is null (don't let this happen)",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkState(boolean expression)",
+    "name": "checkState",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      }
+    ]
+  },
+  {
+    "signature": "checkState(boolean expression,java.lang.Object errorMessage)",
+    "name": "checkState",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "errorMessage",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "errorMessage",
+          "nullable": true
+        },
+        "comment": "the exception message to use if the check fails; will be converted to a string using String.valueOf(Object)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      }
+    ]
+  },
+  {
+    "signature": "checkState(boolean expression,java.lang.String errorMessageTemplate,java.lang.Object[] errorMessageArgs)",
+    "name": "checkState",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "expression"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "errorMessageTemplate",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "errorMessageArgs",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "expression"
+        },
+        "comment": "a boolean expression",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "errorMessageTemplate",
+          "nullable": true
+        },
+        "comment": "a template for the exception message should the check fail. The message is formed by replacing each %s placeholder in the template with an argument. These are matched by position - the first %s gets errorMessageArgs[0], etc. Unmatched arguments will be appended to the formatted message in square braces. Unmatched placeholders will be left as-is.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "errorMessageArgs",
+          "nullable": true
+        },
+        "comment": "the arguments to be substituted into the message template. Arguments are converted to strings using String.valueOf(Object).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expression"
+        ],
+        "comment": "if expression is false",
+        "kind": "THROWS",
+        "condition": "args[0]==false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "errorMessageTemplate",
+          "errorMessageArgs"
+        ],
+        "comment": "if the check fails and either errorMessageTemplate or errorMessageArgs is null (don't let this happen)",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkNotNull(java.lang.Object reference)",
+    "name": "checkNotNull",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "reference"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "reference"
+        },
+        "comment": "an object reference",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the non-null reference that was validated",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "reference"
+        ],
+        "comment": "if reference is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkNotNull(java.lang.Object reference,java.lang.Object errorMessage)",
+    "name": "checkNotNull",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "reference"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "errorMessage",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "reference"
+        },
+        "comment": "an object reference",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "errorMessage",
+          "nullable": true
+        },
+        "comment": "the exception message to use if the check fails; will be converted to a string using String.valueOf(Object)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the non-null reference that was validated",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "reference"
+        ],
+        "comment": "if reference is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkNotNull(java.lang.Object reference,java.lang.String errorMessageTemplate,java.lang.Object[] errorMessageArgs)",
+    "name": "checkNotNull",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "reference"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "errorMessageTemplate",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "errorMessageArgs",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "reference"
+        },
+        "comment": "an object reference",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "errorMessageTemplate",
+          "nullable": true
+        },
+        "comment": "a template for the exception message should the check fail. The message is formed by replacing each %s placeholder in the template with an argument. These are matched by position - the first %s gets errorMessageArgs[0], etc. Unmatched arguments will be appended to the formatted message in square braces. Unmatched placeholders will be left as-is.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "errorMessageArgs",
+          "nullable": true
+        },
+        "comment": "the arguments to be substituted into the message template. Arguments are converted to strings using String.valueOf(Object).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the non-null reference that was validated",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "reference"
+        ],
+        "comment": "if reference is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkElementIndex(int index,int size)",
+    "name": "checkElementIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "a user-supplied index identifying an element of an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of that array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "size"
+        ],
+        "comment": "if index is negative or is not less than size",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || (args[0]<args[1]) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "checkElementIndex(int index,int size,java.lang.String desc)",
+    "name": "checkElementIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "desc",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "a user-supplied index identifying an element of an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of that array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "desc",
+          "nullable": true
+        },
+        "comment": "the text to use to describe this index in an error message",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "size"
+        ],
+        "comment": "if index is negative or is not less than size",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || (args[0]<args[1]) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "checkPositionIndex(int index,int size)",
+    "name": "checkPositionIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "a user-supplied index identifying a position in an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of that array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "size"
+        ],
+        "comment": "if index is negative or is greater than size",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]>args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "checkPositionIndex(int index,int size,java.lang.String desc)",
+    "name": "checkPositionIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "desc",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "a user-supplied index identifying a position in an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of that array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "desc",
+          "nullable": true
+        },
+        "comment": "the text to use to describe this index in an error message",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "size"
+        ],
+        "comment": "if index is negative or is greater than size",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[0]>args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "checkPositionIndexes(int start,int end,int size)",
+    "name": "checkPositionIndexes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "a user-supplied index identifying a starting position in an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "a user-supplied index identifying a ending position in an array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the size of that array, list or string",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size",
+          "end",
+          "start"
+        ],
+        "comment": "if either index is negative or is greater than size, or if end is less than start",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[2]<0"
+      }
+    ]
+  },
+  {
+    "signature": "format(java.lang.String template,java.lang.Object[] args)",
+    "name": "format",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Preconditions",
+      "name": "Preconditions",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Preconditions",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "template"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "args",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "template"
+        },
+        "comment": "a non-null string containing 0 or more %s placeholders.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "args",
+          "nullable": true
+        },
+        "comment": "the arguments to be substituted into the message template. Arguments are converted to strings using String.valueOf(Object). Arguments can be null.",
+        "kind": "PARAM",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ],
+    "throwsTags": []
+  }
+]

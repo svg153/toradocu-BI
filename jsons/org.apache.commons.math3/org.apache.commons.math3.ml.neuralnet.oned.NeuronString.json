@@ -1,0 +1,301 @@
+[
+  {
+    "signature": "NeuronString(boolean wrap,double[][] featuresList)",
+    "name": "NeuronString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+      "name": "NeuronString",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrap"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "featuresList"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrap"
+        },
+        "comment": "Whether to wrap the dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "featuresList"
+        },
+        "comment": "Arrays that will initialize the features sets of the network's neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "num < 2"
+        ],
+        "comment": "if num < 2.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "NeuronString(int num,boolean wrap,org.apache.commons.math3.ml.neuralnet.FeatureInitializer[] featureInit)",
+    "name": "NeuronString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+      "name": "NeuronString",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "num"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrap"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer[]",
+          "name": "FeatureInitializer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+            "name": "FeatureInitializer",
+            "isArray": false
+          }
+        },
+        "name": "featureInit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "num"
+        },
+        "comment": "Number of neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrap"
+        },
+        "comment": "Whether to wrap the dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer[]",
+            "name": "FeatureInitializer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+              "name": "FeatureInitializer",
+              "isArray": false
+            }
+          },
+          "name": "featureInit"
+        },
+        "comment": "Arrays that will initialize the features sets of the network's neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "num < 2"
+        ],
+        "comment": "if num < 2.",
+        "kind": "THROWS",
+        "condition": "args[0]<2"
+      }
+    ]
+  },
+  {
+    "signature": "getNetwork()",
+    "name": "getNetwork",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+      "name": "NeuronString",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the network.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSize()",
+    "name": "getSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+      "name": "NeuronString",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of neurons.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFeatures(int i)",
+    "name": "getFeatures",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+      "name": "NeuronString",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.oned.NeuronString",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "Neuron index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the features of the neuron at index i.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "i"
+        ],
+        "comment": "if i is out of range.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

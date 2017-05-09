@@ -1,0 +1,204 @@
+[
+  {
+    "signature": "InterpolatingMicrosphere2D(int size,double maxDarkFraction,double darkThreshold,double background)",
+    "name": "InterpolatingMicrosphere2D",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+      "name": "InterpolatingMicrosphere2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxDarkFraction"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "darkThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "background"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "Number of surface elements of the sphere.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxDarkFraction"
+        },
+        "comment": "Maximum fraction of the facets that can be dark. If the fraction of \"non-illuminated\" facets is larger, no estimation of the value will be performed, and the background value will be returned instead.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "darkThreshold"
+        },
+        "comment": "Value of the illumination below which a facet is considered dark.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "background"
+        },
+        "comment": "Value returned when the maxDarkFraction threshold is exceeded.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size <= 0"
+        ],
+        "comment": "if size <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "darkThreshold < 0"
+        ],
+        "comment": "if darkThreshold < 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "maxDarkFraction",
+          "[0, 1]"
+        ],
+        "comment": "if maxDarkFraction does not belong to the interval [0, 1].",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "InterpolatingMicrosphere2D(org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D other)",
+    "name": "InterpolatingMicrosphere2D",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+      "name": "InterpolatingMicrosphere2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+          "name": "InterpolatingMicrosphere2D",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+            "name": "InterpolatingMicrosphere2D",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "Instance to copy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+      "name": "InterpolatingMicrosphere2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.InterpolatingMicrosphere2D",
+      "name": "InterpolatingMicrosphere2D",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of this instance.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,1612 @@
+[
+  {
+    "signature": "dump_method_declarations(ClassGen gen)",
+    "name": "dump_method_declarations",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "ClassGen",
+          "name": "ClassGen",
+          "isArray": false
+        },
+        "name": "gen"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ClassGen",
+            "name": "ClassGen",
+            "isArray": false
+          },
+          "name": "gen"
+        },
+        "comment": "class whose methods to print",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "get_method_declaration(Method m)",
+    "name": "get_method_declaration",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Method",
+          "name": "Method",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Method",
+            "name": "Method",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "the method",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a string describing the method declaration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get_access_flags(Method m)",
+    "name": "get_access_flags",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Method",
+          "name": "Method",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Method",
+            "name": "Method",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "the method whose access flags to retrieve",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a string representation of the access flags of method m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get_attribute_name(Attribute a)",
+    "name": "get_attribute_name",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Attribute",
+          "name": "Attribute",
+          "isArray": false
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Attribute",
+            "name": "Attribute",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the attribute",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the attribute name for the specified attribute",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get_constant_str(ConstantPool pool,int index)",
+    "name": "get_constant_str",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "ConstantPool",
+          "name": "ConstantPool",
+          "isArray": false
+        },
+        "name": "pool"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ConstantPool",
+            "name": "ConstantPool",
+            "isArray": false
+          },
+          "name": "pool"
+        },
+        "comment": "the constant pool",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index in the constant pool",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the constant string at the specified offset in the constant pool",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "is_constructor(MethodGen mg)",
+    "name": "is_constructor",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method to test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the method is a constructor",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "is_constructor(Method m)",
+    "name": "is_constructor",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Method",
+          "name": "Method",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Method",
+            "name": "Method",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "the method to test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the method is a constructor",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "is_clinit(MethodGen mg)",
+    "name": "is_clinit",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method to test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the method is a class initializer",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "is_clinit(Method m)",
+    "name": "is_clinit",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Method",
+          "name": "Method",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Method",
+            "name": "Method",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "the method to test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the method is a class initializer",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "in_jdk(ClassGen gen)",
+    "name": "in_jdk",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "ClassGen",
+          "name": "ClassGen",
+          "isArray": false
+        },
+        "name": "gen"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ClassGen",
+            "name": "ClassGen",
+            "isArray": false
+          },
+          "name": "gen"
+        },
+        "comment": "the class to test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the class is part of the JDK (rt.jar)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "in_jdk_internalform(java.lang.String classname)",
+    "name": "in_jdk_internalform",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "classname"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "classname"
+        },
+        "comment": "the class to test, in internal form",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the class is part of the JDK (rt.jar)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "dump_methods(ClassGen gen)",
+    "name": "dump_methods",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "ClassGen",
+          "name": "ClassGen",
+          "isArray": false
+        },
+        "name": "gen"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ClassGen",
+            "name": "ClassGen",
+            "isArray": false
+          },
+          "name": "gen"
+        },
+        "comment": "the class whose methods to print",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkMgen(MethodGen mgen)",
+    "name": "checkMgen",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mgen"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mgen"
+        },
+        "comment": "the class to check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkMgens(ClassGen gen)",
+    "name": "checkMgens",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "ClassGen",
+          "name": "ClassGen",
+          "isArray": false
+        },
+        "name": "gen"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ClassGen",
+            "name": "ClassGen",
+            "isArray": false
+          },
+          "name": "gen"
+        },
+        "comment": "the class to check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "add_to_start(MethodGen mg,InstructionList nl)",
+    "name": "add_to_start",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      },
+      {
+        "type": {
+          "qualifiedName": "InstructionList",
+          "name": "InstructionList",
+          "isArray": false
+        },
+        "name": "nl"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "method to be augmented",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "InstructionList",
+            "name": "InstructionList",
+            "isArray": false
+          },
+          "name": "nl"
+        },
+        "comment": "instructions to prepend to the method",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "dump(JavaClass jc,java.lang.String dump_dir)",
+    "name": "dump",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "JavaClass",
+          "name": "JavaClass",
+          "isArray": false
+        },
+        "name": "jc"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "dump_dir"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "JavaClass",
+            "name": "JavaClass",
+            "isArray": false
+          },
+          "name": "jc"
+        },
+        "comment": "javaclass to dump",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "dump_dir"
+        },
+        "comment": "directory in which to write the file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "dump(JavaClass jc,java.io.File dump_dir)",
+    "name": "dump",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "JavaClass",
+          "name": "JavaClass",
+          "isArray": false
+        },
+        "name": "jc"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "dump_dir"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "JavaClass",
+            "name": "JavaClass",
+            "isArray": false
+          },
+          "name": "jc"
+        },
+        "comment": "javaclass to dump",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "dump_dir"
+        },
+        "comment": "directory in which to write the file",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "instruction_descr(InstructionList il,ConstantPoolGen pool)",
+    "name": "instruction_descr",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "InstructionList",
+          "name": "InstructionList",
+          "isArray": false
+        },
+        "name": "il"
+      },
+      {
+        "type": {
+          "qualifiedName": "ConstantPoolGen",
+          "name": "ConstantPoolGen",
+          "isArray": false
+        },
+        "name": "pool"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "local_var_descr(MethodGen mg)",
+    "name": "local_var_descr",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method whose local variables to describe",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a description of the local variables (one per line)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add_line_numbers(MethodGen mg,InstructionList il)",
+    "name": "add_line_numbers",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      },
+      {
+        "type": {
+          "qualifiedName": "InstructionList",
+          "name": "InstructionList",
+          "isArray": false
+        },
+        "name": "il"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method whose line numbers to extract",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "InstructionList",
+            "name": "InstructionList",
+            "isArray": false
+          },
+          "name": "il"
+        },
+        "comment": "the instruction list to augment with line numbers",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setup_init_locals(MethodGen mg)",
+    "name": "setup_init_locals",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method whose locals to set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "empty_method(MethodGen mg)",
+    "name": "empty_method",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method to clear out",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove_local_variable_type_tables(MethodGen mg)",
+    "name": "remove_local_variable_type_tables",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method to clear out",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "is_local_variable_type_table(Attribute a,ConstantPoolGen pool)",
+    "name": "is_local_variable_type_table",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Attribute",
+          "name": "Attribute",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "ConstantPoolGen",
+          "name": "ConstantPoolGen",
+          "isArray": false
+        },
+        "name": "pool"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Attribute",
+            "name": "Attribute",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the attribute",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ConstantPoolGen",
+            "name": "ConstantPoolGen",
+            "isArray": false
+          },
+          "name": "pool"
+        },
+        "comment": "the constant pool",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the attribute is a local variable type table",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get_attribute_name(Attribute a,ConstantPoolGen pool)",
+    "name": "get_attribute_name",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Attribute",
+          "name": "Attribute",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "ConstantPoolGen",
+          "name": "ConstantPoolGen",
+          "isArray": false
+        },
+        "name": "pool"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Attribute",
+            "name": "Attribute",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "the attribute",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "ConstantPoolGen",
+            "name": "ConstantPoolGen",
+            "isArray": false
+          },
+          "name": "pool"
+        },
+        "comment": "the constant pool",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the attribute name for the specified attribute",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "is_main(MethodGen mg)",
+    "name": "is_main",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "MethodGen",
+          "name": "MethodGen",
+          "isArray": false
+        },
+        "name": "mg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "MethodGen",
+            "name": "MethodGen",
+            "isArray": false
+          },
+          "name": "mg"
+        },
+        "comment": "the method to check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the method is a main method",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "type_to_classgetname(Type type)",
+    "name": "type_to_classgetname",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Type",
+          "name": "Type",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the Java classname that corresponds to type",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "type_to_class(Type type)",
+    "name": "type_to_class",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Class",
+      "name": "Class",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Type",
+          "name": "Type",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the Java class that corresponds to type",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add_type(Type[] types,Type new_type)",
+    "name": "add_type",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "Type[]",
+      "name": "Type[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "Type",
+        "name": "Type",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Type[]",
+          "name": "Type[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          }
+        },
+        "name": "types"
+      },
+      {
+        "type": {
+          "qualifiedName": "Type",
+          "name": "Type",
+          "isArray": false
+        },
+        "name": "new_type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type[]",
+            "name": "Type[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "Type",
+              "name": "Type",
+              "isArray": false
+            }
+          },
+          "name": "types"
+        },
+        "comment": "the array to extend",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          },
+          "name": "new_type"
+        },
+        "comment": "the element to add to the end of the types array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the array (or a new one), with new_type at the end",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "insert_type(Type new_type,Type[] types)",
+    "name": "insert_type",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "Type[]",
+      "name": "Type[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "Type",
+        "name": "Type",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "Type",
+          "name": "Type",
+          "isArray": false
+        },
+        "name": "new_type"
+      },
+      {
+        "type": {
+          "qualifiedName": "Type[]",
+          "name": "Type[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          }
+        },
+        "name": "types"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type[]",
+            "name": "Type[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "Type",
+              "name": "Type",
+              "isArray": false
+            }
+          },
+          "name": "types"
+        },
+        "comment": "the array to extend",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "Type",
+            "name": "Type",
+            "isArray": false
+          },
+          "name": "new_type"
+        },
+        "comment": "the element to add to the beginning of the types array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the array (or a new one), with new_type at the beginning",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "classname_to_type(java.lang.String classname)",
+    "name": "classname_to_type",
+    "containingClass": {
+      "qualifiedName": "plume.BCELUtil",
+      "name": "BCELUtil",
+      "isArray": false
+    },
+    "targetClass": "plume.BCELUtil",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "Type",
+      "name": "Type",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "classname"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "classname"
+        },
+        "comment": "the class to convert to a type",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the type corresponding to the given class name",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

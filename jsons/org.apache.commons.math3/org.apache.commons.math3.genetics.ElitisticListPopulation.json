@@ -1,0 +1,311 @@
+[
+  {
+    "signature": "ElitisticListPopulation(java.util.List chromosomes,int populationLimit,double elitismRate)",
+    "name": "ElitisticListPopulation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+      "name": "ElitisticListPopulation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "chromosomes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "populationLimit"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "elitismRate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "chromosomes"
+        },
+        "comment": "list of chromosomes in the population",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "populationLimit"
+        },
+        "comment": "maximal size of the population",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "elitismRate"
+        },
+        "comment": "how many best chromosomes will be directly transferred to the next generation [in %]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the list of chromosomes is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the population limit is not a positive number (< 1)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the list of chromosomes exceeds the population limit",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elitism rate is outside the [0, 1] range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ElitisticListPopulation(int populationLimit,double elitismRate)",
+    "name": "ElitisticListPopulation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+      "name": "ElitisticListPopulation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "populationLimit"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "elitismRate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "populationLimit"
+        },
+        "comment": "maximal size of the population",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "elitismRate"
+        },
+        "comment": "how many best chromosomes will be directly transferred to the next generation [in %]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the population limit is not a positive number (< 1)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elitism rate is outside the [0, 1] range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "nextGeneration()",
+    "name": "nextGeneration",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+      "name": "ElitisticListPopulation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.Population",
+      "name": "Population",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the beginnings of the next generation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setElitismRate(double elitismRate)",
+    "name": "setElitismRate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+      "name": "ElitisticListPopulation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "elitismRate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "elitismRate"
+        },
+        "comment": "how many best chromosomes will be directly transferred to the next generation [in %]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elitism rate is outside the [0, 1] range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getElitismRate()",
+    "name": "getElitismRate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+      "name": "ElitisticListPopulation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the elitism rate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

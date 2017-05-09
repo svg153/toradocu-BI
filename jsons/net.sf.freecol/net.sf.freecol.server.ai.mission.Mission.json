@@ -1,0 +1,2290 @@
+[
+  {
+    "signature": "Mission(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "Mission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit this mission is created for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Mission(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location target)",
+    "name": "Mission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit this mission is created for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The initial target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIUnit()",
+    "name": "getAIUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+      "name": "AIUnit",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The AIUnit.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getUnit())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getUnit()",
+    "name": "getUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Unit",
+      "name": "Unit",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Unit.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getAIUnit())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPlayer()",
+    "name": "getPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Player that owns the mission unit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIPlayer()",
+    "name": "getAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The AIPlayer.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEuropeanAIPlayer()",
+    "name": "getEuropeanAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.EuropeanAIPlayer",
+      "name": "EuropeanAIPlayer",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The EuropeanAIPlayer.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIRandom()",
+    "name": "getAIRandom",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Random",
+      "name": "Random",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A Random to use.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid()",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the mission is valid.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isTargetReason(java.lang.String reason)",
+    "name": "isTargetReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "reason"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the reason starts with \"target-\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidUnitReason(net.sf.freecol.common.model.Unit unit)",
+    "name": "invalidUnitReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidAIUnitReason(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "invalidAIUnitReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidNewMissionReason(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "invalidNewMissionReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"mission-exists\" if a valid mission is found, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidTargetReason(net.sf.freecol.common.model.Location target)",
+    "name": "invalidTargetReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Location to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for the target to be invalid, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidTargetReason(net.sf.freecol.common.model.Location target,net.sf.freecol.common.model.Player owner)",
+    "name": "invalidTargetReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "owner"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Location to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "owner"
+        },
+        "comment": "A Player that should own the target.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for the target to be invalid, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidTransportableReason(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "invalidTransportableReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for the transport to be invalid, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidAttackReason(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Player other)",
+    "name": "invalidAttackReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that will attack.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The Player to attack.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason why the attack would be invalid, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location loc)",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The target Location to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbAt(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "lbAt",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbAttack(net.sf.freecol.common.util.LogBuilder lb,net.sf.freecol.common.model.Location what)",
+    "name": "lbAttack",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "what"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "what"
+        },
+        "comment": "What is being attacked (a Unit or Settlement).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbDodge(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "lbDodge",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbDone(net.sf.freecol.common.util.LogBuilder lb,boolean cont,java.lang.Object[] reasons)",
+    "name": "lbDone",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "cont"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "reasons"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "cont"
+        },
+        "comment": "If true, the mission should continue, otherwise drop the mission.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "reasons"
+        },
+        "comment": "Reasons for the successful completion.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current Mission of the unit, which may now be different from this.",
+      "kind": "RETURN",
+      "condition": "true ?result==target"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbDrop(net.sf.freecol.common.util.LogBuilder lb,java.lang.Object[] reasons)",
+    "name": "lbDrop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "reasons"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "reasons"
+        },
+        "comment": "Optional reasons to drop the mission.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Null, which is now the current Mission of this unit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbFail(net.sf.freecol.common.util.LogBuilder lb,boolean cont,java.lang.Object[] reasons)",
+    "name": "lbFail",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "cont"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "reasons"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "cont"
+        },
+        "comment": "If true, the mission should continue, otherwise drop the mission.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "reasons"
+        },
+        "comment": "Reasons for the successful completion.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current Mission of the unit, which may not be different from this.",
+      "kind": "RETURN",
+      "condition": "true ?result==target"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbMove(net.sf.freecol.common.util.LogBuilder lb,net.sf.freecol.common.model.Unit.MoveType mt)",
+    "name": "lbMove",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit.MoveType",
+          "name": "MoveType",
+          "isArray": false
+        },
+        "name": "mt"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit.MoveType",
+            "name": "MoveType",
+            "isArray": false
+          },
+          "name": "mt"
+        },
+        "comment": "The bad MoveType.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbRetarget(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "lbRetarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lbWait(net.sf.freecol.common.util.LogBuilder lb,java.lang.Object[] reasons)",
+    "name": "lbWait",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "reasons"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "reasons"
+        },
+        "comment": "Reasons for the wait.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "This Mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "findCircleTarget(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.pathfinding.GoalDecider gd,int radius,boolean deferOK)",
+    "name": "findCircleTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+          "name": "GoalDecider",
+          "isArray": false
+        },
+        "name": "gd"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radius"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "deferOK"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that is searching.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.GoalDecider",
+            "name": "GoalDecider",
+            "isArray": false
+          },
+          "name": "gd"
+        },
+        "comment": "The GoalDecider that selects targets.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "radius"
+        },
+        "comment": "A maximum radius from the unit location to search within.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "deferOK"
+        },
+        "comment": "If true, fall back to the nearest port to Europe.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best target Tile found, or null if none.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "resolveBlockage(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location target)",
+    "name": "resolveBlockage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit that was blocked.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The blockage to attack, or null if not.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "moveRandomly(java.lang.String logMe,net.sf.freecol.common.model.Direction direction)",
+    "name": "moveRandomly",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Direction",
+          "name": "Direction",
+          "isArray": false
+        },
+        "name": "direction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log the random number generation with.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Direction",
+            "name": "Direction",
+            "isArray": false
+          },
+          "name": "direction"
+        },
+        "comment": "An optional preferred Direction.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The direction of the move, or null if no move was made.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "moveRandomlyTurn(java.lang.String logMe)",
+    "name": "moveRandomlyTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log the random number generation with.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBestSettlement(net.sf.freecol.common.model.Player player)",
+    "name": "getBestSettlement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Settlement",
+      "name": "Settlement",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player that is searching.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A good settlement to restart a Mission from.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "travelToTarget(net.sf.freecol.common.model.Location target,net.sf.freecol.common.model.pathfinding.CostDecider costDecider,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "travelToTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Unit.MoveType",
+      "name": "MoveType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+          "name": "CostDecider",
+          "isArray": false
+        },
+        "name": "costDecider"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The destination Location.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.pathfinding.CostDecider",
+            "name": "CostDecider",
+            "isArray": false
+          },
+          "name": "costDecider"
+        },
+        "comment": "The CostDecider to use in any path finding.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The type of move the unit stopped at.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "retargetMission(java.lang.String reason,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "retargetMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "reason"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "reason"
+        },
+        "comment": "The reason for the retarget.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current Mission, which has been set to null on failure to retarget.",
+      "kind": "RETURN",
+      "condition": "true ?result!=null"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "dispose()",
+    "name": "dispose",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBaseTransportPriority()",
+    "name": "getBaseTransportPriority",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A base transport priority.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportDestination()",
+    "name": "getTransportDestination",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The mission target, or null if the mission is invalid, otherwise lacks a target (e.g. UnitWanderHostile), or the unit does not need transport.",
+      "kind": "RETURN",
+      "condition": "target.isValid() ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTarget()",
+    "name": "getTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The target of this mission, or null if none.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setTarget(net.sf.freecol.common.model.Location target)",
+    "name": "setTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The new target of this mission, or null if none.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "findTarget()",
+    "name": "findTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A new target for this mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isOneTime()",
+    "name": "isOneTime",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "False.",
+      "kind": "RETURN",
+      "condition": "true ? result==false"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason()",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "doMission(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "doMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Mission to continue with, or null if the current mission has completed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXML(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "toXML",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.Mission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

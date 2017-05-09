@@ -1,0 +1,315 @@
+[
+  {
+    "signature": "UnivariateOptimizer(org.apache.commons.math3.optim.ConvergenceChecker checker)",
+    "name": "UnivariateOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. In addition to those documented in BaseOptimizer, this method will register the following data: GoalType SearchInterval UnivariateObjectiveFunction",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a point/value pair that satisfies the convergence criteria.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getGoalType()",
+    "name": "getGoalType",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.GoalType",
+      "name": "GoalType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the optimization type.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "parseOptimizationData(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "parseOptimizationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: GoalType SearchInterval UnivariateObjectiveFunction",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStartValue()",
+    "name": "getStartValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the initial guess.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMin()",
+    "name": "getMin",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the lower bounds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMax()",
+    "name": "getMax",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the upper bounds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeObjectiveValue(double x)",
+    "name": "computeObjectiveValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+      "name": "UnivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.UnivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Point at which the objective function must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the objective function value at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

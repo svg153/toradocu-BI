@@ -1,0 +1,3363 @@
+[
+  {
+    "signature": "keyFunction()",
+    "name": "keyFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valueFunction()",
+    "name": "valueFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "keyIterator(java.util.Iterator entryIterator)",
+    "name": "keyIterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "entryIterator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valueIterator(java.util.Iterator entryIterator)",
+    "name": "valueIterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "entryIterator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "immutableEnumMap(java.util.Map map)",
+    "name": "immutableEnumMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to make an immutable copy of",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an immutable map containing those entries",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newHashMap()",
+    "name": "newHashMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.HashMap",
+      "name": "HashMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new, empty HashMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newHashMapWithExpectedSize(int expectedSize)",
+    "name": "newHashMapWithExpectedSize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.HashMap",
+      "name": "HashMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "expectedSize"
+        },
+        "comment": "the number of entries you expect to add to the returned map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new, empty HashMap with enough capacity to hold expectedSize entries without resizing",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expectedSize"
+        ],
+        "comment": "if expectedSize is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "capacity(int expectedSize)",
+    "name": "capacity",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedSize"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newHashMap(java.util.Map map)",
+    "name": "newHashMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.HashMap",
+      "name": "HashMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the mappings to be placed in the new map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new HashMap initialized with the mappings from map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newLinkedHashMap()",
+    "name": "newLinkedHashMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.LinkedHashMap",
+      "name": "LinkedHashMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new, empty LinkedHashMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newLinkedHashMapWithExpectedSize(int expectedSize)",
+    "name": "newLinkedHashMapWithExpectedSize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.LinkedHashMap",
+      "name": "LinkedHashMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "expectedSize"
+        },
+        "comment": "the number of entries you expect to add to the returned map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new, empty LinkedHashMap with enough capacity to hold expectedSize entries without resizing",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expectedSize"
+        ],
+        "comment": "if expectedSize is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "newLinkedHashMap(java.util.Map map)",
+    "name": "newLinkedHashMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.LinkedHashMap",
+      "name": "LinkedHashMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the mappings to be placed in the new map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new, LinkedHashMap initialized with the mappings from map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newConcurrentMap()",
+    "name": "newConcurrentMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ConcurrentMap",
+      "name": "ConcurrentMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new, empty ConcurrentMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newTreeMap()",
+    "name": "newTreeMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.TreeMap",
+      "name": "TreeMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new, empty TreeMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newTreeMap(java.util.SortedMap map)",
+    "name": "newTreeMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.TreeMap",
+      "name": "TreeMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedMap",
+            "name": "SortedMap",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the sorted map whose mappings are to be placed in the new map and whose comparator is to be used to sort the new map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new TreeMap initialized with the mappings from map and using the comparator of map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newTreeMap(java.util.Comparator comparator)",
+    "name": "newTreeMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.TreeMap",
+      "name": "TreeMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator",
+          "nullable": true
+        },
+        "comment": "the comparator to sort the keys with",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new, empty TreeMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newEnumMap(java.lang.Class type)",
+    "name": "newEnumMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.EnumMap",
+      "name": "EnumMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the key type for this map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new, empty EnumMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newEnumMap(java.util.Map map)",
+    "name": "newEnumMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.EnumMap",
+      "name": "EnumMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map from which to initialize this EnumMap",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new EnumMap initialized with the mappings from map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m",
+          "EnumMap"
+        ],
+        "comment": "if m is not an EnumMap instance and contains no mappings",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "newIdentityHashMap()",
+    "name": "newIdentityHashMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.IdentityHashMap",
+      "name": "IdentityHashMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new, empty IdentityHashMap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "difference(java.util.Map left,java.util.Map right)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapDifference",
+      "name": "MapDifference",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "right"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "the map to treat as the \"left\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "the map to treat as the \"right\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the difference between the two maps",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "difference(java.util.Map left,java.util.Map right,com.google.common.base.Equivalence valueEquivalence)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapDifference",
+      "name": "MapDifference",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "right"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Equivalence",
+          "name": "Equivalence",
+          "isArray": false
+        },
+        "name": "valueEquivalence"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "the map to treat as the \"left\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "the map to treat as the \"right\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Equivalence",
+            "name": "Equivalence",
+            "isArray": false
+          },
+          "name": "valueEquivalence"
+        },
+        "comment": "the equivalence relationship to use to compare values",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the difference between the two maps",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(com.google.common.collect.Maps.difference())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "difference(java.util.SortedMap left,java.util.Map right)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SortedMapDifference",
+      "name": "SortedMapDifference",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "right"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedMap",
+            "name": "SortedMap",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "the map to treat as the \"left\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "the map to treat as the \"right\" map for purposes of comparison",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the difference between the two maps",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(com.google.common.collect.Maps.difference())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "orNaturalOrder(java.util.Comparator comparator)",
+    "name": "orNaturalOrder",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(java.util.Set set,com.google.common.base.Function function)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(java.util.SortedSet set,com.google.common.base.Function function)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMapSortedIgnoreNavigable(java.util.SortedSet set,com.google.common.base.Function function)",
+    "name": "asMapSortedIgnoreNavigable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(java.util.NavigableSet set,com.google.common.base.Function function)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableSet",
+          "name": "NavigableSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMapEntryIterator(java.util.Set set,com.google.common.base.Function function)",
+    "name": "asMapEntryIterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toMap(java.lang.Iterable keys,com.google.common.base.Function valueFunction)",
+    "name": "toMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "keys"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "valueFunction"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "keys",
+          "null",
+          "valueFunction",
+          "null"
+        ],
+        "comment": "if any element of keys is null, or if valueFunction produces null for any key",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "toMap(java.util.Iterator keys,com.google.common.base.Function valueFunction)",
+    "name": "toMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "keys"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "valueFunction"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "keys",
+          "null",
+          "valueFunction",
+          "null"
+        ],
+        "comment": "if any element of keys is null, or if valueFunction produces null for any key",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "uniqueIndex(java.lang.Iterable values,com.google.common.base.Function keyFunction)",
+    "name": "uniqueIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "keyFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "the values to use when constructing the Map",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "keyFunction"
+        },
+        "comment": "the function used to produce the key for each value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a map mapping the result of evaluating the function keyFunction on each value in the input collection to that value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "keyFunction"
+        ],
+        "comment": "if keyFunction produces the same key for more than one value in the input collection",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values",
+          "keyFunction",
+          "null"
+        ],
+        "comment": "if any elements of values is null, or if keyFunction produces null for any value",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "uniqueIndex(java.util.Iterator values,com.google.common.base.Function keyFunction)",
+    "name": "uniqueIndex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "keyFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "the values to use when constructing the Map",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "keyFunction"
+        },
+        "comment": "the function used to produce the key for each value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a map mapping the result of evaluating the function keyFunction on each value in the input collection to that value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "keyFunction"
+        ],
+        "comment": "if keyFunction produces the same key for more than one value in the input collection",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values",
+          "keyFunction",
+          "null"
+        ],
+        "comment": "if any elements of values is null, or if keyFunction produces null for any value",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "fromProperties(java.util.Properties properties)",
+    "name": "fromProperties",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Properties",
+          "name": "Properties",
+          "isArray": false
+        },
+        "name": "properties"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Properties",
+            "name": "Properties",
+            "isArray": false
+          },
+          "name": "properties"
+        },
+        "comment": "a Properties object to be converted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an immutable map containing all the entries in properties",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Properties",
+          "String"
+        ],
+        "comment": "if any key in Properties is not a String",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Properties"
+        ],
+        "comment": "if any key or value in Properties is null",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "immutableEntry(java.lang.Object key,java.lang.Object value)",
+    "name": "immutableEntry",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map.Entry",
+      "name": "Entry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key",
+          "nullable": true
+        },
+        "comment": "the key to be associated with the returned entry",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value",
+          "nullable": true
+        },
+        "comment": "the value to be associated with the returned entry",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableEntrySet(java.util.Set entrySet)",
+    "name": "unmodifiableEntrySet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "entrySet"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "entrySet"
+        },
+        "comment": "the entries for which to return an unmodifiable view",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the entries",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableEntry(java.util.Map.Entry entry)",
+    "name": "unmodifiableEntry",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map.Entry",
+      "name": "Entry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map.Entry",
+          "name": "Entry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map.Entry",
+            "name": "Entry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry for which to return an unmodifiable view",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableEntryIterator(java.util.Iterator entryIterator)",
+    "name": "unmodifiableEntryIterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.UnmodifiableIterator",
+      "name": "UnmodifiableIterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "entryIterator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asConverter(com.google.common.collect.BiMap bimap)",
+    "name": "asConverter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Converter",
+      "name": "Converter",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "bimap"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedBiMap(com.google.common.collect.BiMap bimap)",
+    "name": "synchronizedBiMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "bimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.BiMap",
+            "name": "BiMap",
+            "isArray": false
+          },
+          "name": "bimap"
+        },
+        "comment": "the bimap to be wrapped in a synchronized view",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a sychronized view of the specified bimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableBiMap(com.google.common.collect.BiMap bimap)",
+    "name": "unmodifiableBiMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "bimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.BiMap",
+            "name": "BiMap",
+            "isArray": false
+          },
+          "name": "bimap"
+        },
+        "comment": "the bimap for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified bimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "transformValues(java.util.Map fromMap,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformValues(java.util.SortedMap fromMap,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformValues(java.util.NavigableMap fromMap,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntries(java.util.Map fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntries(java.util.SortedMap fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntries(java.util.NavigableMap fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntriesIgnoreNavigable(java.util.SortedMap fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntriesIgnoreNavigable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asEntryTransformer(com.google.common.base.Function function)",
+    "name": "asEntryTransformer",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+      "name": "EntryTransformer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asValueToValueFunction(com.google.common.collect.Maps.EntryTransformer transformer,java.lang.Object key)",
+    "name": "asValueToValueFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asEntryToValueFunction(com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "asEntryToValueFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntry(com.google.common.collect.Maps.EntryTransformer transformer,java.util.Map.Entry entry)",
+    "name": "transformEntry",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map.Entry",
+      "name": "Entry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map.Entry",
+          "name": "Entry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asEntryToEntryFunction(com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "asEntryToEntryFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "keyPredicateOnEntries(com.google.common.base.Predicate keyPredicate)",
+    "name": "keyPredicateOnEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Predicate",
+      "name": "Predicate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valuePredicateOnEntries(com.google.common.base.Predicate valuePredicate)",
+    "name": "valuePredicateOnEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Predicate",
+      "name": "Predicate",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(java.util.Map unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(java.util.SortedMap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(java.util.NavigableMap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(com.google.common.collect.BiMap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(java.util.Map unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(java.util.SortedMap unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(java.util.NavigableMap unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(com.google.common.collect.BiMap unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(java.util.Map unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(java.util.SortedMap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterSortedIgnoreNavigable(java.util.SortedMap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterSortedIgnoreNavigable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedMap",
+      "name": "SortedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedMap",
+          "name": "SortedMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(java.util.NavigableMap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(com.google.common.collect.BiMap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.BiMap",
+          "name": "BiMap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableNavigableMap(java.util.NavigableMap map)",
+    "name": "unmodifiableNavigableMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.NavigableMap",
+            "name": "NavigableMap",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the navigable map for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified navigable map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedNavigableMap(java.util.NavigableMap navigableMap)",
+    "name": "synchronizedNavigableMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.NavigableMap",
+      "name": "NavigableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.NavigableMap",
+          "name": "NavigableMap",
+          "isArray": false
+        },
+        "name": "navigableMap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.NavigableMap",
+            "name": "NavigableMap",
+            "isArray": false
+          },
+          "name": "navigableMap"
+        },
+        "comment": "the navigable map to be \"wrapped\" in a synchronized navigable map.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized view of the specified navigable map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "safeGet(java.util.Map map,java.lang.Object key)",
+    "name": "safeGet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "safeContainsKey(java.util.Map map,java.lang.Object key)",
+    "name": "safeContainsKey",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "safeRemove(java.util.Map map,java.lang.Object key)",
+    "name": "safeRemove",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsKeyImpl(java.util.Map map,java.lang.Object key)",
+    "name": "containsKeyImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsValueImpl(java.util.Map map,java.lang.Object value)",
+    "name": "containsValueImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsEntryImpl(java.util.Collection c,java.lang.Object o)",
+    "name": "containsEntryImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "c"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the delegate (unwrapped) collection of map entries",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "the object that might be contained in c",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if c contains o",
+      "kind": "RETURN",
+      "condition": "args[0].contains(args[1]) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeEntryImpl(java.util.Collection c,java.lang.Object o)",
+    "name": "removeEntryImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "c"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the delegate (unwrapped) collection of map entries",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "the object to remove from c",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if c was changed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equalsImpl(java.util.Map map,java.lang.Object object)",
+    "name": "equalsImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toStringImpl(java.util.Map map)",
+    "name": "toStringImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putAllImpl(java.util.Map self,java.util.Map map)",
+    "name": "putAllImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "keyOrNull(java.util.Map.Entry entry)",
+    "name": "keyOrNull",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map.Entry",
+          "name": "Entry",
+          "isArray": false
+        },
+        "name": "entry",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valueOrNull(java.util.Map.Entry entry)",
+    "name": "valueOrNull",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map.Entry",
+          "name": "Entry",
+          "isArray": false
+        },
+        "name": "entry",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "indexMap(java.util.Collection list)",
+    "name": "indexMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Maps",
+      "name": "Maps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Maps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "signature": "equals(java.lang.Object one,java.lang.Object two)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.Utils",
+      "name": "Utils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.Utils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "one"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "two"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "one"
+        },
+        "comment": "First object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "two"
+        },
+        "comment": "Second object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the arguments are either both null or equal in the sense of their equals() method.",
+      "kind": "RETURN",
+      "condition": "args[0]==null || args[1]==null || args[0].equals(args[1]) || args[1].equals(args[0]) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode(java.lang.Object object)",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.Utils",
+      "name": "Utils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.Utils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "The Object to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A hash code.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomState(java.util.Random random)",
+    "name": "getRandomState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.Utils",
+      "name": "Utils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.Utils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A String encapsulating the object state.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "restoreRandomState(java.lang.String state)",
+    "name": "restoreRandomState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.Utils",
+      "name": "Utils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.Utils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Random",
+      "name": "Random",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "The saved state (@see #getRandomState()).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The restored Random.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFileUTF8Writer(java.io.File file)",
+    "name": "getFileUTF8Writer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.util.Utils",
+      "name": "Utils",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.util.Utils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.Writer",
+      "name": "Writer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "A File to write to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A Writer for this file.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  }
+]

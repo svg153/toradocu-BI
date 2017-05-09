@@ -1,0 +1,260 @@
+[
+  {
+    "signature": "Arc(double lower,double upper,double tolerance)",
+    "name": "Arc",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "upper"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower angular bound of the arc",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper angular bound of the arc",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which angles are considered identical",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if lower is greater than upper",
+        "kind": "THROWS",
+        "condition": "args[0]>args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "getInf()",
+    "name": "getInf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower angular bound of the arc, always between 0 and \\( 2 \\pi \\)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSup()",
+    "name": "getSup",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper angular bound of the arc, always between getInf() and getInf() \\( + 2 \\pi \\)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSize()",
+    "name": "getSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "angular size of the arc",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBarycenter()",
+    "name": "getBarycenter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "barycenter of the arc",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTolerance()",
+    "name": "getTolerance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "tolerance below which angles are considered identical",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "checkPoint(double point)",
+    "name": "checkPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+      "name": "Arc",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.Arc",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Region.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "point"
+        },
+        "comment": "point to check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a code representing the point status: either Region.Location.INSIDE, Region.Location.OUTSIDE or Region.Location.BOUNDARY",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

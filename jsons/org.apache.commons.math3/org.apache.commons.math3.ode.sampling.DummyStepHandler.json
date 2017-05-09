@@ -1,0 +1,138 @@
+[
+  {
+    "signature": "getInstance()",
+    "name": "getInstance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+      "name": "DummyStepHandler",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+      "name": "DummyStepHandler",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the only instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "init(double t0,double[] y0,double t)",
+    "name": "init",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+      "name": "DummyStepHandler",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "handleStep(org.apache.commons.math3.ode.sampling.StepInterpolator interpolator,boolean isLast)",
+    "name": "handleStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+      "name": "DummyStepHandler",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.DummyStepHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+          "name": "StepInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isLast"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+            "name": "StepInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "interpolator for the last accepted step. For efficiency purposes, the various integrators reuse the same object on each call, so if the instance wants to keep it across all calls (for example to provide at the end of the integration a continuous model valid throughout the integration range), it should build a local copy using the clone method and store this copy.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isLast"
+        },
+        "comment": "true if the step is the last one",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

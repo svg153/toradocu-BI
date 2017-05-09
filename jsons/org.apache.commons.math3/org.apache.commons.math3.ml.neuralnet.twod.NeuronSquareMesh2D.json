@@ -1,0 +1,602 @@
+[
+  {
+    "signature": "NeuronSquareMesh2D(boolean wrapRowDim,boolean wrapColDim,org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood neighbourhoodType,double[][][] featuresList)",
+    "name": "NeuronSquareMesh2D",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrapRowDim"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrapColDim"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood",
+          "name": "SquareNeighbourhood",
+          "isArray": false
+        },
+        "name": "neighbourhoodType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "featuresList"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrapRowDim"
+        },
+        "comment": "Whether to wrap the first dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrapColDim"
+        },
+        "comment": "Whether to wrap the second dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood",
+            "name": "SquareNeighbourhood",
+            "isArray": false
+          },
+          "name": "neighbourhoodType"
+        },
+        "comment": "Neighbourhood type.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "featuresList"
+        },
+        "comment": "Arrays that will initialize the features sets of the network's neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numRows < 2",
+          "numCols < 2"
+        ],
+        "comment": "if numRows < 2 or numCols < 2.",
+        "kind": "THROWS",
+        "condition": "target<2 || target<2"
+      }
+    ]
+  },
+  {
+    "signature": "NeuronSquareMesh2D(int numRows,boolean wrapRowDim,int numCols,boolean wrapColDim,org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood neighbourhoodType,org.apache.commons.math3.ml.neuralnet.FeatureInitializer[] featureInit)",
+    "name": "NeuronSquareMesh2D",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numRows"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrapRowDim"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numCols"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wrapColDim"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood",
+          "name": "SquareNeighbourhood",
+          "isArray": false
+        },
+        "name": "neighbourhoodType"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer[]",
+          "name": "FeatureInitializer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+            "name": "FeatureInitializer",
+            "isArray": false
+          }
+        },
+        "name": "featureInit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numRows"
+        },
+        "comment": "Number of neurons in the first dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrapRowDim"
+        },
+        "comment": "Whether to wrap the first dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numCols"
+        },
+        "comment": "Number of neurons in the second dimension.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wrapColDim"
+        },
+        "comment": "Whether to wrap the second dimension (i.e the first and last neurons will be linked together).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.SquareNeighbourhood",
+            "name": "SquareNeighbourhood",
+            "isArray": false
+          },
+          "name": "neighbourhoodType"
+        },
+        "comment": "Neighbourhood type.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer[]",
+            "name": "FeatureInitializer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+              "name": "FeatureInitializer",
+              "isArray": false
+            }
+          },
+          "name": "featureInit"
+        },
+        "comment": "Array of functions that will initialize the corresponding element of the features set of each newly created neuron. In particular, the size of this array defines the size of feature set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numRows < 2",
+          "numCols < 2"
+        ],
+        "comment": "if numRows < 2 or numCols < 2.",
+        "kind": "THROWS",
+        "condition": "args[0]<2 || args[2]<2"
+      }
+    ]
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new instance with the same state as this instance.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNetwork()",
+    "name": "getNetwork",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the network.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumberOfRows()",
+    "name": "getNumberOfRows",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of rows.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumberOfColumns()",
+    "name": "getNumberOfColumns",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of column.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeuron(int i,int j)",
+    "name": "getNeuron",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+      "name": "Neuron",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "j"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "Row index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "j"
+        },
+        "comment": "Column index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neuron at (i, j).",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "i",
+          "j"
+        ],
+        "comment": "if i or j is out of range.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNeuron(int row,int col,org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection alongRowDir,org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection alongColDir)",
+    "name": "getNeuron",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+      "name": "NeuronSquareMesh2D",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+      "name": "Neuron",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "col"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection",
+          "name": "HorizontalDirection",
+          "isArray": false
+        },
+        "name": "alongRowDir"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection",
+          "name": "VerticalDirection",
+          "isArray": false
+        },
+        "name": "alongColDir"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "row"
+        },
+        "comment": "Row index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "col"
+        },
+        "comment": "Column index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection",
+            "name": "HorizontalDirection",
+            "isArray": false
+          },
+          "name": "alongRowDir"
+        },
+        "comment": "Direction along the given row (i.e. an offset will be added to the given column index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection",
+            "name": "VerticalDirection",
+            "isArray": false
+          },
+          "name": "alongColDir"
+        },
+        "comment": "Direction along the given col (i.e. an offset will be added to the given row index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neuron at the requested location, or null if the location is not on the map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

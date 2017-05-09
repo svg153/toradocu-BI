@@ -1,0 +1,1171 @@
+[
+  {
+    "signature": "Region(net.sf.freecol.common.model.Game game)",
+    "name": "Region",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Region(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "Region",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "The object identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getKey()",
+    "name": "getKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The region key, which will be null for non-fixed regions.",
+      "kind": "RETURN",
+      "condition": "true ?result==null"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasName()",
+    "name": "hasName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the region has been named or was predefined.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isPacific()",
+    "name": "isPacific",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this region is the Pacific.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLabel()",
+    "name": "getLabel",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+      "name": "StringTemplate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The i18n-ready name for the region.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getType()",
+    "name": "getType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Region.RegionType",
+      "name": "RegionType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The region type.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getParent()",
+    "name": "getParent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The parent region",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setParent(net.sf.freecol.common.model.Region newParent)",
+    "name": "setParent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "newParent"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "newParent"
+        },
+        "comment": "The new parent region.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getChildren()",
+    "name": "getChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The child regions.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setChildren(java.util.List newChildren)",
+    "name": "setChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "newChildren"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "newChildren"
+        },
+        "comment": "The new child regions.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addChild(net.sf.freecol.common.model.Region child)",
+    "name": "addChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Region",
+          "name": "Region",
+          "isArray": false
+        },
+        "name": "child"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Region",
+            "name": "Region",
+            "isArray": false
+          },
+          "name": "child"
+        },
+        "comment": "The child Region to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isLeaf()",
+    "name": "isLeaf",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the region has no children.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getClaimable()",
+    "name": "getClaimable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the region can be claimed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setClaimable(boolean newClaimable)",
+    "name": "setClaimable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "newClaimable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "newClaimable"
+        },
+        "comment": "True if the region can be claimed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiscoverable()",
+    "name": "getDiscoverable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the region can be discovered.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDiscoverable(boolean newDiscoverable)",
+    "name": "setDiscoverable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "newDiscoverable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "newDiscoverable"
+        },
+        "comment": "True if the region can be discovered.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiscoverer()",
+    "name": "getDiscoverer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The unit identifier, or null if none yet.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDiscoverer(java.lang.String discoverer)",
+    "name": "setDiscoverer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "discoverer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "discoverer"
+        },
+        "comment": "The unit identifier to set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiscoverableRegion()",
+    "name": "getDiscoverableRegion",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A discoverable a region, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiscoveredIn()",
+    "name": "getDiscoveredIn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The discovery turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDiscoveredIn(net.sf.freecol.common.model.Turn newDiscoveredIn)",
+    "name": "setDiscoveredIn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Turn",
+          "name": "Turn",
+          "isArray": false
+        },
+        "name": "newDiscoveredIn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Turn",
+            "name": "Turn",
+            "isArray": false
+          },
+          "name": "newDiscoveredIn"
+        },
+        "comment": "The new discoveredy turn.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiscoveredBy()",
+    "name": "getDiscoveredBy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The discovering Player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDiscoveredBy(net.sf.freecol.common.model.Player newDiscoveredBy)",
+    "name": "setDiscoveredBy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "newDiscoveredBy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "newDiscoveredBy"
+        },
+        "comment": "The new discovering player.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getScoreValue()",
+    "name": "getScoreValue",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The score.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setScoreValue(int newScoreValue)",
+    "name": "setScoreValue",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newScoreValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newScoreValue"
+        },
+        "comment": "The new score.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "discover(net.sf.freecol.common.model.Player player,net.sf.freecol.common.model.Turn turn)",
+    "name": "discover",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Turn",
+          "name": "Turn",
+          "isArray": false
+        },
+        "name": "turn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The discovering Player.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Turn",
+            "name": "Turn",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The Turn of discovery.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of discovered Regions.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getName()",
+    "name": "getName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setName(java.lang.String newName)",
+    "name": "setName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "newName"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNameKey()",
+    "name": "getNameKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Region",
+      "name": "Region",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Region",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"region\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,629 @@
+[
+  {
+    "signature": "PolynomialFunctionLagrangeForm(double[] x,double[] y)",
+    "name": "PolynomialFunctionLagrangeForm",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "interpolating points",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "function values at interpolating points",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths are different.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of points is less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if two abscissae have the same value.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double z)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "z"
+        },
+        "comment": "Point at which the function value is to be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the function value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x and y have different lengths.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if x is not sorted in strictly increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the size of x is less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0]<2"
+      }
+    ]
+  },
+  {
+    "signature": "degree()",
+    "name": "degree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the degree of the polynomial",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatingPoints()",
+    "name": "getInterpolatingPoints",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a fresh copy of the interpolating points array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatingValues()",
+    "name": "getInterpolatingValues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a fresh copy of the interpolating values array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCoefficients()",
+    "name": "getCoefficients",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a fresh copy of the coefficients array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(double[] x,double[] y,double z)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "Interpolating points array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "Interpolating values array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "z"
+        },
+        "comment": "Point at which the function value is to be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the function value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x and y have different lengths.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if x is not sorted in strictly increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the size of x is less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      }
+    ]
+  },
+  {
+    "signature": "computeCoefficients()",
+    "name": "computeCoefficients",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "verifyInterpolationArray(double[] x,double[] y,boolean abort)",
+    "name": "verifyInterpolationArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+      "name": "PolynomialFunctionLagrangeForm",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "abort"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "Interpolating points array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "Interpolating values array.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "abort"
+        },
+        "comment": "Whether to throw an exception if x is not sorted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "false if the x is not sorted in increasing order, true otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array lengths are different.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of points is less than 2.",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "abort",
+          "true"
+        ],
+        "comment": "if x is not sorted in strictly increasing order and abort is true.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,658 @@
+[
+  {
+    "signature": "getAgrestiCoullInterval(int numberOfTrials,int numberOfSuccesses,double confidenceLevel)",
+    "name": "getAgrestiCoullInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.IntervalUtils",
+      "name": "IntervalUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.interval.IntervalUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.ConfidenceInterval",
+      "name": "ConfidenceInterval",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "confidenceLevel"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "confidenceLevel"
+        },
+        "comment": "desired probability that the true probability of success falls within the returned interval",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Confidence interval containing the probability of success with probability confidenceLevel",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials <= 0"
+        ],
+        "comment": "if numberOfTrials <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses < 0"
+        ],
+        "comment": "if numberOfSuccesses < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses > numberOfTrials"
+        ],
+        "comment": "if numberOfSuccesses > numberOfTrials.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "confidenceLevel",
+          "(0, 1)"
+        ],
+        "comment": "if confidenceLevel is not in the interval (0, 1).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getClopperPearsonInterval(int numberOfTrials,int numberOfSuccesses,double confidenceLevel)",
+    "name": "getClopperPearsonInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.IntervalUtils",
+      "name": "IntervalUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.interval.IntervalUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.ConfidenceInterval",
+      "name": "ConfidenceInterval",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "confidenceLevel"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "confidenceLevel"
+        },
+        "comment": "desired probability that the true probability of success falls within the returned interval",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Confidence interval containing the probability of success with probability confidenceLevel",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials <= 0"
+        ],
+        "comment": "if numberOfTrials <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses < 0"
+        ],
+        "comment": "if numberOfSuccesses < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses > numberOfTrials"
+        ],
+        "comment": "if numberOfSuccesses > numberOfTrials.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "confidenceLevel",
+          "(0, 1)"
+        ],
+        "comment": "if confidenceLevel is not in the interval (0, 1).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNormalApproximationInterval(int numberOfTrials,int numberOfSuccesses,double confidenceLevel)",
+    "name": "getNormalApproximationInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.IntervalUtils",
+      "name": "IntervalUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.interval.IntervalUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.ConfidenceInterval",
+      "name": "ConfidenceInterval",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "confidenceLevel"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "confidenceLevel"
+        },
+        "comment": "desired probability that the true probability of success falls within the interval",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Confidence interval containing the probability of success with probability confidenceLevel",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWilsonScoreInterval(int numberOfTrials,int numberOfSuccesses,double confidenceLevel)",
+    "name": "getWilsonScoreInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.IntervalUtils",
+      "name": "IntervalUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.interval.IntervalUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.ConfidenceInterval",
+      "name": "ConfidenceInterval",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "confidenceLevel"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "confidenceLevel"
+        },
+        "comment": "desired probability that the true probability of success falls within the returned interval",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Confidence interval containing the probability of success with probability confidenceLevel",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials <= 0"
+        ],
+        "comment": "if numberOfTrials <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses < 0"
+        ],
+        "comment": "if numberOfSuccesses < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses > numberOfTrials"
+        ],
+        "comment": "if numberOfSuccesses > numberOfTrials.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "confidenceLevel",
+          "(0, 1)"
+        ],
+        "comment": "if confidenceLevel is not in the interval (0, 1).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkParameters(int numberOfTrials,int numberOfSuccesses,double confidenceLevel)",
+    "name": "checkParameters",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.interval.IntervalUtils",
+      "name": "IntervalUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.interval.IntervalUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "confidenceLevel"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials (must be positive)",
+        "kind": "PARAM",
+        "condition": "args[0]>0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes (must not exceed numberOfTrials)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "confidenceLevel"
+        },
+        "comment": "confidence level (must be strictly between 0 and 1)",
+        "kind": "PARAM",
+        "condition": "args[2]==0"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials <= 0"
+        ],
+        "comment": "if numberOfTrials <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses < 0"
+        ],
+        "comment": "if numberOfSuccesses < 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfSuccesses > numberOfTrials"
+        ],
+        "comment": "if numberOfSuccesses > numberOfTrials.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "confidenceLevel",
+          "(0, 1)"
+        ],
+        "comment": "if confidenceLevel is not in the interval (0, 1).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

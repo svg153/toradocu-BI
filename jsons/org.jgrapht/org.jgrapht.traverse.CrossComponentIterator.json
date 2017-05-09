@@ -1,0 +1,562 @@
+[
+  {
+    "signature": "CrossComponentIterator(org.jgrapht.Graph g,java.lang.Object startVertex)",
+    "name": "CrossComponentIterator",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.Graph",
+          "name": "Graph",
+          "isArray": false
+        },
+        "name": "g"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "startVertex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.Graph",
+            "name": "Graph",
+            "isArray": false
+          },
+          "name": "g"
+        },
+        "comment": "the graph to be iterated.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "startVertex"
+        },
+        "comment": "the vertex iteration to be started.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "g==null",
+          "startVertex"
+        ],
+        "comment": "if g==null or does not contain startVertex",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getGraph()",
+    "name": "getGraph",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.Graph",
+      "name": "Graph",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the graph being traversed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isConnectedComponentExhausted()",
+    "name": "isConnectedComponentExhausted",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if there are no more uniterated vertices in the currently iterated connected component; false otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "encounterVertex(java.lang.Object vertex,java.lang.Object edge)",
+    "name": "encounterVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "edge"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "the vertex encountered",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "edge"
+        },
+        "comment": "the edge via which the vertex was encountered, or null if the vertex is a starting point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "provideNextVertex()",
+    "name": "provideNextVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next vertex to be returned by this iterator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeenData(java.lang.Object vertex)",
+    "name": "getSeenData",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "D",
+      "name": "D",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "a vertex which has already been seen.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "data associated with the seen vertex or null if no data was associated with the vertex. A null return can also indicate that the vertex was explicitly associated with null.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSeenVertex(java.lang.Object vertex)",
+    "name": "isSeenVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "vertex in question",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if vertex has already been seen",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "encounterVertexAgain(java.lang.Object vertex,java.lang.Object edge)",
+    "name": "encounterVertexAgain",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "edge"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "the vertex re-encountered",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "edge"
+        },
+        "comment": "the edge via which the vertex was re-encountered",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "putSeenData(java.lang.Object vertex,java.lang.Object data)",
+    "name": "putSeenData",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "D",
+      "name": "D",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "a vertex which has been seen.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "data"
+        },
+        "comment": "data to be associated with the seen vertex.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "previous value associated with specified vertex or null if no data was associated with the vertex. A null return can also indicate that the vertex was explicitly associated with null.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "finishVertex(java.lang.Object vertex)",
+    "name": "finishVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "vertex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "vertex"
+        },
+        "comment": "vertex which has been finished",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "createGraphSpecifics(org.jgrapht.Graph g)",
+    "name": "createGraphSpecifics",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator",
+      "name": "CrossComponentIterator",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.traverse.CrossComponentIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.traverse.CrossComponentIterator.Specifics",
+      "name": "Specifics",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.Graph",
+          "name": "Graph",
+          "isArray": false
+        },
+        "name": "g"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.Graph",
+            "name": "Graph",
+            "isArray": false
+          },
+          "name": "g"
+        },
+        "comment": "",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "TODO Document me",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

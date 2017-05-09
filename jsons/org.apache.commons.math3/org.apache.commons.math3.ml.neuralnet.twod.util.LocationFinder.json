@@ -1,0 +1,100 @@
+[
+  {
+    "signature": "LocationFinder(org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D map)",
+    "name": "LocationFinder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.util.LocationFinder",
+      "name": "LocationFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.util.LocationFinder",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+          "name": "NeuronSquareMesh2D",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D",
+            "name": "NeuronSquareMesh2D",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "Map.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "network"
+        ],
+        "comment": "if the network contains non-unique identifiers. This indicates an inconsistent state due to a bug in the construction code of the underlying network.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getLocation(org.apache.commons.math3.ml.neuralnet.Neuron n)",
+    "name": "getLocation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.util.LocationFinder",
+      "name": "LocationFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.twod.util.LocationFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.twod.util.LocationFinder.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Neuron.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the (row, column) coordinates of n, or null if no such neuron belongs to the map used to build this instance.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

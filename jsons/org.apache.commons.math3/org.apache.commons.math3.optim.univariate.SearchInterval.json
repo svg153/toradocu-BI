@@ -1,0 +1,253 @@
+[
+  {
+    "signature": "SearchInterval(double lo,double hi,double init)",
+    "name": "SearchInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.SearchInterval",
+      "name": "SearchInterval",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.SearchInterval",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lo"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "hi"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "init"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lo"
+        },
+        "comment": "Lower bound.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "hi"
+        },
+        "comment": "Upper bound.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "init"
+        },
+        "comment": "Start value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lo >= hi"
+        ],
+        "comment": "if lo >= hi.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "init < lo",
+          "init > hi"
+        ],
+        "comment": "if init < lo or init > hi.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[0] || args[2]>args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "SearchInterval(double lo,double hi)",
+    "name": "SearchInterval",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.SearchInterval",
+      "name": "SearchInterval",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.SearchInterval",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lo"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "hi"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lo"
+        },
+        "comment": "Lower bound.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "hi"
+        },
+        "comment": "Upper bound.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lo >= hi"
+        ],
+        "comment": "if lo >= hi.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "getMin()",
+    "name": "getMin",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.SearchInterval",
+      "name": "SearchInterval",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.SearchInterval",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the lower bound.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMax()",
+    "name": "getMax",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.SearchInterval",
+      "name": "SearchInterval",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.SearchInterval",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the upper bound.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStartValue()",
+    "name": "getStartValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.SearchInterval",
+      "name": "SearchInterval",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.SearchInterval",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the start value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

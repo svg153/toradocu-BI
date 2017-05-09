@@ -1,0 +1,1085 @@
+[
+  {
+    "signature": "hash(double value)",
+    "name": "hash",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to be hashed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the hash code",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(double x,double y)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "Value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "new Double(x).equals(new Double(y))",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hash(double[] value)",
+    "name": "hash",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "value"
+        },
+        "comment": "the value to be hashed (may be null)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the hash code",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "normalizeAngle(double a,double center)",
+    "name": "normalizeAngle",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "center"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "angle to normalize",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "center"
+        },
+        "comment": "center of the desired 2π interval for the result",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a-2kπ with integer k and center-π <= a-2kπ <= center+π",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "max(org.apache.commons.math3.RealFieldElement e1,org.apache.commons.math3.RealFieldElement e2)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "e1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "e2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "e1"
+        },
+        "comment": "first element",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "e2"
+        },
+        "comment": "second element",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "max(a1, e2)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "min(org.apache.commons.math3.RealFieldElement e1,org.apache.commons.math3.RealFieldElement e2)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "e1"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "e2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "e1"
+        },
+        "comment": "first element",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "e2"
+        },
+        "comment": "second element",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "min(a1, e2)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reduce(double a,double period,double offset)",
+    "name": "reduce",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "period"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "offset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "Value to reduce.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "period"
+        },
+        "comment": "Period.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "offset"
+        },
+        "comment": "Value that will be mapped to 0.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value, within the interval [0 |period|), that corresponds to a.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "copySign(byte magnitude,byte sign)",
+    "name": "copySign",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte",
+      "name": "byte",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte",
+          "name": "byte",
+          "isArray": false
+        },
+        "name": "magnitude"
+      },
+      {
+        "type": {
+          "qualifiedName": "byte",
+          "name": "byte",
+          "isArray": false
+        },
+        "name": "sign"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          },
+          "name": "magnitude"
+        },
+        "comment": "Magnitude of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          },
+          "name": "sign"
+        },
+        "comment": "Sign of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a value with magnitude equal to magnitude and with the same sign as the sign argument.",
+      "kind": "RETURN",
+      "condition": "true ?result=={magnitude}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "magnitude == Byte.MIN_VALUE",
+          "sign >= 0"
+        ],
+        "comment": "if magnitude == Byte.MIN_VALUE and sign >= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]==args[0].MIN_VALUE && args[1]>=0"
+      }
+    ]
+  },
+  {
+    "signature": "copySign(short magnitude,short sign)",
+    "name": "copySign",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "short",
+      "name": "short",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "short",
+          "name": "short",
+          "isArray": false
+        },
+        "name": "magnitude"
+      },
+      {
+        "type": {
+          "qualifiedName": "short",
+          "name": "short",
+          "isArray": false
+        },
+        "name": "sign"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "short",
+            "name": "short",
+            "isArray": false
+          },
+          "name": "magnitude"
+        },
+        "comment": "Magnitude of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "short",
+            "name": "short",
+            "isArray": false
+          },
+          "name": "sign"
+        },
+        "comment": "Sign of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a value with magnitude equal to magnitude and with the same sign as the sign argument.",
+      "kind": "RETURN",
+      "condition": "true ?result=={magnitude}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "magnitude == Short.MIN_VALUE",
+          "sign >= 0"
+        ],
+        "comment": "if magnitude == Short.MIN_VALUE and sign >= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]==args[0].MIN_VALUE && args[1]>=0"
+      }
+    ]
+  },
+  {
+    "signature": "copySign(int magnitude,int sign)",
+    "name": "copySign",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "magnitude"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "sign"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "magnitude"
+        },
+        "comment": "Magnitude of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "sign"
+        },
+        "comment": "Sign of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a value with magnitude equal to magnitude and with the same sign as the sign argument.",
+      "kind": "RETURN",
+      "condition": "true ?result=={magnitude}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "magnitude == Integer.MIN_VALUE",
+          "sign >= 0"
+        ],
+        "comment": "if magnitude == Integer.MIN_VALUE and sign >= 0.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copySign(long magnitude,long sign)",
+    "name": "copySign",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "magnitude"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "sign"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "magnitude"
+        },
+        "comment": "Magnitude of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "sign"
+        },
+        "comment": "Sign of the returned value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a value with magnitude equal to magnitude and with the same sign as the sign argument.",
+      "kind": "RETURN",
+      "condition": "true ?result=={magnitude}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "magnitude == Long.MIN_VALUE",
+          "sign >= 0"
+        ],
+        "comment": "if magnitude == Long.MIN_VALUE and sign >= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]==args[0].MIN_VALUE && args[1]>=0"
+      }
+    ]
+  },
+  {
+    "signature": "checkFinite(double x)",
+    "name": "checkFinite",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Argument.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if x is not a finite real number.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkFinite(double[] val)",
+    "name": "checkFinite",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "val"
+        },
+        "comment": "Arguments.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any values of the array is not a finite real number.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkNotNull(java.lang.Object o,org.apache.commons.math3.exception.util.Localizable pattern,java.lang.Object[] args)",
+    "name": "checkNotNull",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.exception.util.Localizable",
+          "name": "Localizable",
+          "isArray": false
+        },
+        "name": "pattern"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "args"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "Object to be checked.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.exception.util.Localizable",
+            "name": "Localizable",
+            "isArray": false
+          },
+          "name": "pattern"
+        },
+        "comment": "Message pattern.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object[]",
+            "name": "Object[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.Object",
+              "name": "Object",
+              "isArray": false
+            }
+          },
+          "name": "args"
+        },
+        "comment": "Arguments to replace the placeholders in pattern.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "o",
+          "null"
+        ],
+        "comment": "if o is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkNotNull(java.lang.Object o)",
+    "name": "checkNotNull",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MathUtils",
+      "name": "MathUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MathUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "Object to be checked.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "o",
+          "null"
+        ],
+        "comment": "if o is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

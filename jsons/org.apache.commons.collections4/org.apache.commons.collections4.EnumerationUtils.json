@@ -1,0 +1,201 @@
+[
+  {
+    "signature": "get(java.util.Enumeration e,int index)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.EnumerationUtils",
+      "name": "EnumerationUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.EnumerationUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Enumeration",
+          "name": "Enumeration",
+          "isArray": false
+        },
+        "name": "e"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Enumeration",
+            "name": "Enumeration",
+            "isArray": false
+          },
+          "name": "e"
+        },
+        "comment": "the enumeration to get a value from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to get",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the object at the specified index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the index is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the object type is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toList(java.util.Enumeration enumeration)",
+    "name": "toList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.EnumerationUtils",
+      "name": "EnumerationUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.EnumerationUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Enumeration",
+          "name": "Enumeration",
+          "isArray": false
+        },
+        "name": "enumeration"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Enumeration",
+            "name": "Enumeration",
+            "isArray": false
+          },
+          "name": "enumeration"
+        },
+        "comment": "the enumeration to traverse, which should not be null.",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a list containing all elements of the given enumeration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the enumeration parameter is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "toList(java.util.StringTokenizer stringTokenizer)",
+    "name": "toList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.EnumerationUtils",
+      "name": "EnumerationUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.EnumerationUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.StringTokenizer",
+          "name": "StringTokenizer",
+          "isArray": false
+        },
+        "name": "stringTokenizer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.StringTokenizer",
+            "name": "StringTokenizer",
+            "isArray": false
+          },
+          "name": "stringTokenizer"
+        },
+        "comment": "the tokenizer to convert to a List<String>",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list containing all tokens of the given StringTokenizer",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

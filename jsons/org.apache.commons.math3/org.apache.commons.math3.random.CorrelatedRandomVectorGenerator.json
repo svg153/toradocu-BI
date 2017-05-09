@@ -1,0 +1,327 @@
+[
+  {
+    "signature": "CorrelatedRandomVectorGenerator(double[] mean,org.apache.commons.math3.linear.RealMatrix covariance,double small,org.apache.commons.math3.random.NormalizedRandomGenerator generator)",
+    "name": "CorrelatedRandomVectorGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "mean"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "covariance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "small"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.NormalizedRandomGenerator",
+          "name": "NormalizedRandomGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "mean"
+        },
+        "comment": "Expected mean values for all components.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "covariance"
+        },
+        "comment": "Covariance matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "small"
+        },
+        "comment": "Diagonal elements threshold under which column are considered to be dependent on previous ones and are discarded",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.NormalizedRandomGenerator",
+            "name": "NormalizedRandomGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "underlying generator for uncorrelated normalized components.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the covariance matrix is not strictly positive definite.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the mean and covariance arrays dimensions do not match.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "CorrelatedRandomVectorGenerator(org.apache.commons.math3.linear.RealMatrix covariance,double small,org.apache.commons.math3.random.NormalizedRandomGenerator generator)",
+    "name": "CorrelatedRandomVectorGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "covariance"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "small"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.NormalizedRandomGenerator",
+          "name": "NormalizedRandomGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "covariance"
+        },
+        "comment": "Covariance matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "small"
+        },
+        "comment": "Diagonal elements threshold under which column are considered to be dependent on previous ones and are discarded.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.NormalizedRandomGenerator",
+            "name": "NormalizedRandomGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "Underlying generator for uncorrelated normalized components.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the covariance matrix is not strictly positive definite.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getGenerator()",
+    "name": "getGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.random.NormalizedRandomGenerator",
+      "name": "NormalizedRandomGenerator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "underlying uncorrelated components generator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRank()",
+    "name": "getRank",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "rank of the square matrix.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRootMatrix()",
+    "name": "getRootMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "root of the square matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nextVector()",
+    "name": "nextVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+      "name": "CorrelatedRandomVectorGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.CorrelatedRandomVectorGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a random vector as an array of double. The returned array is created at each call, the caller can do what it wants with it.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,480 @@
+[
+  {
+    "signature": "isPowerOfTwo(java.math.BigInteger x)",
+    "name": "isPowerOfTwo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "log2(java.math.BigInteger x,java.math.RoundingMode mode)",
+    "name": "log2",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x <= 0"
+        ],
+        "comment": "if x <= 0",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "x"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and x is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "log10(java.math.BigInteger x,java.math.RoundingMode mode)",
+    "name": "log10",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x <= 0"
+        ],
+        "comment": "if x <= 0",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "x"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and x is not a power of ten",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sqrt(java.math.BigInteger x,java.math.RoundingMode mode)",
+    "name": "sqrt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x < 0"
+        ],
+        "comment": "if x < 0",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "sqrt(x)"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and sqrt(x) is not an integer",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "divide(java.math.BigInteger p,java.math.BigInteger q,java.math.RoundingMode mode)",
+    "name": "divide",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "q"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "q == 0",
+          "mode == UNNECESSARY",
+          "a",
+          "b"
+        ],
+        "comment": "if q == 0, or if mode == UNNECESSARY and a is not an integer multiple of b",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "factorial(int n)",
+    "name": "factorial",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "listProduct(java.util.List nums)",
+    "name": "listProduct",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "nums"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "listProduct(java.util.List nums,int start,int end)",
+    "name": "listProduct",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "nums"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "binomial(int n,int k)",
+    "name": "binomial",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0",
+          "k < 0",
+          "k > n"
+        ],
+        "comment": "if n < 0, k < 0, or k > n",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fitsInLong(java.math.BigInteger x)",
+    "name": "fitsInLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.BigIntegerMath",
+      "name": "BigIntegerMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.BigIntegerMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

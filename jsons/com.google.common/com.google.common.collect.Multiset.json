@@ -1,0 +1,874 @@
+[
+  {
+    "signature": "count(java.lang.Object element)",
+    "name": "count",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element",
+          "nullable": true
+        },
+        "comment": "the element to count occurrences of",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of occurrences of the element in this multiset; possibly zero but never negative",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add(java.lang.Object element,int occurrences)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "occurrences"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element",
+          "nullable": true
+        },
+        "comment": "the element to add occurrences of; may be null only if explicitly allowed by the implementation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "occurrences"
+        },
+        "comment": "the number of occurrences of the element to add. May be zero, in which case no change will be made.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the count of the element before the operation; possibly zero",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "occurrences",
+          "Integer.MAX_VALUE"
+        ],
+        "comment": "if occurrences is negative, or if this operation would result in more than Integer.MAX_VALUE occurrences of the element",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "element",
+          "occurrences"
+        ],
+        "comment": "if element is null and this implementation does not permit null elements. Note that if occurrences is zero, the implementation may opt to return normally.",
+        "kind": "THROWS",
+        "condition": "(args[0]==null) || (args[1]==0)"
+      }
+    ]
+  },
+  {
+    "signature": "remove(java.lang.Object element,int occurrences)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "occurrences"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element",
+          "nullable": true
+        },
+        "comment": "the element to conditionally remove occurrences of",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "occurrences"
+        },
+        "comment": "the number of occurrences of the element to remove. May be zero, in which case no change will be made.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the count of the element before the operation; possibly zero",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "occurrences"
+        ],
+        "comment": "if occurrences is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "setCount(java.lang.Object element,int count)",
+    "name": "setCount",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "count"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "the element to add or remove occurrences of; may be null only if explicitly allowed by the implementation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "count"
+        },
+        "comment": "the desired count of the element in this multiset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the count of the element before the operation; possibly zero",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "count"
+        ],
+        "comment": "if count is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "element",
+          "count"
+        ],
+        "comment": "if element is null and this implementation does not permit null elements. Note that if count is zero, the implementor may optionally return zero instead.",
+        "kind": "THROWS",
+        "condition": "(args[0]==null) || (args[1]==0)"
+      }
+    ]
+  },
+  {
+    "signature": "setCount(java.lang.Object element,int oldCount,int newCount)",
+    "name": "setCount",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "oldCount"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "the element to conditionally set the count of; may be null only if explicitly allowed by the implementation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "oldCount"
+        },
+        "comment": "the expected present count of the element in this multiset",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newCount"
+        },
+        "comment": "the desired count of the element in this multiset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the condition for modification was met. This implies that the multiset was indeed modified, unless oldCount == newCount.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "oldCount",
+          "newCount"
+        ],
+        "comment": "if oldCount or newCount is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0 || args[2]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "element",
+          "oldCount",
+          "newCount",
+          "true"
+        ],
+        "comment": "if element is null and the implementation does not permit null elements. Note that if oldCount and newCount are both zero, the implementor may optionally return true instead.",
+        "kind": "THROWS",
+        "condition": "(args[0]==null) || (args[1]==0 && args[2]==0)"
+      }
+    ]
+  },
+  {
+    "signature": "elementSet()",
+    "name": "elementSet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a view of the set of distinct elements in this multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "entrySet()",
+    "name": "entrySet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a set of entries representing the data of this multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object object)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "contains(java.lang.Object element)",
+    "name": "contains",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element",
+          "nullable": true
+        },
+        "comment": "the element to check for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this multiset contains at least one occurrence of the element",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "containsAll(java.util.Collection elements)",
+    "name": "containsAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "elements"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "elements"
+        },
+        "comment": "the collection of elements to be checked for containment in this multiset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this multiset contains at least one occurrence of each element contained in elements",
+      "kind": "RETURN",
+      "condition": "target.contains(java.lang.Object) ? result == true"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "elements"
+        ],
+        "comment": "if elements is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "add(java.lang.Object element)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "the element to add one occurrence of; may be null only if explicitly allowed by the implementation",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true always, since this call is required to modify the multiset, unlike other Collection types",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "element"
+        ],
+        "comment": "if element is null and this implementation does not permit null elements",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Integer.MAX_VALUE",
+          "element"
+        ],
+        "comment": "if Integer.MAX_VALUE occurrences of element are already contained in this multiset",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove(java.lang.Object element)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "element",
+          "nullable": true
+        },
+        "comment": "the element to remove one occurrence of",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if an occurrence was found and removed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAll(java.util.Collection c)",
+    "name": "removeAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "retainAll(java.util.Collection c)",
+    "name": "retainAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multiset",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "signature": "TransactionSession(java.lang.String key)",
+    "name": "TransactionSession",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "A unique key to lookup this transaction with.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "complete(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "complete",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update with changes that occur when completing this session.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "makeSessionKey(java.lang.Class type,java.lang.String o1,java.lang.String o2)",
+    "name": "makeSessionKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "o1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "o2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "An identifier for the type of transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "o1"
+        },
+        "comment": "A string to uniquely identify the transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "o2"
+        },
+        "comment": "Another string to uniquely identify the transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A transaction session key.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "makeSessionKey(java.lang.Class type,net.sf.freecol.common.model.FreeColGameObject o1,net.sf.freecol.common.model.FreeColGameObject o2)",
+    "name": "makeSessionKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "o1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "o2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "An identifier for the type of transaction.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "o1"
+        },
+        "comment": "A FreeColGameObject involved in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "o2"
+        },
+        "comment": "Another FreeColGameObject involved in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A transaction session key.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "completeAll(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "completeAll",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "clearAll()",
+    "name": "clearAll",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "lookup(java.lang.Class type,net.sf.freecol.common.model.FreeColGameObject o1,net.sf.freecol.common.model.FreeColGameObject o2)",
+    "name": "lookup",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "o1"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "o2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The class of session.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "o1"
+        },
+        "comment": "The first FreeColGameObject in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "o2"
+        },
+        "comment": "The second FreeColGameObject in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A session of the specified type, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lookup(java.lang.Class type,java.lang.String s1,java.lang.String s2)",
+    "name": "lookup",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.TransactionSession",
+      "name": "TransactionSession",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.TransactionSession",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The class of session.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "s1"
+        },
+        "comment": "The identifier of the first object in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "s2"
+        },
+        "comment": "The identifier of the second object in the session.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A session of the specified type, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

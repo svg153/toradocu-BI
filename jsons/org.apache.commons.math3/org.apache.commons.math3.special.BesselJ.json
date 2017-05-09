@@ -1,0 +1,295 @@
+[
+  {
+    "signature": "BesselJ(double order)",
+    "name": "BesselJ",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.special.BesselJ",
+      "name": "BesselJ",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.special.BesselJ",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "order"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "order"
+        },
+        "comment": "order of the function computed when using value(double).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "value(double x)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.special.BesselJ",
+      "name": "BesselJ",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.special.BesselJ",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Value of the Bessel function at x",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "order"
+        ],
+        "comment": "if x is too large relative to order",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double order,double x)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.special.BesselJ",
+      "name": "BesselJ",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.special.BesselJ",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "order"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "order"
+        },
+        "comment": "Order of the Bessel function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Value of the Bessel function of the first kind, \\(J_{order}(x)\\)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "order"
+        ],
+        "comment": "if x is too large relative to order",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "rjBesl(double x,double alpha,int nb)",
+    "name": "rjBesl",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.special.BesselJ",
+      "name": "BesselJ",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.special.BesselJ",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.special.BesselJ.BesselJResult",
+      "name": "BesselJResult",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "non-negative real argument for which J's are to be calculated",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "fractional part of order for which J's or exponentially scaled J's (\\(J\\cdot e^{x}\\)) are to be calculated. 0 <= alpha < 1.0.",
+        "kind": "PARAM",
+        "condition": "target<1.0 || args[0]<1.0 || args[1]<1.0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nb"
+        },
+        "comment": "integer number of functions to be calculated, nb > 0. The first function calculated is of order alpha, and the last is of order nb - 1 + alpha.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "BesselJResult a vector of the functions \\(J_{alpha}(x)\\) through \\(J_{nb-1+alpha}(x)\\), or the corresponding exponentially scaled functions and an integer output variable indicating possible errors",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "signature": "SoundPlayer(net.sf.freecol.common.option.AudioMixerOption mixerOption,net.sf.freecol.common.option.PercentageOption volumeOption)",
+    "name": "SoundPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.option.AudioMixerOption",
+          "name": "AudioMixerOption",
+          "isArray": false
+        },
+        "name": "mixerOption"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.option.PercentageOption",
+          "name": "PercentageOption",
+          "isArray": false
+        },
+        "name": "volumeOption"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.option.AudioMixerOption",
+            "name": "AudioMixerOption",
+            "isArray": false
+          },
+          "name": "mixerOption"
+        },
+        "comment": "The option for setting the mixer to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.option.PercentageOption",
+            "name": "PercentageOption",
+            "isArray": false
+          },
+          "name": "volumeOption"
+        },
+        "comment": "The volume option to use when playing audio.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAudioInputStream(java.io.File file)",
+    "name": "getAudioInputStream",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "javax.sound.sampled.AudioInputStream",
+      "name": "AudioInputStream",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The File to test.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An AudioInputStream, or null on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.Exception",
+          "name": "Exception",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the file does not contain valid audio.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getMixer()",
+    "name": "getMixer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "javax.sound.sampled.Mixer",
+      "name": "Mixer",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The current mixer.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getVolume()",
+    "name": "getVolume",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The current volume.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "playOnce(java.io.File file)",
+    "name": "playOnce",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The File to be played.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "stop()",
+    "name": "stop",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.SoundPlayer",
+      "name": "SoundPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.SoundPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

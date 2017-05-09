@@ -1,0 +1,1306 @@
+[
+  {
+    "signature": "Array2DRowRealMatrix()",
+    "name": "Array2DRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "Array2DRowRealMatrix(int rowDimension,int columnDimension)",
+    "name": "Array2DRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rowDimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columnDimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rowDimension"
+        },
+        "comment": "Number of rows in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columnDimension"
+        },
+        "comment": "Number of columns in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the row or column dimension is not positive.",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false || (args[0]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "Array2DRowRealMatrix(double[][] d)",
+    "name": "Array2DRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d is not rectangular.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d row or column dimension is zero.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "Array2DRowRealMatrix(double[][] d,boolean copyArray)",
+    "name": "Array2DRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d"
+        },
+        "comment": "Data for new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyArray"
+        },
+        "comment": "if true, the input array will be copied, otherwise it will be referenced.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d is not rectangular.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d"
+        ],
+        "comment": "if d row or column dimension is zero.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "d",
+          "null"
+        ],
+        "comment": "if d is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "Array2DRowRealMatrix(double[] v)",
+    "name": "Array2DRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "v"
+        },
+        "comment": "Column vector holding data for new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "createMatrix(int rowDimension,int columnDimension)",
+    "name": "createMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rowDimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columnDimension"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.Array2DRowRealMatrix m)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+          "name": "Array2DRowRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+            "name": "Array2DRowRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be added.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this + m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m",
+          "this"
+        ],
+        "comment": "if m is not the same size as this.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.Array2DRowRealMatrix m)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+          "name": "Array2DRowRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+            "name": "Array2DRowRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be subtracted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this - m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m",
+          "this"
+        ],
+        "comment": "if m is not the same size as this.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.linear.Array2DRowRealMatrix m)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+          "name": "Array2DRowRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+            "name": "Array2DRowRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "matrix to postmultiply by",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this * m",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnDimension(this) != rowDimension(m)"
+        ],
+        "comment": "if columnDimension(this) != rowDimension(m)",
+        "kind": "THROWS",
+        "condition": "target.getColumnDimension()!=target.getRowDimension()"
+      }
+    ]
+  },
+  {
+    "signature": "getData()",
+    "name": "getData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDataRef()",
+    "name": "getDataRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "2-dimensional array of entries.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setSubMatrix(double[][] subMatrix,int row,int column)",
+    "name": "setSubMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "subMatrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEntry(int row,int column)",
+    "name": "getEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEntry(int row,int column,double value)",
+    "name": "setEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addToEntry(int row,int column,double increment)",
+    "name": "addToEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "increment"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "multiplyEntry(int row,int column,double factor)",
+    "name": "multiplyEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "factor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRowDimension()",
+    "name": "getRowDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumnDimension()",
+    "name": "getColumnDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "operate(double[] v)",
+    "name": "operate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "preMultiply(double[] v)",
+    "name": "preMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor)",
+    "name": "walkInColumnOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor)",
+    "name": "walkInColumnOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInColumnOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInColumnOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInColumnOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

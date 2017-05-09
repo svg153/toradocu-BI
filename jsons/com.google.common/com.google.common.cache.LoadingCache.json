@@ -1,0 +1,274 @@
+[
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.ExecutionException",
+          "name": "ExecutionException",
+          "isArray": false
+        },
+        "codeTags": [
+          "ExecutionException",
+          "InterruptedException"
+        ],
+        "comment": "if a checked exception was thrown while loading the value. (ExecutionException is thrown even if computation was interrupted by an InterruptedException.)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "name": "UncheckedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an unchecked exception was thrown while loading the value",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.ExecutionError",
+          "name": "ExecutionError",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error was thrown while loading the value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getUnchecked(java.lang.Object key)",
+    "name": "getUnchecked",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "name": "UncheckedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an exception was thrown while loading the value. (As explained in the last paragraph above, this should be an unchecked exception only.)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.ExecutionError",
+          "name": "ExecutionError",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error was thrown while loading the value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getAll(java.lang.Iterable keys)",
+    "name": "getAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "keys"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.ExecutionException",
+          "name": "ExecutionException",
+          "isArray": false
+        },
+        "codeTags": [
+          "ExecutionException",
+          "InterruptedException"
+        ],
+        "comment": "if a checked exception was thrown while loading the value. (ExecutionException is thrown even if computation was interrupted by an InterruptedException.)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "name": "UncheckedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an unchecked exception was thrown while loading the values",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.ExecutionError",
+          "name": "ExecutionError",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error was thrown while loading the values",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "apply(java.lang.Object key)",
+    "name": "apply",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.util.concurrent.UncheckedExecutionException",
+          "name": "UncheckedExecutionException",
+          "isArray": false
+        },
+        "codeTags": [
+          "getUnchecked(K)",
+          "LoadingCache",
+          "Function"
+        ],
+        "comment": "if an exception was thrown while loading the value. (As described in the documentation for getUnchecked(K), LoadingCache should be used as a Function only with cache loaders that throw only unchecked exceptions.)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "refresh(java.lang.Object key)",
+    "name": "refresh",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap()",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.LoadingCache",
+      "name": "LoadingCache",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.LoadingCache",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ConcurrentMap",
+      "name": "ConcurrentMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

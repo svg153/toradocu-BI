@@ -1,0 +1,720 @@
+[
+  {
+    "signature": "HistoryEvent(net.sf.freecol.common.model.Turn turn,net.sf.freecol.common.model.HistoryEvent.HistoryEventType eventType,net.sf.freecol.common.model.Player player)",
+    "name": "HistoryEvent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Turn",
+          "name": "Turn",
+          "isArray": false
+        },
+        "name": "turn"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.HistoryEvent.HistoryEventType",
+          "name": "HistoryEventType",
+          "isArray": false
+        },
+        "name": "eventType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Turn",
+            "name": "Turn",
+            "isArray": false
+          },
+          "name": "turn"
+        },
+        "comment": "The Turn of the event.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.HistoryEvent.HistoryEventType",
+            "name": "HistoryEventType",
+            "isArray": false
+          },
+          "name": "eventType"
+        },
+        "comment": "The EventType.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "An optional Player responsible for this event.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "HistoryEvent(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "HistoryEvent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The FreeColXMLReader to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading the stream.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "HistoryEvent(org.w3c.dom.Element element)",
+    "name": "HistoryEvent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTurn()",
+    "name": "getTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Turn",
+      "name": "Turn",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The turn.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEventType()",
+    "name": "getEventType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent.HistoryEventType",
+      "name": "HistoryEventType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The event type.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEventTypeFromStance(net.sf.freecol.common.model.Stance stance)",
+    "name": "getEventTypeFromStance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent.HistoryEventType",
+      "name": "HistoryEventType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Stance",
+          "name": "Stance",
+          "isArray": false
+        },
+        "name": "stance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Stance",
+            "name": "Stance",
+            "isArray": false
+          },
+          "name": "stance"
+        },
+        "comment": "The new Stance.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The corresponding event type.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPlayerId()",
+    "name": "getPlayerId",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The credited Player id.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setPlayerId(java.lang.String playerId)",
+    "name": "setPlayerId",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "playerId"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "playerId"
+        },
+        "comment": "The new credited Player id.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getScore()",
+    "name": "getScore",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The score.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setScore(int score)",
+    "name": "setScore",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "score"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "score"
+        },
+        "comment": "The new score for this event.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(java.lang.String key,java.lang.String value)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addName(java.lang.String key,java.lang.String value)",
+    "name": "addName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addNamed(java.lang.String key,net.sf.freecol.common.model.Named value)",
+    "name": "addNamed",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Named",
+          "name": "Named",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAmount(java.lang.String key,java.lang.Number amount)",
+    "name": "addAmount",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Number",
+          "name": "Number",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addStringTemplate(java.lang.String key,net.sf.freecol.common.model.StringTemplate template)",
+    "name": "addStringTemplate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.StringTemplate",
+          "name": "StringTemplate",
+          "isArray": false
+        },
+        "name": "template"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object o)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.HistoryEvent",
+      "name": "HistoryEvent",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.HistoryEvent",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"historyEvent\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "signature": "TricubicInterpolatingFunction(double[] x,double[] y,double[] z,double[][][] f,double[][][] dFdX,double[][][] dFdY,double[][][] dFdZ,double[][][] d2FdXdY,double[][][] d2FdXdZ,double[][][] d2FdYdZ,double[][][] d3FdXdYdZ)",
+    "name": "TricubicInterpolatingFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+      "name": "TricubicInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "z"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dFdX"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dFdY"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dFdZ"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d2FdXdY"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d2FdXdZ"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d2FdYdZ"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "d3FdXdYdZ"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "Sample values of the x-coordinate, in increasing order.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "Sample values of the y-coordinate, in increasing order.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "z"
+        },
+        "comment": "Sample values of the y-coordinate, in increasing order.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "Values of the function on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dFdX"
+        },
+        "comment": "Values of the partial derivative of function with respect to x on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dFdY"
+        },
+        "comment": "Values of the partial derivative of function with respect to y on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dFdZ"
+        },
+        "comment": "Values of the partial derivative of function with respect to z on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d2FdXdY"
+        },
+        "comment": "Values of the cross partial derivative of function on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d2FdXdZ"
+        },
+        "comment": "Values of the cross partial derivative of function on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d2FdYdZ"
+        },
+        "comment": "Values of the cross partial derivative of function on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "d3FdXdYdZ"
+        },
+        "comment": "Values of the cross partial derivative of function on every grid point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the arrays has zero length.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0 || args[1].length==0 || args[2].length==0 || args[3].length==0 || args[4].length==0 || args[5].length==0 || args[6].length==0 || args[7].length==0 || args[8].length==0 || args[9].length==0 || args[10].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the various arrays do not contain the expected number of elements.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y",
+          "z"
+        ],
+        "comment": "if x, y or z are not strictly increasing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double x,double y,double z)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+      "name": "TricubicInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the variables is outside its interpolation range.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isValidPoint(double x,double y,double z)",
+    "name": "isValidPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+      "name": "TricubicInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.TricubicInterpolatingFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "First coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "Second coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "z"
+        },
+        "comment": "Third coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if (x, y, z) is a valid point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

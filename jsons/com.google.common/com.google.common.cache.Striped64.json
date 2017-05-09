@@ -1,0 +1,261 @@
+[
+  {
+    "signature": "Striped64()",
+    "name": "Striped64",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "casBase(long cmp,long val)",
+    "name": "casBase",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "cmp"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "casBusy()",
+    "name": "casBusy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fn(long currentValue,long newValue)",
+    "name": "fn",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "currentValue"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "newValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "currentValue"
+        },
+        "comment": "the current value (of either base or a cell)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "newValue"
+        },
+        "comment": "the argument from a user update call",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "result of the update function",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "retryUpdate(long x,int[] hc,boolean wasUncontended)",
+    "name": "retryUpdate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "hc"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "wasUncontended"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "hc"
+        },
+        "comment": "the hash code holder",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "wasUncontended"
+        },
+        "comment": "false if CAS failed before call",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "internalReset(long initialValue)",
+    "name": "internalReset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.cache.Striped64",
+      "name": "Striped64",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.cache.Striped64",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "initialValue"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

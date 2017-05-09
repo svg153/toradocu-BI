@@ -1,0 +1,523 @@
+[
+  {
+    "signature": "getName()",
+    "name": "getName",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "name of the method",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler handler)",
+    "name": "addStepHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.StepHandler",
+          "name": "StepHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.StepHandler",
+            "name": "StepHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "handler for the accepted steps",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStepHandlers()",
+    "name": "getStepHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable collection of the added events handlers",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearStepHandlers()",
+    "name": "clearStepHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEventHandler(org.apache.commons.math3.ode.events.EventHandler handler,double maxCheckInterval,double convergence,int maxIterationCount)",
+    "name": "addEventHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.events.EventHandler",
+          "name": "EventHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxCheckInterval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "convergence"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterationCount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.events.EventHandler",
+            "name": "EventHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "event handler",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxCheckInterval"
+        },
+        "comment": "maximal time interval between switching function checks (this interval prevents missing sign changes in case the integration steps becomes very large)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "convergence"
+        },
+        "comment": "convergence threshold in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterationCount"
+        },
+        "comment": "upper limit of the iteration count in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addEventHandler(org.apache.commons.math3.ode.events.EventHandler handler,double maxCheckInterval,double convergence,int maxIterationCount,org.apache.commons.math3.analysis.solvers.UnivariateSolver solver)",
+    "name": "addEventHandler",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.events.EventHandler",
+          "name": "EventHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxCheckInterval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "convergence"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterationCount"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.solvers.UnivariateSolver",
+          "name": "UnivariateSolver",
+          "isArray": false
+        },
+        "name": "solver"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.events.EventHandler",
+            "name": "EventHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "event handler",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxCheckInterval"
+        },
+        "comment": "maximal time interval between switching function checks (this interval prevents missing sign changes in case the integration steps becomes very large)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "convergence"
+        },
+        "comment": "convergence threshold in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterationCount"
+        },
+        "comment": "upper limit of the iteration count in the event time search",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.solvers.UnivariateSolver",
+            "name": "UnivariateSolver",
+            "isArray": false
+          },
+          "name": "solver"
+        },
+        "comment": "The root-finding algorithm to use to detect the state events.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEventHandlers()",
+    "name": "getEventHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable collection of the added events handlers",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearEventHandlers()",
+    "name": "clearEventHandlers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentStepStart()",
+    "name": "getCurrentStepStart",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current value of the step start time ti",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentSignedStepsize()",
+    "name": "getCurrentSignedStepsize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current signed value of the stepsize",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMaxEvaluations(int maxEvaluations)",
+    "name": "setMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "maximal number of function evaluations (negative values are silently converted to maximal integer value, thus representing almost unlimited evaluations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxEvaluations()",
+    "name": "getMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "maximal number of functions evaluations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ODEIntegrator",
+      "name": "ODEIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ODEIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of evaluations of the differential equations function",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

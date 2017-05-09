@@ -1,0 +1,156 @@
+[
+  {
+    "signature": "WelzlEncloser(double tolerance,org.apache.commons.math3.geometry.enclosing.SupportBallGenerator generator)",
+    "name": "WelzlEncloser",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+      "name": "WelzlEncloser",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.enclosing.SupportBallGenerator",
+          "name": "SupportBallGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "below which points are consider to be identical",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.enclosing.SupportBallGenerator",
+            "name": "SupportBallGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "generator for balls on support",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "enclose(java.lang.Iterable points)",
+    "name": "enclose",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+      "name": "WelzlEncloser",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.enclosing.EnclosingBall",
+      "name": "EnclosingBall",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "points"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "selectFarthest(java.lang.Iterable points,org.apache.commons.math3.geometry.enclosing.EnclosingBall ball)",
+    "name": "selectFarthest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+      "name": "WelzlEncloser",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.enclosing.WelzlEncloser",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "P",
+      "name": "P",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "points"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.enclosing.EnclosingBall",
+          "name": "EnclosingBall",
+          "isArray": false
+        },
+        "name": "ball"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "points to be enclosed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.enclosing.EnclosingBall",
+            "name": "EnclosingBall",
+            "isArray": false
+          },
+          "name": "ball"
+        },
+        "comment": "current ball",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "farthest point",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "signature": "setMaxIterations(int maxIterations)",
+    "name": "setMaxIterations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "maximal number of function calls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxIterations()",
+    "name": "getMaxIterations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "maximal number of iterations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getIterations()",
+    "name": "getIterations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of iterations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction f,java.util.Collection constraints,org.apache.commons.math3.optimization.GoalType goalType,boolean restrictToNonNegative)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+      "name": "LinearOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.linear.LinearOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearObjectiveFunction",
+          "name": "LinearObjectiveFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "constraints"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "restrictToNonNegative"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.linear.LinearObjectiveFunction",
+            "name": "LinearObjectiveFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "linear objective function",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "constraints"
+        },
+        "comment": "linear constraints",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "type of optimization goal: either GoalType.MAXIMIZE or GoalType.MINIMIZE",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "restrictToNonNegative"
+        },
+        "comment": "whether to restrict the variables to non-negative values",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "point/value pair giving the optimal value for objective function",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no solution fulfilling the constraints can be found in the allowed number of iterations",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

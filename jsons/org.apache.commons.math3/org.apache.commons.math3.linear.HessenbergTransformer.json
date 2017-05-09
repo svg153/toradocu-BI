@@ -1,0 +1,152 @@
+[
+  {
+    "signature": "HessenbergTransformer(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "HessenbergTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.HessenbergTransformer",
+      "name": "HessenbergTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.HessenbergTransformer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "matrix to transform",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getP()",
+    "name": "getP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.HessenbergTransformer",
+      "name": "HessenbergTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.HessenbergTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the P matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPT()",
+    "name": "getPT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.HessenbergTransformer",
+      "name": "HessenbergTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.HessenbergTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the transpose of the P matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getP())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getH()",
+    "name": "getH",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.HessenbergTransformer",
+      "name": "HessenbergTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.HessenbergTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the H matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getHouseholderVectorsRef()",
+    "name": "getHouseholderVectorsRef",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.HessenbergTransformer",
+      "name": "HessenbergTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.HessenbergTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the main diagonal elements of the B matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getP())"
+    },
+    "throwsTags": []
+  }
+]

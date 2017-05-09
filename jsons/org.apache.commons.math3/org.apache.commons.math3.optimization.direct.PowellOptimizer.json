@@ -1,0 +1,487 @@
+[
+  {
+    "signature": "PowellOptimizer(double rel,double abs,org.apache.commons.math3.optimization.ConvergenceChecker checker)",
+    "name": "PowellOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+      "name": "PowellOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "PowellOptimizer(double rel,double abs,double lineRel,double lineAbs,org.apache.commons.math3.optimization.ConvergenceChecker checker)",
+    "name": "PowellOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+      "name": "PowellOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lineRel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lineAbs"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold for this optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold for this optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lineRel"
+        },
+        "comment": "Relative threshold for the internal line search optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lineAbs"
+        },
+        "comment": "Absolute threshold for the internal line search optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "PowellOptimizer(double rel,double abs)",
+    "name": "PowellOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+      "name": "PowellOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "PowellOptimizer(double rel,double abs,double lineRel,double lineAbs)",
+    "name": "PowellOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+      "name": "PowellOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "rel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "abs"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lineRel"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lineAbs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "rel"
+        },
+        "comment": "Relative threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "abs"
+        },
+        "comment": "Absolute threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lineRel"
+        },
+        "comment": "Relative threshold for the internal line search optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lineAbs"
+        },
+        "comment": "Absolute threshold for the internal line search optimizer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "abs <= 0"
+        ],
+        "comment": "if abs <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rel < 2 * Math.ulp(1d)"
+        ],
+        "comment": "if rel < 2 * Math.ulp(1d).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "doOptimize()",
+    "name": "doOptimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+      "name": "PowellOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.PowellOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

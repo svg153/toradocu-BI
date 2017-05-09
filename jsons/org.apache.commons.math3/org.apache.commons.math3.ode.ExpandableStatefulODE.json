@@ -1,0 +1,796 @@
+[
+  {
+    "signature": "ExpandableStatefulODE(org.apache.commons.math3.ode.FirstOrderDifferentialEquations primary)",
+    "name": "ExpandableStatefulODE",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+          "name": "FirstOrderDifferentialEquations",
+          "isArray": false
+        },
+        "name": "primary"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+            "name": "FirstOrderDifferentialEquations",
+            "isArray": false
+          },
+          "name": "primary"
+        },
+        "comment": "the primary set of differential equations to be integrated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPrimary()",
+    "name": "getPrimary",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+      "name": "FirstOrderDifferentialEquations",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "primary set of differential equations",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTotalDimension()",
+    "name": "getTotalDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "dimension of the complete set of equations",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeDerivatives(double t,double[] y,double[] yDot)",
+    "name": "computeDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yDot"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "current value of the independent time variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "array containing the current value of the complete state vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yDot"
+        },
+        "comment": "placeholder array where to put the time derivative of the complete state vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if arrays dimensions do not match equations settings",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addSecondaryEquations(org.apache.commons.math3.ode.SecondaryEquations secondary)",
+    "name": "addSecondaryEquations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.SecondaryEquations",
+          "name": "SecondaryEquations",
+          "isArray": false
+        },
+        "name": "secondary"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.SecondaryEquations",
+            "name": "SecondaryEquations",
+            "isArray": false
+          },
+          "name": "secondary"
+        },
+        "comment": "secondary equations set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "index of the secondary equation in the expanded state",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPrimaryMapper()",
+    "name": "getPrimaryMapper",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+      "name": "EquationsMapper",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "mapper for the primary set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSecondaryMappers()",
+    "name": "getSecondaryMappers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper[]",
+      "name": "EquationsMapper[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.ode.EquationsMapper",
+        "name": "EquationsMapper",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "equations mappers for the secondary equations sets",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setTime(double time)",
+    "name": "setTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "time"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "time"
+        },
+        "comment": "current time",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTime()",
+    "name": "getTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current time",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setPrimaryState(double[] primaryState)",
+    "name": "setPrimaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "primaryState"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "primaryState"
+        },
+        "comment": "primary part of the current state",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the array does not match the primary set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getPrimaryState()",
+    "name": "getPrimaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "primary part of the current state",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPrimaryStateDot()",
+    "name": "getPrimaryStateDot",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "primary part of the current state derivative",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setSecondaryState(int index,double[] secondaryState)",
+    "name": "setSecondaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "secondaryState"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the part to set as returned by addSecondaryEquations(SecondaryEquations)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "secondaryState"
+        },
+        "comment": "secondary part of the current state",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the partial state does not match the selected equations set dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getSecondaryState(int index)",
+    "name": "getSecondaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the part to set as returned by addSecondaryEquations(SecondaryEquations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "secondary part of the current state",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSecondaryStateDot(int index)",
+    "name": "getSecondaryStateDot",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the part to set as returned by addSecondaryEquations(SecondaryEquations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "secondary part of the current state derivative",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setCompleteState(double[] completeState)",
+    "name": "setCompleteState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "completeState"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "completeState"
+        },
+        "comment": "complete current state to copy data from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the complete state does not match the complete equations sets dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getCompleteState()",
+    "name": "getCompleteState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+      "name": "ExpandableStatefulODE",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "complete current state",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the complete state does not match the complete equations sets dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "signature": "PredicatedMap(java.util.Map map,org.apache.commons.collections4.Predicate keyPredicate,org.apache.commons.collections4.Predicate valuePredicate)",
+    "name": "PredicatedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "keyPredicate"
+        },
+        "comment": "the predicate to validate the keys, null means no check",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "valuePredicate"
+        },
+        "comment": "the predicate to validate to values, null means no check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedMap(java.util.Map map,org.apache.commons.collections4.Predicate keyPredicate,org.apache.commons.collections4.Predicate valuePredicate)",
+    "name": "predicatedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "keyPredicate"
+        },
+        "comment": "the predicate to validate the keys, null means no check",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "valuePredicate"
+        },
+        "comment": "the predicate to validate to values, null means no check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new predicated map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "validate(java.lang.Object key,java.lang.Object value)",
+    "name": "validate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to validate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to validate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkSetValue(java.lang.Object value)",
+    "name": "checkSetValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to validate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value itself",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isSetValueChecking()",
+    "name": "isSetValueChecking",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if a value predicate is in use",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putAll(java.util.Map mapToCopy)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PredicatedMap",
+      "name": "PredicatedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PredicatedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "mapToCopy"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

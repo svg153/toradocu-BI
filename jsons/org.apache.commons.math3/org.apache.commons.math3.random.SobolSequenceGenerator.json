@@ -1,0 +1,266 @@
+[
+  {
+    "signature": "SobolSequenceGenerator(int dimension)",
+    "name": "SobolSequenceGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.SobolSequenceGenerator",
+      "name": "SobolSequenceGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.SobolSequenceGenerator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "the space dimension",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the space dimension is outside the allowed range of [1, 1000]",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "SobolSequenceGenerator(int dimension,java.io.InputStream is)",
+    "name": "SobolSequenceGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.SobolSequenceGenerator",
+      "name": "SobolSequenceGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.SobolSequenceGenerator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "is"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "the space dimension",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "is"
+        },
+        "comment": "the stream to read the direction vectors from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the space dimension is < 1",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the space dimension is outside the range [1, max], where max refers to the maximum dimension found in the input stream",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathParseException",
+          "name": "MathParseException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the content in the stream could not be parsed successfully",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs while reading from the input stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "nextVector()",
+    "name": "nextVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.SobolSequenceGenerator",
+      "name": "SobolSequenceGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.SobolSequenceGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "skipTo(int index)",
+    "name": "skipTo",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.SobolSequenceGenerator",
+      "name": "SobolSequenceGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.SobolSequenceGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index in the sequence to skip to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the i-th point in the Sobol sequence",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if index < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "getNextIndex()",
+    "name": "getNextIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.SobolSequenceGenerator",
+      "name": "SobolSequenceGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.SobolSequenceGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the index of the next point",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

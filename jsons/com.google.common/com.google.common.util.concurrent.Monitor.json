@@ -1,0 +1,1003 @@
+[
+  {
+    "signature": "Monitor()",
+    "name": "Monitor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "Monitor(boolean fair)",
+    "name": "Monitor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "fair"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "fair"
+        },
+        "comment": "whether this monitor should use a fair ordering policy rather than a non-fair (but fast) one",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "enter()",
+    "name": "enter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "enterInterruptibly()",
+    "name": "enterInterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "enter(long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "enterInterruptibly(long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enterInterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "tryEnter()",
+    "name": "tryEnter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "enterWhen(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "enterWhen",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "enterWhenUninterruptibly(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "enterWhenUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "enterWhen(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enterWhen",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "enterWhenUninterruptibly(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enterWhenUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "enterIf(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "enterIf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "enterIfInterruptibly(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "enterIfInterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "enterIf(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enterIf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "enterIfInterruptibly(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "enterIfInterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "tryEnterIf(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "tryEnterIf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the monitor was entered, which guarantees that the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "waitFor(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "waitFor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "waitForUninterruptibly(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "waitForUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "waitFor(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "waitFor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InterruptedException",
+          "name": "InterruptedException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if interrupted while waiting",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "waitForUninterruptibly(com.google.common.util.concurrent.Monitor.Guard guard,long time,java.util.concurrent.TimeUnit unit)",
+    "name": "waitForUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "time"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "whether the guard is now satisfied",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "leave()",
+    "name": "leave",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isFair()",
+    "name": "isFair",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isOccupied()",
+    "name": "isOccupied",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isOccupiedByCurrentThread()",
+    "name": "isOccupiedByCurrentThread",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOccupiedDepth()",
+    "name": "getOccupiedDepth",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getQueueLength()",
+    "name": "getQueueLength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasQueuedThreads()",
+    "name": "hasQueuedThreads",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasQueuedThread(java.lang.Thread thread)",
+    "name": "hasQueuedThread",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Thread",
+          "name": "Thread",
+          "isArray": false
+        },
+        "name": "thread"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasWaiters(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "hasWaiters",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getWaitQueueLength(com.google.common.util.concurrent.Monitor.Guard guard)",
+    "name": "getWaitQueueLength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Monitor",
+      "name": "Monitor",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Monitor",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Monitor.Guard",
+          "name": "Guard",
+          "isArray": false
+        },
+        "name": "guard"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "signature": "returning(java.lang.Object value)",
+    "name": "returning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Callables",
+      "name": "Callables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Callables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.Callable",
+      "name": "Callable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "threadRenaming(java.util.concurrent.Callable callable,com.google.common.base.Supplier nameSupplier)",
+    "name": "threadRenaming",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Callables",
+      "name": "Callables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Callables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.Callable",
+      "name": "Callable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Callable",
+          "name": "Callable",
+          "isArray": false
+        },
+        "name": "callable"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "nameSupplier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Callable",
+            "name": "Callable",
+            "isArray": false
+          },
+          "name": "callable"
+        },
+        "comment": "The callable to wrap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "nameSupplier"
+        },
+        "comment": "The supplier of thread names, get will be called once for each invocation of the wrapped callable.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "threadRenaming(java.lang.Runnable task,com.google.common.base.Supplier nameSupplier)",
+    "name": "threadRenaming",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Callables",
+      "name": "Callables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Callables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Runnable",
+      "name": "Runnable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "task"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "nameSupplier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Runnable",
+            "name": "Runnable",
+            "isArray": false
+          },
+          "name": "task"
+        },
+        "comment": "The Runnable to wrap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "nameSupplier"
+        },
+        "comment": "The supplier of thread names, get will be called once for each invocation of the wrapped callable.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

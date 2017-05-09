@@ -1,0 +1,938 @@
+[
+  {
+    "signature": "getX()",
+    "name": "getX",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the X sample data.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getY()",
+    "name": "getY",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the Y sample data.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isNoIntercept()",
+    "name": "isNoIntercept",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the model has no intercept term; false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setNoIntercept(boolean noIntercept)",
+    "name": "setNoIntercept",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "noIntercept"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "noIntercept"
+        },
+        "comment": "true means the model is to be estimated without an intercept term",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "newSampleData(double[] data,int nobs,int nvars)",
+    "name": "newSampleData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nobs"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "nvars"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "input data array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nobs"
+        },
+        "comment": "number of observations (rows)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "nvars"
+        },
+        "comment": "number of independent variables (columns, not counting y)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the data array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "nobs * (nvars + 1)"
+        ],
+        "comment": "if the length of the data array is not equal to nobs * (nvars + 1)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "nobs",
+          "nvars + 1"
+        ],
+        "comment": "if nobs is less than nvars + 1",
+        "kind": "THROWS",
+        "condition": "args[1]<args[2]"
+      }
+    ]
+  },
+  {
+    "signature": "newYSampleData(double[] y)",
+    "name": "newYSampleData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "the array representing the y sample",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if y is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if y is empty",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "newXSampleData(double[][] x)",
+    "name": "newXSampleData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "the rectangular array representing the x sample",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if x is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if x is empty",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if x is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "validateSampleData(double[][] x,double[] y)",
+    "name": "validateSampleData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "the [n,k] array representing the x data",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "the [n,1] array representing the y data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x or y is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x and y do not have the same length",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x or y are zero-length",
+        "kind": "THROWS",
+        "condition": "args[0].length==0 || args[1].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the number of rows of x is not larger than the number of columns + 1",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "validateCovarianceData(double[][] x,double[][] covariance)",
+    "name": "validateCovarianceData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "covariance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "the [n,k] array representing the x sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "covariance"
+        },
+        "comment": "the [n,n] array representing the covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of rows in x is not equal to the number of rows in covariance",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the covariance matrix is not square",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "estimateRegressionParameters()",
+    "name": "estimateRegressionParameters",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateResiduals()",
+    "name": "estimateResiduals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateRegressionParametersVariance()",
+    "name": "estimateRegressionParametersVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateRegressionParametersStandardErrors()",
+    "name": "estimateRegressionParametersStandardErrors",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateRegressandVariance()",
+    "name": "estimateRegressandVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateErrorVariance()",
+    "name": "estimateErrorVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "estimate of the error variance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "estimateRegressionStandardError()",
+    "name": "estimateRegressionStandardError",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "regression standard error",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateBeta()",
+    "name": "calculateBeta",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "beta",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateBetaVariance()",
+    "name": "calculateBetaVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "beta variance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateYVariance()",
+    "name": "calculateYVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Y variance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateErrorVariance()",
+    "name": "calculateErrorVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "error variance estimate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateResiduals()",
+    "name": "calculateResiduals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+      "name": "AbstractMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.AbstractMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The residuals [n,1] matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

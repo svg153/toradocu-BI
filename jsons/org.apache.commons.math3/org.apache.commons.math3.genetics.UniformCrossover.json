@@ -1,0 +1,136 @@
+[
+  {
+    "signature": "UniformCrossover(double ratio)",
+    "name": "UniformCrossover",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.UniformCrossover",
+      "name": "UniformCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.UniformCrossover",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "ratio"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "ratio"
+        },
+        "comment": "the mixing ratio",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the mixing ratio is outside the [0, 1] range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getRatio()",
+    "name": "getRatio",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.UniformCrossover",
+      "name": "UniformCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.UniformCrossover",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mixing ratio",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "crossover(org.apache.commons.math3.genetics.Chromosome first,org.apache.commons.math3.genetics.Chromosome second)",
+    "name": "crossover",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.genetics.UniformCrossover",
+      "name": "UniformCrossover",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.genetics.UniformCrossover",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.genetics.ChromosomePair",
+      "name": "ChromosomePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+          "name": "Chromosome",
+          "isArray": false
+        },
+        "name": "first"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.genetics.Chromosome",
+          "name": "Chromosome",
+          "isArray": false
+        },
+        "name": "second"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "AbstractListChromosome"
+        ],
+        "comment": "iff one of the chromosomes is not an instance of AbstractListChromosome",
+        "kind": "THROWS",
+        "condition": "(args[0] instanceof AbstractListChromosome) == false || (args[1] instanceof AbstractListChromosome) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the length of the two chromosomes is different",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

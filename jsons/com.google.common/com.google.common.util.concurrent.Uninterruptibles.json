@@ -1,0 +1,494 @@
+[
+  {
+    "signature": "awaitUninterruptibly(java.util.concurrent.CountDownLatch latch)",
+    "name": "awaitUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.CountDownLatch",
+          "name": "CountDownLatch",
+          "isArray": false
+        },
+        "name": "latch"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "awaitUninterruptibly(java.util.concurrent.CountDownLatch latch,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "awaitUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.CountDownLatch",
+          "name": "CountDownLatch",
+          "isArray": false
+        },
+        "name": "latch"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "joinUninterruptibly(java.lang.Thread toJoin)",
+    "name": "joinUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Thread",
+          "name": "Thread",
+          "isArray": false
+        },
+        "name": "toJoin"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUninterruptibly(java.util.concurrent.Future future)",
+    "name": "getUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Future",
+          "name": "Future",
+          "isArray": false
+        },
+        "name": "future"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.ExecutionException",
+          "name": "ExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the computation threw an exception",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.CancellationException",
+          "name": "CancellationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the computation was cancelled",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getUninterruptibly(java.util.concurrent.Future future,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "getUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Future",
+          "name": "Future",
+          "isArray": false
+        },
+        "name": "future"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.ExecutionException",
+          "name": "ExecutionException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the computation threw an exception",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.CancellationException",
+          "name": "CancellationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the computation was cancelled",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the wait timed out",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "joinUninterruptibly(java.lang.Thread toJoin,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "joinUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Thread",
+          "name": "Thread",
+          "isArray": false
+        },
+        "name": "toJoin"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "takeUninterruptibly(java.util.concurrent.BlockingQueue queue)",
+    "name": "takeUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.BlockingQueue",
+          "name": "BlockingQueue",
+          "isArray": false
+        },
+        "name": "queue"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putUninterruptibly(java.util.concurrent.BlockingQueue queue,java.lang.Object element)",
+    "name": "putUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.BlockingQueue",
+          "name": "BlockingQueue",
+          "isArray": false
+        },
+        "name": "queue"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the class of the specified element prevents it from being added to the given queue",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if some property of the specified element prevents it from being added to the given queue",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sleepUninterruptibly(long sleepFor,java.util.concurrent.TimeUnit unit)",
+    "name": "sleepUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "sleepFor"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "tryAcquireUninterruptibly(java.util.concurrent.Semaphore semaphore,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "tryAcquireUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Semaphore",
+          "name": "Semaphore",
+          "isArray": false
+        },
+        "name": "semaphore"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "tryAcquireUninterruptibly(java.util.concurrent.Semaphore semaphore,int permits,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "tryAcquireUninterruptibly",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Uninterruptibles",
+      "name": "Uninterruptibles",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Uninterruptibles",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Semaphore",
+          "name": "Semaphore",
+          "isArray": false
+        },
+        "name": "semaphore"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

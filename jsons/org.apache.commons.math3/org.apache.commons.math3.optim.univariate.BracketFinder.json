@@ -1,0 +1,383 @@
+[
+  {
+    "signature": "BracketFinder()",
+    "name": "BracketFinder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "BracketFinder(double growLimit,int maxEvaluations)",
+    "name": "BracketFinder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "growLimit"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEvaluations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "growLimit"
+        },
+        "comment": "Expanding factor.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEvaluations"
+        },
+        "comment": "Maximum number of evaluations allowed for finding a bracketing interval.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "search(org.apache.commons.math3.analysis.UnivariateFunction func,org.apache.commons.math3.optim.nonlinear.scalar.GoalType goal,double xA,double xB)",
+    "name": "search",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "func"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goal"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "xA"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "xB"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "func"
+        },
+        "comment": "Function whose optimum should be bracketed.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.nonlinear.scalar.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goal"
+        },
+        "comment": "Goal type.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "xA"
+        },
+        "comment": "Initial point.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "xB"
+        },
+        "comment": "Initial point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximum number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getMaxEvaluations()",
+    "name": "getMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of evalutations.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of evalutations.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLo()",
+    "name": "getLo",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the lower bound of the bracket.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFLo()",
+    "name": "getFLo",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "function value at getLo()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getHi()",
+    "name": "getHi",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the higher bound of the bracket.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFHi()",
+    "name": "getFHi",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "function value at getHi()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMid()",
+    "name": "getMid",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a point in the middle of the bracket.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFMid()",
+    "name": "getFMid",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.univariate.BracketFinder",
+      "name": "BracketFinder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.univariate.BracketFinder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "function value at getMid()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

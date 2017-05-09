@@ -1,0 +1,146 @@
+[
+  {
+    "signature": "polar2Complex(double r,double theta)",
+    "name": "polar2Complex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.ComplexUtils",
+      "name": "ComplexUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.ComplexUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex",
+      "name": "Complex",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "r"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "theta"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "r"
+        },
+        "comment": "the modulus of the complex number to create",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "theta"
+        },
+        "comment": "the argument of the complex number to create",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "r·ei·theta",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "r"
+        ],
+        "comment": "if r is negative.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "convertToComplex(double[] real)",
+    "name": "convertToComplex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.complex.ComplexUtils",
+      "name": "ComplexUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.complex.ComplexUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "real"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "real"
+        },
+        "comment": "Array of numbers to be converted to their Complex equivalent.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array of Complex objects.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

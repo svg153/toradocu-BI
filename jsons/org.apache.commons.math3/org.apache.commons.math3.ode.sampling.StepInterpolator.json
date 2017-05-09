@@ -1,0 +1,386 @@
+[
+  {
+    "signature": "getPreviousTime()",
+    "name": "getPreviousTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "previous grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentTime()",
+    "name": "getCurrentTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "current grid point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedTime()",
+    "name": "getInterpolatedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "interpolation point time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setInterpolatedTime(double time)",
+    "name": "setInterpolatedTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "time"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "time"
+        },
+        "comment": "time of the interpolated point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedState()",
+    "name": "getInterpolatedState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "state vector at time getInterpolatedTime()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInterpolatedDerivatives()",
+    "name": "getInterpolatedDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "derivatives of the state vector at time getInterpolatedTime()",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInterpolatedSecondaryState(int index)",
+    "name": "getInterpolatedSecondaryState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the secondary set, as returned by ExpandableStatefulODE.addSecondaryEquations(SecondaryEquations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "interpolated secondary state at the current interpolation date",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInterpolatedSecondaryDerivatives(int index)",
+    "name": "getInterpolatedSecondaryDerivatives",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "index of the secondary set, as returned by ExpandableStatefulODE.addSecondaryEquations(SecondaryEquations)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "interpolated secondary derivatives at the current interpolation date",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isForward()",
+    "name": "isForward",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the integration variable (time) increases during integration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.StepInterpolator",
+      "name": "StepInterpolator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a deep copy of the instance, which can be used independently.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded during step finalization",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

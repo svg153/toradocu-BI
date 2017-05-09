@@ -1,0 +1,499 @@
+[
+  {
+    "signature": "Server(net.sf.freecol.server.FreeColServer freeColServer,java.lang.String host,int port)",
+    "name": "Server",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "freeColServer"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "freeColServer"
+        },
+        "comment": "The owner of this Server.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "The name of the host for the public socket.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The TCP port to use for the public socket.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the public socket cannot be created.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getHost()",
+    "name": "getHost",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The name of the host.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getName())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPort()",
+    "name": "getPort",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The TCP port.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConnection(java.net.Socket socket)",
+    "name": "getConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.networking.Connection",
+      "name": "Connection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Socket",
+          "name": "Socket",
+          "isArray": false
+        },
+        "name": "socket"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Socket",
+            "name": "Socket",
+            "isArray": false
+          },
+          "name": "socket"
+        },
+        "comment": "The Socket that identifies the Connection",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The Connection.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addDummyConnection(net.sf.freecol.common.networking.Connection connection)",
+    "name": "addDummyConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The connection to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addConnection(net.sf.freecol.common.networking.Connection connection)",
+    "name": "addConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The connection to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeConnection(net.sf.freecol.common.networking.Connection connection)",
+    "name": "removeConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The connection that should be removed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setMessageHandlerToAllConnections(net.sf.freecol.common.networking.MessageHandler mh)",
+    "name": "setMessageHandlerToAllConnections",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+          "name": "MessageHandler",
+          "isArray": false
+        },
+        "name": "mh"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+            "name": "MessageHandler",
+            "isArray": false
+          },
+          "name": "mh"
+        },
+        "comment": "The MessageHandler to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "sendToAll(org.w3c.dom.Element element,net.sf.freecol.common.networking.Connection exceptConnection)",
+    "name": "sendToAll",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "exceptConnection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The root Element of the message to send.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "exceptConnection"
+        },
+        "comment": "An optional Connection not to send to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "sendToAll(org.w3c.dom.Element element)",
+    "name": "sendToAll",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The root element of the message to send.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "run()",
+    "name": "run",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "shutdown()",
+    "name": "shutdown",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.networking.Server",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

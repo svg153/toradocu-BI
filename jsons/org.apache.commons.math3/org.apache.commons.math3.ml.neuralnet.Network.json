@@ -1,0 +1,873 @@
+[
+  {
+    "signature": "Network(long nextId,int featureSize,org.apache.commons.math3.ml.neuralnet.Neuron[] neuronList,long[][] neighbourIdList)",
+    "name": "Network",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nextId"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "featureSize"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron[]",
+          "name": "Neuron[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          }
+        },
+        "name": "neuronList"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[][]",
+          "name": "long[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "neighbourIdList"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "nextId"
+        },
+        "comment": "Next available identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "featureSize"
+        },
+        "comment": "Number of features.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron[]",
+            "name": "Neuron[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+              "name": "Neuron",
+              "isArray": false
+            }
+          },
+          "name": "neuronList"
+        },
+        "comment": "Neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[][]",
+            "name": "long[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "neighbourIdList"
+        },
+        "comment": "Links associated to each of the neurons in neuronList.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an inconsistency is detected (which probably means that the serialized form has been corrupted).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Network(long initialIdentifier,int featureSize)",
+    "name": "Network",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "initialIdentifier"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "featureSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "initialIdentifier"
+        },
+        "comment": "Identifier for the first neuron that will be added to this network.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "featureSize"
+        },
+        "comment": "Size of the neuron's features.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new instance with the same state as this instance.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeurons(java.util.Comparator comparator)",
+    "name": "getNeurons",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "Comparator used for sorting the neurons.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a list of neurons, sorted in the order prescribed by the given comparator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createNeuron(double[] features)",
+    "name": "createNeuron",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "features"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "features"
+        },
+        "comment": "Initial values for the neuron's features.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neuron's identifier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "features",
+          "constructor"
+        ],
+        "comment": "if the length of features is different from the expected size (as set by the constructor).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "deleteNeuron(org.apache.commons.math3.ml.neuralnet.Neuron neuron)",
+    "name": "deleteNeuron",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "neuron"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "neuron"
+        },
+        "comment": "Neuron to be removed from this network.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n"
+        ],
+        "comment": "if n does not belong to this network.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getFeaturesSize()",
+    "name": "getFeaturesSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the size of the features set.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addLink(org.apache.commons.math3.ml.neuralnet.Neuron a,org.apache.commons.math3.ml.neuralnet.Neuron b)",
+    "name": "addLink",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "Neuron.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "Neuron.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the neurons do not exist in the network.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "deleteLink(org.apache.commons.math3.ml.neuralnet.Neuron a,org.apache.commons.math3.ml.neuralnet.Neuron b)",
+    "name": "deleteLink",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "Neuron.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "Neuron.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the neurons do not exist in the network.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNeuron(long id)",
+    "name": "getNeuron",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+      "name": "Neuron",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "Identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neuron associated with the given id.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the neuron does not exist in the network.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNeighbours(java.lang.Iterable neurons)",
+    "name": "getNeighbours",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "Neurons for which to retrieve the neighbours.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of neighbours.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeighbours(java.lang.Iterable neurons,java.lang.Iterable exclude)",
+    "name": "getNeighbours",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "neurons"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "exclude"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "neurons"
+        },
+        "comment": "Neurons for which to retrieve the neighbours.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "exclude"
+        },
+        "comment": "Neurons to exclude from the returned list. Can be null.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of neighbours.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeighbours(org.apache.commons.math3.ml.neuralnet.Neuron neuron)",
+    "name": "getNeighbours",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "neuron"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "neuron"
+        },
+        "comment": "Neuron for which to retrieve the neighbours.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of neighbours.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNeighbours(org.apache.commons.math3.ml.neuralnet.Neuron neuron,java.lang.Iterable exclude)",
+    "name": "getNeighbours",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Network",
+      "name": "Network",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.Network",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+          "name": "Neuron",
+          "isArray": false
+        },
+        "name": "neuron"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "exclude"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.Neuron",
+            "name": "Neuron",
+            "isArray": false
+          },
+          "name": "neuron"
+        },
+        "comment": "Neuron for which to retrieve the neighbours.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "exclude"
+        },
+        "comment": "Neurons to exclude from the returned list. Can be null.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of neighbours.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

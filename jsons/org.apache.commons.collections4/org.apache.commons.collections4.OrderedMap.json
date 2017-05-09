@@ -1,0 +1,192 @@
+[
+  {
+    "signature": "mapIterator()",
+    "name": "mapIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMap",
+      "name": "OrderedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.OrderedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMapIterator",
+      "name": "OrderedMapIterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a map iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "firstKey()",
+    "name": "firstKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMap",
+      "name": "OrderedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.OrderedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the first key currently in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this map is empty",
+        "kind": "THROWS",
+        "condition": "target.isEmpty()"
+      }
+    ]
+  },
+  {
+    "signature": "lastKey()",
+    "name": "lastKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMap",
+      "name": "OrderedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.OrderedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the last key currently in this map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this map is empty",
+        "kind": "THROWS",
+        "condition": "target.isEmpty()"
+      }
+    ]
+  },
+  {
+    "signature": "nextKey(java.lang.Object key)",
+    "name": "nextKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMap",
+      "name": "OrderedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.OrderedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to search for next from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the next key, null if no match or at end",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "previousKey(java.lang.Object key)",
+    "name": "previousKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedMap",
+      "name": "OrderedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.OrderedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to search for previous from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the previous key, null if no match or at start",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

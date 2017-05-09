@@ -1,0 +1,1599 @@
+[
+  {
+    "signature": "newMultimap(java.util.Map map,com.google.common.base.Supplier factory)",
+    "name": "newMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "place to store the mapping from each key to its corresponding values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "supplier of new, empty collections that will each hold all values for a given key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "map"
+        ],
+        "comment": "if map is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "newListMultimap(java.util.Map map,com.google.common.base.Supplier factory)",
+    "name": "newListMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "place to store the mapping from each key to its corresponding values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "supplier of new, empty lists that will each hold all values for a given key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "map"
+        ],
+        "comment": "if map is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "newSetMultimap(java.util.Map map,com.google.common.base.Supplier factory)",
+    "name": "newSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "place to store the mapping from each key to its corresponding values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "supplier of new, empty sets that will each hold all values for a given key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "map"
+        ],
+        "comment": "if map is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "newSortedSetMultimap(java.util.Map map,com.google.common.base.Supplier factory)",
+    "name": "newSortedSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+      "name": "SortedSetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "place to store the mapping from each key to its corresponding values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "supplier of new, empty sorted sets that will each hold all values for a given key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "map"
+        ],
+        "comment": "if map is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "invertFrom(com.google.common.collect.Multimap source,com.google.common.collect.Multimap dest)",
+    "name": "invertFrom",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "M",
+      "name": "M",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "dest"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Multimap",
+            "name": "Multimap",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "any multimap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Multimap",
+            "name": "Multimap",
+            "isArray": false
+          },
+          "name": "dest"
+        },
+        "comment": "the multimap to copy into; usually empty",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "dest",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[1])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedMultimap(com.google.common.collect.Multimap multimap)",
+    "name": "synchronizedMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Multimap",
+            "name": "Multimap",
+            "isArray": false
+          },
+          "name": "multimap"
+        },
+        "comment": "the multimap to be wrapped in a synchronized view",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableMultimap(com.google.common.collect.Multimap delegate)",
+    "name": "unmodifiableMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Multimap",
+            "name": "Multimap",
+            "isArray": false
+          },
+          "name": "delegate"
+        },
+        "comment": "the multimap for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableMultimap(com.google.common.collect.ImmutableMultimap delegate)",
+    "name": "unmodifiableMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ImmutableMultimap",
+          "name": "ImmutableMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedSetMultimap(com.google.common.collect.SetMultimap multimap)",
+    "name": "synchronizedSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.SetMultimap",
+            "name": "SetMultimap",
+            "isArray": false
+          },
+          "name": "multimap"
+        },
+        "comment": "the multimap to be wrapped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableSetMultimap(com.google.common.collect.SetMultimap delegate)",
+    "name": "unmodifiableSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.SetMultimap",
+            "name": "SetMultimap",
+            "isArray": false
+          },
+          "name": "delegate"
+        },
+        "comment": "the multimap for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableSetMultimap(com.google.common.collect.ImmutableSetMultimap delegate)",
+    "name": "unmodifiableSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ImmutableSetMultimap",
+          "name": "ImmutableSetMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedSortedSetMultimap(com.google.common.collect.SortedSetMultimap multimap)",
+    "name": "synchronizedSortedSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+      "name": "SortedSetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+          "name": "SortedSetMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+            "name": "SortedSetMultimap",
+            "isArray": false
+          },
+          "name": "multimap"
+        },
+        "comment": "the multimap to be wrapped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableSortedSetMultimap(com.google.common.collect.SortedSetMultimap delegate)",
+    "name": "unmodifiableSortedSetMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+      "name": "SortedSetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+          "name": "SortedSetMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+            "name": "SortedSetMultimap",
+            "isArray": false
+          },
+          "name": "delegate"
+        },
+        "comment": "the multimap for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedListMultimap(com.google.common.collect.ListMultimap multimap)",
+    "name": "synchronizedListMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.ListMultimap",
+            "name": "ListMultimap",
+            "isArray": false
+          },
+          "name": "multimap"
+        },
+        "comment": "the multimap to be wrapped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableListMultimap(com.google.common.collect.ListMultimap delegate)",
+    "name": "unmodifiableListMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.ListMultimap",
+            "name": "ListMultimap",
+            "isArray": false
+          },
+          "name": "delegate"
+        },
+        "comment": "the multimap for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified multimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableListMultimap(com.google.common.collect.ImmutableListMultimap delegate)",
+    "name": "unmodifiableListMultimap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ImmutableListMultimap",
+          "name": "ImmutableListMultimap",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(com.google.common.collect.ListMultimap multimap)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(com.google.common.collect.SetMultimap multimap)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(com.google.common.collect.SortedSetMultimap multimap)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SortedSetMultimap",
+          "name": "SortedSetMultimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asMap(com.google.common.collect.Multimap multimap)",
+    "name": "asMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "forMap(java.util.Map map)",
+    "name": "forMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the backing map for the returned multimap view",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformValues(com.google.common.collect.Multimap fromMultimap,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "fromMultimap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntries(com.google.common.collect.Multimap fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformValues(com.google.common.collect.ListMultimap fromMultimap,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "fromMultimap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformEntries(com.google.common.collect.ListMultimap fromMap,com.google.common.collect.Maps.EntryTransformer transformer)",
+    "name": "transformEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "fromMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Maps.EntryTransformer",
+          "name": "EntryTransformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "index(java.lang.Iterable values,com.google.common.base.Function keyFunction)",
+    "name": "index",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableListMultimap",
+      "name": "ImmutableListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "keyFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "the values to use when constructing the ImmutableListMultimap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "keyFunction"
+        },
+        "comment": "the function used to produce the key for each value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "ImmutableListMultimap mapping the result of evaluating the function keyFunction on each value in the input collection to that value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values",
+          "keyFunction",
+          "values",
+          "keyFunction",
+          "null",
+          "values"
+        ],
+        "comment": "if any of the following cases is true: values is null keyFunction is null An element in values is null keyFunction returns null for any element of values",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "index(java.util.Iterator values,com.google.common.base.Function keyFunction)",
+    "name": "index",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableListMultimap",
+      "name": "ImmutableListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "keyFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "the values to use when constructing the ImmutableListMultimap",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "keyFunction"
+        },
+        "comment": "the function used to produce the key for each value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "ImmutableListMultimap mapping the result of evaluating the function keyFunction on each value in the input collection to that value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values",
+          "keyFunction",
+          "values",
+          "keyFunction",
+          "null",
+          "values"
+        ],
+        "comment": "if any of the following cases is true: values is null keyFunction is null An element in values is null keyFunction returns null for any element of values",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "filterKeys(com.google.common.collect.Multimap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(com.google.common.collect.SetMultimap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterKeys(com.google.common.collect.ListMultimap unfiltered,com.google.common.base.Predicate keyPredicate)",
+    "name": "filterKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ListMultimap",
+      "name": "ListMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ListMultimap",
+          "name": "ListMultimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "keyPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(com.google.common.collect.Multimap unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterValues(com.google.common.collect.SetMultimap unfiltered,com.google.common.base.Predicate valuePredicate)",
+    "name": "filterValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "valuePredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(com.google.common.collect.Multimap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multimap",
+      "name": "Multimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "filterEntries(com.google.common.collect.SetMultimap unfiltered,com.google.common.base.Predicate entryPredicate)",
+    "name": "filterEntries",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SetMultimap",
+      "name": "SetMultimap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SetMultimap",
+          "name": "SetMultimap",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "entryPredicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equalsImpl(com.google.common.collect.Multimap multimap,java.lang.Object object)",
+    "name": "equalsImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multimaps",
+      "name": "Multimaps",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multimaps",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "multimap"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

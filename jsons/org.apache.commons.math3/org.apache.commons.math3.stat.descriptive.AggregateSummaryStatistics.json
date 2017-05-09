@@ -1,0 +1,447 @@
+[
+  {
+    "signature": "AggregateSummaryStatistics()",
+    "name": "AggregateSummaryStatistics",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AggregateSummaryStatistics(org.apache.commons.math3.stat.descriptive.SummaryStatistics prototypeStatistics)",
+    "name": "AggregateSummaryStatistics",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+          "name": "SummaryStatistics",
+          "isArray": false
+        },
+        "name": "prototypeStatistics"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+            "name": "SummaryStatistics",
+            "isArray": false
+          },
+          "name": "prototypeStatistics"
+        },
+        "comment": "a SummaryStatistics serving as a prototype both for the internal aggregate statistics and for contributing statistics obtained via the createContributingStatistics() method. Being a prototype means that other objects are initialized by copying this object's state. If null, a new, default statistics object is used. Any statistic values in the prototype are propagated to contributing statistics objects and (once) into these aggregate statistics.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if prototypeStatistics is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "AggregateSummaryStatistics(org.apache.commons.math3.stat.descriptive.SummaryStatistics prototypeStatistics,org.apache.commons.math3.stat.descriptive.SummaryStatistics initialStatistics)",
+    "name": "AggregateSummaryStatistics",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+          "name": "SummaryStatistics",
+          "isArray": false
+        },
+        "name": "prototypeStatistics"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+          "name": "SummaryStatistics",
+          "isArray": false
+        },
+        "name": "initialStatistics"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+            "name": "SummaryStatistics",
+            "isArray": false
+          },
+          "name": "prototypeStatistics"
+        },
+        "comment": "a SummaryStatistics serving as a prototype both for the internal aggregate statistics and for contributing statistics obtained via the createContributingStatistics() method. Being a prototype means that other objects are initialized by copying this object's state. If null, a new, default statistics object is used. Any statistic values in the prototype are propagated to contributing statistics objects, but not into these aggregate statistics.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+            "name": "SummaryStatistics",
+            "isArray": false
+          },
+          "name": "initialStatistics"
+        },
+        "comment": "a SummaryStatistics to serve as the internal aggregate statistics object. If null, a new, default statistics object is used.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMax()",
+    "name": "getMax",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMean()",
+    "name": "getMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMin()",
+    "name": "getMin",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getStandardDeviation()",
+    "name": "getStandardDeviation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSum()",
+    "name": "getSum",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getVariance()",
+    "name": "getVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSumOfLogs()",
+    "name": "getSumOfLogs",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the sum of logs",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGeometricMean()",
+    "name": "getGeometricMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the geometric mean",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSumsq()",
+    "name": "getSumsq",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The sum of squares",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSecondMoment()",
+    "name": "getSecondMoment",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "second central moment statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSummary()",
+    "name": "getSummary",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.StatisticalSummary",
+      "name": "StatisticalSummary",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Current values of aggregate statistics",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createContributingStatistics()",
+    "name": "createContributingStatistics",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.SummaryStatistics",
+      "name": "SummaryStatistics",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a SummaryStatistics whose data will be aggregated with those of this AggregateSummaryStatistics. The initial state is a copy of the configured prototype statistics.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "aggregate(java.util.Collection statistics)",
+    "name": "aggregate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+      "name": "AggregateSummaryStatistics",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.AggregateSummaryStatistics",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.StatisticalSummaryValues",
+      "name": "StatisticalSummaryValues",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "statistics"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "statistics"
+        },
+        "comment": "collection of SummaryStatistics to aggregate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "summary statistics for the combined dataset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

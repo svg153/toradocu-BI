@@ -1,0 +1,181 @@
+[
+  {
+    "signature": "ExponentialDecayFunction(double initValue,double valueAtNumCall,long numCall)",
+    "name": "ExponentialDecayFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.util.ExponentialDecayFunction",
+      "name": "ExponentialDecayFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.sofm.util.ExponentialDecayFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "initValue"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "valueAtNumCall"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "numCall"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "initValue"
+        },
+        "comment": "Initial value, i.e. value(0).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "valueAtNumCall"
+        },
+        "comment": "Value of the function at numCall.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "numCall"
+        },
+        "comment": "Argument for which the function returns valueAtNumCall.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "initValue <= 0"
+        ],
+        "comment": "if initValue <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valueAtNumCall <= 0"
+        ],
+        "comment": "if valueAtNumCall <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valueAtNumCall >= initValue"
+        ],
+        "comment": "if valueAtNumCall >= initValue.",
+        "kind": "THROWS",
+        "condition": "args[1]>=args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numCall <= 0"
+        ],
+        "comment": "if numCall <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "value(long numCall)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.util.ExponentialDecayFunction",
+      "name": "ExponentialDecayFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.sofm.util.ExponentialDecayFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "numCall"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "numCall"
+        },
+        "comment": "Current step of the training task.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the function at numCall.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

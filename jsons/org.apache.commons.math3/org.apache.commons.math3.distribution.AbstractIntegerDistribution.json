@@ -1,0 +1,333 @@
+[
+  {
+    "signature": "AbstractIntegerDistribution()",
+    "name": "AbstractIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractIntegerDistribution(org.apache.commons.math3.random.RandomGenerator rng)",
+    "name": "AbstractIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x0,int x1)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "solveInverseCumulativeProbability(double p,int lower,int upper)",
+    "name": "solveInverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the cumulative probability",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "a value satisfying cumulativeProbability(lower) < p",
+        "kind": "PARAM",
+        "condition": "args[0]<args[0]"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "a value satisfying p <= cumulativeProbability(upper)",
+        "kind": "PARAM",
+        "condition": "args[0]<=args[1]"
+      }
+    ],
+    "returnTag": {
+      "comment": "the smallest p-quantile of this distribution",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "reseedRandomGenerator(long seed)",
+    "name": "reseedRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "seed"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample(int sampleSize)",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "sampleSize"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logProbability(int x)",
+    "name": "logProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+      "name": "AbstractIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.AbstractIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "the point at which the PMF is evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the logarithm of the value of the probability mass function at x",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

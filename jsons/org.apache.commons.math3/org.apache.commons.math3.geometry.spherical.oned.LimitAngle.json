@@ -1,0 +1,328 @@
+[
+  {
+    "signature": "LimitAngle(org.apache.commons.math3.geometry.spherical.oned.S1Point location,boolean direct,double tolerance)",
+    "name": "LimitAngle",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.S1Point",
+          "name": "S1Point",
+          "isArray": false
+        },
+        "name": "location"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "direct"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.S1Point",
+            "name": "S1Point",
+            "isArray": false
+          },
+          "name": "location"
+        },
+        "comment": "location of the hyperplane",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "direct"
+        },
+        "comment": "if true, the plus side of the hyperplane is towards angles greater than location",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which angles are considered identical",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "copySelf()",
+    "name": "copySelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the instance itself",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOffset(org.apache.commons.math3.geometry.Point point)",
+    "name": "getOffset",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Point",
+          "name": "Point",
+          "isArray": false
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isDirect()",
+    "name": "isDirect",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the plus side of the hyperplane is towards angles greater than hyperplane location",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getReverse()",
+    "name": "getReverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new limit angle, with orientation opposite to the instance orientation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "wholeHyperplane()",
+    "name": "wholeHyperplane",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.SubLimitAngle",
+      "name": "SubLimitAngle",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a dummy sub hyperplane",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "wholeSpace()",
+    "name": "wholeSpace",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.ArcsSet",
+      "name": "ArcsSet",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a region containing the instance (really an IntervalsSet instance)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sameOrientationAs(org.apache.commons.math3.geometry.partitioning.Hyperplane other)",
+    "name": "sameOrientationAs",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+          "name": "Hyperplane",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLocation()",
+    "name": "getLocation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.S1Point",
+      "name": "S1Point",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the hyperplane location",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "project(org.apache.commons.math3.geometry.Point point)",
+    "name": "project",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.Point",
+      "name": "Point",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Point",
+          "name": "Point",
+          "isArray": false
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTolerance()",
+    "name": "getTolerance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+      "name": "LimitAngle",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.oned.LimitAngle",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

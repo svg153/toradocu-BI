@@ -1,0 +1,575 @@
+[
+  {
+    "signature": "HashCode()",
+    "name": "HashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "bits()",
+    "name": "bits",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asInt()",
+    "name": "asInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "bits() < 32"
+        ],
+        "comment": "if bits() < 32",
+        "kind": "THROWS",
+        "condition": "target.bits()<32"
+      }
+    ]
+  },
+  {
+    "signature": "asLong()",
+    "name": "asLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "bits() < 64"
+        ],
+        "comment": "if bits() < 64",
+        "kind": "THROWS",
+        "condition": "target.bits()<64"
+      }
+    ]
+  },
+  {
+    "signature": "padToLong()",
+    "name": "padToLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asBytes()",
+    "name": "asBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeBytesTo(byte[] dest,int offset,int maxLength)",
+    "name": "writeBytesTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "dest"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "offset"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxLength"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "dest"
+        },
+        "comment": "the byte array into which the hash code will be written",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "offset"
+        },
+        "comment": "the start offset in the data",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxLength"
+        },
+        "comment": "the maximum number of bytes to write",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of bytes written to dest",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IndexOutOfBoundsException",
+          "name": "IndexOutOfBoundsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "dest"
+        ],
+        "comment": "if there is not enough room in dest",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "writeBytesToImpl(byte[] dest,int offset,int maxLength)",
+    "name": "writeBytesToImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "dest"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "offset"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxLength"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBytesInternal()",
+    "name": "getBytesInternal",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equalsSameBits(com.google.common.hash.HashCode that)",
+    "name": "equalsSameBits",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.hash.HashCode",
+          "name": "HashCode",
+          "isArray": false
+        },
+        "name": "that"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromInt(int hash)",
+    "name": "fromInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hash"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromLong(long hash)",
+    "name": "fromLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "hash"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromBytes(byte[] bytes)",
+    "name": "fromBytes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromBytesNoCopy(byte[] bytes)",
+    "name": "fromBytesNoCopy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromString(java.lang.String string)",
+    "name": "fromString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "string"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object object)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.hash.HashCode",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

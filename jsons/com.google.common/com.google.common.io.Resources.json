@@ -1,0 +1,554 @@
+[
+  {
+    "signature": "asByteSource(java.net.URL url)",
+    "name": "asByteSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asCharSource(java.net.URL url,java.nio.charset.Charset charset)",
+    "name": "asCharSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toByteArray(java.net.URL url)",
+    "name": "toByteArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "the URL to read from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a byte array containing all the bytes from the URL",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toString(java.net.URL url,java.nio.charset.Charset charset)",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "the URL to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a string containing all the characters from the URL",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines(java.net.URL url,java.nio.charset.Charset charset,com.google.common.io.LineProcessor callback)",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.LineProcessor",
+          "name": "LineProcessor",
+          "isArray": false
+        },
+        "name": "callback"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "the URL to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.LineProcessor",
+            "name": "LineProcessor",
+            "isArray": false
+          },
+          "name": "callback"
+        },
+        "comment": "the LineProcessor to use to handle the lines",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the output of processing the lines",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readLines(java.net.URL url,java.nio.charset.Charset charset)",
+    "name": "readLines",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "url"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "url"
+        },
+        "comment": "the URL to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.nio.charset.Charset",
+            "name": "Charset",
+            "isArray": false
+          },
+          "name": "charset"
+        },
+        "comment": "the charset used to decode the input stream; see Charsets for helpful predefined constants",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a mutable List containing all the lines",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copy(java.net.URL from,java.io.OutputStream to)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.URL",
+          "name": "URL",
+          "isArray": false
+        },
+        "name": "from"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.OutputStream",
+          "name": "OutputStream",
+          "isArray": false
+        },
+        "name": "to"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.URL",
+            "name": "URL",
+            "isArray": false
+          },
+          "name": "from"
+        },
+        "comment": "the URL to read from",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.OutputStream",
+            "name": "OutputStream",
+            "isArray": false
+          },
+          "name": "to"
+        },
+        "comment": "the output stream",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getResource(java.lang.String resourceName)",
+    "name": "getResource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.URL",
+      "name": "URL",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "resourceName"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the resource is not found",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getResource(java.lang.Class contextClass,java.lang.String resourceName)",
+    "name": "getResource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.Resources",
+      "name": "Resources",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.Resources",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.URL",
+      "name": "URL",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "contextClass"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "resourceName"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the resource is not found",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "signature": "primeFactors(int n)",
+    "name": "primeFactors",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.PollardRho",
+      "name": "PollardRho",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.PollardRho",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "number to factors, must be > 0",
+        "kind": "PARAM",
+        "condition": "args[0]>0"
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of prime factors of n.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "rhoBrent(int n)",
+    "name": "rhoBrent",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.PollardRho",
+      "name": "PollardRho",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.PollardRho",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "number to factor, must be semi-prime.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a prime factor of n.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "gcdPositive(int a,int b)",
+    "name": "gcdPositive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.PollardRho",
+      "name": "PollardRho",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.PollardRho",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "a"
+        },
+        "comment": "first number, must be ≥ 0",
+        "kind": "PARAM",
+        "condition": "args[0]>=0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "second number, must be ≥ 0",
+        "kind": "PARAM",
+        "condition": "args[1]>=0"
+      }
+    ],
+    "returnTag": {
+      "comment": "gcd(a,b)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  }
+]

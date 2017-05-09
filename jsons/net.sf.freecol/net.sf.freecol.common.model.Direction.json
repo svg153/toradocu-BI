@@ -1,0 +1,632 @@
+[
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction[]",
+      "name": "Direction[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "net.sf.freecol.common.model.Direction",
+        "name": "Direction",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an array containing the constants of this enum type, in the order they are declared",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "valueOf(java.lang.String name)",
+    "name": "valueOf",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "the name of the enum constant to be returned.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the enum constant with the specified name",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this enum type has no constant with the specified name",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "step(int x,int y)",
+    "name": "step",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Map.Position",
+      "name": "Position",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "The x coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "The y coordinate.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The map position after the step.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNextDirection()",
+    "name": "getNextDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The next Direction.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPreviousDirection()",
+    "name": "getPreviousDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The previous Direction.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getReverseDirection()",
+    "name": "getReverseDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The reverse Direction.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEWMirroredDirection()",
+    "name": "getEWMirroredDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The mirrored Direction.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomDirection(java.lang.String logMe,java.util.logging.Logger logger,java.util.Random random)",
+    "name": "getRandomDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the random results.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "A Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A random Direction value.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRandomDirections(java.lang.String logMe,java.util.logging.Logger logger,java.util.Random random)",
+    "name": "getRandomDirections",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction[]",
+      "name": "Direction[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "net.sf.freecol.common.model.Direction",
+        "name": "Direction",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the random results.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "A Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An array of the Directions in a random order.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getClosestDirections(java.lang.String logMe,java.util.logging.Logger logger,java.util.Random random)",
+    "name": "getClosestDirections",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction[]",
+      "name": "Direction[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "net.sf.freecol.common.model.Direction",
+        "name": "Direction",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "logMe"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.logging.Logger",
+          "name": "Logger",
+          "isArray": false
+        },
+        "name": "logger"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "logMe"
+        },
+        "comment": "A string to log with the random results.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.logging.Logger",
+            "name": "Logger",
+            "isArray": false
+          },
+          "name": "logger"
+        },
+        "comment": "A Logger to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An array of the Directions favouring this one.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "angleToDirection(double angle)",
+    "name": "angleToDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "angle"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "angle"
+        },
+        "comment": "The angle to convert.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An equivalent Direction.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getKey()",
+    "name": "getKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A suitable message key.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.N)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNameKey()",
+    "name": "getNameKey",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Direction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

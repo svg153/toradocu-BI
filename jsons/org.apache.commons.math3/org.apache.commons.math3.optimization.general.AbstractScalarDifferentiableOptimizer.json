@@ -1,0 +1,340 @@
+[
+  {
+    "signature": "AbstractScalarDifferentiableOptimizer()",
+    "name": "AbstractScalarDifferentiableOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+      "name": "AbstractScalarDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractScalarDifferentiableOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker checker)",
+    "name": "AbstractScalarDifferentiableOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+      "name": "AbstractScalarDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeObjectiveGradient(double[] evaluationPoint)",
+    "name": "computeObjectiveGradient",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+      "name": "AbstractScalarDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "evaluationPoint"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "evaluationPoint"
+        },
+        "comment": "Point at which the gradient must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the gradient at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the allowed number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "optimizeInternal(int maxEval,org.apache.commons.math3.analysis.DifferentiableMultivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,double[] startPoint)",
+    "name": "optimizeInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+      "name": "AbstractScalarDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.DifferentiableMultivariateFunction",
+          "name": "DifferentiableMultivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction f,org.apache.commons.math3.optimization.GoalType goalType,double[] startPoint)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+      "name": "AbstractScalarDifferentiableOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.general.AbstractScalarDifferentiableOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+          "name": "MultivariateDifferentiableFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.differentiation.MultivariateDifferentiableFunction",
+            "name": "MultivariateDifferentiableFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Type of optimization goal: either GoalType.MAXIMIZE or GoalType.MINIMIZE.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "startPoint"
+        },
+        "comment": "Start point for optimization.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of function evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the point/value pair giving the optimal value for objective function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the start point dimension is wrong.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if any argument is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null || args[3]==null"
+      }
+    ]
+  }
+]

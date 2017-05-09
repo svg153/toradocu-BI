@@ -1,0 +1,373 @@
+[
+  {
+    "signature": "GeometricDistribution(double p)",
+    "name": "GeometricDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "probability of success.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0",
+          "p > 1"
+        ],
+        "comment": "if p <= 0 or p > 1.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[0]>1"
+      }
+    ]
+  },
+  {
+    "signature": "GeometricDistribution(org.apache.commons.math3.random.RandomGenerator rng,double p)",
+    "name": "GeometricDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Probability of success.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0",
+          "p > 1"
+        ],
+        "comment": "if p <= 0 or p > 1.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[1]>1"
+      }
+    ]
+  },
+  {
+    "signature": "getProbabilityOfSuccess()",
+    "name": "getProbabilityOfSuccess",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the probability of success.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(int x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logProbability(int x)",
+    "name": "logProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (always 0)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (always Integer.MAX_VALUE)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GeometricDistribution",
+      "name": "GeometricDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GeometricDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

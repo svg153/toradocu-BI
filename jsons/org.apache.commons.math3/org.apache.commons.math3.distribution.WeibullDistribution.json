@@ -1,0 +1,758 @@
+[
+  {
+    "signature": "WeibullDistribution(double alpha,double beta)",
+    "name": "WeibullDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "beta"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "Shape parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "beta"
+        },
+        "comment": "Scale parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha <= 0",
+          "beta <= 0"
+        ],
+        "comment": "if alpha <= 0 or beta <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "WeibullDistribution(double alpha,double beta,double inverseCumAccuracy)",
+    "name": "WeibullDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "beta"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "Shape parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "beta"
+        },
+        "comment": "Scale parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "Maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha <= 0",
+          "beta <= 0"
+        ],
+        "comment": "if alpha <= 0 or beta <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "WeibullDistribution(org.apache.commons.math3.random.RandomGenerator rng,double alpha,double beta)",
+    "name": "WeibullDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "beta"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "Shape parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "beta"
+        },
+        "comment": "Scale parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha <= 0",
+          "beta <= 0"
+        ],
+        "comment": "if alpha <= 0 or beta <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "WeibullDistribution(org.apache.commons.math3.random.RandomGenerator rng,double alpha,double beta,double inverseCumAccuracy)",
+    "name": "WeibullDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "beta"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "Shape parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "beta"
+        },
+        "comment": "Scale parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "Maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha <= 0",
+          "beta <= 0"
+        ],
+        "comment": "if alpha <= 0 or beta <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "getShape()",
+    "name": "getShape",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the shape parameter, alpha.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getScale()",
+    "name": "getScale",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the scale parameter, beta.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logDensity(double x)",
+    "name": "logDensity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the solver absolute accuracy.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateNumericalMean()",
+    "name": "calculateNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mean of this distribution",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateNumericalVariance()",
+    "name": "calculateNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the variance of this distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (always 0)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (always Double.POSITIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.WeibullDistribution",
+      "name": "WeibullDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.WeibullDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  }
+]

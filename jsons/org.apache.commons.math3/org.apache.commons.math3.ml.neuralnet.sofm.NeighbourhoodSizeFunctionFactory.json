@@ -1,0 +1,273 @@
+[
+  {
+    "signature": "exponentialDecay(double initValue,double valueAtNumCall,long numCall)",
+    "name": "exponentialDecay",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactory",
+      "name": "NeighbourhoodSizeFunctionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunction",
+      "name": "NeighbourhoodSizeFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "initValue"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "valueAtNumCall"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "numCall"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "initValue"
+        },
+        "comment": "Initial value, i.e. value(0).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "valueAtNumCall"
+        },
+        "comment": "Value of the function at numCall.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "numCall"
+        },
+        "comment": "Argument for which the function returns valueAtNumCall.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neighbourhood size function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "initValue <= 0"
+        ],
+        "comment": "if initValue <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valueAtNumCall <= 0"
+        ],
+        "comment": "if valueAtNumCall <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "valueAtNumCall >= initValue"
+        ],
+        "comment": "if valueAtNumCall >= initValue.",
+        "kind": "THROWS",
+        "condition": "args[1]>=args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numCall <= 0"
+        ],
+        "comment": "if numCall <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "quasiSigmoidDecay(double initValue,double slope,long numCall)",
+    "name": "quasiSigmoidDecay",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactory",
+      "name": "NeighbourhoodSizeFunctionFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunction",
+      "name": "NeighbourhoodSizeFunction",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "initValue"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "slope"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "numCall"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "initValue"
+        },
+        "comment": "Initial value, i.e. value(0).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "slope"
+        },
+        "comment": "Value of the function derivative at numCall.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "numCall"
+        },
+        "comment": "Inflexion point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the neighbourhood size function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "initValue <= 0"
+        ],
+        "comment": "if initValue <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "slope >= 0"
+        ],
+        "comment": "if slope >= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]>=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numCall <= 0"
+        ],
+        "comment": "if numCall <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  }
+]

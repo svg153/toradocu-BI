@@ -1,0 +1,742 @@
+[
+  {
+    "signature": "PassiveExpiringMap()",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "PassiveExpiringMap(org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy expiringPolicy)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy",
+          "name": "ExpirationPolicy",
+          "isArray": false
+        },
+        "name": "expiringPolicy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy",
+            "name": "ExpirationPolicy",
+            "isArray": false
+          },
+          "name": "expiringPolicy"
+        },
+        "comment": "the policy used to determine expiration times of entries as they are added.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if expiringPolicy is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "PassiveExpiringMap(org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy expiringPolicy,java.util.Map map)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy",
+          "name": "ExpirationPolicy",
+          "isArray": false
+        },
+        "name": "expiringPolicy"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap.ExpirationPolicy",
+            "name": "ExpirationPolicy",
+            "isArray": false
+          },
+          "name": "expiringPolicy"
+        },
+        "comment": "the policy used to determine expiration times of entries as they are added.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map or expiringPolicy is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "PassiveExpiringMap(long timeToLiveMillis)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeToLiveMillis"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeToLiveMillis"
+        },
+        "comment": "the constant amount of time (in milliseconds) an entry is available before it expires. A negative value results in entries that NEVER expire. A zero value results in entries that ALWAYS expire.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "PassiveExpiringMap(long timeToLiveMillis,java.util.Map map)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeToLiveMillis"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeToLiveMillis"
+        },
+        "comment": "the constant amount of time (in milliseconds) an entry is available before it expires. A negative value results in entries that NEVER expire. A zero value results in entries that ALWAYS expire.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "PassiveExpiringMap(long timeToLive,java.util.concurrent.TimeUnit timeUnit)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeToLive"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeToLive"
+        },
+        "comment": "the constant amount of time an entry is available before it expires. A negative value results in entries that NEVER expire. A zero value results in entries that ALWAYS expire.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeUnit"
+        },
+        "comment": "the unit of time for the timeToLive parameter, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the time unit is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "PassiveExpiringMap(long timeToLive,java.util.concurrent.TimeUnit timeUnit,java.util.Map map)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeToLive"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeToLive"
+        },
+        "comment": "the constant amount of time an entry is available before it expires. A negative value results in entries that NEVER expire. A zero value results in entries that ALWAYS expire.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeUnit"
+        },
+        "comment": "the unit of time for the timeToLive parameter, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[2]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map or time unit is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "PassiveExpiringMap(java.util.Map map)",
+    "name": "PassiveExpiringMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to decorate, must not be null.",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsKey(java.lang.Object key)",
+    "name": "containsKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsValue(java.lang.Object value)",
+    "name": "containsValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "entrySet()",
+    "name": "entrySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "keySet()",
+    "name": "keySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "putAll(java.util.Map mapToCopy)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "mapToCopy"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(java.lang.Object key)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.PassiveExpiringMap",
+      "name": "PassiveExpiringMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.PassiveExpiringMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

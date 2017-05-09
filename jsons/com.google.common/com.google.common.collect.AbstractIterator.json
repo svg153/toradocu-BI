@@ -1,0 +1,138 @@
+[
+  {
+    "signature": "AbstractIterator()",
+    "name": "AbstractIterator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeNext()",
+    "name": "computeNext",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next element if there was one. If endOfData was called during execution, the return value will be ignored.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.RuntimeException",
+          "name": "RuntimeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "hasNext()",
+          "next()",
+          "peek()",
+          "IllegalStateException"
+        ],
+        "comment": "if any unrecoverable error happens. This exception will propagate outward to the hasNext(), next(), or peek() invocation that invoked this method. Any further attempts to use the iterator will result in an IllegalStateException.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "endOfData()",
+    "name": "endOfData",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "null; a convenience so your computeNext implementation can use the simple statement return endOfData();",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "peek()",
+    "name": "peek",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.AbstractIterator",
+      "name": "AbstractIterator",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.AbstractIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

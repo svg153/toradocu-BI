@@ -1,0 +1,806 @@
+[
+  {
+    "signature": "NormalDistribution()",
+    "name": "NormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "NormalDistribution(double mean,double sd)",
+    "name": "NormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sd"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "Mean for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sd"
+        },
+        "comment": "Standard deviation for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sd <= 0"
+        ],
+        "comment": "if sd <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "NormalDistribution(double mean,double sd,double inverseCumAccuracy)",
+    "name": "NormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sd"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "Mean for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sd"
+        },
+        "comment": "Standard deviation for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "Inverse cumulative probability accuracy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sd <= 0"
+        ],
+        "comment": "if sd <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "NormalDistribution(org.apache.commons.math3.random.RandomGenerator rng,double mean,double sd)",
+    "name": "NormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sd"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "Mean for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sd"
+        },
+        "comment": "Standard deviation for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sd <= 0"
+        ],
+        "comment": "if sd <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "NormalDistribution(org.apache.commons.math3.random.RandomGenerator rng,double mean,double sd,double inverseCumAccuracy)",
+    "name": "NormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sd"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "Mean for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sd"
+        },
+        "comment": "Standard deviation for this distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "Inverse cumulative probability accuracy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sd <= 0"
+        ],
+        "comment": "if sd <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "getMean()",
+    "name": "getMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mean for this distribution.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStandardDeviation()",
+    "name": "getStandardDeviation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the standard deviation for this distribution.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logDensity(double x)",
+    "name": "logDensity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inverseCumulativeProbability(double p)",
+    "name": "inverseCumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x0,double x1)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(double x0,double x1)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x0"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x1"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (always Double.NEGATIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (always Double.POSITIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NormalDistribution",
+      "name": "NormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NormalDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

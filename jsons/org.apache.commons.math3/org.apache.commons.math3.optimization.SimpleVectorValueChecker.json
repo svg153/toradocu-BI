@@ -1,0 +1,256 @@
+[
+  {
+    "signature": "SimpleVectorValueChecker()",
+    "name": "SimpleVectorValueChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+      "name": "SimpleVectorValueChecker",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "SimpleVectorValueChecker(double relativeThreshold,double absoluteThreshold)",
+    "name": "SimpleVectorValueChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+      "name": "SimpleVectorValueChecker",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "relativeThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "absoluteThreshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "relativeThreshold"
+        },
+        "comment": "relative tolerance threshold",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "absoluteThreshold"
+        },
+        "comment": "absolute tolerance threshold",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "SimpleVectorValueChecker(double relativeThreshold,double absoluteThreshold,int maxIter)",
+    "name": "SimpleVectorValueChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+      "name": "SimpleVectorValueChecker",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "relativeThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "absoluteThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIter"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "relativeThreshold"
+        },
+        "comment": "Relative tolerance threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "absoluteThreshold"
+        },
+        "comment": "Absolute tolerance threshold.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIter"
+        },
+        "comment": "Maximum iteration count.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "maxIter <= 0"
+        ],
+        "comment": "if maxIter <= 0.",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "converged(int iteration,org.apache.commons.math3.optimization.PointVectorValuePair previous,org.apache.commons.math3.optimization.PointVectorValuePair current)",
+    "name": "converged",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+      "name": "SimpleVectorValueChecker",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.SimpleVectorValueChecker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "iteration"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.PointVectorValuePair",
+          "name": "PointVectorValuePair",
+          "isArray": false
+        },
+        "name": "previous"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.PointVectorValuePair",
+          "name": "PointVectorValuePair",
+          "isArray": false
+        },
+        "name": "current"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "iteration"
+        },
+        "comment": "Index of current iteration",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.PointVectorValuePair",
+            "name": "PointVectorValuePair",
+            "isArray": false
+          },
+          "name": "previous"
+        },
+        "comment": "Best point in the previous iteration.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.PointVectorValuePair",
+            "name": "PointVectorValuePair",
+            "isArray": false
+          },
+          "name": "current"
+        },
+        "comment": "Best point in the current iteration.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the arguments satify the convergence criterion.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

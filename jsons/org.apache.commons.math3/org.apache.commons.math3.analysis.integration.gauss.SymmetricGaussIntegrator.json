@@ -1,0 +1,184 @@
+[
+  {
+    "signature": "SymmetricGaussIntegrator(double[] points,double[] weights)",
+    "name": "SymmetricGaussIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+      "name": "SymmetricGaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "points"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "weights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "points"
+        },
+        "comment": "Integration points.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "weights"
+        },
+        "comment": "Weights of the corresponding integration nodes.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "points"
+        ],
+        "comment": "if the points are not sorted in increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if points and weights don't have the same length",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "SymmetricGaussIntegrator(org.apache.commons.math3.util.Pair pointsAndWeights)",
+    "name": "SymmetricGaussIntegrator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+      "name": "SymmetricGaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.Pair",
+          "name": "Pair",
+          "isArray": false
+        },
+        "name": "pointsAndWeights"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.Pair",
+            "name": "Pair",
+            "isArray": false
+          },
+          "name": "pointsAndWeights"
+        },
+        "comment": "Integration points and corresponding weights.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "points"
+        ],
+        "comment": "if the points are not sorted in increasing order.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "integrate(org.apache.commons.math3.analysis.UnivariateFunction f)",
+    "name": "integrate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+      "name": "SymmetricGaussIntegrator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.SymmetricGaussIntegrator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

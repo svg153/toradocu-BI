@@ -1,0 +1,754 @@
+[
+  {
+    "signature": "GammaDistribution(double shape,double scale)",
+    "name": "GammaDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "shape"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "shape"
+        },
+        "comment": "the shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "the scale parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "shape <= 0",
+          "scale <= 0"
+        ],
+        "comment": "if shape <= 0 or scale <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "GammaDistribution(double shape,double scale,double inverseCumAccuracy)",
+    "name": "GammaDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "shape"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scale"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "shape"
+        },
+        "comment": "the shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "the scale parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "the maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "shape <= 0",
+          "scale <= 0"
+        ],
+        "comment": "if shape <= 0 or scale <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0 || args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "GammaDistribution(org.apache.commons.math3.random.RandomGenerator rng,double shape,double scale)",
+    "name": "GammaDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "shape"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scale"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "shape"
+        },
+        "comment": "the shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "the scale parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "shape <= 0",
+          "scale <= 0"
+        ],
+        "comment": "if shape <= 0 or scale <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "GammaDistribution(org.apache.commons.math3.random.RandomGenerator rng,double shape,double scale,double inverseCumAccuracy)",
+    "name": "GammaDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "shape"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "scale"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseCumAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "shape"
+        },
+        "comment": "the shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "scale"
+        },
+        "comment": "the scale parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseCumAccuracy"
+        },
+        "comment": "the maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "shape <= 0",
+          "scale <= 0"
+        ],
+        "comment": "if shape <= 0 or scale <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "getAlpha()",
+    "name": "getAlpha",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the shape parameter",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getShape()",
+    "name": "getShape",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the shape parameter",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getBeta()",
+    "name": "getBeta",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the scale parameter",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getScale()",
+    "name": "getScale",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the scale parameter",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logDensity(double x)",
+    "name": "logDensity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the variance (possibly Double.POSITIVE_INFINITY as for certain cases in TDistribution) or Double.NaN if it is not defined",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (always 0)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (always Double.POSITIVE_INFINITY)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.GammaDistribution",
+      "name": "GammaDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.GammaDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "random value sampled from the Gamma(shape, scale) distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,958 @@
+[
+  {
+    "signature": "isPowerOfTwo(long x)",
+    "name": "isPowerOfTwo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "lessThanBranchFree(long x,long y)",
+    "name": "lessThanBranchFree",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "log2(long x,java.math.RoundingMode mode)",
+    "name": "log2",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x <= 0"
+        ],
+        "comment": "if x <= 0",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "x"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and x is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "log10(long x,java.math.RoundingMode mode)",
+    "name": "log10",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x <= 0"
+        ],
+        "comment": "if x <= 0",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "x"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and x is not a power of ten",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "log10Floor(long x)",
+    "name": "log10Floor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "pow(long b,int k)",
+    "name": "pow",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k < 0"
+        ],
+        "comment": "if k < 0",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "sqrt(long x,java.math.RoundingMode mode)",
+    "name": "sqrt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x < 0"
+        ],
+        "comment": "if x < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mode",
+          "RoundingMode.UNNECESSARY",
+          "sqrt(x)"
+        ],
+        "comment": "if mode is RoundingMode.UNNECESSARY and sqrt(x) is not an integer",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "divide(long p,long q,java.math.RoundingMode mode)",
+    "name": "divide",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "q"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "q == 0",
+          "mode == UNNECESSARY",
+          "a",
+          "b"
+        ],
+        "comment": "if q == 0, or if mode == UNNECESSARY and a is not an integer multiple of b",
+        "kind": "THROWS",
+        "condition": "args[1]==0"
+      }
+    ]
+  },
+  {
+    "signature": "mod(long x,int m)",
+    "name": "mod",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m <= 0"
+        ],
+        "comment": "if m <= 0",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "mod(long x,long m)",
+    "name": "mod",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m <= 0"
+        ],
+        "comment": "if m <= 0",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "gcd(long a,long b)",
+    "name": "gcd",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a < 0",
+          "b < 0"
+        ],
+        "comment": "if a < 0 or b < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "checkedAdd(long a,long b)",
+    "name": "checkedAdd",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a + b",
+          "long"
+        ],
+        "comment": "if a + b overflows in signed long arithmetic",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkedSubtract(long a,long b)",
+    "name": "checkedSubtract",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a - b",
+          "long"
+        ],
+        "comment": "if a - b overflows in signed long arithmetic",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkedMultiply(long a,long b)",
+    "name": "checkedMultiply",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "a * b",
+          "long"
+        ],
+        "comment": "if a * b overflows in signed long arithmetic",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkedPow(long b,int k)",
+    "name": "checkedPow",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "b",
+          "k",
+          "long"
+        ],
+        "comment": "if b to the kth power overflows in signed long arithmetic",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "factorial(int n)",
+    "name": "factorial",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "binomial(int n,int k)",
+    "name": "binomial",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0",
+          "k < 0",
+          "k > n"
+        ],
+        "comment": "if n < 0, k < 0, or k > n",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "multiplyFraction(long x,long numerator,long denominator)",
+    "name": "multiplyFraction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "numerator"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "denominator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fitsInInt(long x)",
+    "name": "fitsInInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "mean(long x,long y)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.LongMath",
+      "name": "LongMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.LongMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

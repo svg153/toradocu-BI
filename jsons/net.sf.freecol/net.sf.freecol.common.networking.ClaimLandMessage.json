@@ -1,0 +1,276 @@
+[
+  {
+    "signature": "ClaimLandMessage(net.sf.freecol.common.model.Tile tile,net.sf.freecol.common.model.FreeColGameObject claimant,int price)",
+    "name": "ClaimLandMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ClaimLandMessage",
+      "name": "ClaimLandMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ClaimLandMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+          "name": "FreeColGameObject",
+          "isArray": false
+        },
+        "name": "claimant"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "price"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to claim.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+            "name": "FreeColGameObject",
+            "isArray": false
+          },
+          "name": "claimant"
+        },
+        "comment": "The Unit or Settlement claiming the tile.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "price"
+        },
+        "comment": "The price to pay for the tile, negative if stealing.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ClaimLandMessage(net.sf.freecol.common.model.Game game,org.w3c.dom.Element element)",
+    "name": "ClaimLandMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ClaimLandMessage",
+      "name": "ClaimLandMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ClaimLandMessage",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game this message belongs to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element to use to create the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.server.FreeColServer server,net.sf.freecol.common.model.Player player,net.sf.freecol.common.networking.Connection connection)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ClaimLandMessage",
+      "name": "ClaimLandMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ClaimLandMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "The FreeColServer handling the message.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player the message applies to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection the message was from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An update, or error Element on failure.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ClaimLandMessage",
+      "name": "ClaimLandMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ClaimLandMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The XML representation of this message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.ClaimLandMessage",
+      "name": "ClaimLandMessage",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.ClaimLandMessage",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"claimLand\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

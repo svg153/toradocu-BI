@@ -1,0 +1,779 @@
+[
+  {
+    "signature": "BaseAbstractMultivariateOptimizer()",
+    "name": "BaseAbstractMultivariateOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "BaseAbstractMultivariateOptimizer(org.apache.commons.math3.optimization.ConvergenceChecker checker)",
+    "name": "BaseAbstractMultivariateOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxEvaluations()",
+    "name": "getMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getConvergenceChecker()",
+    "name": "getConvergenceChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+      "name": "ConvergenceChecker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeObjectiveValue(double[] point)",
+    "name": "computeObjectiveValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "Point at which the objective function must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the objective function value at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.MultivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,double[] startPoint)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.MultivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,org.apache.commons.math3.optimization.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Allowed number of evaluations of the objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+            "name": "MultivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Optimization type.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: InitialGuess SimpleBounds",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the point/value pair giving the optimal value of the objective function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimizeInternal(int maxEval,org.apache.commons.math3.analysis.MultivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,double[] startPoint)",
+    "name": "optimizeInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "startPoint"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+            "name": "MultivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Type of optimization goal: either GoalType.MAXIMIZE or GoalType.MINIMIZE.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "startPoint"
+        },
+        "comment": "Start point for optimization.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of function evaluations.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the point/value pair giving the optimal value for objective function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the start point dimension is wrong.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if any argument is null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null || args[3]==null"
+      }
+    ]
+  },
+  {
+    "signature": "optimizeInternal(int maxEval,org.apache.commons.math3.analysis.MultivariateFunction f,org.apache.commons.math3.optimization.GoalType goalType,org.apache.commons.math3.optimization.OptimizationData[] optData)",
+    "name": "optimizeInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+          "name": "MultivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goalType"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Allowed number of evaluations of the objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.MultivariateFunction",
+            "name": "MultivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Objective function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+            "name": "GoalType",
+            "isArray": false
+          },
+          "name": "goalType"
+        },
+        "comment": "Optimization type.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optimization.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: InitialGuess SimpleBounds",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the point/value pair giving the optimal value of the objective function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getGoalType()",
+    "name": "getGoalType",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+      "name": "GoalType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the optimization type.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStartPoint()",
+    "name": "getStartPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the initial guess.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLowerBound()",
+    "name": "getLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the lower bounds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getUpperBound()",
+    "name": "getUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the upper bounds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "doOptimize()",
+    "name": "doOptimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+      "name": "BaseAbstractMultivariateOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.direct.BaseAbstractMultivariateOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.PointValuePair",
+      "name": "PointValuePair",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the point/value pair giving the optimal value of the objective function.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

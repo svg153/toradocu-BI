@@ -1,0 +1,510 @@
+[
+  {
+    "signature": "ServiceManager(java.lang.Iterable services)",
+    "name": "ServiceManager",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "services"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "services"
+        },
+        "comment": "The services to manage",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if not all services are new or if there are any duplicate services.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addListener(com.google.common.util.concurrent.ServiceManager.Listener listener,java.util.concurrent.Executor executor)",
+    "name": "addListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.ServiceManager.Listener",
+          "name": "Listener",
+          "isArray": false
+        },
+        "name": "listener"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Executor",
+          "name": "Executor",
+          "isArray": false
+        },
+        "name": "executor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.util.concurrent.ServiceManager.Listener",
+            "name": "Listener",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "the listener to run when the manager changes state",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Executor",
+            "name": "Executor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor in which the listeners callback methods will be run.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addListener(com.google.common.util.concurrent.ServiceManager.Listener listener)",
+    "name": "addListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.ServiceManager.Listener",
+          "name": "Listener",
+          "isArray": false
+        },
+        "name": "listener"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.util.concurrent.ServiceManager.Listener",
+            "name": "Listener",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "the listener to run when the manager changes state",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "startAsync()",
+    "name": "startAsync",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "new"
+        ],
+        "comment": "if any of the Services are not new when the method is called.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "awaitHealthy()",
+    "name": "awaitHealthy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service manager reaches a state from which it cannot become healthy.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "awaitHealthy(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "awaitHealthy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if not all of the services have finished starting within the deadline",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service manager reaches a state from which it cannot become healthy.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "stopAsync()",
+    "name": "stopAsync",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "awaitStopped()",
+    "name": "awaitStopped",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "awaitStopped(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "awaitStopped",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if not all of the services have stopped within the deadline",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isHealthy()",
+    "name": "isHealthy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "servicesByState()",
+    "name": "servicesByState",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMultimap",
+      "name": "ImmutableMultimap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "startupTimes()",
+    "name": "startupTimes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMap",
+      "name": "ImmutableMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Map of services and their corresponding startup time in millis, the map entries will be ordered by startup time.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.ServiceManager",
+      "name": "ServiceManager",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.ServiceManager",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

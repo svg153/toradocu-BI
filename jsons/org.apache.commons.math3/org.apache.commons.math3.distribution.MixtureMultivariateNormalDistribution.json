@@ -1,0 +1,229 @@
+[
+  {
+    "signature": "MixtureMultivariateNormalDistribution(double[] weights,double[][] means,double[][][] covariances)",
+    "name": "MixtureMultivariateNormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+      "name": "MixtureMultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "weights"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "means"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][][]",
+          "name": "double[][][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "covariances"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "weights"
+        },
+        "comment": "Weights of each component.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "means"
+        },
+        "comment": "Mean vector for each component.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][][]",
+            "name": "double[][][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "covariances"
+        },
+        "comment": "Covariance matrix for each component.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "MixtureMultivariateNormalDistribution(java.util.List components)",
+    "name": "MixtureMultivariateNormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+      "name": "MixtureMultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "components"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "components"
+        },
+        "comment": "List of (weight, distribution) pairs from which to sample.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "MixtureMultivariateNormalDistribution(org.apache.commons.math3.random.RandomGenerator rng,java.util.List components)",
+    "name": "MixtureMultivariateNormalDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+      "name": "MixtureMultivariateNormalDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "components"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "components"
+        },
+        "comment": "Distributions from which to sample.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the weights is negative.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if not all components have the same number of variables.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

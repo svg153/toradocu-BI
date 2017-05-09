@@ -1,0 +1,320 @@
+[
+  {
+    "signature": "PolynomialFitter(int degree,org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer optimizer)",
+    "name": "PolynomialFitter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+      "name": "PolynomialFitter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "degree"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer",
+          "name": "DifferentiableMultivariateVectorOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "degree"
+        },
+        "comment": "Maximal degree of the polynomial.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer",
+            "name": "DifferentiableMultivariateVectorOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Optimizer to use for the fitting.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "PolynomialFitter(org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer optimizer)",
+    "name": "PolynomialFitter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+      "name": "PolynomialFitter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer",
+          "name": "DifferentiableMultivariateVectorOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.DifferentiableMultivariateVectorOptimizer",
+            "name": "DifferentiableMultivariateVectorOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Optimizer to use for the fitting.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "fit()",
+    "name": "fit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+      "name": "PolynomialFitter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the coefficients of the polynomial that best fits the observed points.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm failed to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fit(int maxEval,double[] guess)",
+    "name": "fit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+      "name": "PolynomialFitter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "guess"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "guess"
+        },
+        "comment": "First guess for the coefficients. They must be sorted in increasing order of the polynomial's degree.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxEval"
+        },
+        "comment": "Maximum number of evaluations of the polynomial.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the coefficients of the polynomial that best fits the observed points.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [
+          "maxEval"
+        ],
+        "comment": "if the number of evaluations exceeds maxEval.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm failed to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fit(double[] guess)",
+    "name": "fit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+      "name": "PolynomialFitter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.fitting.PolynomialFitter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "guess"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "guess"
+        },
+        "comment": "First guess for the coefficients. They must be sorted in increasing order of the polynomial's degree.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the coefficients of the polynomial that best fits the observed points.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ConvergenceException",
+          "name": "ConvergenceException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm failed to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

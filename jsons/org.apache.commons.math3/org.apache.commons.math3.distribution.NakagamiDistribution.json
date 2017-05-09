@@ -1,0 +1,576 @@
+[
+  {
+    "signature": "NakagamiDistribution(double mu,double omega)",
+    "name": "NakagamiDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mu"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "omega"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "omega"
+        },
+        "comment": "scale parameter (must be positive)",
+        "kind": "PARAM",
+        "condition": "args[1]>0"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mu < 0.5"
+        ],
+        "comment": "if mu < 0.5",
+        "kind": "THROWS",
+        "condition": "args[0]<0.5"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "omega <= 0"
+        ],
+        "comment": "if omega <= 0",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "NakagamiDistribution(double mu,double omega,double inverseAbsoluteAccuracy)",
+    "name": "NakagamiDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mu"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "omega"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseAbsoluteAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "omega"
+        },
+        "comment": "scale parameter (must be positive)",
+        "kind": "PARAM",
+        "condition": "args[1]>0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseAbsoluteAccuracy"
+        },
+        "comment": "the maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mu < 0.5"
+        ],
+        "comment": "if mu < 0.5",
+        "kind": "THROWS",
+        "condition": "args[0]<0.5"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "omega <= 0"
+        ],
+        "comment": "if omega <= 0",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "NakagamiDistribution(org.apache.commons.math3.random.RandomGenerator rng,double mu,double omega,double inverseAbsoluteAccuracy)",
+    "name": "NakagamiDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mu"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "omega"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inverseAbsoluteAccuracy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "shape parameter",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "omega"
+        },
+        "comment": "scale parameter (must be positive)",
+        "kind": "PARAM",
+        "condition": "args[2]>0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inverseAbsoluteAccuracy"
+        },
+        "comment": "the maximum absolute error in inverse cumulative probability estimates (defaults to DEFAULT_INVERSE_ABSOLUTE_ACCURACY).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mu < 0.5"
+        ],
+        "comment": "if mu < 0.5",
+        "kind": "THROWS",
+        "condition": "args[1]<0.5"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "omega <= 0"
+        ],
+        "comment": "if omega <= 0",
+        "kind": "THROWS",
+        "condition": "args[2]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "getShape()",
+    "name": "getShape",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the shape parameter.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getScale()",
+    "name": "getScale",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the scale parameter.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolverAbsoluteAccuracy()",
+    "name": "getSolverAbsoluteAccuracy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "density(double x)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(double x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportLowerBoundInclusive()",
+    "name": "isSupportLowerBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportUpperBoundInclusive()",
+    "name": "isSupportUpperBoundInclusive",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.NakagamiDistribution",
+      "name": "NakagamiDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.NakagamiDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

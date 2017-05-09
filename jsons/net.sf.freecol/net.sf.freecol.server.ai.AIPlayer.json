@@ -1,0 +1,2038 @@
+[
+  {
+    "signature": "AIPlayer(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.model.ServerPlayer player)",
+    "name": "AIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The AIMain the player exists within.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The ServerPlayer to associate this AI player with.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "AIPlayer(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "AIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a problem was encountered during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getPlayer()",
+    "name": "getPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Player.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIRandom()",
+    "name": "getAIRandom",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Random",
+      "name": "Random",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A Random to use for this player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clearAIUnits()",
+    "name": "clearAIUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAIUnit(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "addAIUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAIUnit(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "removeAIUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to remove.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIAdvantage()",
+    "name": "getAIAdvantage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A short string stating the national advantage.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConnection()",
+    "name": "getConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.networking.Connection",
+      "name": "Connection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The connection that can be used when communication with the server.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setDebuggingConnection(net.sf.freecol.common.networking.Connection debuggingConnection)",
+    "name": "setDebuggingConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "debuggingConnection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "debuggingConnection"
+        },
+        "comment": "The Connection to be used for debugging.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIColony(net.sf.freecol.common.model.Colony colony)",
+    "name": "getAIColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+      "name": "AIColony",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony to look up.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The corresponding AI colony or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIColonies()",
+    "name": "getAIColonies",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of AI colonies.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAIColony(net.sf.freecol.server.ai.AIColony aic)",
+    "name": "removeAIColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+          "name": "AIColony",
+          "isArray": false
+        },
+        "name": "aic"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIColony",
+            "name": "AIColony",
+            "isArray": false
+          },
+          "name": "aic"
+        },
+        "comment": "The AIColony to remove.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIUnit(net.sf.freecol.common.model.Unit unit)",
+    "name": "getAIUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+      "name": "AIUnit",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to look up.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The corresponding AI unit or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIUnits()",
+    "name": "getAIUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of AIUnits.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIUnitIterator()",
+    "name": "getAIUnitIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Iterator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "determineStance(net.sf.freecol.common.model.Player other)",
+    "name": "determineStance",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Stance",
+      "name": "Stance",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The Player wrt consider stance.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new Stance.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSettlementDefenders(net.sf.freecol.common.model.Settlement settlement)",
+    "name": "getSettlementDefenders",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement to examine.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The number of defenders.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getIdNumber())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isTargetValidForSeekAndDestroy(net.sf.freecol.common.model.Unit attacker,net.sf.freecol.common.model.Tile tile)",
+    "name": "isTargetValidForSeekAndDestroy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "attacker"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "attacker"
+        },
+        "comment": "The attacking Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The Tile to attack into.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if an attack can be launched.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "logMissions(java.util.Map reasons,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "logMissions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "reasons"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "reasons"
+        },
+        "comment": "A map of reasons for the current mission by unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefendCurrentSettlementMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getDefendCurrentSettlementMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new misison, or null if impossible or not worthwhile.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDefendSettlementMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Settlement target)",
+    "name": "getDefendSettlementMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "target"
+        },
+        "comment": "The Settlement to defend.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getIdleAtSettlementMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getIdleAtSettlementMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeekAndDestroyMission(net.sf.freecol.server.ai.AIUnit aiUnit,int range)",
+    "name": "getSeekAndDestroyMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "range"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "range"
+        },
+        "comment": "A maximum range to search for a target within.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSeekAndDestroyMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location loc)",
+    "name": "getSeekAndDestroyMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The target Location.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getWanderHostileMission(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "getWanderHostileMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new mission, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "checkIntegrity(boolean fix)",
+    "name": "checkIntegrity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "fix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "fix"
+        },
+        "comment": "Fix problems if possible.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Negative if there are problems remaining, zero if problems were fixed, positive if no problems found at all.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "startWorking()",
+    "name": "startWorking",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doMissions(java.util.List aiUnits,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "doMissions",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "aiUnits"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "aiUnits"
+        },
+        "comment": "A list of AIUnits to perform missions.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of AIUnits that have moves left.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "adjustMission(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.PathNode path,java.lang.Class type,int value)",
+    "name": "adjustMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.PathNode",
+          "name": "PathNode",
+          "isArray": false
+        },
+        "name": "path"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to perform the mission.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.PathNode",
+            "name": "PathNode",
+            "isArray": false
+          },
+          "name": "path"
+        },
+        "comment": "A PathNode to the target of this mission.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "The proposed value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The mission type.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A score representing the desirability of this mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indianDemand(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Colony colony,net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "indianDemand",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Colony",
+          "name": "Colony",
+          "isArray": false
+        },
+        "name": "colony"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit making demands.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Colony",
+            "name": "Colony",
+            "isArray": false
+          },
+          "name": "colony"
+        },
+        "comment": "The Colony where demands are being made.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType demanded.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of gold demanded.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if this player accepts the demand.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptDiplomaticTrade(net.sf.freecol.common.model.DiplomaticTrade agreement)",
+    "name": "acceptDiplomaticTrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade.TradeStatus",
+      "name": "TradeStatus",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+          "name": "DiplomaticTrade",
+          "isArray": false
+        },
+        "name": "agreement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.DiplomaticTrade",
+            "name": "DiplomaticTrade",
+            "isArray": false
+          },
+          "name": "agreement"
+        },
+        "comment": "The proposed DiplomaticTrade.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The TradeStatus to apply to the agreement.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "registerSellGoods(net.sf.freecol.common.model.Goods goods)",
+    "name": "registerSellGoods",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The goods which we are going to offer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "buyProposition(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Goods goods,int gold)",
+    "name": "buyProposition",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "gold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The foreign Unit trying to trade.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement this player owns and which the given Unit is trading.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The goods the given Unit is trying to sell.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "gold"
+        },
+        "comment": "The suggested price.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The price this AIPlayer suggests or NetworkConstants.NO_TRADE.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[3])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sellProposition(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Settlement settlement,net.sf.freecol.common.model.Goods goods,int gold)",
+    "name": "sellProposition",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "gold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The foreign Unit trying to trade.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement this player owns and which the given Unit if trying to sell goods.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "The goods the given Unit is trying to sell.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "gold"
+        },
+        "comment": "The suggested price.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The price this AIPlayer suggests or NetworkConstants.NO_TRADE.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[3])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptTax(int tax)",
+    "name": "acceptTax",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "tax"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "tax"
+        },
+        "comment": "The tax raise.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the raise is accepted.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "acceptMercenaries()",
+    "name": "acceptMercenaries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the mercenaries are accepted.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "selectFoundingFather(java.util.List ffs)",
+    "name": "selectFoundingFather",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.FoundingFather",
+      "name": "FoundingFather",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "ffs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "ffs"
+        },
+        "comment": "The founding fathers on offer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The founding father selected.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.AIPlayer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the tag name.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

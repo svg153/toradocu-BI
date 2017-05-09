@@ -1,0 +1,579 @@
+[
+  {
+    "signature": "fromIntBits(int bits)",
+    "name": "fromIntBits",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "bits"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valueOf(long value)",
+    "name": "valueOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "valueOf(java.math.BigInteger value)",
+    "name": "valueOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.math.BigInteger",
+          "name": "BigInteger",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "value",
+          "value >= 2^32"
+        ],
+        "comment": "if value is negative or value >= 2^32",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "valueOf(java.lang.String string)",
+    "name": "valueOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "string"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NumberFormatException",
+          "name": "NumberFormatException",
+          "isArray": false
+        },
+        "codeTags": [
+          "int"
+        ],
+        "comment": "if the string does not contain a parsable unsigned int value",
+        "kind": "THROWS",
+        "condition": "(args[0].contains(java.lang.CharSequence)) == false"
+      }
+    ]
+  },
+  {
+    "signature": "valueOf(java.lang.String string,int radix)",
+    "name": "valueOf",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "string"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NumberFormatException",
+          "name": "NumberFormatException",
+          "isArray": false
+        },
+        "codeTags": [
+          "int"
+        ],
+        "comment": "if the string does not contain a parsable unsigned int value",
+        "kind": "THROWS",
+        "condition": "(args[0].contains(java.lang.CharSequence)) == false"
+      }
+    ]
+  },
+  {
+    "signature": "plus(com.google.common.primitives.UnsignedInteger val)",
+    "name": "plus",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "minus(com.google.common.primitives.UnsignedInteger val)",
+    "name": "minus",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "times(com.google.common.primitives.UnsignedInteger val)",
+    "name": "times",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "dividedBy(com.google.common.primitives.UnsignedInteger val)",
+    "name": "dividedBy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "val"
+        ],
+        "comment": "if val is zero",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "mod(com.google.common.primitives.UnsignedInteger val)",
+    "name": "mod",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "val"
+        ],
+        "comment": "if val is zero",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "intValue()",
+    "name": "intValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "longValue()",
+    "name": "longValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "floatValue()",
+    "name": "floatValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doubleValue()",
+    "name": "doubleValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "bigIntegerValue()",
+    "name": "bigIntegerValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "compareTo(com.google.common.primitives.UnsignedInteger other)",
+    "name": "compareTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+          "name": "UnsignedInteger",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object obj)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString(int radix)",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.primitives.UnsignedInteger",
+      "name": "UnsignedInteger",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.primitives.UnsignedInteger",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "radix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

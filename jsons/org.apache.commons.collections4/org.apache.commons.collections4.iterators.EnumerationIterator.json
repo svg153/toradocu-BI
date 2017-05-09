@@ -1,0 +1,293 @@
+[
+  {
+    "signature": "EnumerationIterator()",
+    "name": "EnumerationIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "EnumerationIterator(java.util.Enumeration enumeration)",
+    "name": "EnumerationIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Enumeration",
+          "name": "Enumeration",
+          "isArray": false
+        },
+        "name": "enumeration"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Enumeration",
+            "name": "Enumeration",
+            "isArray": false
+          },
+          "name": "enumeration"
+        },
+        "comment": "the enumeration to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "EnumerationIterator(java.util.Enumeration enumeration,java.util.Collection collection)",
+    "name": "EnumerationIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Enumeration",
+          "name": "Enumeration",
+          "isArray": false
+        },
+        "name": "enumeration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "collection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Enumeration",
+            "name": "Enumeration",
+            "isArray": false
+          },
+          "name": "enumeration"
+        },
+        "comment": "the enumeration to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "collection"
+        },
+        "comment": "the collection to remove elements from",
+        "kind": "PARAM",
+        "condition": "args[1].remove(java.lang.Object)"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the underlying enumeration has more elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the underlying enumeration is null",
+        "kind": "THROWS",
+        "condition": "target.getEnumeration()==null"
+      }
+    ]
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next object from the enumeration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the enumeration is null",
+        "kind": "THROWS",
+        "condition": "target.getEnumeration()==null"
+      }
+    ]
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next()"
+        ],
+        "comment": "next() not called.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if no associated collection",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getEnumeration()",
+    "name": "getEnumeration",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Enumeration",
+      "name": "Enumeration",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the underlying enumeration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setEnumeration(java.util.Enumeration enumeration)",
+    "name": "setEnumeration",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EnumerationIterator",
+      "name": "EnumerationIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EnumerationIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Enumeration",
+          "name": "Enumeration",
+          "isArray": false
+        },
+        "name": "enumeration"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Enumeration",
+            "name": "Enumeration",
+            "isArray": false
+          },
+          "name": "enumeration"
+        },
+        "comment": "the new underlying enumeration",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

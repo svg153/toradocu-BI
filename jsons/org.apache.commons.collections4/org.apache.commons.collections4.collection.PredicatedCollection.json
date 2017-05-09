@@ -1,0 +1,417 @@
+[
+  {
+    "signature": "PredicatedCollection(java.util.Collection coll,org.apache.commons.collections4.Predicate predicate)",
+    "name": "PredicatedCollection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if collection or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the collection contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "builder(org.apache.commons.collections4.Predicate predicate)",
+    "name": "builder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection.Builder",
+      "name": "Builder",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Builder for predicated collections",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "notNullBuilder()",
+    "name": "notNullBuilder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection.Builder",
+      "name": "Builder",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new Builder for predicated collections that ignores null values.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "predicatedCollection(java.util.Collection coll,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedCollection",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new predicated collection",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if collection or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the collection contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "validate(java.lang.Object object)",
+    "name": "validate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object being added",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the add is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "add(java.lang.Object object)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object being added",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result of adding to the underlying collection",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the add is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addAll(java.util.Collection coll)",
+    "name": "addAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.collection.PredicatedCollection",
+      "name": "PredicatedCollection",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.collection.PredicatedCollection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection being added",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result of adding to the underlying collection",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the add is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

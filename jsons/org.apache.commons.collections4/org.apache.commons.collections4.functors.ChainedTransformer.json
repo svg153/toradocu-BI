@@ -1,0 +1,275 @@
+[
+  {
+    "signature": "ChainedTransformer(org.apache.commons.collections4.Transformer[] transformers)",
+    "name": "ChainedTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedTransformer",
+      "name": "ChainedTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedTransformer",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer[]",
+          "name": "Transformer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          }
+        },
+        "name": "transformers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer[]",
+            "name": "Transformer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.collections4.Transformer",
+              "name": "Transformer",
+              "isArray": false
+            }
+          },
+          "name": "transformers"
+        },
+        "comment": "the transformers to chain, copied, no nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "chainedTransformer(org.apache.commons.collections4.Transformer[] transformers)",
+    "name": "chainedTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedTransformer",
+      "name": "ChainedTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedTransformer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Transformer",
+      "name": "Transformer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer[]",
+          "name": "Transformer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          }
+        },
+        "name": "transformers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer[]",
+            "name": "Transformer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.collections4.Transformer",
+              "name": "Transformer",
+              "isArray": false
+            }
+          },
+          "name": "transformers"
+        },
+        "comment": "the transformers to chain, copied, no nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the chained transformer",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the transformers array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any transformer in the array is null",
+        "kind": "THROWS",
+        "condition": "java.util.Arrays.stream(args[0]).anyMatch(e -> e==null)"
+      }
+    ]
+  },
+  {
+    "signature": "chainedTransformer(java.util.Collection transformers)",
+    "name": "chainedTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedTransformer",
+      "name": "ChainedTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Transformer",
+      "name": "Transformer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "transformers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "transformers"
+        },
+        "comment": "a collection of transformers to chain",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the chained transformer",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the transformers collection is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any transformer in the collection is null",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "transform(java.lang.Object object)",
+    "name": "transform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedTransformer",
+      "name": "ChainedTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the input object passed to the first transformer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the transformed result",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransformers()",
+    "name": "getTransformers",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.functors.ChainedTransformer",
+      "name": "ChainedTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.functors.ChainedTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Transformer[]",
+      "name": "Transformer[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.collections4.Transformer",
+        "name": "Transformer",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of the transformers",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,1514 @@
+[
+  {
+    "signature": "TransportMission(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "TransportMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit this mission is created for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "TransportMission(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "TransportMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit this mission is created for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a problem was encountered during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "dispose()",
+    "name": "dispose",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isTransporting(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "isTransporting",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the transportable is queued in this mission.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "destinationCapacity()",
+    "name": "destinationCapacity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of desired extra destinations.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportTarget(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "getTransportTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to collect.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The collection Location, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportTurns(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "getTransportTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to collect.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The expected transport turns.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if there is no work allocated to this carrier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "makeCargo(net.sf.freecol.server.ai.TransportableAIObject t,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "makeCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to consider.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A new Cargo defining the action to take with the TransportableAIObject, or null if impossible.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "spaceAvailable(net.sf.freecol.server.ai.Cargo cargo)",
+    "name": "spaceAvailable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+          "name": "Cargo",
+          "isArray": false
+        },
+        "name": "cargo"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+            "name": "Cargo",
+            "isArray": false
+          },
+          "name": "cargo"
+        },
+        "comment": "The Cargo to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if there is space available for this cargo.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "spaceAvailable(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "spaceAvailable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if there is space available for this transportable.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "dumpCargo(net.sf.freecol.server.ai.Cargo cargo,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "dumpCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+          "name": "Cargo",
+          "isArray": false
+        },
+        "name": "cargo"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+            "name": "Cargo",
+            "isArray": false
+          },
+          "name": "cargo"
+        },
+        "comment": "The Cargo to dump.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the cargo is no longer on board and not on the transport list, or is on board but is scheduled to be dumped.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "requeueCargo(net.sf.freecol.server.ai.Cargo cargo,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "requeueCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+          "name": "Cargo",
+          "isArray": false
+        },
+        "name": "cargo"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+            "name": "Cargo",
+            "isArray": false
+          },
+          "name": "cargo"
+        },
+        "comment": "The Cargo to requeue.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the queuing succeeded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason(net.sf.freecol.server.ai.AIUnit aiUnit,net.sf.freecol.common.model.Location loc)",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "loc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "loc"
+        },
+        "comment": "The Location to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason(net.sf.freecol.server.ai.AIUnit aiUnit)",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiUnit"
+        },
+        "comment": "The AIUnit to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for mission invalidity, or null if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeTransportable(net.sf.freecol.server.ai.TransportableAIObject t)",
+    "name": "removeTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to remove.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the removal succeeded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "requeueTransportable(net.sf.freecol.server.ai.TransportableAIObject t,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "requeueTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to retarget.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the retargeting succeeded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "queueTransportable(net.sf.freecol.server.ai.TransportableAIObject t,boolean requireMatch,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "queueTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "requireMatch"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to add.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "requireMatch"
+        },
+        "comment": "Fail if an existing destination is not matched.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the transportable was queued.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "dumpTransportable(net.sf.freecol.server.ai.TransportableAIObject t,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "dumpTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to dump.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the transportable is no longer on board, queued, or was reset to be dumped at the next stop.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "forceCollection(net.sf.freecol.server.ai.AIUnit aiu,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "forceCollection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiu"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiu"
+        },
+        "comment": "The AIUnit to collect.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit was queued.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "suppressEuropeanTrade(net.sf.freecol.common.model.GoodsType type,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "suppressEuropeanTrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to suppress.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportDestination()",
+    "name": "getTransportDestination",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Tile",
+      "name": "Tile",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTarget()",
+    "name": "getTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setTarget(net.sf.freecol.common.model.Location target)",
+    "name": "setTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "target"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "findTarget()",
+    "name": "findTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "invalidReason()",
+    "name": "invalidReason",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "doMission(net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "doMission",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.Mission",
+      "name": "Mission",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toFullString()",
+    "name": "toFullString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A summary of this mission including its transportables.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.mission.TransportMission",
+      "name": "TransportMission",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.mission.TransportMission",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"transportMission\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

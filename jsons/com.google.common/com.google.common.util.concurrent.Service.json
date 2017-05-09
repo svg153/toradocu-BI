@@ -1,0 +1,438 @@
+[
+  {
+    "signature": "startAsync()",
+    "name": "startAsync",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Service.State.NEW"
+        ],
+        "comment": "if the service is not Service.State.NEW",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isRunning()",
+    "name": "isRunning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "state()",
+    "name": "state",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Service.State",
+      "name": "State",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "stopAsync()",
+    "name": "stopAsync",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "awaitRunning()",
+    "name": "awaitRunning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Service.State.RUNNING",
+          "state",
+          "State#TERMINATED"
+        ],
+        "comment": "if the service reaches a state from which it is not possible to enter the Service.State.RUNNING state. e.g. if the state is State#TERMINATED when this method is called then this will throw an IllegalStateException.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "awaitRunning(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "awaitRunning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service has not reached the given state within the deadline",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "RUNNING",
+          "state",
+          "State#TERMINATED"
+        ],
+        "comment": "if the service reaches a state from which it is not possible to enter the RUNNING state. e.g. if the state is State#TERMINATED when this method is called then this will throw an IllegalStateException.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "awaitTerminated()",
+    "name": "awaitTerminated",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service fails.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "awaitTerminated(long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "awaitTerminated",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.concurrent.TimeoutException",
+          "name": "TimeoutException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service has not reached the given state within the deadline",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the service fails.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "failureCause()",
+    "name": "failureCause",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Throwable",
+      "name": "Throwable",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this service's state isn't FAILED.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addListener(com.google.common.util.concurrent.Service.Listener listener,java.util.concurrent.Executor executor)",
+    "name": "addListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Service",
+      "name": "Service",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Service",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.Service.Listener",
+          "name": "Listener",
+          "isArray": false
+        },
+        "name": "listener"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Executor",
+          "name": "Executor",
+          "isArray": false
+        },
+        "name": "executor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.util.concurrent.Service.Listener",
+            "name": "Listener",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "the listener to run when the service changes state is complete",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Executor",
+            "name": "Executor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor in which the listeners callback methods will be run. For fast, lightweight listeners that would be safe to execute in any thread, consider MoreExecutors.directExecutor().",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

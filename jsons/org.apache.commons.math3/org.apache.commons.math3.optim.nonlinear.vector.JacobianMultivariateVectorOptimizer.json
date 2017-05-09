@@ -1,0 +1,233 @@
+[
+  {
+    "signature": "JacobianMultivariateVectorOptimizer(org.apache.commons.math3.optim.ConvergenceChecker checker)",
+    "name": "JacobianMultivariateVectorOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+      "name": "JacobianMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+          "name": "ConvergenceChecker",
+          "isArray": false
+        },
+        "name": "checker"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.ConvergenceChecker",
+            "name": "ConvergenceChecker",
+            "isArray": false
+          },
+          "name": "checker"
+        },
+        "comment": "Convergence checker.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "computeJacobian(double[] params)",
+    "name": "computeJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+      "name": "JacobianMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "params"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "params"
+        },
+        "comment": "Point at which the Jacobian must be evaluated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the Jacobian at the specified point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+      "name": "JacobianMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optim.PointVectorValuePair",
+      "name": "PointVectorValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. In addition to those documented in MultivariateVectorOptimizer.optimize(OptimizationData...) MultivariateOptimizer}, this method will register the following data: ModelFunctionJacobian",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a point/value pair that satisfies the convergence criteria.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyEvaluationsException",
+          "name": "TooManyEvaluationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the maximal number of evaluations is exceeded.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the initial guess, target, and weight arguments have inconsistent dimensions.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "parseOptimizationData(org.apache.commons.math3.optim.OptimizationData[] optData)",
+    "name": "parseOptimizationData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+      "name": "JacobianMultivariateVectorOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optim.nonlinear.vector.JacobianMultivariateVectorOptimizer",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+          "name": "OptimizationData[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+            "name": "OptimizationData",
+            "isArray": false
+          }
+        },
+        "name": "optData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optim.OptimizationData[]",
+            "name": "OptimizationData[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.optim.OptimizationData",
+              "name": "OptimizationData",
+              "isArray": false
+            }
+          },
+          "name": "optData"
+        },
+        "comment": "Optimization data. The following data will be looked for: ModelFunctionJacobian",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

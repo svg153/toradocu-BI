@@ -1,0 +1,276 @@
+[
+  {
+    "signature": "DBSCANClusterer(double eps,int minPts)",
+    "name": "DBSCANClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+      "name": "DBSCANClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "eps"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "minPts"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "eps"
+        },
+        "comment": "maximum radius of the neighborhood to be considered",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "minPts"
+        },
+        "comment": "minimum number of points needed for a cluster",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "eps < 0.0",
+          "minPts < 0"
+        ],
+        "comment": "if eps < 0.0 or minPts < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0.0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "DBSCANClusterer(double eps,int minPts,org.apache.commons.math3.ml.distance.DistanceMeasure measure)",
+    "name": "DBSCANClusterer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+      "name": "DBSCANClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "eps"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "minPts"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+          "name": "DistanceMeasure",
+          "isArray": false
+        },
+        "name": "measure"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "eps"
+        },
+        "comment": "maximum radius of the neighborhood to be considered",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "minPts"
+        },
+        "comment": "minimum number of points needed for a cluster",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.distance.DistanceMeasure",
+            "name": "DistanceMeasure",
+            "isArray": false
+          },
+          "name": "measure"
+        },
+        "comment": "the distance measure to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "eps < 0.0",
+          "minPts < 0"
+        ],
+        "comment": "if eps < 0.0 or minPts < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0.0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "getEps()",
+    "name": "getEps",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+      "name": "DBSCANClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "maximum radius of the neighborhood",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMinPts()",
+    "name": "getMinPts",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+      "name": "DBSCANClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "minimum number of points needed for a cluster",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cluster(java.util.Collection points)",
+    "name": "cluster",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+      "name": "DBSCANClusterer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.clustering.DBSCANClusterer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "points"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "points"
+        },
+        "comment": "the points to cluster",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of clusters",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the data points are null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

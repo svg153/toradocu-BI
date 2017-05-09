@@ -1,0 +1,805 @@
+[
+  {
+    "signature": "SetUniqueList(java.util.List list,java.util.Set set)",
+    "name": "SetUniqueList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set or list is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "setUniqueList(java.util.List list)",
+    "name": "setUniqueList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new SetUniqueList",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if list is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "asSet()",
+    "name": "asSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable set view",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add(java.lang.Object object)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if object was added",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add(int index,java.lang.Object object)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to insert at",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAll(java.util.Collection coll)",
+    "name": "addAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection to add in iterator order",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this collection changed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addAll(int index,java.util.Collection coll)",
+    "name": "addAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to insert at",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection to add in iterator order",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this collection changed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "set(int index,java.lang.Object object)",
+    "name": "set",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to insert at",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object to set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the previous object",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.get(int))"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(java.lang.Object object)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(int index)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAll(java.util.Collection coll)",
+    "name": "removeAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "retainAll(java.util.Collection coll)",
+    "name": "retainAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "contains(java.lang.Object object)",
+    "name": "contains",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsAll(java.util.Collection coll)",
+    "name": "containsAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "listIterator()",
+    "name": "listIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.ListIterator",
+      "name": "ListIterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "listIterator(int index)",
+    "name": "listIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.ListIterator",
+      "name": "ListIterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "subList(int fromIndex,int toIndex)",
+    "name": "subList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "fromIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "toIndex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "createSetBasedOnList(java.util.Set set,java.util.List list)",
+    "name": "createSetBasedOnList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.SetUniqueList",
+      "name": "SetUniqueList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.SetUniqueList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the Set to be used as return type, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the List to populate the Set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Set populated with all elements of the provided List",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

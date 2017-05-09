@@ -1,0 +1,235 @@
+[
+  {
+    "signature": "LazyList(java.util.List list,org.apache.commons.collections4.Factory factory)",
+    "name": "LazyList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.LazyList",
+      "name": "LazyList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.LazyList",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Factory",
+          "name": "Factory",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Factory",
+            "name": "Factory",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "the factory to use for creation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if list or factory is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "lazyList(java.util.List list,org.apache.commons.collections4.Factory factory)",
+    "name": "lazyList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.LazyList",
+      "name": "LazyList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.LazyList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.list.LazyList",
+      "name": "LazyList",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Factory",
+          "name": "Factory",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Factory",
+            "name": "Factory",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "the factory to use for creation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new lazy list",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if list or factory is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "get(int index)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.LazyList",
+      "name": "LazyList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.LazyList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to retrieve",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the element at the given index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "subList(int fromIndex,int toIndex)",
+    "name": "subList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.list.LazyList",
+      "name": "LazyList",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.list.LazyList",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "fromIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "toIndex"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

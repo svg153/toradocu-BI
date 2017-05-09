@@ -1,0 +1,333 @@
+[
+  {
+    "signature": "PredicatedQueue(java.util.Queue queue,org.apache.commons.collections4.Predicate predicate)",
+    "name": "PredicatedQueue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Queue",
+          "name": "Queue",
+          "isArray": false
+        },
+        "name": "queue"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Queue",
+            "name": "Queue",
+            "isArray": false
+          },
+          "name": "queue"
+        },
+        "comment": "the queue to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if queue or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the Queue contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedQueue(java.util.Queue Queue,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedQueue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Queue",
+          "name": "Queue",
+          "isArray": false
+        },
+        "name": "Queue"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Queue",
+            "name": "Queue",
+            "isArray": false
+          },
+          "name": "Queue"
+        },
+        "comment": "the queue to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new predicated queue",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if queue or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the queue contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "decorated()",
+    "name": "decorated",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Queue",
+      "name": "Queue",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the decorated queue",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "offer(java.lang.Object object)",
+    "name": "offer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object being added",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the result of adding to the underlying queue",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the add is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "poll()",
+    "name": "poll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "peek()",
+    "name": "peek",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "element()",
+    "name": "element",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.queue.PredicatedQueue",
+      "name": "PredicatedQueue",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.queue.PredicatedQueue",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

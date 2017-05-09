@@ -1,0 +1,344 @@
+[
+  {
+    "signature": "uniform(org.apache.commons.math3.random.RandomGenerator rng,double min,double max)",
+    "name": "uniform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+      "name": "FeatureInitializerFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+      "name": "FeatureInitializer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "Lower bound of the range.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "Upper bound of the range.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator used to draw samples from a uniform distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an initializer such that the features will be initialized with values within the given range.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min >= max"
+        ],
+        "comment": "if min >= max.",
+        "kind": "THROWS",
+        "condition": "args[1]>=args[2]"
+      }
+    ]
+  },
+  {
+    "signature": "uniform(double min,double max)",
+    "name": "uniform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+      "name": "FeatureInitializerFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+      "name": "FeatureInitializer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "Lower bound of the range.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "Upper bound of the range.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an initializer such that the features will be initialized with values within the given range.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "min >= max"
+        ],
+        "comment": "if min >= max.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "function(org.apache.commons.math3.analysis.UnivariateFunction f,double init,double inc)",
+    "name": "function",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+      "name": "FeatureInitializerFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+      "name": "FeatureInitializer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "init"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "inc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "Function.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "init"
+        },
+        "comment": "Initial value.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "inc"
+        },
+        "comment": "Increment",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the initializer.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomize(org.apache.commons.math3.distribution.RealDistribution random,org.apache.commons.math3.ml.neuralnet.FeatureInitializer orig)",
+    "name": "randomize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+      "name": "FeatureInitializerFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ml.neuralnet.FeatureInitializerFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+      "name": "FeatureInitializer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+          "name": "RealDistribution",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+          "name": "FeatureInitializer",
+          "isArray": false
+        },
+        "name": "orig"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+            "name": "RealDistribution",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "Random variable distribution.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ml.neuralnet.FeatureInitializer",
+            "name": "FeatureInitializer",
+            "isArray": false
+          },
+          "name": "orig"
+        },
+        "comment": "Original initializer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an initializer whose value method will return orig.value() + random.sample().",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

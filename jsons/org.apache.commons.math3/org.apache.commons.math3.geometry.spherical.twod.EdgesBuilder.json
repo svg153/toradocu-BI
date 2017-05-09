@@ -1,0 +1,180 @@
+[
+  {
+    "signature": "EdgesBuilder(org.apache.commons.math3.geometry.partitioning.BSPTree root,double tolerance)",
+    "name": "EdgesBuilder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+      "name": "EdgesBuilder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "root"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "root"
+        },
+        "comment": "tree root",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "below which points are consider to be identical",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "visitOrder(org.apache.commons.math3.geometry.partitioning.BSPTree node)",
+    "name": "visitOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+      "name": "EdgesBuilder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor.Order",
+      "name": "Order",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "node"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "visitInternalNode(org.apache.commons.math3.geometry.partitioning.BSPTree node)",
+    "name": "visitInternalNode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+      "name": "EdgesBuilder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "node"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "visitLeafNode(org.apache.commons.math3.geometry.partitioning.BSPTree node)",
+    "name": "visitLeafNode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+      "name": "EdgesBuilder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "node"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdges()",
+    "name": "getEdges",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+      "name": "EdgesBuilder",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.spherical.twod.EdgesBuilder",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "boundary edges",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is not a single other edge",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

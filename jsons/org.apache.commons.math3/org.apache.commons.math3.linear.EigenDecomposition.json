@@ -1,0 +1,735 @@
+[
+  {
+    "signature": "EigenDecomposition(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "EigenDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposition of a general matrix results in a matrix with zero norm",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "EigenDecomposition(org.apache.commons.math3.linear.RealMatrix matrix,double splitTolerance)",
+    "name": "EigenDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "splitTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "splitTolerance"
+        },
+        "comment": "Dummy parameter (present for backward compatibility only).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposition of a general matrix results in a matrix with zero norm",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "EigenDecomposition(double[] main,double[] secondary)",
+    "name": "EigenDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "main"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "secondary"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "main"
+        },
+        "comment": "Main diagonal of the symmetric tridiagonal form.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "secondary"
+        },
+        "comment": "Secondary of the tridiagonal form.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "EigenDecomposition(double[] main,double[] secondary,double splitTolerance)",
+    "name": "EigenDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "main"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "secondary"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "splitTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "main"
+        },
+        "comment": "Main diagonal of the symmetric tridiagonal form.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "secondary"
+        },
+        "comment": "Secondary of the tridiagonal form.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "splitTolerance"
+        },
+        "comment": "Dummy parameter (present for backward compatibility only).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the algorithm fails to converge.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getV()",
+    "name": "getV",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the V matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getD())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getD()",
+    "name": "getD",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the D matrix.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getVT()",
+    "name": "getVT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the transpose of the V matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasComplexEigenvalues()",
+    "name": "hasComplexEigenvalues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the eigen values are complex, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRealEigenvalues()",
+    "name": "getRealEigenvalues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of the real parts of the eigenvalues of the original matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRealEigenvalue(int i)",
+    "name": "getRealEigenvalue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "index of the eigenvalue (counting from 0)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "real part of the ith eigenvalue of the original matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getImagEigenvalues()",
+    "name": "getImagEigenvalues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a copy of the imaginary parts of the eigenvalues of the original matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getImagEigenvalue(int i)",
+    "name": "getImagEigenvalue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "Index of the eigenvalue (counting from 0).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the imaginary part of the ith eigenvalue of the original matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEigenvector(int i)",
+    "name": "getEigenvector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "Index of the eigenvector (counting from 0).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a copy of the ith eigenvector of the original matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDeterminant()",
+    "name": "getDeterminant",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the determinant of the matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSquareRoot()",
+    "name": "getSquareRoot",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the square-root of the matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathUnsupportedOperationException",
+          "name": "MathUnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not symmetric or not positive definite.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getSolver()",
+    "name": "getSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.EigenDecomposition",
+      "name": "EigenDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.EigenDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DecompositionSolver",
+      "name": "DecompositionSolver",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a solver",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getV())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathUnsupportedOperationException",
+          "name": "MathUnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposition resulted in complex eigenvalues",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,791 @@
+[
+  {
+    "signature": "ServerColony(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "ServerColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ServerColony(net.sf.freecol.common.model.Game game,net.sf.freecol.common.model.Player owner,java.lang.String name,net.sf.freecol.common.model.Tile tile)",
+    "name": "ServerColony",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "owner"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Tile",
+          "name": "Tile",
+          "isArray": false
+        },
+        "name": "tile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game in which this object belongs.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "owner"
+        },
+        "comment": "The Player owning this Colony.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name of the new Colony.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Tile",
+            "name": "Tile",
+            "isArray": false
+          },
+          "name": "tile"
+        },
+        "comment": "The location of the Colony.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csNewTurn(java.util.Random random,net.sf.freecol.common.util.LogBuilder lb,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csNewTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ejectUnits(net.sf.freecol.common.model.WorkLocation workLocation,java.util.List units)",
+    "name": "ejectUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "workLocation"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "units"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "workLocation"
+        },
+        "comment": "The WorkLocation to eject from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "units"
+        },
+        "comment": "A list of Units to eject.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if units were ejected.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csEvictUsers(net.sf.freecol.common.model.Unit enemyUnit,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csEvictUsers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "enemyUnit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "enemyUnit"
+        },
+        "comment": "The Unit that has moved in.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csChangeOwner(net.sf.freecol.server.model.ServerPlayer newOwner,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csChangeOwner",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "newOwner"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "newOwner"
+        },
+        "comment": "The new owning ServerPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A set of newly explored Tiles as a result of the ownership change.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csFreeBuilding(net.sf.freecol.common.model.BuildingType type,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csFreeBuilding",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.BuildingType",
+          "name": "BuildingType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.BuildingType",
+            "name": "BuildingType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The BuildingType to add.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "buildBuilding(net.sf.freecol.common.model.Building building)",
+    "name": "buildBuilding",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Building",
+          "name": "Building",
+          "isArray": false
+        },
+        "name": "building"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Building",
+            "name": "Building",
+            "isArray": false
+          },
+          "name": "building"
+        },
+        "comment": "The Building to build.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the building was built.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csEquipForRole(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.Role role,int roleCount,java.util.Random random,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csEquipForRole",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Role",
+          "name": "Role",
+          "isArray": false
+        },
+        "name": "role"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "roleCount"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to equip.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Role",
+            "name": "Role",
+            "isArray": false
+          },
+          "name": "role"
+        },
+        "comment": "The Role to equip for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "roleCount"
+        },
+        "comment": "The role count.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the equipping succeeds.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "csAddConvert(net.sf.freecol.common.model.Unit brave,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csAddConvert",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "brave"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "brave"
+        },
+        "comment": "The convert Unit.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "destroyBuilding(net.sf.freecol.common.model.Building building)",
+    "name": "destroyBuilding",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Building",
+          "name": "Building",
+          "isArray": false
+        },
+        "name": "building"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Building",
+            "name": "Building",
+            "isArray": false
+          },
+          "name": "building"
+        },
+        "comment": "The Building to destroy.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the building was destroyed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerXMLElementTagName()",
+    "name": "getServerXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerColony",
+      "name": "ServerColony",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerColony",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"serverColony\"",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

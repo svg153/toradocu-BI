@@ -1,0 +1,630 @@
+[
+  {
+    "signature": "Client(java.lang.String host,int port,net.sf.freecol.common.networking.MessageHandler handler,java.lang.String name)",
+    "name": "Client",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+          "name": "MessageHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "The host to connect to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The port to connect to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+            "name": "MessageHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "The MessageHandler to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name for the connection.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Connection"
+        ],
+        "comment": "If an exception is thrown while creating a new Connection.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getHost()",
+    "name": "getHost",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The host.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getPort())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPort()",
+    "name": "getPort",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The port.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getHost())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConnection()",
+    "name": "getConnection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.networking.Connection",
+      "name": "Connection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Connection.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMessageHandler(net.sf.freecol.common.networking.MessageHandler mh)",
+    "name": "setMessageHandler",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+          "name": "MessageHandler",
+          "isArray": false
+        },
+        "name": "mh"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.MessageHandler",
+            "name": "MessageHandler",
+            "isArray": false
+          },
+          "name": "mh"
+        },
+        "comment": "The new MessageHandler for this client.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "disconnect()",
+    "name": "disconnect",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "send(net.sf.freecol.common.networking.DOMMessage message)",
+    "name": "send",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+          "name": "DOMMessage",
+          "isArray": false
+        },
+        "name": "message"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+            "name": "DOMMessage",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "The DOMMessage to send.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "send(org.w3c.dom.Element element)",
+    "name": "send",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The element (root element in a DOM-parsed XML tree) that holds all the information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sendAndWait(net.sf.freecol.common.networking.DOMMessage message)",
+    "name": "sendAndWait",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+          "name": "DOMMessage",
+          "isArray": false
+        },
+        "name": "message"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+            "name": "DOMMessage",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "The DOMMessage to send.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sendAndWait(org.w3c.dom.Element element)",
+    "name": "sendAndWait",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The element (root element in a DOM-parsed XML tree) that holds all the information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ask(net.sf.freecol.common.networking.DOMMessage message)",
+    "name": "ask",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+          "name": "DOMMessage",
+          "isArray": false
+        },
+        "name": "message"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.DOMMessage",
+            "name": "DOMMessage",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "The DOMMessage to send.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The answer from the server or null if either an error occured or the server did not send a reply.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "ask(org.w3c.dom.Element element)",
+    "name": "ask",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The element (root element in a DOM-parsed XML tree) that holds all the information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The answer from the server or null if either an error occured or the server did not send a reply.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "handleReply(org.w3c.dom.Element reply)",
+    "name": "handleReply",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Client",
+      "name": "Client",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Client",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "reply"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "reply"
+        },
+        "comment": "The reply Element to handle.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The reply Element.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

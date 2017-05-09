@@ -1,0 +1,282 @@
+[
+  {
+    "signature": "CholeskyDecomposition(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "CholeskyDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "the matrix to decompose",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSymmetricMatrixException",
+          "name": "NonSymmetricMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not symmetric.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not strictly positive definite.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "CholeskyDecomposition(org.apache.commons.math3.linear.RealMatrix matrix,double relativeSymmetryThreshold,double absolutePositivityThreshold)",
+    "name": "CholeskyDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "relativeSymmetryThreshold"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "absolutePositivityThreshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "the matrix to decompose",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "relativeSymmetryThreshold"
+        },
+        "comment": "threshold above which off-diagonal elements are considered too different and matrix not symmetric",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "absolutePositivityThreshold"
+        },
+        "comment": "threshold below which diagonal elements are considered null and matrix not positive definite",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSymmetricMatrixException",
+          "name": "NonSymmetricMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not symmetric.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException",
+          "name": "NonPositiveDefiniteMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not strictly positive definite.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getL()",
+    "name": "getL",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the L matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLT()",
+    "name": "getLT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the transpose of the matrix L of the decomposition",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDeterminant()",
+    "name": "getDeterminant",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "determinant of the matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolver()",
+    "name": "getSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.CholeskyDecomposition",
+      "name": "CholeskyDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.CholeskyDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DecompositionSolver",
+      "name": "DecompositionSolver",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a solver",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getL())"
+    },
+    "throwsTags": []
+  }
+]

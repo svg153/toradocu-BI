@@ -1,0 +1,600 @@
+[
+  {
+    "signature": "FastFourierTransformer(org.apache.commons.math3.transform.DftNormalization normalization)",
+    "name": "FastFourierTransformer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.DftNormalization",
+          "name": "DftNormalization",
+          "isArray": false
+        },
+        "name": "normalization"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.DftNormalization",
+            "name": "DftNormalization",
+            "isArray": false
+          },
+          "name": "normalization"
+        },
+        "comment": "the type of normalization to be applied to the transformed data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "transformInPlace(double[][] dataRI,org.apache.commons.math3.transform.DftNormalization normalization,org.apache.commons.math3.transform.TransformType type)",
+    "name": "transformInPlace",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dataRI"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.DftNormalization",
+          "name": "DftNormalization",
+          "isArray": false
+        },
+        "name": "normalization"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+          "name": "TransformType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dataRI"
+        },
+        "comment": "the two dimensional array of real and imaginary parts of the data",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.DftNormalization",
+            "name": "DftNormalization",
+            "isArray": false
+          },
+          "name": "normalization"
+        },
+        "comment": "the normalization to be applied to the transformed data",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+            "name": "TransformType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type of transform (forward, inverse) to be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of rows of the specified array is not two, or the array is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of data points is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "transform(double[] f,org.apache.commons.math3.transform.TransformType type)",
+    "name": "transform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+          "name": "TransformType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "the real data array to be transformed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+            "name": "TransformType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type of transform (forward, inverse) to be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the complex transformed array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the length of the data array is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "transform(org.apache.commons.math3.analysis.UnivariateFunction f,double min,double max,int n,org.apache.commons.math3.transform.TransformType type)",
+    "name": "transform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+          "name": "TransformType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+            "name": "UnivariateFunction",
+            "isArray": false
+          },
+          "name": "f"
+        },
+        "comment": "the function to be sampled and transformed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "min"
+        },
+        "comment": "the (inclusive) lower bound for the interval",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "max"
+        },
+        "comment": "the (exclusive) upper bound for the interval",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the number of sample points",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+            "name": "TransformType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type of transform (forward, inverse) to be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the complex transformed array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the lower bound is greater than, or equal to the upper bound",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n"
+        ],
+        "comment": "if the number of sample points n is negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n"
+        ],
+        "comment": "if the number of sample points n is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "transform(org.apache.commons.math3.complex.Complex[] f,org.apache.commons.math3.transform.TransformType type)",
+    "name": "transform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+      "name": "Complex[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.complex.Complex",
+        "name": "Complex",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+          "name": "Complex[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex",
+            "name": "Complex",
+            "isArray": false
+          }
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+          "name": "TransformType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.complex.Complex[]",
+            "name": "Complex[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.complex.Complex",
+              "name": "Complex",
+              "isArray": false
+            }
+          },
+          "name": "f"
+        },
+        "comment": "the complex data array to be transformed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+            "name": "TransformType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type of transform (forward, inverse) to be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the complex transformed array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the length of the data array is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "mdfft(java.lang.Object mdca,org.apache.commons.math3.transform.TransformType type)",
+    "name": "mdfft",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.transform.FastFourierTransformer",
+      "name": "FastFourierTransformer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.transform.FastFourierTransformer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object",
+      "name": "Object",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "mdca"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+          "name": "TransformType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "mdca"
+        },
+        "comment": "Multi-Dimensional Complex Array, i.e. Complex[][][][]",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.transform.TransformType",
+            "name": "TransformType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "the type of transform (forward, inverse) to be performed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "transform of mdca as a Multi-Dimensional Complex Array, i.e. Complex[][][][]",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any dimension is not a power of two",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

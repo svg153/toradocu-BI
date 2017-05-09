@@ -1,0 +1,605 @@
+[
+  {
+    "signature": "EnumeratedIntegerDistribution(int[] singletons,double[] probabilities)",
+    "name": "EnumeratedIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "singletons"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "probabilities"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "singletons"
+        },
+        "comment": "array of random variable values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "probabilities"
+        },
+        "comment": "array of probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "singletons.length != probabilities.length"
+        ],
+        "comment": "if singletons.length != probabilities.length",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are negative.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are infinite.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotANumberException",
+          "name": "NotANumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are NaN.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "all of the probabilities are 0.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "EnumeratedIntegerDistribution(org.apache.commons.math3.random.RandomGenerator rng,int[] singletons,double[] probabilities)",
+    "name": "EnumeratedIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "singletons"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "probabilities"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "singletons"
+        },
+        "comment": "array of random variable values.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "probabilities"
+        },
+        "comment": "array of probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "singletons.length != probabilities.length"
+        ],
+        "comment": "if singletons.length != probabilities.length",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are negative.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are infinite.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotANumberException",
+          "name": "NotANumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the probabilities are NaN.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "all of the probabilities are 0.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "EnumeratedIntegerDistribution(org.apache.commons.math3.random.RandomGenerator rng,int[] data)",
+    "name": "EnumeratedIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "random number generator used for sampling",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "input dataset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "EnumeratedIntegerDistribution(int[] data)",
+    "name": "EnumeratedIntegerDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "input dataset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(int x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum(singletons[i] * probabilities[i])",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum((singletons[i] - mean) ^ 2 * probabilities[i])",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the lowest value with non-zero probability.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the highest value with non-zero probability.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+      "name": "EnumeratedIntegerDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.EnumeratedIntegerDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

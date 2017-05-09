@@ -1,0 +1,3001 @@
+[
+  {
+    "signature": "createRealMatrix(int rows,int columns)",
+    "name": "createRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rows"
+        },
+        "comment": "number of rows of the matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columns"
+        },
+        "comment": "number of columns of the matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "RealMatrix with specified dimensions",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createFieldMatrix(org.apache.commons.math3.Field field,int rows,int columns)",
+    "name": "createFieldMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the matrix elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rows"
+        },
+        "comment": "number of rows of the matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columns"
+        },
+        "comment": "number of columns of the matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "FieldMatrix with specified dimensions",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createRealMatrix(double[][] data)",
+    "name": "createRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "input array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "RealMatrix containing the values of the array",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is not rectangular (not all rows have the same length).",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a row or column is empty.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data",
+          "data[0]",
+          "null"
+        ],
+        "comment": "if either data or data[0] is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is not rectangular.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createFieldMatrix(org.apache.commons.math3.FieldElement[][] data)",
+    "name": "createFieldMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[][]",
+          "name": "FieldElement[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[][]",
+            "name": "FieldElement[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "input array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a matrix containing the values of the array.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is not rectangular (not all rows have the same length).",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a row or column is empty.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data",
+          "data[0]",
+          "null"
+        ],
+        "comment": "if either data or data[0] is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createRealIdentityMatrix(int dimension)",
+    "name": "createRealIdentityMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "dimension of identity matrix to generate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "identity matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if dimension is not positive",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "createFieldIdentityMatrix(org.apache.commons.math3.Field field,int dimension)",
+    "name": "createFieldIdentityMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.Field",
+          "name": "Field",
+          "isArray": false
+        },
+        "name": "field"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dimension"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.Field",
+            "name": "Field",
+            "isArray": false
+          },
+          "name": "field"
+        },
+        "comment": "field to which the elements belong",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dimension"
+        },
+        "comment": "dimension of identity matrix to generate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "identity matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if dimension is not positive",
+        "kind": "THROWS",
+        "condition": "(args[1]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "createRealDiagonalMatrix(double[] diagonal)",
+    "name": "createRealDiagonalMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "diagonal"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "diagonal"
+        },
+        "comment": "diagonal elements of the matrix (the array elements will be copied)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "diagonal matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createFieldDiagonalMatrix(org.apache.commons.math3.FieldElement[] diagonal)",
+    "name": "createFieldDiagonalMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "diagonal"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "diagonal"
+        },
+        "comment": "diagonal elements of the matrix (the array elements will be copied)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "diagonal matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createRealVector(double[] data)",
+    "name": "createRealVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "the input data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a data.length RealVector",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data",
+          "null"
+        ],
+        "comment": "if data is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createFieldVector(org.apache.commons.math3.FieldElement[] data)",
+    "name": "createFieldVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "the input data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a data.length FieldVector",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data",
+          "null"
+        ],
+        "comment": "if data is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data has 0 elements",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createRowRealMatrix(double[] rowData)",
+    "name": "createRowRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "rowData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "rowData"
+        },
+        "comment": "the input row data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a 1 x rowData.length RealMatrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rowData"
+        ],
+        "comment": "if rowData is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rowData",
+          "null"
+        ],
+        "comment": "if rowData is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createRowFieldMatrix(org.apache.commons.math3.FieldElement[] rowData)",
+    "name": "createRowFieldMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "rowData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "rowData"
+        },
+        "comment": "the input row data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a 1 x rowData.length FieldMatrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rowData"
+        ],
+        "comment": "if rowData is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rowData",
+          "null"
+        ],
+        "comment": "if rowData is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createColumnRealMatrix(double[] columnData)",
+    "name": "createColumnRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "columnData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "columnData"
+        },
+        "comment": "the input column data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a columnData x 1 RealMatrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnData"
+        ],
+        "comment": "if columnData is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnData",
+          "null"
+        ],
+        "comment": "if columnData is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "createColumnFieldMatrix(org.apache.commons.math3.FieldElement[] columnData)",
+    "name": "createColumnFieldMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+          "name": "FieldElement[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement",
+            "name": "FieldElement",
+            "isArray": false
+          }
+        },
+        "name": "columnData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.FieldElement[]",
+            "name": "FieldElement[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.FieldElement",
+              "name": "FieldElement",
+              "isArray": false
+            }
+          },
+          "name": "columnData"
+        },
+        "comment": "the input column data",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a columnData x 1 FieldMatrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is empty.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "columnData",
+          "null"
+        ],
+        "comment": "if columnData is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "checkSymmetric(org.apache.commons.math3.linear.RealMatrix matrix,double eps)",
+    "name": "checkSymmetric",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "eps"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "eps"
+        },
+        "comment": "Relative tolerance.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSymmetricMatrixException",
+          "name": "NonSymmetricMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix is not symmetric.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isSymmetric(org.apache.commons.math3.linear.RealMatrix matrix,double eps)",
+    "name": "isSymmetric",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "eps"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "eps"
+        },
+        "comment": "Relative tolerance.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if matrix is symmetric.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "checkMatrixIndex(org.apache.commons.math3.linear.AnyMatrix m,int row,int column)",
+    "name": "checkMatrixIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "row"
+        },
+        "comment": "Row index to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "column"
+        },
+        "comment": "Column index to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "row",
+          "column"
+        ],
+        "comment": "if row or column is not a valid index.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkRowIndex(org.apache.commons.math3.linear.AnyMatrix m,int row)",
+    "name": "checkRowIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "row"
+        },
+        "comment": "Row index to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "row"
+        ],
+        "comment": "if row is not a valid index.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkColumnIndex(org.apache.commons.math3.linear.AnyMatrix m,int column)",
+    "name": "checkColumnIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "column"
+        },
+        "comment": "Column index to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "column"
+        ],
+        "comment": "if column is not a valid index.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkSubMatrixIndex(org.apache.commons.math3.linear.AnyMatrix m,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "checkSubMatrixIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "startRow"
+        },
+        "comment": "Initial row index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "endRow"
+        },
+        "comment": "Final row index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "startColumn"
+        },
+        "comment": "Initial column index.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "endColumn"
+        },
+        "comment": "Final column index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the indices are invalid.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [
+          "endRow < startRow",
+          "endColumn < startColumn"
+        ],
+        "comment": "if endRow < startRow or endColumn < startColumn.",
+        "kind": "THROWS",
+        "condition": "args[2]<args[1] || args[4]<args[3]"
+      }
+    ]
+  },
+  {
+    "signature": "checkSubMatrixIndex(org.apache.commons.math3.linear.AnyMatrix m,int[] selectedRows,int[] selectedColumns)",
+    "name": "checkSubMatrixIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "selectedRows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "selectedColumns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "selectedRows"
+        },
+        "comment": "Array of row indices.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "selectedColumns"
+        },
+        "comment": "Array of column indices.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "selectedRows",
+          "selectedColumns",
+          "null"
+        ],
+        "comment": "if selectedRows or selectedColumns are null.",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the row or column selections are empty (zero length).",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if row or column selections are not valid.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkAdditionCompatible(org.apache.commons.math3.linear.AnyMatrix left,org.apache.commons.math3.linear.AnyMatrix right)",
+    "name": "checkAdditionCompatible",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "right"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "Left hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "Right hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrices are not addition compatible.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkSubtractionCompatible(org.apache.commons.math3.linear.AnyMatrix left,org.apache.commons.math3.linear.AnyMatrix right)",
+    "name": "checkSubtractionCompatible",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "right"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "Left hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "Right hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrices are not addition compatible.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "checkMultiplicationCompatible(org.apache.commons.math3.linear.AnyMatrix left,org.apache.commons.math3.linear.AnyMatrix right)",
+    "name": "checkMultiplicationCompatible",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "left"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+          "name": "AnyMatrix",
+          "isArray": false
+        },
+        "name": "right"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "left"
+        },
+        "comment": "Left hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.AnyMatrix",
+            "name": "AnyMatrix",
+            "isArray": false
+          },
+          "name": "right"
+        },
+        "comment": "Right hand side matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrices are not multiplication compatible.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fractionMatrixToRealMatrix(org.apache.commons.math3.linear.FieldMatrix m)",
+    "name": "fractionMatrixToRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+          "name": "FieldMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+            "name": "FieldMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to convert.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the converted matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "bigFractionMatrixToRealMatrix(org.apache.commons.math3.linear.FieldMatrix m)",
+    "name": "bigFractionMatrixToRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.Array2DRowRealMatrix",
+      "name": "Array2DRowRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+          "name": "FieldMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+            "name": "FieldMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to convert.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the converted matrix.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "serializeRealVector(org.apache.commons.math3.linear.RealVector vector,java.io.ObjectOutputStream oos)",
+    "name": "serializeRealVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "vector"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutputStream",
+          "name": "ObjectOutputStream",
+          "isArray": false
+        },
+        "name": "oos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "vector"
+        },
+        "comment": "real vector to serialize",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectOutputStream",
+            "name": "ObjectOutputStream",
+            "isArray": false
+          },
+          "name": "oos"
+        },
+        "comment": "stream where the real vector should be written",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if object cannot be written to stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "deserializeRealVector(java.lang.Object instance,java.lang.String fieldName,java.io.ObjectInputStream ois)",
+    "name": "deserializeRealVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "instance"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "fieldName"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInputStream",
+          "name": "ObjectInputStream",
+          "isArray": false
+        },
+        "name": "ois"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "instance"
+        },
+        "comment": "instance in which the field must be set up",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "fieldName"
+        },
+        "comment": "name of the field within the class (may be private and final)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectInputStream",
+            "name": "ObjectInputStream",
+            "isArray": false
+          },
+          "name": "ois"
+        },
+        "comment": "stream from which the real vector should be read",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassNotFoundException",
+          "name": "ClassNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a class in the stream cannot be found",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if object cannot be read from the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "serializeRealMatrix(org.apache.commons.math3.linear.RealMatrix matrix,java.io.ObjectOutputStream oos)",
+    "name": "serializeRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutputStream",
+          "name": "ObjectOutputStream",
+          "isArray": false
+        },
+        "name": "oos"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "real matrix to serialize",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectOutputStream",
+            "name": "ObjectOutputStream",
+            "isArray": false
+          },
+          "name": "oos"
+        },
+        "comment": "stream where the real matrix should be written",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if object cannot be written to stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "deserializeRealMatrix(java.lang.Object instance,java.lang.String fieldName,java.io.ObjectInputStream ois)",
+    "name": "deserializeRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "instance"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "fieldName"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInputStream",
+          "name": "ObjectInputStream",
+          "isArray": false
+        },
+        "name": "ois"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "instance"
+        },
+        "comment": "instance in which the field must be set up",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "fieldName"
+        },
+        "comment": "name of the field within the class (may be private and final)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectInputStream",
+            "name": "ObjectInputStream",
+            "isArray": false
+          },
+          "name": "ois"
+        },
+        "comment": "stream from which the real matrix should be read",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassNotFoundException",
+          "name": "ClassNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a class in the stream cannot be found",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if object cannot be read from the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "solveLowerTriangularSystem(org.apache.commons.math3.linear.RealMatrix rm,org.apache.commons.math3.linear.RealVector b)",
+    "name": "solveLowerTriangularSystem",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "rm"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "rm"
+        },
+        "comment": "RealMatrix which is lower triangular",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "RealVector this is overwritten",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix and vector are not conformable",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rm"
+        ],
+        "comment": "if the matrix rm is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rm",
+          "Precision.SAFE_MIN"
+        ],
+        "comment": "if the absolute value of one of the diagonal coefficient of rm is lower than Precision.SAFE_MIN",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "solveUpperTriangularSystem(org.apache.commons.math3.linear.RealMatrix rm,org.apache.commons.math3.linear.RealVector b)",
+    "name": "solveUpperTriangularSystem",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "rm"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "rm"
+        },
+        "comment": "RealMatrix which is upper triangular",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "RealVector this is overwritten",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix and vector are not conformable",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rm"
+        ],
+        "comment": "if the matrix rm is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rm",
+          "Precision.SAFE_MIN"
+        ],
+        "comment": "if the absolute value of one of the diagonal coefficient of rm is lower than Precision.SAFE_MIN",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "blockInverse(org.apache.commons.math3.linear.RealMatrix m,int splitIndex)",
+    "name": "blockInverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "splitIndex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix whose inverse must be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "splitIndex"
+        },
+        "comment": "Index that determines the \"split\" line and column. The element corresponding to this index will part of the upper-left sub-matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the inverse of m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m"
+        ],
+        "comment": "if m is not square.",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "inverse(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "inverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix whose inverse shall be computed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the inverse of matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "matrix",
+          "null"
+        ],
+        "comment": "if matrix is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if m is singular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "inverse(org.apache.commons.math3.linear.RealMatrix matrix,double threshold)",
+    "name": "inverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.MatrixUtils",
+      "name": "MatrixUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.MatrixUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix whose inverse shall be computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "Singularity threshold",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the inverse of m",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "matrix",
+          "null"
+        ],
+        "comment": "if matrix is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix is singular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix is not square",
+        "kind": "THROWS",
+        "condition": "(args[0].isSquare()) == false"
+      }
+    ]
+  }
+]

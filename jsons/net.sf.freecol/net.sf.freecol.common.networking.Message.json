@@ -1,0 +1,557 @@
+[
+  {
+    "signature": "Message()",
+    "name": "Message",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "Message(java.lang.String msg)",
+    "name": "Message",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "msg"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "msg"
+        },
+        "comment": "The raw message data.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "should not be thrown.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.xml.sax.SAXException",
+          "name": "SAXException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if thrown during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Message(java.io.InputStream inputStream)",
+    "name": "Message",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "inputStream"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.InputStream",
+            "name": "InputStream",
+            "isArray": false
+          },
+          "name": "inputStream"
+        },
+        "comment": "The InputStream to get the XML-data from.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "InputStream"
+        ],
+        "comment": "if thrown by the InputStream.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.xml.sax.SAXException",
+          "name": "SAXException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if thrown during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Message(org.w3c.dom.Document document)",
+    "name": "Message",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Document",
+          "name": "Document",
+          "isArray": false
+        },
+        "name": "document"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Document",
+            "name": "Document",
+            "isArray": false
+          },
+          "name": "document"
+        },
+        "comment": "The document representing an XML-message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDocument()",
+    "name": "getDocument",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Document",
+      "name": "Document",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Document holding the message data.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getType()",
+    "name": "getType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The type of this Message.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isType(java.lang.String type)",
+    "name": "isType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type you wish to test against.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the type of this message equals the given type.",
+      "kind": "RETURN",
+      "condition": "target.equals(java.lang.Object) ? result == true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAttribute(java.lang.String key)",
+    "name": "getAttribute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "The key of the attribute.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The value of the attribute with the given key.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasAttribute(java.lang.String attribute)",
+    "name": "hasAttribute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "attribute"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "attribute"
+        },
+        "comment": "The attribute in which to verify the existence of.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the root element has the given attribute.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setAttribute(java.lang.String key,java.lang.String value)",
+    "name": "setAttribute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "The key of the attribute.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "The value of the attribute.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setAttribute(java.lang.String key,int value)",
+    "name": "setAttribute",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "The key of the attribute.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "The value of the attribute.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "toXMLElement()",
+    "name": "toXMLElement",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Null.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getFreeColProtocolVersion()",
+    "name": "getFreeColProtocolVersion",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.networking.Message",
+      "name": "Message",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.networking.Message",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The version of the FreeCol protocol.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

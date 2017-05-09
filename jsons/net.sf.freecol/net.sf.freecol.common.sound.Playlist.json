@@ -1,0 +1,270 @@
+[
+  {
+    "signature": "Playlist(java.io.File[] soundFiles)",
+    "name": "Playlist",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File[]",
+          "name": "File[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          }
+        },
+        "name": "soundFiles"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File[]",
+            "name": "File[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.io.File",
+              "name": "File",
+              "isArray": false
+            }
+          },
+          "name": "soundFiles"
+        },
+        "comment": "The sounds that will make up this Playlist. The order of the sounds is important.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Playlist(java.io.File[] soundFiles,int repeatMode,int pickMode)",
+    "name": "Playlist",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File[]",
+          "name": "File[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          }
+        },
+        "name": "soundFiles"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "repeatMode"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "pickMode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File[]",
+            "name": "File[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.io.File",
+              "name": "File",
+              "isArray": false
+            }
+          },
+          "name": "soundFiles"
+        },
+        "comment": "The sounds that will make up this Playlist. The order of the sounds may be important.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "repeatMode"
+        },
+        "comment": "Determines how, which and if songs will be repeated. Should be one of {PLAY_ALL, REPEAT_ALL, PLAY_ONE, REPEAT_ONE}.",
+        "kind": "PARAM",
+        "condition": "args[1]==1"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "pickMode"
+        },
+        "comment": "The way in which sounds will be picked from the list. Should be one of {FORWARDS, BACKWARDS, SHUFFLE}.",
+        "kind": "PARAM",
+        "condition": "args[2]==1"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRepeatMode(int repeatMode)",
+    "name": "setRepeatMode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "repeatMode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "repeatMode"
+        },
+        "comment": "The method this PlayList should be repeated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setPickMode(int pickMode)",
+    "name": "setPickMode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "pickMode"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "pickMode"
+        },
+        "comment": "The method to be used for picking the songs.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.File",
+      "name": "File",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The next sound file on this Playlist or null if there is no such sound.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.sound.Playlist",
+      "name": "Playlist",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.sound.Playlist",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "false if this Playlist is exhausted, true otherwise.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

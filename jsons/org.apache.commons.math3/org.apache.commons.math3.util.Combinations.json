@@ -1,0 +1,178 @@
+[
+  {
+    "signature": "Combinations(int n,int k)",
+    "name": "Combinations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.Combinations",
+      "name": "Combinations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.Combinations",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Size of the set from which subsets are selected.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "Size of the subsets to be enumerated.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      }
+    ]
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.Combinations",
+      "name": "Combinations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.Combinations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the size of the universe.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getK())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getK()",
+    "name": "getK",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.Combinations",
+      "name": "Combinations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.Combinations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the size of the subsets to be enumerated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.Combinations",
+      "name": "Combinations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.Combinations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "comparator()",
+    "name": "comparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.Combinations",
+      "name": "Combinations",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.Combinations",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a lexicographic comparator.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  }
+]

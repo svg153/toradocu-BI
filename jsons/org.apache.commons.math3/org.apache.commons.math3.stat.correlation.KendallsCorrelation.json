@@ -1,0 +1,340 @@
+[
+  {
+    "signature": "KendallsCorrelation()",
+    "name": "KendallsCorrelation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "KendallsCorrelation(double[][] data)",
+    "name": "KendallsCorrelation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "rectangular array with columns representing variables",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the input data array is not rectangular with at least two rows and two columns.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "KendallsCorrelation(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "KendallsCorrelation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "matrix with columns representing variables to correlate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCorrelationMatrix()",
+    "name": "getCorrelationMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "correlation matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeCorrelationMatrix(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "computeCorrelationMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "matrix with columns representing variables to correlate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "correlation matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getCorrelationMatrix())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "computeCorrelationMatrix(double[][] matrix)",
+    "name": "computeCorrelationMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "matrix"
+        },
+        "comment": "matrix with columns representing variables to correlate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "correlation matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getCorrelationMatrix())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "correlation(double[] xArray,double[] yArray)",
+    "name": "correlation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+      "name": "KendallsCorrelation",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.correlation.KendallsCorrelation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "xArray"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "xArray"
+        },
+        "comment": "first data array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yArray"
+        },
+        "comment": "second data array",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Returns Kendall's Tau rank correlation coefficient for the two arrays",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays lengths do not match",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

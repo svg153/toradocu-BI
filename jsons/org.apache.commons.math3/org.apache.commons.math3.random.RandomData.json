@@ -1,0 +1,1085 @@
+[
+  {
+    "signature": "nextHexString(int len)",
+    "name": "nextHexString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "the length of the string to be generated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random string of hex characters of length len",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "len <= 0"
+        ],
+        "comment": "if len <= 0",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextInt(int lower,int upper)",
+    "name": "nextInt",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random integer greater than or equal to lower and less than or equal to upper",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "nextLong(long lower,long upper)",
+    "name": "nextLong",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower bound for generated long integer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper bound for generated long integer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random long integer greater than or equal to lower and less than or equal to upper",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "nextSecureHexString(int len)",
+    "name": "nextSecureHexString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "len"
+        },
+        "comment": "the length of the string to be generated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random string of hex characters of length len",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "len <= 0"
+        ],
+        "comment": "if len <= 0",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextSecureInt(int lower,int upper)",
+    "name": "nextSecureInt",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random integer greater than or equal to lower and less than or equal to upper.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "nextSecureLong(long lower,long upper)",
+    "name": "nextSecureLong",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "lower bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "upper bound for generated integer",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random long integer greater than or equal to lower and less than or equal to upper.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper.",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      }
+    ]
+  },
+  {
+    "signature": "nextPoisson(double mean)",
+    "name": "nextPoisson",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "the mean of the Poisson distribution",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random value following the specified Poisson distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mean <= 0"
+        ],
+        "comment": "if mean <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextGaussian(double mu,double sigma)",
+    "name": "nextGaussian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mu"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sigma"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mu"
+        },
+        "comment": "the mean of the distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sigma"
+        },
+        "comment": "the standard deviation of the distribution",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random value following the specified Gaussian distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sigma <= 0"
+        ],
+        "comment": "if sigma <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextExponential(double mean)",
+    "name": "nextExponential",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "mean"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "mean"
+        },
+        "comment": "the mean of the distribution",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random value following the specified exponential distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "mean <= 0"
+        ],
+        "comment": "if mean <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextUniform(double lower,double upper)",
+    "name": "nextUniform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "upper"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "the exclusive lower bound of the support",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "the exclusive upper bound of the support",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a uniformly distributed random value between lower and upper (exclusive)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the bounds is infinite",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotANumberException",
+          "name": "NotANumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the bounds is NaN",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "nextUniform(double lower,double upper,boolean lowerInclusive)",
+    "name": "nextUniform",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "lower"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "upper"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "lowerInclusive"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "lower"
+        },
+        "comment": "the lower bound of the support",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "upper"
+        },
+        "comment": "the exclusive upper bound of the support",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "lowerInclusive"
+        },
+        "comment": "true if the lower bound is inclusive",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "uniformly distributed random value in the (lower, upper) interval, if lowerInclusive is false, or in the [lower, upper) interval, if lowerInclusive is true",
+      "kind": "RETURN",
+      "condition": "result==false"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "lower >= upper"
+        ],
+        "comment": "if lower >= upper",
+        "kind": "THROWS",
+        "condition": "args[0]>=args[1]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotFiniteNumberException",
+          "name": "NotFiniteNumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the bounds is infinite",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotANumberException",
+          "name": "NotANumberException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the bounds is NaN",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "nextPermutation(int n,int k)",
+    "name": "nextPermutation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the domain of the permutation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the size of the permutation",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random k-permutation of n, as an array of integers",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > n"
+        ],
+        "comment": "if k > n.",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0]"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k <= 0"
+        ],
+        "comment": "if k <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "nextSample(java.util.Collection c,int k)",
+    "name": "nextSample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.RandomData",
+      "name": "RandomData",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.RandomData",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object[]",
+      "name": "Object[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "java.lang.Object",
+        "name": "Object",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "c"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "k"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the collection to be sampled",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "k"
+        },
+        "comment": "the size of the sample",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a random sample of k elements from c",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooLargeException",
+          "name": "NumberIsTooLargeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k > c.size()"
+        ],
+        "comment": "if k > c.size().",
+        "kind": "THROWS",
+        "condition": "args[1]>args[0].size()"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "k <= 0"
+        ],
+        "comment": "if k <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  }
+]

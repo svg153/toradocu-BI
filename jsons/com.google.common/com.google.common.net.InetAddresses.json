@@ -1,0 +1,1248 @@
+[
+  {
+    "signature": "forString(java.lang.String ipString)",
+    "name": "forString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.InetAddress",
+      "name": "InetAddress",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "ipString"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "ipString"
+        },
+        "comment": "String containing an IPv4 or IPv6 string literal, e.g. \"192.168.0.1\" or \"2001:db8::1\"",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "InetAddress representing the argument",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is not a valid IP string literal",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isInetAddress(java.lang.String ipString)",
+    "name": "isInetAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "ipString"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "ipString"
+        },
+        "comment": "String to evaluated as an IP string literal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a valid IP string literal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toAddrString(java.net.InetAddress ip)",
+    "name": "toAddrString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "InetAddress to be converted to an address string",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "String containing the text-formatted IP address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toUriString(java.net.InetAddress ip)",
+    "name": "toUriString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "InetAddress to be converted to URI string literal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "String containing URI-safe string literal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "forUriString(java.lang.String hostAddr)",
+    "name": "forUriString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.InetAddress",
+      "name": "InetAddress",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "hostAddr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "hostAddr"
+        },
+        "comment": "A RFC 3986 section 3.2.2 encoded IPv4 or IPv6 address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an InetAddress representing the address in hostAddr",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "hostAddr"
+        ],
+        "comment": "if hostAddr is not a valid IPv4 address, or IPv6 address surrounded by square brackets",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isUriInetAddress(java.lang.String ipString)",
+    "name": "isUriInetAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "ipString"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "ipString"
+        },
+        "comment": "String to evaluated as an IP URI host string literal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a valid IP URI host",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isCompatIPv4Address(java.net.Inet6Address ip)",
+    "name": "isCompatIPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded IPv4 compatible address format",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a valid \"compat\" address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCompatIPv4Address(java.net.Inet6Address ip)",
+    "name": "getCompatIPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for an embedded IPv4 address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address of the embedded IPv4 address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is not a valid IPv4 compatible address",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "is6to4Address(java.net.Inet6Address ip)",
+    "name": "is6to4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for 6to4 address format",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a 6to4 address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "get6to4IPv4Address(java.net.Inet6Address ip)",
+    "name": "get6to4IPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded IPv4 in 6to4 address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address of embedded IPv4 in 6to4 address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is not a valid IPv6 6to4 address",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isTeredoAddress(java.net.Inet6Address ip)",
+    "name": "isTeredoAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for Teredo address format",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a Teredo address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTeredoInfo(java.net.Inet6Address ip)",
+    "name": "getTeredoInfo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.InetAddresses.TeredoInfo",
+      "name": "TeredoInfo",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded Teredo information",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "extracted TeredoInfo",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is not a valid IPv6 Teredo address",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isIsatapAddress(java.net.Inet6Address ip)",
+    "name": "isIsatapAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for ISATAP address format",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is an ISATAP address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getIsatapIPv4Address(java.net.Inet6Address ip)",
+    "name": "getIsatapIPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded IPv4 in ISATAP address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address of embedded IPv4 in an ISATAP address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument is not a valid IPv6 ISATAP address",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hasEmbeddedIPv4ClientAddress(java.net.Inet6Address ip)",
+    "name": "hasEmbeddedIPv4ClientAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded IPv4 client address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if there is an embedded IPv4 client address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEmbeddedIPv4ClientAddress(java.net.Inet6Address ip)",
+    "name": "getEmbeddedIPv4ClientAddress",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.Inet6Address",
+          "name": "Inet6Address",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.Inet6Address",
+            "name": "Inet6Address",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "Inet6Address to be examined for embedded IPv4 client address",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address of embedded IPv4 client address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the argument does not have a valid embedded IPv4 address",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isMappedIPv4Address(java.lang.String ipString)",
+    "name": "isMappedIPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "ipString"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "ipString"
+        },
+        "comment": "String to be examined for embedded IPv4-mapped IPv6 address format",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the argument is a valid \"mapped\" address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCoercedIPv4Address(java.net.InetAddress ip)",
+    "name": "getCoercedIPv4Address",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "InetAddress to \"coerce\"",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address represented \"coerced\" address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "coerceToInteger(java.net.InetAddress ip)",
+    "name": "coerceToInteger",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "ip"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "ip"
+        },
+        "comment": "InetAddress to convert",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "int, \"coerced\" if ip is not an IPv4 address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "fromInteger(int address)",
+    "name": "fromInteger",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.Inet4Address",
+      "name": "Inet4Address",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "address"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "address"
+        },
+        "comment": "int, the 32bit integer address to be converted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Inet4Address equivalent of the argument",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "fromLittleEndianByteArray(byte[] addr)",
+    "name": "fromLittleEndianByteArray",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.InetAddress",
+      "name": "InetAddress",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "addr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "byte[]",
+            "name": "byte[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "byte",
+              "name": "byte",
+              "isArray": false
+            }
+          },
+          "name": "addr"
+        },
+        "comment": "the raw IP address in little-endian byte order",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an InetAddress object created from the raw IP address",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.net.UnknownHostException",
+          "name": "UnknownHostException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if IP address is of illegal length",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "decrement(java.net.InetAddress address)",
+    "name": "decrement",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.InetAddress",
+      "name": "InetAddress",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "address"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "address"
+        },
+        "comment": "the InetAddress to decrement",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new InetAddress that is one less than the passed in address",
+      "kind": "RETURN",
+      "condition": "true ?result==1"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if InetAddress is at the beginning of its range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "increment(java.net.InetAddress address)",
+    "name": "increment",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.net.InetAddress",
+      "name": "InetAddress",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "address"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.net.InetAddress",
+            "name": "InetAddress",
+            "isArray": false
+          },
+          "name": "address"
+        },
+        "comment": "the InetAddress to increment",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new InetAddress that is one more than the passed in address",
+      "kind": "RETURN",
+      "condition": "true ?result==1"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if InetAddress is at the end of its range",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isMaximum(java.net.InetAddress address)",
+    "name": "isMaximum",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.InetAddresses",
+      "name": "InetAddresses",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.InetAddresses",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.net.InetAddress",
+          "name": "InetAddress",
+          "isArray": false
+        },
+        "name": "address"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the InetAddress is either 255.255.255.255 for IPv4 or ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff for IPv6",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

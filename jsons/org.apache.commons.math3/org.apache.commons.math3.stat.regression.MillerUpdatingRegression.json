@@ -1,0 +1,721 @@
+[
+  {
+    "signature": "MillerUpdatingRegression(int numberOfVariables,boolean includeConstant,double errorTolerance)",
+    "name": "MillerUpdatingRegression",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfVariables"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "includeConstant"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "errorTolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfVariables"
+        },
+        "comment": "number of regressors to expect, not including constant",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "includeConstant"
+        },
+        "comment": "include a constant automatically",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "errorTolerance"
+        },
+        "comment": "zero tolerance, how machine zero is determined",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfVariables is less than 1"
+        ],
+        "comment": "if numberOfVariables is less than 1",
+        "kind": "THROWS",
+        "condition": "args[0]<1"
+      }
+    ]
+  },
+  {
+    "signature": "MillerUpdatingRegression(int numberOfVariables,boolean includeConstant)",
+    "name": "MillerUpdatingRegression",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfVariables"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "includeConstant"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfVariables"
+        },
+        "comment": "maximum number of potential regressors",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "includeConstant"
+        },
+        "comment": "include a constant automatically",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfVariables is less than 1"
+        ],
+        "comment": "if numberOfVariables is less than 1",
+        "kind": "THROWS",
+        "condition": "args[0]<1"
+      }
+    ]
+  },
+  {
+    "signature": "hasIntercept()",
+    "name": "hasIntercept",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true regression has an intercept, false no intercept",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of observations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addObservation(double[] x,double y)",
+    "name": "addObservation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "the array with regressor values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "the value of dependent variable given these regressors",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the length of x does not equal the number of independent variables in the model",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addObservations(double[][] x,double[] y)",
+    "name": "addObservations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "observations on the regressors",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "observations on the regressand",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x is not rectangular, does not match the length of y or does not contain sufficient data to estimate the model",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPartialCorrelations(int in)",
+    "name": "getPartialCorrelations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "how many of the regressors to include (either in canonical order, or in the current reordered state)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an array with the partial correlations of the remainder of regressors with each other and the regressand, in lower triangular form",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDiagonalOfHatMatrix(double[] row_data)",
+    "name": "getDiagonalOfHatMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "row_data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "row_data"
+        },
+        "comment": "returns the diagonal of the hat matrix for this observation",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the diagonal element of the hatmatrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOrderOfRegressors()",
+    "name": "getOrderOfRegressors",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "int[] with the current order of the regressors",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "regress()",
+    "name": "regress",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "RegressionResults the structure holding all regression results",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "- thrown if number of observations is less than the number of variables",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "regress(int numberOfRegressors)",
+    "name": "regress",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfRegressors"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfRegressors"
+        },
+        "comment": "many of the regressors to include (either in canonical order, or in the current reordered state)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "RegressionResults the structure holding all regression results",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "- thrown if number of observations is less than the number of variables or number of regressors requested is greater than the regressors in the model",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "regress(int[] variablesToInclude)",
+    "name": "regress",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+      "name": "MillerUpdatingRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.MillerUpdatingRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "variablesToInclude"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "variablesToInclude"
+        },
+        "comment": "array of variables to include in regression",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "RegressionResults the structure holding all regression results",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "- thrown if number of observations is less than the number of variables, the number of regressors requested is greater than the regressors in the model or a regressor index in regressor array does not exist",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

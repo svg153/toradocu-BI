@@ -1,0 +1,334 @@
+[
+  {
+    "signature": "MultidimensionalCounter(int[] size)",
+    "name": "MultidimensionalCounter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "size"
+        },
+        "comment": "Counter sizes (number of slots in each dimension).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if one of the sizes is negative or zero.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the iterator.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.iterator())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDimension()",
+    "name": "getDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of dimensions.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCounts(int index)",
+    "name": "getCounts",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "Index in unidimensional counter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the multidimensional counts.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "0",
+          "getSize()"
+        ],
+        "comment": "if index is not between 0 and the value returned by getSize() (excluded).",
+        "kind": "THROWS",
+        "condition": "(args[0]==0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "getCount(int[] c)",
+    "name": "getCount",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "c"
+        },
+        "comment": "Indices in multidimensional counter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the index within the unidimensionl counter.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c"
+        ],
+        "comment": "if the size of c does not match the size of the array given in the constructor.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "c",
+          "constructor"
+        ],
+        "comment": "if a value of c is not in the range of the corresponding dimension, as defined in the constructor.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getSize()",
+    "name": "getSize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the total size of the unidimensional counter.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSizes()",
+    "name": "getSizes",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the sizes of the multidimensional counter in each dimension.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.util.MultidimensionalCounter",
+      "name": "MultidimensionalCounter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.util.MultidimensionalCounter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

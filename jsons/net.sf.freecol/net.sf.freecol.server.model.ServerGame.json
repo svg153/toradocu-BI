@@ -1,0 +1,726 @@
+[
+  {
+    "signature": "ServerGame(net.sf.freecol.common.model.Specification specification)",
+    "name": "ServerGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification to use in this game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "ServerGame(net.sf.freecol.common.model.FreeColGameObjectListener freeColGameObjectListener,net.sf.freecol.common.io.FreeColXMLReader xr,net.sf.freecol.common.model.Specification specification)",
+    "name": "ServerGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColGameObjectListener",
+          "name": "FreeColGameObjectListener",
+          "isArray": false
+        },
+        "name": "freeColGameObjectListener"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColGameObjectListener",
+            "name": "FreeColGameObjectListener",
+            "isArray": false
+          },
+          "name": "freeColGameObjectListener"
+        },
+        "comment": "A listener that should be monitoring this Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification to use in this game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurred during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getConnectedPlayers(net.sf.freecol.server.model.ServerPlayer[] serverPlayers)",
+    "name": "getConnectedPlayers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer[]",
+          "name": "ServerPlayer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          }
+        },
+        "name": "serverPlayers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer[]",
+            "name": "ServerPlayer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+              "name": "ServerPlayer",
+              "isArray": false
+            }
+          },
+          "name": "serverPlayers"
+        },
+        "comment": "The ServerPlayers to exclude.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A list of all connected server players, with exclusions.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sendToAll(net.sf.freecol.server.control.ChangeSet cs,net.sf.freecol.server.model.ServerPlayer[] serverPlayers)",
+    "name": "sendToAll",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer[]",
+          "name": "ServerPlayer[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          }
+        },
+        "name": "serverPlayers"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "The ChangeSet to send.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer[]",
+            "name": "ServerPlayer[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+              "name": "ServerPlayer",
+              "isArray": false
+            }
+          },
+          "name": "serverPlayers"
+        },
+        "comment": "Optional extra ServerPlayers to include (useful when a player dies).",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "sendToOthers(net.sf.freecol.server.model.ServerPlayer serverPlayer,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "sendToOthers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+          "name": "ServerPlayer",
+          "isArray": false
+        },
+        "name": "serverPlayer"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+            "name": "ServerPlayer",
+            "isArray": false
+          },
+          "name": "serverPlayer"
+        },
+        "comment": "A ServerPlayer to exclude.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "The ChangeSet encapsulating the update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "sendToList(java.util.List serverPlayers,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "sendToList",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "serverPlayers"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "serverPlayers"
+        },
+        "comment": "The list of ServerPlayers to send to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerModelObjects()",
+    "name": "getServerModelObjects",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of all the ServerModelObjects in this game.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "updatePlayers(java.util.List players)",
+    "name": "updatePlayers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "players"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "players"
+        },
+        "comment": "A list of new ServerPlayers.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNextId()",
+    "name": "getNextId",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A unique identifier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "randomize(java.util.Random random)",
+    "name": "randomize",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A pseudo-random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkForWinner()",
+    "name": "checkForWinner",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Player who has won the game or null if none.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isNextPlayerInNewTurn()",
+    "name": "isNextPlayerInNewTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "csNextTurn(net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csNextTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "csNewTurn(java.util.Random random,net.sf.freecol.common.util.LogBuilder lb,net.sf.freecol.server.control.ChangeSet cs)",
+    "name": "csNewTurn",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+          "name": "ChangeSet",
+          "isArray": false
+        },
+        "name": "cs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "A Random number source.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.control.ChangeSet",
+            "name": "ChangeSet",
+            "isArray": false
+          },
+          "name": "cs"
+        },
+        "comment": "A ChangeSet to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object o)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerXMLElementTagName()",
+    "name": "getServerXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.model.ServerGame",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"serverGame\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

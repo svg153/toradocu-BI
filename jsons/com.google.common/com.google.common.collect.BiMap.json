@@ -1,0 +1,211 @@
+[
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.BiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "forcePut(K, V)"
+        ],
+        "comment": "if the given value is already bound to a different key in this bimap. The bimap will remain unmodified in this event. To avoid this exception, call forcePut(K, V) instead.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "forcePut(java.lang.Object key,java.lang.Object value)",
+    "name": "forcePut",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.BiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key",
+          "nullable": true
+        },
+        "comment": "the key with which the specified value is to be associated",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value",
+          "nullable": true
+        },
+        "comment": "the value to be associated with the specified key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value which was previously associated with the key, which may be null, or null if there was no previous entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "putAll(java.util.Map map)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.BiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "put"
+        ],
+        "comment": "if an attempt to put any entry fails. Note that some map entries may have been added to the bimap before the exception was thrown.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.BiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inverse()",
+    "name": "inverse",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.BiMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.BiMap",
+      "name": "BiMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the inverse view of this bimap",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

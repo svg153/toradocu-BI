@@ -1,0 +1,2069 @@
+[
+  {
+    "signature": "FreeColServer(boolean publicServer,boolean singlePlayer,net.sf.freecol.common.model.Specification specification,int port,java.lang.String name)",
+    "name": "FreeColServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "publicServer"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "singlePlayer"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "publicServer"
+        },
+        "comment": "If true, add to the meta-server.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "singlePlayer"
+        },
+        "comment": "True if this is a single player game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification to use in this game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The TCP port to use for the public socket.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "An optional name for the server.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If the public socket cannot be created.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "FreeColServer(net.sf.freecol.common.io.FreeColSavegameFile savegame,net.sf.freecol.common.model.Specification specification,int port,java.lang.String name)",
+    "name": "FreeColServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+          "name": "FreeColSavegameFile",
+          "isArray": false
+        },
+        "name": "savegame"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+            "name": "FreeColSavegameFile",
+            "isArray": false
+          },
+          "name": "savegame"
+        },
+        "comment": "The file where the game data is located.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "An optional Specification to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "The TCP port to use for the public socket.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "An optional name for the server.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If save game can not be found.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If the savegame could not be loaded.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getSinglePlayer()",
+    "name": "getSinglePlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this is a single player game.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setSinglePlayer(boolean singlePlayer)",
+    "name": "setSinglePlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "singlePlayer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "singlePlayer"
+        },
+        "comment": "The new single/multiplayer status.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPublicServer()",
+    "name": "getPublicServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The public server state.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setPublicServer(boolean publicServer)",
+    "name": "setPublicServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "publicServer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "publicServer"
+        },
+        "comment": "The new public server state.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getName()",
+    "name": "getName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The name.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getGame())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setName(java.lang.String name)",
+    "name": "setName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The new name.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getHost()",
+    "name": "getHost",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The host.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getPort())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPort()",
+    "name": "getPort",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The port.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getHost())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSpecification()",
+    "name": "getSpecification",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Specification",
+      "name": "Specification",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The specification from the game.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getUserConnectionHandler()",
+    "name": "getUserConnectionHandler",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.control.UserConnectionHandler",
+      "name": "UserConnectionHandler",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The UserConnectionHandler that is beeing used when new client connect.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getController()",
+    "name": "getController",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.control.Controller",
+      "name": "Controller",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Controller.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPreGameInputHandler()",
+    "name": "getPreGameInputHandler",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.control.PreGameInputHandler",
+      "name": "PreGameInputHandler",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The PreGameInputHandler.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInGameInputHandler()",
+    "name": "getInGameInputHandler",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.control.InGameInputHandler",
+      "name": "InGameInputHandler",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The InGameInputHandler.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInGameController()",
+    "name": "getInGameController",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.control.InGameController",
+      "name": "InGameController",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The controller from making a new turn etc.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGame()",
+    "name": "getGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Game which is the main class of the game-model being used in this game.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setGame(net.sf.freecol.server.model.ServerGame game)",
+    "name": "setGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+          "name": "ServerGame",
+          "isArray": false
+        },
+        "name": "game"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+            "name": "ServerGame",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The new Game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setAIMain(net.sf.freecol.server.ai.AIMain aiMain)",
+    "name": "setAIMain",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object which is responsible for controlling, updating and saving the AI objects.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIMain()",
+    "name": "getAIMain",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+      "name": "AIMain",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The main AI-object which is responsible for controlling, updating and saving the AI objects.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGameState()",
+    "name": "getGameState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer.GameState",
+      "name": "GameState",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "One of: FreeColServer.GameState.STARTING_GAME, FreeColServer.GameState.IN_GAME and FreeColServer.GameState.ENDING_GAME.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setGameState(net.sf.freecol.server.FreeColServer.GameState state)",
+    "name": "setGameState",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer.GameState",
+          "name": "GameState",
+          "isArray": false
+        },
+        "name": "state"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer.GameState",
+            "name": "GameState",
+            "isArray": false
+          },
+          "name": "state"
+        },
+        "comment": "The new state to be set. One of: FreeColServer.GameState.STARTING_GAME, FreeColServer.GameState.IN_GAME and FreeColServer.GameState.ENDING_GAME.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServer()",
+    "name": "getServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.networking.Server",
+      "name": "Server",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The network server.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getIntegrity()",
+    "name": "getIntegrity",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The integrity check result.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMapGenerator()",
+    "name": "getMapGenerator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.generator.MapGenerator",
+      "name": "MapGenerator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The MapGenerator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setMapGenerator(net.sf.freecol.server.generator.MapGenerator mapGenerator)",
+    "name": "setMapGenerator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.generator.MapGenerator",
+          "name": "MapGenerator",
+          "isArray": false
+        },
+        "name": "mapGenerator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.generator.MapGenerator",
+            "name": "MapGenerator",
+            "isArray": false
+          },
+          "name": "mapGenerator"
+        },
+        "comment": "The new MapGenerator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getServerRandom()",
+    "name": "getServerRandom",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Random",
+      "name": "Random",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The server random number generator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setServerRandom(java.util.Random random)",
+    "name": "setServerRandom",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Random",
+          "name": "Random",
+          "isArray": false
+        },
+        "name": "random"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Random",
+            "name": "Random",
+            "isArray": false
+          },
+          "name": "random"
+        },
+        "comment": "The new random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getActiveUnit()",
+    "name": "getActiveUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Unit",
+      "name": "Unit",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The active unit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setActiveUnit(net.sf.freecol.common.model.Unit unit)",
+    "name": "setActiveUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The active unit to save.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "updateMetaServer()",
+    "name": "updateMetaServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the MetaServer was updated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeFromMetaServer()",
+    "name": "removeFromMetaServer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the MetaServer was updated.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSlotsAvailable()",
+    "name": "getSlotsAvailable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of available slots for human players. This number also includes european players currently controlled by the AI.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumberOfLivingHumanPlayers()",
+    "name": "getNumberOfLivingHumanPlayers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The number of living human players.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "saveGame(java.io.File file,net.sf.freecol.common.option.OptionGroup options)",
+    "name": "saveGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.option.OptionGroup",
+          "name": "OptionGroup",
+          "isArray": false
+        },
+        "name": "options"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The file where the data will be written.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If a problem was encountered while trying to open, write or close the file.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "saveMapEditorGame(java.io.File file,java.awt.image.BufferedImage image)",
+    "name": "saveMapEditorGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.awt.image.BufferedImage",
+          "name": "BufferedImage",
+          "isArray": false
+        },
+        "name": "image"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The file where the data will be written.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.awt.image.BufferedImage",
+            "name": "BufferedImage",
+            "isArray": false
+          },
+          "name": "image"
+        },
+        "comment": "A thumbnail image for the map.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If a problem was encountered while trying to open, write or close the file.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "saveGame(java.io.File file,net.sf.freecol.common.option.OptionGroup options,java.awt.image.BufferedImage image)",
+    "name": "saveGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.option.OptionGroup",
+          "name": "OptionGroup",
+          "isArray": false
+        },
+        "name": "options"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.awt.image.BufferedImage",
+          "name": "BufferedImage",
+          "isArray": false
+        },
+        "name": "image"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The file where the data will be written.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.option.OptionGroup",
+            "name": "OptionGroup",
+            "isArray": false
+          },
+          "name": "options"
+        },
+        "comment": "Optional client options to save in the game.",
+        "kind": "PARAM",
+        "condition": "args[1].save(args[0])"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.awt.image.BufferedImage",
+            "name": "BufferedImage",
+            "isArray": false
+          },
+          "name": "image"
+        },
+        "comment": "A thumbnail Image value to save in the game.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "If a problem was encountered while trying to open, write or close the file.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "loadGame(net.sf.freecol.common.io.FreeColSavegameFile fis)",
+    "name": "loadGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+          "name": "FreeColSavegameFile",
+          "isArray": false
+        },
+        "name": "fis"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+            "name": "FreeColSavegameFile",
+            "isArray": false
+          },
+          "name": "fis"
+        },
+        "comment": "The file where the game data is located.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The game found in the stream.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the savegame contains incompatible data.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the stream can not be created.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading the stream.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "readGame(java.io.File file,net.sf.freecol.common.model.Specification spec,net.sf.freecol.server.FreeColServer server)",
+    "name": "readGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "spec"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The File to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "spec"
+        },
+        "comment": "An optional Specification to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "Use this (optional) server to load into.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The game found in the stream.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "readGame(net.sf.freecol.common.io.FreeColSavegameFile fis,net.sf.freecol.common.model.Specification specification,net.sf.freecol.server.FreeColServer server)",
+    "name": "readGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerGame",
+      "name": "ServerGame",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+          "name": "FreeColSavegameFile",
+          "isArray": false
+        },
+        "name": "fis"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "server"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+            "name": "FreeColSavegameFile",
+            "isArray": false
+          },
+          "name": "fis"
+        },
+        "comment": "The stream to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "An optional Specification to use.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "server"
+        },
+        "comment": "Use this (optional) server to load into.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The game found in the stream.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the format is incompatible.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the stream can not be created.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading the stream.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createEmptyMap(net.sf.freecol.common.model.Game game,int width,int height)",
+    "name": "createEmptyMap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Map",
+      "name": "Map",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "width"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "height"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game to create the map for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "width"
+        },
+        "comment": "The map width.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "height"
+        },
+        "comment": "The map height.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new empty Map.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "buildGame()",
+    "name": "buildGame",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Game",
+      "name": "Game",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The updated game.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "on map generation failure.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "makeAIPlayer(net.sf.freecol.common.model.Nation nation)",
+    "name": "makeAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Nation",
+          "name": "Nation",
+          "isArray": false
+        },
+        "name": "nation"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Nation",
+            "name": "Nation",
+            "isArray": false
+          },
+          "name": "nation"
+        },
+        "comment": "The Nation to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new AI ServerPlayer.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAutosaves(java.lang.String prefix)",
+    "name": "removeAutosaves",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "prefix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "exploreMapForAllPlayers(boolean reveal)",
+    "name": "exploreMapForAllPlayers",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "reveal"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "reveal"
+        },
+        "comment": "If true, reveal, if false, hide.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPlayer(net.sf.freecol.common.networking.Connection connection)",
+    "name": "getPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.model.ServerPlayer",
+      "name": "ServerPlayer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The connection to use while searching for a ServerPlayer.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The player.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAIPlayer(net.sf.freecol.common.model.Player player)",
+    "name": "getAIPlayer",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+      "name": "AIPlayer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to look up.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The corresponding AI player, or null if not found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "shutdown()",
+    "name": "shutdown",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.FreeColServer",
+      "name": "FreeColServer",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.FreeColServer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

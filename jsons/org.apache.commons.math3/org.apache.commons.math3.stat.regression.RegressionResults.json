@@ -1,0 +1,730 @@
+[
+  {
+    "signature": "RegressionResults(double[] parameters,double[][] varcov,boolean isSymmetricCompressed,long nobs,int rank,double sumy,double sumysq,double sse,boolean containsConstant,boolean copyData)",
+    "name": "RegressionResults",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "parameters"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "varcov"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isSymmetricCompressed"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nobs"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rank"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sumy"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sumysq"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "sse"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "containsConstant"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "parameters"
+        },
+        "comment": "a double array with the regression slope estimates",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "varcov"
+        },
+        "comment": "the variance covariance matrix, stored either in a square matrix or as a compressed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isSymmetricCompressed"
+        },
+        "comment": "a flag which denotes that the variance covariance matrix is in symmetric compressed format",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "nobs"
+        },
+        "comment": "the number of observations of the regression estimation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rank"
+        },
+        "comment": "the number of independent variables in the regression",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sumy"
+        },
+        "comment": "the sum of the independent variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sumysq"
+        },
+        "comment": "the sum of the squared independent variable",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "sse"
+        },
+        "comment": "sum of squared errors",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "containsConstant"
+        },
+        "comment": "true model has constant, false model does not have constant",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyData"
+        },
+        "comment": "if true a deep copy of all input data is made, if false only references are copied and the RegressionResults become mutable",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getParameterEstimate(int index)",
+    "name": "getParameterEstimate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "Index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the parameters estimated for regressor at index.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "[0, number of parameters)"
+        ],
+        "comment": "if index is not in the interval [0, number of parameters).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getParameterEstimates()",
+    "name": "getParameterEstimates",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "array of parameter estimates, null if no estimation occurred",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStdErrorOfEstimate(int index)",
+    "name": "getStdErrorOfEstimate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "Index.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the standard errors associated with parameters estimated at index.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "index",
+          "[0, number of parameters)"
+        ],
+        "comment": "if index is not in the interval [0, number of parameters).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getStdErrorOfEstimates()",
+    "name": "getStdErrorOfEstimates",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an array standard errors associated with parameters estimates, null if no estimation occurred",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCovarianceOfParameters(int i,int j)",
+    "name": "getCovarianceOfParameters",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "i"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "j"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "i"
+        },
+        "comment": "ith regression parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "j"
+        },
+        "comment": "jth regression parameter.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the covariance of the parameter estimates.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "i",
+          "j",
+          "[0, number of parameters)"
+        ],
+        "comment": "if i or j is not in the interval [0, number of parameters).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNumberOfParameters()",
+    "name": "getNumberOfParameters",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "number of regressors, -1 if not estimated",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Number of observations, -1 if an error condition prevents estimation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTotalSumSquares()",
+    "name": "getTotalSumSquares",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum of squared deviations of y values",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRegressionSumSquares()",
+    "name": "getRegressionSumSquares",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum of squared deviations of predicted y values",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getErrorSumSquares()",
+    "name": "getErrorSumSquares",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum of squared errors associated with the regression model",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMeanSquareError()",
+    "name": "getMeanSquareError",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "sum of squared deviations of y values",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRSquared()",
+    "name": "getRSquared",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "r-square, a double in the interval [0, 1]",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAdjustedRSquared()",
+    "name": "getAdjustedRSquared",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "adjusted R-Squared statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasIntercept()",
+    "name": "hasIntercept",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.RegressionResults",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the model has an intercept term",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

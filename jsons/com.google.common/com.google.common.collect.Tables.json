@@ -1,0 +1,364 @@
+[
+  {
+    "signature": "immutableCell(java.lang.Object rowKey,java.lang.Object columnKey,java.lang.Object value)",
+    "name": "immutableCell",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Table.Cell",
+      "name": "Cell",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "rowKey",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "columnKey",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "rowKey",
+          "nullable": true
+        },
+        "comment": "the row key to be associated with the returned cell",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "columnKey",
+          "nullable": true
+        },
+        "comment": "the column key to be associated with the returned cell",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value",
+          "nullable": true
+        },
+        "comment": "the value to be associated with the returned cell",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "transpose(com.google.common.collect.Table table)",
+    "name": "transpose",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Table",
+      "name": "Table",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Table",
+          "name": "Table",
+          "isArray": false
+        },
+        "name": "table"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newCustomTable(java.util.Map backingMap,com.google.common.base.Supplier factory)",
+    "name": "newCustomTable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Table",
+      "name": "Table",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "backingMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "backingMap"
+        },
+        "comment": "place to store the mapping from each row key to its corresponding column key / value map",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "factory"
+        },
+        "comment": "supplier of new, empty maps that will each hold all column key / value mappings for a given row key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "backingMap"
+        ],
+        "comment": "if backingMap is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "transformValues(com.google.common.collect.Table fromTable,com.google.common.base.Function function)",
+    "name": "transformValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Table",
+      "name": "Table",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Table",
+          "name": "Table",
+          "isArray": false
+        },
+        "name": "fromTable"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableTable(com.google.common.collect.Table table)",
+    "name": "unmodifiableTable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Table",
+      "name": "Table",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Table",
+          "name": "Table",
+          "isArray": false
+        },
+        "name": "table"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Table",
+            "name": "Table",
+            "isArray": false
+          },
+          "name": "table"
+        },
+        "comment": "the table for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified table",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableRowSortedTable(com.google.common.collect.RowSortedTable table)",
+    "name": "unmodifiableRowSortedTable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.RowSortedTable",
+      "name": "RowSortedTable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.RowSortedTable",
+          "name": "RowSortedTable",
+          "isArray": false
+        },
+        "name": "table"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.RowSortedTable",
+            "name": "RowSortedTable",
+            "isArray": false
+          },
+          "name": "table"
+        },
+        "comment": "the row-sorted table for which an unmodifiable view is to be returned",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the specified table",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equalsImpl(com.google.common.collect.Table table,java.lang.Object obj)",
+    "name": "equalsImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Tables",
+      "name": "Tables",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Tables",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Table",
+          "name": "Table",
+          "isArray": false
+        },
+        "name": "table"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

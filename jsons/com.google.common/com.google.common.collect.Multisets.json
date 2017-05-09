@@ -1,0 +1,923 @@
+[
+  {
+    "signature": "unmodifiableMultiset(com.google.common.collect.Multiset multiset)",
+    "name": "unmodifiableMultiset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Multiset",
+            "name": "Multiset",
+            "isArray": false
+          },
+          "name": "multiset"
+        },
+        "comment": "the multiset for which an unmodifiable view is to be generated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableMultiset(com.google.common.collect.ImmutableMultiset multiset)",
+    "name": "unmodifiableMultiset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.ImmutableMultiset",
+          "name": "ImmutableMultiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "unmodifiableSortedMultiset(com.google.common.collect.SortedMultiset sortedMultiset)",
+    "name": "unmodifiableSortedMultiset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.SortedMultiset",
+      "name": "SortedMultiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.SortedMultiset",
+          "name": "SortedMultiset",
+          "isArray": false
+        },
+        "name": "sortedMultiset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.SortedMultiset",
+            "name": "SortedMultiset",
+            "isArray": false
+          },
+          "name": "sortedMultiset"
+        },
+        "comment": "the sorted multiset for which an unmodifiable view is to be generated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of the multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "immutableEntry(java.lang.Object e,int n)",
+    "name": "immutableEntry",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset.Entry",
+      "name": "Entry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "e",
+          "nullable": true
+        },
+        "comment": "the element to be associated with the returned entry",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the count to be associated with the returned entry",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n"
+        ],
+        "comment": "if n is negative",
+        "kind": "THROWS",
+        "condition": "args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "filter(com.google.common.collect.Multiset unfiltered,com.google.common.base.Predicate predicate)",
+    "name": "filter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "unfiltered"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "inferDistinctElements(java.lang.Iterable elements)",
+    "name": "inferDistinctElements",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "elements"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "union(com.google.common.collect.Multiset multiset1,com.google.common.collect.Multiset multiset2)",
+    "name": "union",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset1"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset2"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "intersection(com.google.common.collect.Multiset multiset1,com.google.common.collect.Multiset multiset2)",
+    "name": "intersection",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset1"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset2"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sum(com.google.common.collect.Multiset multiset1,com.google.common.collect.Multiset multiset2)",
+    "name": "sum",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset1"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset2"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "difference(com.google.common.collect.Multiset multiset1,com.google.common.collect.Multiset multiset2)",
+    "name": "difference",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset1"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset2"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsOccurrences(com.google.common.collect.Multiset superMultiset,com.google.common.collect.Multiset subMultiset)",
+    "name": "containsOccurrences",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "superMultiset"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "subMultiset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "retainOccurrences(com.google.common.collect.Multiset multisetToModify,com.google.common.collect.Multiset multisetToRetain)",
+    "name": "retainOccurrences",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multisetToModify"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multisetToRetain"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if multisetToModify was changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeOccurrences(com.google.common.collect.Multiset multisetToModify,java.lang.Iterable occurrencesToRemove)",
+    "name": "removeOccurrences",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multisetToModify"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "occurrencesToRemove"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if multisetToModify was changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeOccurrences(com.google.common.collect.Multiset multisetToModify,com.google.common.collect.Multiset occurrencesToRemove)",
+    "name": "removeOccurrences",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multisetToModify"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "occurrencesToRemove"
+      }
+    ],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if multisetToModify was changed as a result of this operation",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equalsImpl(com.google.common.collect.Multiset multiset,java.lang.Object object)",
+    "name": "equalsImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAllImpl(com.google.common.collect.Multiset self,java.util.Collection elements)",
+    "name": "addAllImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "elements"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAllImpl(com.google.common.collect.Multiset self,java.util.Collection elementsToRemove)",
+    "name": "removeAllImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "elementsToRemove"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "retainAllImpl(com.google.common.collect.Multiset self,java.util.Collection elementsToRetain)",
+    "name": "retainAllImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "elementsToRetain"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setCountImpl(com.google.common.collect.Multiset self,java.lang.Object element,int count)",
+    "name": "setCountImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "count"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setCountImpl(com.google.common.collect.Multiset self,java.lang.Object element,int oldCount,int newCount)",
+    "name": "setCountImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "self"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "element"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "oldCount"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newCount"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "iteratorImpl(com.google.common.collect.Multiset multiset)",
+    "name": "iteratorImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sizeImpl(com.google.common.collect.Multiset multiset)",
+    "name": "sizeImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cast(java.lang.Iterable iterable)",
+    "name": "cast",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.Multiset",
+      "name": "Multiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "iterable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "copyHighestCountFirst(com.google.common.collect.Multiset multiset)",
+    "name": "copyHighestCountFirst",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.Multisets",
+      "name": "Multisets",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.Multisets",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableMultiset",
+      "name": "ImmutableMultiset",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multiset",
+          "name": "Multiset",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

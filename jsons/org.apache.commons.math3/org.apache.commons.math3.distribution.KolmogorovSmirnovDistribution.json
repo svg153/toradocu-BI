@@ -1,0 +1,272 @@
+[
+  {
+    "signature": "KolmogorovSmirnovDistribution(int n)",
+    "name": "KolmogorovSmirnovDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+      "name": "KolmogorovSmirnovDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "Number of observations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n <= 0"
+        ],
+        "comment": "if n <= 0",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "cdf(double d)",
+    "name": "cdf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+      "name": "KolmogorovSmirnovDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the two-sided probability of P(D_n < d)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "(k - h) / m",
+          "k, m",
+          "0 <= h < 1"
+        ],
+        "comment": "if algorithm fails to convert h to a BigFraction in expressing d as (k - h) / m for integer k, m and 0 <= h < 1.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cdfExact(double d)",
+    "name": "cdfExact",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+      "name": "KolmogorovSmirnovDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the two-sided probability of P(D_n < d)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "(k - h) / m",
+          "k, m",
+          "0 <= h < 1"
+        ],
+        "comment": "if algorithm fails to convert h to a BigFraction in expressing d as (k - h) / m for integer k, m and 0 <= h < 1.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cdf(double d,boolean exact)",
+    "name": "cdf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+      "name": "KolmogorovSmirnovDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.KolmogorovSmirnovDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "exact"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "exact"
+        },
+        "comment": "whether the probability should be calculated exact using BigFraction everywhere at the expense of very slow execution time, or if double should be used convenient places to gain speed. Almost never choose true in real applications unless you are very sure; true is almost solely for verification purposes.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the two-sided probability of P(D_n < d)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "(k - h) / m",
+          "k, m",
+          "0 <= h < 1"
+        ],
+        "comment": "if algorithm fails to convert h to a BigFraction in expressing d as (k - h) / m for integer k, m and 0 <= h < 1.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

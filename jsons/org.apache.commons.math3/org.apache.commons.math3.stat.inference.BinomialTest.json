@@ -1,0 +1,329 @@
+[
+  {
+    "signature": "binomialTest(int numberOfTrials,int numberOfSuccesses,double probability,org.apache.commons.math3.stat.inference.AlternativeHypothesis alternativeHypothesis,double alpha)",
+    "name": "binomialTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.BinomialTest",
+      "name": "BinomialTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.BinomialTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "probability"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.inference.AlternativeHypothesis",
+          "name": "AlternativeHypothesis",
+          "isArray": false
+        },
+        "name": "alternativeHypothesis"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials performed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes observed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "probability"
+        },
+        "comment": "assumed probability of a single trial under the null hypothesis",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.inference.AlternativeHypothesis",
+            "name": "AlternativeHypothesis",
+            "isArray": false
+          },
+          "name": "alternativeHypothesis"
+        },
+        "comment": "type of hypothesis being evaluated (one- or two-sided)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials",
+          "numberOfSuccesses"
+        ],
+        "comment": "if numberOfTrials or numberOfSuccesses is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "probability"
+        ],
+        "comment": "if probability is not between 0 and 1",
+        "kind": "THROWS",
+        "condition": "(args[2]==0) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials",
+          "numberOfSuccesses",
+          "alternateHypothesis"
+        ],
+        "comment": "if numberOfTrials < numberOfSuccesses or if alternateHypothesis is null.",
+        "kind": "THROWS",
+        "condition": "args[0]<args[1] || args[3]==null"
+      }
+    ]
+  },
+  {
+    "signature": "binomialTest(int numberOfTrials,int numberOfSuccesses,double probability,org.apache.commons.math3.stat.inference.AlternativeHypothesis alternativeHypothesis)",
+    "name": "binomialTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.BinomialTest",
+      "name": "BinomialTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.BinomialTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrials"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfSuccesses"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "probability"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.inference.AlternativeHypothesis",
+          "name": "AlternativeHypothesis",
+          "isArray": false
+        },
+        "name": "alternativeHypothesis"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrials"
+        },
+        "comment": "number of trials performed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfSuccesses"
+        },
+        "comment": "number of successes observed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "probability"
+        },
+        "comment": "assumed probability of a single trial under the null hypothesis",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.inference.AlternativeHypothesis",
+            "name": "AlternativeHypothesis",
+            "isArray": false
+          },
+          "name": "alternativeHypothesis"
+        },
+        "comment": "type of hypothesis being evaluated (one- or two-sided)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials",
+          "numberOfSuccesses"
+        ],
+        "comment": "if numberOfTrials or numberOfSuccesses is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[1]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "probability"
+        ],
+        "comment": "if probability is not between 0 and 1",
+        "kind": "THROWS",
+        "condition": "(args[2]==0) == false"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfTrials",
+          "numberOfSuccesses",
+          "alternateHypothesis"
+        ],
+        "comment": "if numberOfTrials < numberOfSuccesses or if alternateHypothesis is null.",
+        "kind": "THROWS",
+        "condition": "args[0]<args[1] || args[3]==null"
+      }
+    ]
+  }
+]

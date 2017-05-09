@@ -1,0 +1,2524 @@
+[
+  {
+    "signature": "AbstractHashedMap()",
+    "name": "AbstractHashedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractHashedMap(int initialCapacity,float loadFactor,int threshold)",
+    "name": "AbstractHashedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "initialCapacity"
+      },
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "loadFactor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "threshold"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "initialCapacity"
+        },
+        "comment": "the initial capacity, must be a power of two",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "loadFactor"
+        },
+        "comment": "the load factor, must be > 0.0f and generally < 1.0f",
+        "kind": "PARAM",
+        "condition": "args[1]>0.0 && args[1]<1.0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "threshold"
+        },
+        "comment": "the threshold, must be sensible",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "AbstractHashedMap(int initialCapacity)",
+    "name": "AbstractHashedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "initialCapacity"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "initialCapacity"
+        },
+        "comment": "the initial capacity",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the initial capacity is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "AbstractHashedMap(int initialCapacity,float loadFactor)",
+    "name": "AbstractHashedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "initialCapacity"
+      },
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "loadFactor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "initialCapacity"
+        },
+        "comment": "the initial capacity",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "loadFactor"
+        },
+        "comment": "the load factor",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the initial capacity is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the load factor is less than or equal to zero",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "AbstractHashedMap(java.util.Map map)",
+    "name": "AbstractHashedMap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to copy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "init()",
+    "name": "init",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the mapped value, null if no match",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the size",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the map is currently size zero",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "containsKey(java.lang.Object key)",
+    "name": "containsKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to search for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map contains the key",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "containsValue(java.lang.Object value)",
+    "name": "containsValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to search for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the map contains the value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "put(java.lang.Object key,java.lang.Object value)",
+    "name": "put",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value previously mapped to this key, null if none",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "putAll(java.util.Map map)",
+    "name": "putAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the map is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "remove(java.lang.Object key)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the mapping to remove",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value mapped to the removed key, null if key not in map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "convertKey(java.lang.Object key)",
+    "name": "convertKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object",
+      "name": "Object",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key convert",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the converted key",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.get(java.lang.Object))"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hash(java.lang.Object key)",
+    "name": "hash",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to get a hash code for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the hash code",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.hashCode())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEqualKey(java.lang.Object key1,java.lang.Object key2)",
+    "name": "isEqualKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key1"
+        },
+        "comment": "the first key to compare passed in from outside",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key2"
+        },
+        "comment": "the second key extracted from the entry via entry.key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if equal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isEqualValue(java.lang.Object value1,java.lang.Object value2)",
+    "name": "isEqualValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value1"
+        },
+        "comment": "the first value to compare passed in from outside",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value2"
+        },
+        "comment": "the second value extracted from the entry via getValue()",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if equal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashIndex(int hashCode,int dataSize)",
+    "name": "hashIndex",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashCode"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "dataSize"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashCode"
+        },
+        "comment": "the hash code to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "dataSize"
+        },
+        "comment": "the size of the data to pick a bucket from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the bucket index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEntry(java.lang.Object key)",
+    "name": "getEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+      "name": "HashEntry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the entry, null if no match",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "updateEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry,java.lang.Object newValue)",
+    "name": "updateEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "newValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to update",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "newValue"
+        },
+        "comment": "the new value to store",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "reuseEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry,int hashIndex,int hashCode,java.lang.Object key,java.lang.Object value)",
+    "name": "reuseEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashCode"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to update, not null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashIndex"
+        },
+        "comment": "the index in the data array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashCode"
+        },
+        "comment": "the hash code of the key to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addMapping(int hashIndex,int hashCode,java.lang.Object key,java.lang.Object value)",
+    "name": "addMapping",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashCode"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashIndex"
+        },
+        "comment": "the index into the data array to store at",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashCode"
+        },
+        "comment": "the hash code of the key to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to add",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "createEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry next,int hashCode,java.lang.Object key,java.lang.Object value)",
+    "name": "createEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+      "name": "HashEntry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "next"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashCode"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "next"
+        },
+        "comment": "the next entry in sequence",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashCode"
+        },
+        "comment": "the hash code to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "the key to store",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the value to store",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the newly created entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry,int hashIndex)",
+    "name": "addEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashIndex"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to add",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashIndex"
+        },
+        "comment": "the index into the data array to store at",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeMapping(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry,int hashIndex,org.apache.commons.collections4.map.AbstractHashedMap.HashEntry previous)",
+    "name": "removeMapping",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "previous"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to remove",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashIndex"
+        },
+        "comment": "the index into the data structure",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "previous"
+        },
+        "comment": "the previous entry in the chain",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry,int hashIndex,org.apache.commons.collections4.map.AbstractHashedMap.HashEntry previous)",
+    "name": "removeEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "hashIndex"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "previous"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to remove",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "hashIndex"
+        },
+        "comment": "the index into the data structure",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "previous"
+        },
+        "comment": "the previous entry in the chain",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "destroyEntry(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry)",
+    "name": "destroyEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to destroy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "checkCapacity()",
+    "name": "checkCapacity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ensureCapacity(int newCapacity)",
+    "name": "ensureCapacity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newCapacity"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newCapacity"
+        },
+        "comment": "the new capacity of the array (a power of two, less or equal to max)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateNewCapacity(int proposedCapacity)",
+    "name": "calculateNewCapacity",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "proposedCapacity"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "proposedCapacity"
+        },
+        "comment": "the proposed capacity",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the normalized new capacity",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateThreshold(int newCapacity,float factor)",
+    "name": "calculateThreshold",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "newCapacity"
+      },
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "factor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "newCapacity"
+        },
+        "comment": "the new capacity",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "factor"
+        },
+        "comment": "the load factor",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the new resize threshold",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "entryNext(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry)",
+    "name": "entryNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+      "name": "HashEntry",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to query, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "the next field of the entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the entry is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "entryHashCode(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry)",
+    "name": "entryHashCode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to query, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "the hashCode field of the entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the entry is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "entryKey(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry)",
+    "name": "entryKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to query, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "the key field of the entry",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the entry is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "entryValue(org.apache.commons.collections4.map.AbstractHashedMap.HashEntry entry)",
+    "name": "entryValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+          "name": "HashEntry",
+          "isArray": false
+        },
+        "name": "entry"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap.HashEntry",
+            "name": "HashEntry",
+            "isArray": false
+          },
+          "name": "entry"
+        },
+        "comment": "the entry to query, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "the value field of the entry",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.values())"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the entry is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "mapIterator()",
+    "name": "mapIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MapIterator",
+      "name": "MapIterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the map iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "entrySet()",
+    "name": "entrySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the entrySet view",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createEntrySetIterator()",
+    "name": "createEntrySetIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the entrySet iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "keySet()",
+    "name": "keySet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Set",
+      "name": "Set",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the keySet view",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createKeySetIterator()",
+    "name": "createKeySetIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the keySet iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "values()",
+    "name": "values",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the values view",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createValuesIterator()",
+    "name": "createValuesIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the values iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "doWriteObject(java.io.ObjectOutputStream out)",
+    "name": "doWriteObject",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectOutputStream",
+          "name": "ObjectOutputStream",
+          "isArray": false
+        },
+        "name": "out"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectOutputStream",
+            "name": "ObjectOutputStream",
+            "isArray": false
+          },
+          "name": "out"
+        },
+        "comment": "the output stream",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs while writing tothe stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "doReadObject(java.io.ObjectInputStream in)",
+    "name": "doReadObject",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.ObjectInputStream",
+          "name": "ObjectInputStream",
+          "isArray": false
+        },
+        "name": "in"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.ObjectInputStream",
+            "name": "ObjectInputStream",
+            "isArray": false
+          },
+          "name": "in"
+        },
+        "comment": "the input stream",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs while reading from the stream",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassNotFoundException",
+          "name": "ClassNotFoundException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an object read from the stream can not be loaded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "clone()",
+    "name": "clone",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a shallow clone",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.InternalError",
+          "name": "InternalError",
+          "isArray": false
+        },
+        "codeTags": [
+          "AbstractMap.clone()"
+        ],
+        "comment": "if AbstractMap.clone() failed",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "equals(java.lang.Object obj)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "obj"
+        },
+        "comment": "the object to compare to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if equal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the hash code defined in the Map interface",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "name": "AbstractHashedMap",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.map.AbstractHashedMap",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string version of the map",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

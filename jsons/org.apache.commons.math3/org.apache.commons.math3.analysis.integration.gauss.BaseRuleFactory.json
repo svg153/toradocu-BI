@@ -1,0 +1,246 @@
+[
+  {
+    "signature": "getRule(int numberOfPoints)",
+    "name": "getRule",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+      "name": "BaseRuleFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.Pair",
+      "name": "Pair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfPoints"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfPoints"
+        },
+        "comment": "Number of integration points.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a copy of the integration rule.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "numberOfPoints < 1"
+        ],
+        "comment": "if numberOfPoints < 1.",
+        "kind": "THROWS",
+        "condition": "args[0]<1"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elements of the rule pair do not have the same length.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getRuleInternal(int numberOfPoints)",
+    "name": "getRuleInternal",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+      "name": "BaseRuleFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.Pair",
+      "name": "Pair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfPoints"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfPoints"
+        },
+        "comment": "Order of the rule to be retrieved.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the points and weights corresponding to the given order.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elements of the rule pair do not have the same length.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addRule(org.apache.commons.math3.util.Pair rule)",
+    "name": "addRule",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+      "name": "BaseRuleFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.Pair",
+          "name": "Pair",
+          "isArray": false
+        },
+        "name": "rule"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.Pair",
+            "name": "Pair",
+            "isArray": false
+          },
+          "name": "rule"
+        },
+        "comment": "Rule to be stored.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elements of the pair do not have the same length.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "computeRule(int numberOfPoints)",
+    "name": "computeRule",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+      "name": "BaseRuleFactory",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.integration.gauss.BaseRuleFactory",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.Pair",
+      "name": "Pair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfPoints"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfPoints"
+        },
+        "comment": "Order of the rule to be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the computed rule.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the elements of the pair do not have the same length.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

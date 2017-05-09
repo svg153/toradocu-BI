@@ -1,0 +1,161 @@
+[
+  {
+    "signature": "FreeColSavegameFile(java.io.File file)",
+    "name": "FreeColSavegameFile",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+      "name": "FreeColSavegameFile",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.io.FreeColSavegameFile",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.File",
+          "name": "File",
+          "isArray": false
+        },
+        "name": "file"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.io.File",
+            "name": "File",
+            "isArray": false
+          },
+          "name": "file"
+        },
+        "comment": "The base File.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSavegameVersion()",
+    "name": "getSavegameVersion",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+      "name": "FreeColSavegameFile",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.io.FreeColSavegameFile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The saved game version, or negative on error.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSavegameInputStream()",
+    "name": "getSavegameInputStream",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+      "name": "FreeColSavegameFile",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.io.FreeColSavegameFile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.BufferedInputStream",
+      "name": "BufferedInputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An InputStream to the file \"savegame.xml\" within this data file.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if thrown while opening the input stream.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getFreeColXMLReader()",
+    "name": "getFreeColXMLReader",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+      "name": "FreeColSavegameFile",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.io.FreeColSavegameFile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+      "name": "FreeColXMLReader",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The FreeColXMLReaderr.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "XMLStreamException"
+        ],
+        "comment": "if thrown while loading the game or if a XMLStreamException have been thrown by the parser.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getFileFilter()",
+    "name": "getFileFilter",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.io.FreeColSavegameFile",
+      "name": "FreeColSavegameFile",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.io.FreeColSavegameFile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.FileFilter",
+      "name": "FileFilter",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The saved game file filter.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

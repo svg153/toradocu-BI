@@ -1,0 +1,1995 @@
+[
+  {
+    "signature": "KolmogorovSmirnovTest()",
+    "name": "KolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "KolmogorovSmirnovTest(org.apache.commons.math3.random.RandomGenerator rng)",
+    "name": "KolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "random data generator used by monteCarloP(double, int, int, boolean, int)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution distribution,double[] data,boolean exact)",
+    "name": "kolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+          "name": "RealDistribution",
+          "isArray": false
+        },
+        "name": "distribution"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "exact"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+            "name": "RealDistribution",
+            "isArray": false
+          },
+          "name": "distribution"
+        },
+        "comment": "reference distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "sample being being evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "exact"
+        },
+        "comment": "whether or not to force exact computation of the p-value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the p-value associated with the null hypothesis that data is a sample from distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovStatistic(org.apache.commons.math3.distribution.RealDistribution distribution,double[] data)",
+    "name": "kolmogorovSmirnovStatistic",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+          "name": "RealDistribution",
+          "isArray": false
+        },
+        "name": "distribution"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+            "name": "RealDistribution",
+            "isArray": false
+          },
+          "name": "distribution"
+        },
+        "comment": "reference distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "sample being evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Kolmogorov-Smirnov statistic \\(D_n\\)",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.kolmogorovSmirnovStatistic(double[], double[]))"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovTest(double[] x,double[] y,boolean strict)",
+    "name": "kolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "strict"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "first sample dataset",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "second sample dataset",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "strict"
+        },
+        "comment": "whether or not the probability to compute is expressed as a strict inequality (ignored for large samples)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value associated with the null hypothesis that x and y represent samples from the same distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovTest(double[] x,double[] y)",
+    "name": "kolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "first sample dataset",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "second sample dataset",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value associated with the null hypothesis that x and y represent samples from the same distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovStatistic(double[] x,double[] y)",
+    "name": "kolmogorovSmirnovStatistic",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "first sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "second sample",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "test statistic \\(D_{n,m}\\) used to evaluate the null hypothesis that x and y represent samples from the same underlying distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if either x or y is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution distribution,double[] data)",
+    "name": "kolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+          "name": "RealDistribution",
+          "isArray": false
+        },
+        "name": "distribution"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+            "name": "RealDistribution",
+            "isArray": false
+          },
+          "name": "distribution"
+        },
+        "comment": "reference distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "sample being being evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the p-value associated with the null hypothesis that data is a sample from distribution",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution distribution,double[] data,double alpha)",
+    "name": "kolmogorovSmirnovTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+          "name": "RealDistribution",
+          "isArray": false
+        },
+        "name": "distribution"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "data"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.distribution.RealDistribution",
+            "name": "RealDistribution",
+            "isArray": false
+          },
+          "name": "distribution"
+        },
+        "comment": "reference distribution",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "data"
+        },
+        "comment": "sample being being evaluated",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the null hypothesis that data is a sample from distribution can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.InsufficientDataException",
+          "name": "InsufficientDataException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data does not have length at least 2",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "data"
+        ],
+        "comment": "if data is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "bootstrap(double[] x,double[] y,int iterations,boolean strict)",
+    "name": "bootstrap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "iterations"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "strict"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "first sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "second sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "iterations"
+        },
+        "comment": "number of bootstrap resampling iterations",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "strict"
+        },
+        "comment": "whether or not the null hypothesis is expressed as a strict inequality",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "estimated p-value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "bootstrap(double[] x,double[] y,int iterations)",
+    "name": "bootstrap",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "iterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "first sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "second sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "iterations"
+        },
+        "comment": "number of bootstrap resampling iterations",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "estimated p-value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cdf(double d,int n)",
+    "name": "cdf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "sample size",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "\\(P(D_n < d)\\)",
+      "kind": "RETURN",
+      "condition": "true ?result<{d}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "k, m"
+        ],
+        "comment": "if algorithm fails to convert h to a BigFraction in expressing d as \\((k - h) / m\\) for integer k, m and \\(0 \\le h < 1\\)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cdfExact(double d,int n)",
+    "name": "cdfExact",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "sample size",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "\\(P(D_n < d)\\)",
+      "kind": "RETURN",
+      "condition": "true ?result<{d}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "k, m"
+        ],
+        "comment": "if the algorithm fails to convert h to a BigFraction in expressing d as \\((k - h) / m\\) for integer k, m and \\(0 \\le h < 1\\)",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "cdf(double d,int n,boolean exact)",
+    "name": "cdf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "exact"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "statistic",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "exact"
+        },
+        "comment": "whether the probability should be calculated exact using BigFraction everywhere at the expense of very slow execution time, or if double should be used convenient places to gain speed. Almost never choose true in real applications unless you are very sure; true is almost solely for verification purposes.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "\\(P(D_n < d)\\)",
+      "kind": "RETURN",
+      "condition": "true ?result<{d}"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathArithmeticException",
+          "name": "MathArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "h",
+          "BigFraction",
+          "d",
+          "k, m"
+        ],
+        "comment": "if algorithm fails to convert h to a BigFraction in expressing d as \\((k - h) / m\\) for integer k, m and \\(0 \\le h < 1\\).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "pelzGood(double d,int n)",
+    "name": "pelzGood",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "value of d-statistic (x in [2])",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "sample size",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "\\(P(D_n < d)\\)",
+      "kind": "RETURN",
+      "condition": "true ?result<{d}"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "ksSum(double t,double tolerance,int maxIterations)",
+    "name": "ksSum",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "argument",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "Cauchy criterion for partial sums",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "maximum number of partial sums to compute",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "Kolmogorov sum evaluated at t",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.TooManyIterationsException",
+          "name": "TooManyIterationsException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the series does not converge",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "exactP(double d,int n,int m,boolean strict)",
+    "name": "exactP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "strict"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "D-statistic value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "first sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "second sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "strict"
+        },
+        "comment": "whether or not the probability to compute is expressed as a strict inequality",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "probability that a randomly selected m-n partition of m + n generates \\(D_{n,m}\\) greater than (resp. greater than or equal to) d",
+      "kind": "RETURN",
+      "condition": "true ? result==args[2]-args[1]"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "approximateP(double d,int n,int m)",
+    "name": "approximateP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "D-statistic value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "first sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "second sample size",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "approximate probability that a randomly selected m-n partition of m + n generates \\(D_{n,m}\\) greater than d",
+      "kind": "RETURN",
+      "condition": "true ? result==args[2]-args[1]"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "fillBooleanArrayRandomlyWithFixedNumberTrueValues(boolean[] b,int numberOfTrueValues,org.apache.commons.math3.random.RandomGenerator rng)",
+    "name": "fillBooleanArrayRandomlyWithFixedNumberTrueValues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean[]",
+          "name": "boolean[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "numberOfTrueValues"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean[]",
+            "name": "boolean[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "boolean",
+              "name": "boolean",
+              "isArray": false
+            }
+          },
+          "name": "b"
+        },
+        "comment": "boolean array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "numberOfTrueValues"
+        },
+        "comment": "number of true values the boolean array should finally have",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "random data generator",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "monteCarloP(double d,int n,int m,boolean strict,int iterations)",
+    "name": "monteCarloP",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+      "name": "KolmogorovSmirnovTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.KolmogorovSmirnovTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "m"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "strict"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "iterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "d"
+        },
+        "comment": "D-statistic value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "first sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "second sample size",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "iterations"
+        },
+        "comment": "number of random partitions to generate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "strict"
+        },
+        "comment": "whether or not the probability to compute is expressed as a strict inequality",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "proportion of randomly generated m-n partitions of m + n that result in \\(D_{n,m}\\) greater than (resp. greater than or equal to) d",
+      "kind": "RETURN",
+      "condition": "true ? result==args[2]-args[1]"
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "signature": "ByteSink()",
+    "name": "ByteSink",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asCharSink(java.nio.charset.Charset charset)",
+    "name": "asCharSink",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSink",
+      "name": "CharSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "openStream()",
+    "name": "openStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.OutputStream",
+      "name": "OutputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "openBufferedStream()",
+    "name": "openBufferedStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.OutputStream",
+      "name": "OutputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "write(byte[] bytes)",
+    "name": "write",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O occurs in the process of writing to this sink",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "writeFrom(java.io.InputStream input)",
+    "name": "writeFrom",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSink",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.InputStream",
+          "name": "InputStream",
+          "isArray": false
+        },
+        "name": "input"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "input"
+        ],
+        "comment": "if an I/O occurs in the process of reading from input or writing to this sink",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

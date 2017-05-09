@@ -1,0 +1,856 @@
+[
+  {
+    "signature": "getExitingExecutorService(java.util.concurrent.ThreadPoolExecutor executor,long terminationTimeout,java.util.concurrent.TimeUnit timeUnit)",
+    "name": "getExitingExecutorService",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ExecutorService",
+      "name": "ExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ThreadPoolExecutor",
+          "name": "ThreadPoolExecutor",
+          "isArray": false
+        },
+        "name": "executor"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "terminationTimeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ThreadPoolExecutor",
+            "name": "ThreadPoolExecutor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor to modify to make sure it exits when the application is finished",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "terminationTimeout"
+        },
+        "comment": "how long to wait for the executor to finish before terminating the JVM",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeUnit"
+        },
+        "comment": "unit of time for the time parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable version of the input which will not hang the JVM",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getExitingScheduledExecutorService(java.util.concurrent.ScheduledThreadPoolExecutor executor,long terminationTimeout,java.util.concurrent.TimeUnit timeUnit)",
+    "name": "getExitingScheduledExecutorService",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+      "name": "ScheduledExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ScheduledThreadPoolExecutor",
+          "name": "ScheduledThreadPoolExecutor",
+          "isArray": false
+        },
+        "name": "executor"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "terminationTimeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ScheduledThreadPoolExecutor",
+            "name": "ScheduledThreadPoolExecutor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor to modify to make sure it exits when the application is finished",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "terminationTimeout"
+        },
+        "comment": "how long to wait for the executor to finish before terminating the JVM",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeUnit"
+        },
+        "comment": "unit of time for the time parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable version of the input which will not hang the JVM",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addDelayedShutdownHook(java.util.concurrent.ExecutorService service,long terminationTimeout,java.util.concurrent.TimeUnit timeUnit)",
+    "name": "addDelayedShutdownHook",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ExecutorService",
+          "name": "ExecutorService",
+          "isArray": false
+        },
+        "name": "service"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "terminationTimeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "timeUnit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ExecutorService",
+            "name": "ExecutorService",
+            "isArray": false
+          },
+          "name": "service"
+        },
+        "comment": "ExecutorService which uses daemon threads",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "terminationTimeout"
+        },
+        "comment": "how long to wait for the executor to finish before terminating the JVM",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "timeUnit"
+        },
+        "comment": "unit of time for the time parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getExitingExecutorService(java.util.concurrent.ThreadPoolExecutor executor)",
+    "name": "getExitingExecutorService",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ExecutorService",
+      "name": "ExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ThreadPoolExecutor",
+          "name": "ThreadPoolExecutor",
+          "isArray": false
+        },
+        "name": "executor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ThreadPoolExecutor",
+            "name": "ThreadPoolExecutor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor to modify to make sure it exits when the application is finished",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable version of the input which will not hang the JVM",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getExitingScheduledExecutorService(java.util.concurrent.ScheduledThreadPoolExecutor executor)",
+    "name": "getExitingScheduledExecutorService",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+      "name": "ScheduledExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ScheduledThreadPoolExecutor",
+          "name": "ScheduledThreadPoolExecutor",
+          "isArray": false
+        },
+        "name": "executor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ScheduledThreadPoolExecutor",
+            "name": "ScheduledThreadPoolExecutor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "the executor to modify to make sure it exits when the application is finished",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable version of the input which will not hang the JVM",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sameThreadExecutor()",
+    "name": "sameThreadExecutor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newDirectExecutorService()",
+    "name": "newDirectExecutorService",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "directExecutor()",
+    "name": "directExecutor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.Executor",
+      "name": "Executor",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "listeningDecorator(java.util.concurrent.ExecutorService delegate)",
+    "name": "listeningDecorator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+      "name": "ListeningExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ExecutorService",
+          "name": "ExecutorService",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "listeningDecorator(java.util.concurrent.ScheduledExecutorService delegate)",
+    "name": "listeningDecorator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.ListeningScheduledExecutorService",
+      "name": "ListeningScheduledExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+          "name": "ScheduledExecutorService",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "invokeAnyImpl(com.google.common.util.concurrent.ListeningExecutorService executorService,java.util.Collection tasks,boolean timed,long nanos)",
+    "name": "invokeAnyImpl",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.util.concurrent.ListeningExecutorService",
+          "name": "ListeningExecutorService",
+          "isArray": false
+        },
+        "name": "executorService"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "tasks"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "timed"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "nanos"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "platformThreadFactory()",
+    "name": "platformThreadFactory",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ThreadFactory",
+      "name": "ThreadFactory",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "newThread(java.lang.String name,java.lang.Runnable runnable)",
+    "name": "newThread",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Thread",
+      "name": "Thread",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Runnable",
+          "name": "Runnable",
+          "isArray": false
+        },
+        "name": "runnable"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "renamingDecorator(java.util.concurrent.Executor executor,com.google.common.base.Supplier nameSupplier)",
+    "name": "renamingDecorator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.Executor",
+      "name": "Executor",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.Executor",
+          "name": "Executor",
+          "isArray": false
+        },
+        "name": "executor"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "nameSupplier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.Executor",
+            "name": "Executor",
+            "isArray": false
+          },
+          "name": "executor"
+        },
+        "comment": "The executor to decorate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "nameSupplier"
+        },
+        "comment": "The source of names for each task",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "renamingDecorator(java.util.concurrent.ExecutorService service,com.google.common.base.Supplier nameSupplier)",
+    "name": "renamingDecorator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ExecutorService",
+      "name": "ExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ExecutorService",
+          "name": "ExecutorService",
+          "isArray": false
+        },
+        "name": "service"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "nameSupplier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ExecutorService",
+            "name": "ExecutorService",
+            "isArray": false
+          },
+          "name": "service"
+        },
+        "comment": "The executor to decorate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "nameSupplier"
+        },
+        "comment": "The source of names for each task",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "renamingDecorator(java.util.concurrent.ScheduledExecutorService service,com.google.common.base.Supplier nameSupplier)",
+    "name": "renamingDecorator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+      "name": "ScheduledExecutorService",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+          "name": "ScheduledExecutorService",
+          "isArray": false
+        },
+        "name": "service"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "nameSupplier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ScheduledExecutorService",
+            "name": "ScheduledExecutorService",
+            "isArray": false
+          },
+          "name": "service"
+        },
+        "comment": "The executor to decorate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Supplier",
+            "name": "Supplier",
+            "isArray": false
+          },
+          "name": "nameSupplier"
+        },
+        "comment": "The source of names for each task",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "shutdownAndAwaitTermination(java.util.concurrent.ExecutorService service,long timeout,java.util.concurrent.TimeUnit unit)",
+    "name": "shutdownAndAwaitTermination",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.MoreExecutors",
+      "name": "MoreExecutors",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.MoreExecutors",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.ExecutorService",
+          "name": "ExecutorService",
+          "isArray": false
+        },
+        "name": "service"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "timeout"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.ExecutorService",
+            "name": "ExecutorService",
+            "isArray": false
+          },
+          "name": "service"
+        },
+        "comment": "the ExecutorService to shut down",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "timeout"
+        },
+        "comment": "the maximum time to wait for the ExecutorService to terminate",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the time unit of the timeout argument",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if the ExecutorService was terminated successfully, false the call timed out or was interrupted",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

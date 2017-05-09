@@ -1,0 +1,109 @@
+[
+  {
+    "signature": "Escaper()",
+    "name": "Escaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escaper",
+      "name": "Escaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escaper",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(java.lang.String string)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escaper",
+      "name": "Escaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "string"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "string"
+        },
+        "comment": "the literal string to be escaped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the escaped form of string",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "string"
+        ],
+        "comment": "if string is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "string"
+        ],
+        "comment": "if string contains badly formed UTF-16 or cannot be escaped for any other reason",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.CharSequence)"
+      }
+    ]
+  },
+  {
+    "signature": "asFunction()",
+    "name": "asFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.Escaper",
+      "name": "Escaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.Escaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

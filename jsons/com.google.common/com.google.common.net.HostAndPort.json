@@ -1,0 +1,459 @@
+[
+  {
+    "signature": "getHostText()",
+    "name": "getHostText",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasPort()",
+    "name": "hasPort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPort()",
+    "name": "getPort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a validated port number, in the range [0..65535]",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "withDefaultPort(int)"
+        ],
+        "comment": "if no port is defined. You can use withDefaultPort(int) to prevent this from occurring.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getPortOrDefault(int defaultPort)",
+    "name": "getPortOrDefault",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "defaultPort"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "fromParts(java.lang.String host,int port)",
+    "name": "fromParts",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "port"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "the host string to parse. Must not contain a port number.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "port"
+        },
+        "comment": "a port number from [0..65535]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "if parsing was successful, a populated HostAndPort object.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "host",
+          "port"
+        ],
+        "comment": "if host contains a port number, or port is out of range.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "fromHost(java.lang.String host)",
+    "name": "fromHost",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "host"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "host"
+        },
+        "comment": "the host-only string to parse. Must not contain a port number.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "if parsing was successful, a populated HostAndPort object.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "host"
+        ],
+        "comment": "if host contains a port number.",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.CharSequence)"
+      }
+    ]
+  },
+  {
+    "signature": "fromString(java.lang.String hostPortString)",
+    "name": "fromString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "hostPortString"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "hostPortString"
+        },
+        "comment": "the input string to parse.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "if parsing was successful, a populated HostAndPort object.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if nothing meaningful could be parsed.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "withDefaultPort(int defaultPort)",
+    "name": "withDefaultPort",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "defaultPort"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "defaultPort"
+        },
+        "comment": "a port number, from [0..65535]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a HostAndPort instance, guaranteed to have a defined port.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "requireBracketsForIPv6()",
+    "name": "requireBracketsForIPv6",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "this, to enable chaining of calls.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if bracketless IPv6 is detected.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "equals(java.lang.Object other)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "other",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.HostAndPort",
+      "name": "HostAndPort",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.HostAndPort",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

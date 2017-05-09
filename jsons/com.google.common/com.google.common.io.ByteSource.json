@@ -1,0 +1,716 @@
+[
+  {
+    "signature": "ByteSource()",
+    "name": "ByteSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "asCharSource(java.nio.charset.Charset charset)",
+    "name": "asCharSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.CharSource",
+      "name": "CharSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "openStream()",
+    "name": "openStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.InputStream",
+      "name": "InputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "openBufferedStream()",
+    "name": "openBufferedStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.InputStream",
+      "name": "InputStream",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of opening the stream",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "slice(long offset,long length)",
+    "name": "slice",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "offset"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "length"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "offset",
+          "length"
+        ],
+        "comment": "if offset or length is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "isEmpty()",
+    "name": "isEmpty",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "sizeIfKnown()",
+    "name": "sizeIfKnown",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Optional",
+      "name": "Optional",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading the size of this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copyTo(java.io.OutputStream output)",
+    "name": "copyTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.OutputStream",
+          "name": "OutputStream",
+          "isArray": false
+        },
+        "name": "output"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "output"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or writing to output",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "copyTo(com.google.common.io.ByteSink sink)",
+    "name": "copyTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteSink",
+          "name": "ByteSink",
+          "isArray": false
+        },
+        "name": "sink"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sink"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or writing to sink",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "read()",
+    "name": "read",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading from this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "read(com.google.common.io.ByteProcessor processor)",
+    "name": "read",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteProcessor",
+          "name": "ByteProcessor",
+          "isArray": false
+        },
+        "name": "processor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "processor",
+          "IOException"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or if processor throws an IOException",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hash(com.google.common.hash.HashFunction hashFunction)",
+    "name": "hash",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.hash.HashCode",
+      "name": "HashCode",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.hash.HashFunction",
+          "name": "HashFunction",
+          "isArray": false
+        },
+        "name": "hashFunction"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an I/O error occurs in the process of reading from this source",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "contentEquals(com.google.common.io.ByteSource other)",
+    "name": "contentEquals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteSource",
+          "name": "ByteSource",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.io.IOException",
+          "name": "IOException",
+          "isArray": false
+        },
+        "codeTags": [
+          "other"
+        ],
+        "comment": "if an I/O error occurs in the process of reading from this source or other",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "concat(java.lang.Iterable sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a ByteSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "concat(java.util.Iterator sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a ByteSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sources",
+          "null"
+        ],
+        "comment": "if any of sources is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "concat(com.google.common.io.ByteSource[] sources)",
+    "name": "concat",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.ByteSource[]",
+          "name": "ByteSource[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "com.google.common.io.ByteSource",
+            "name": "ByteSource",
+            "isArray": false
+          }
+        },
+        "name": "sources"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.io.ByteSource[]",
+            "name": "ByteSource[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "com.google.common.io.ByteSource",
+              "name": "ByteSource",
+              "isArray": false
+            }
+          },
+          "name": "sources"
+        },
+        "comment": "the sources to concatenate",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a ByteSource containing the concatenated data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "sources",
+          "null"
+        ],
+        "comment": "if any of sources is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "wrap(byte[] b)",
+    "name": "wrap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "empty()",
+    "name": "empty",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.ByteSource",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

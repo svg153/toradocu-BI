@@ -1,0 +1,809 @@
+[
+  {
+    "signature": "roundIntermediate(double x,java.math.RoundingMode mode)",
+    "name": "roundIntermediate",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "roundToInt(double x,java.math.RoundingMode mode)",
+    "name": "roundToInt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "x",
+          "Integer.MIN_VALUE",
+          "Integer.MAX_VALUE",
+          "x",
+          "mode",
+          "RoundingMode.UNNECESSARY"
+        ],
+        "comment": "if x is infinite or NaN x, after being rounded to a mathematical integer using the specified rounding mode, is either less than Integer.MIN_VALUE or greater than Integer.MAX_VALUE x is not a mathematical integer and mode is RoundingMode.UNNECESSARY",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "roundToLong(double x,java.math.RoundingMode mode)",
+    "name": "roundToLong",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "x",
+          "Long.MIN_VALUE",
+          "Long.MAX_VALUE",
+          "x",
+          "mode",
+          "RoundingMode.UNNECESSARY"
+        ],
+        "comment": "if x is infinite or NaN x, after being rounded to a mathematical integer using the specified rounding mode, is either less than Long.MIN_VALUE or greater than Long.MAX_VALUE x is not a mathematical integer and mode is RoundingMode.UNNECESSARY",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "roundToBigInteger(double x,java.math.RoundingMode mode)",
+    "name": "roundToBigInteger",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.math.BigInteger",
+      "name": "BigInteger",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ArithmeticException",
+          "name": "ArithmeticException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "x",
+          "mode",
+          "RoundingMode.UNNECESSARY"
+        ],
+        "comment": "if x is infinite or NaN x is not a mathematical integer and mode is RoundingMode.UNNECESSARY",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isPowerOfTwo(double x)",
+    "name": "isPowerOfTwo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "log2(double x)",
+    "name": "log2",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "log2(double x,java.math.RoundingMode mode)",
+    "name": "log2",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.math.RoundingMode",
+          "name": "RoundingMode",
+          "isArray": false
+        },
+        "name": "mode"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x <= 0.0",
+          "x",
+          "x"
+        ],
+        "comment": "if x <= 0.0, x is NaN, or x is infinite",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isMathematicalInteger(double x)",
+    "name": "isMathematicalInteger",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "factorial(int n)",
+    "name": "factorial",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n < 0"
+        ],
+        "comment": "if n < 0",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      }
+    ]
+  },
+  {
+    "signature": "fuzzyEquals(double a,double b,double tolerance)",
+    "name": "fuzzyEquals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "tolerance",
+          "< 0"
+        ],
+        "comment": "if tolerance is < 0 or NaN",
+        "kind": "THROWS",
+        "condition": "args[2]<0"
+      }
+    ]
+  },
+  {
+    "signature": "fuzzyCompare(double a,double b,double tolerance)",
+    "name": "fuzzyCompare",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "a"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "b"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "tolerance",
+          "< 0"
+        ],
+        "comment": "if tolerance is < 0 or NaN",
+        "kind": "THROWS",
+        "condition": "args[2]<0"
+      }
+    ]
+  },
+  {
+    "signature": "mean(double[] values)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "a nonempty series of values",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is empty or contains any non-finite value",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "mean(int[] values)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "a nonempty series of values",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is empty",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "mean(long[] values)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "a nonempty series of values, which will be converted to double values (this may cause loss of precision for longs of magnitude over 2^53 (slightly over 9e15))",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is empty",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      }
+    ]
+  },
+  {
+    "signature": "mean(java.lang.Iterable values)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "a nonempty series of values, which will be converted to double values (this may cause loss of precision)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is empty or contains any non-finite value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "mean(java.util.Iterator values)",
+    "name": "mean",
+    "containingClass": {
+      "qualifiedName": "com.google.common.math.DoubleMath",
+      "name": "DoubleMath",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.math.DoubleMath",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "values"
+        },
+        "comment": "a nonempty series of values, which will be converted to double values (this may cause loss of precision)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is empty or contains any non-finite value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

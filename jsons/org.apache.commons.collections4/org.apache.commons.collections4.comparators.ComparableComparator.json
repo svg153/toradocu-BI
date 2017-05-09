@@ -1,0 +1,208 @@
+[
+  {
+    "signature": "ComparableComparator()",
+    "name": "ComparableComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.comparators.ComparableComparator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "comparableComparator()",
+    "name": "comparableComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.comparators.ComparableComparator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the singleton ComparableComparator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "compare(java.lang.Comparable obj1,java.lang.Comparable obj2)",
+    "name": "compare",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.comparators.ComparableComparator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Comparable",
+          "name": "Comparable",
+          "isArray": false
+        },
+        "name": "obj1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Comparable",
+          "name": "Comparable",
+          "isArray": false
+        },
+        "name": "obj2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Comparable",
+            "name": "Comparable",
+            "isArray": false
+          },
+          "name": "obj1"
+        },
+        "comment": "the first object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Comparable",
+            "name": "Comparable",
+            "isArray": false
+          },
+          "name": "obj2"
+        },
+        "comment": "the second object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "negative if obj1 is less, positive if greater, zero if equal",
+      "kind": "RETURN",
+      "condition": "result>0"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null",
+          "((Comparable)obj1).compareTo(obj2)"
+        ],
+        "comment": "if obj1 is null, or when ((Comparable)obj1).compareTo(obj2) does",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Comparable",
+          "((Comparable)obj1).compareTo(obj2)"
+        ],
+        "comment": "if obj1 is not a Comparable, or when ((Comparable)obj1).compareTo(obj2) does",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.comparators.ComparableComparator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a hash code for this comparator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object object)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.comparators.ComparableComparator",
+      "name": "ComparableComparator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.comparators.ComparableComparator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the object to compare with",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if equal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

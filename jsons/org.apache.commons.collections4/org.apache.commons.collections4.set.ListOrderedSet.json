@@ -1,0 +1,904 @@
+[
+  {
+    "signature": "ListOrderedSet()",
+    "name": "ListOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ListOrderedSet(java.util.Set set)",
+    "name": "ListOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "ListOrderedSet(java.util.Set set,java.util.List list)",
+    "name": "ListOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set or list is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "listOrderedSet(java.util.Set set,java.util.List list)",
+    "name": "listOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must be empty and not null",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must be empty and not null",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new ordered set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set or list is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either the set or list is not empty",
+        "kind": "THROWS",
+        "condition": "(args[0].isEmpty()) == false || (args[1].isEmpty()) == false"
+      }
+    ]
+  },
+  {
+    "signature": "listOrderedSet(java.util.Set set)",
+    "name": "listOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Set",
+          "name": "Set",
+          "isArray": false
+        },
+        "name": "set"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Set",
+            "name": "Set",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new ordered set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "listOrderedSet(java.util.List list)",
+    "name": "listOrderedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "list"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "list"
+        },
+        "comment": "the list to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new ordered set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if list is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "asList()",
+    "name": "asList",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an unmodifiable list view",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "iterator()",
+    "name": "iterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.OrderedIterator",
+      "name": "OrderedIterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(java.lang.Object object)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAll(java.util.Collection coll)",
+    "name": "addAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(java.lang.Object object)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeAll(java.util.Collection coll)",
+    "name": "removeAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "retainAll(java.util.Collection coll)",
+    "name": "retainAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toArray()",
+    "name": "toArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object[]",
+      "name": "Object[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "java.lang.Object",
+        "name": "Object",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toArray(java.lang.Object[] a)",
+    "name": "toArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T[]",
+      "name": "T[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "T",
+        "name": "T",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "a"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "get(int index)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the position of the element in the ordered Set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the element at position index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indexOf(java.lang.Object object)",
+    "name": "indexOf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the element to search for",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the index of the first occurrence of the object, or -1 if this ordered set does not contain this object",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "add(int index,java.lang.Object object)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index at which the element is to be inserted",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "the element to be inserted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addAll(int index,java.util.Collection coll)",
+    "name": "addAll",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "coll"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the position to insert the elements",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "coll"
+        },
+        "comment": "the collection containing the elements to be inserted",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this ordered set changed as a result of the call",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(int index)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index of the element to be removed",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the element that has been remove from the ordered set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.ListOrderedSet",
+      "name": "ListOrderedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.ListOrderedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string representation of the ordered set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "signature": "FilterIterator()",
+    "name": "FilterIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "FilterIterator(java.util.Iterator iterator)",
+    "name": "FilterIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "FilterIterator(java.util.Iterator iterator,org.apache.commons.collections4.Predicate predicate)",
+    "name": "FilterIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if there is another object that matches the predicate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either the iterator or predicate are null",
+        "kind": "THROWS",
+        "condition": "target.getIterator()==null || target.getPredicate()==null"
+      }
+    ]
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next object which matches the given predicate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if either the iterator or predicate are null",
+        "kind": "THROWS",
+        "condition": "target.getIterator()==null || target.getPredicate()==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there are no more elements that match the predicate",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "hasNext()"
+        ],
+        "comment": "if hasNext() has already been called.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getIterator()",
+    "name": "getIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the iterator",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setIterator(java.util.Iterator iterator)",
+    "name": "setIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Iterator",
+          "name": "Iterator",
+          "isArray": false
+        },
+        "name": "iterator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Iterator",
+            "name": "Iterator",
+            "isArray": false
+          },
+          "name": "iterator"
+        },
+        "comment": "the iterator to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPredicate()",
+    "name": "getPredicate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Predicate",
+      "name": "Predicate",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the predicate",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setPredicate(org.apache.commons.collections4.Predicate predicate)",
+    "name": "setPredicate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.FilterIterator",
+      "name": "FilterIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.FilterIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

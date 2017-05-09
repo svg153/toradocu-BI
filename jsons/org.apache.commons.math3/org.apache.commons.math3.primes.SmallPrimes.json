@@ -1,0 +1,253 @@
+[
+  {
+    "signature": "smallTrialDivision(int n,java.util.List factors)",
+    "name": "smallTrialDivision",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.SmallPrimes",
+      "name": "SmallPrimes",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.SmallPrimes",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "factors"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the number to factor, must be > 0.",
+        "kind": "PARAM",
+        "condition": "args[0]>0"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "factors"
+        },
+        "comment": "the list where to add the factors.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the part of n which remains to be factored, it is either a prime or a semi-prime",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "boundedTrialDivision(int n,int maxFactor,java.util.List factors)",
+    "name": "boundedTrialDivision",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.SmallPrimes",
+      "name": "SmallPrimes",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.SmallPrimes",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxFactor"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "factors"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the number to factorize, must be >= PRIME_LAST+2 and must not contain any factor below PRIME_LAST+2",
+        "kind": "PARAM",
+        "condition": "args[0]>=target.PRIMES_LAST"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxFactor"
+        },
+        "comment": "the upper bound of trial division: if it is reached, the method gives up and returns n.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "factors"
+        },
+        "comment": "the list where to add the factors.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "n or 1 if factorization is completed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "trialDivision(int n)",
+    "name": "trialDivision",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.SmallPrimes",
+      "name": "SmallPrimes",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.SmallPrimes",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "the number to factor",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the list of prime factors of n",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "millerRabinPrimeTest(int n)",
+    "name": "millerRabinPrimeTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.primes.SmallPrimes",
+      "name": "SmallPrimes",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.primes.SmallPrimes",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "n"
+        },
+        "comment": "number to test: an odd integer ≥ 3",
+        "kind": "PARAM",
+        "condition": "args[0]>=3"
+      }
+    ],
+    "returnTag": {
+      "comment": "true if n is prime. false if n is definitely composite.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "signature": "InputHandler(net.sf.freecol.server.FreeColServer freeColServer)",
+    "name": "InputHandler",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.FreeColServer",
+          "name": "FreeColServer",
+          "isArray": false
+        },
+        "name": "freeColServer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.FreeColServer",
+            "name": "FreeColServer",
+            "isArray": false
+          },
+          "name": "freeColServer"
+        },
+        "comment": "The main server object.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "register(java.lang.String name,net.sf.freecol.common.networking.NetworkRequestHandler handler)",
+    "name": "register",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.NetworkRequestHandler",
+          "name": "NetworkRequestHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.NetworkRequestHandler",
+            "name": "NetworkRequestHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "The handler.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "unregister(java.lang.String name,net.sf.freecol.common.networking.NetworkRequestHandler handler)",
+    "name": "unregister",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "name"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.NetworkRequestHandler",
+          "name": "NetworkRequestHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "name"
+        },
+        "comment": "The name.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.NetworkRequestHandler",
+            "name": "NetworkRequestHandler",
+            "isArray": false
+          },
+          "name": "handler"
+        },
+        "comment": "The handler.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the supplied handler was actually removed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "handle(net.sf.freecol.common.networking.Connection connection,org.w3c.dom.Element element)",
+    "name": "handle",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection the message was received on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The root element of the message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The reply.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createErrorReply(java.lang.String message)",
+    "name": "createErrorReply",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "message"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "message"
+        },
+        "comment": "The error message.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "An error message.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "logout(net.sf.freecol.common.networking.Connection connection,org.w3c.dom.Element element)",
+    "name": "logout",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.control.InputHandler",
+      "name": "InputHandler",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.control.InputHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.w3c.dom.Element",
+      "name": "Element",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.networking.Connection",
+          "name": "Connection",
+          "isArray": false
+        },
+        "name": "connection"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.networking.Connection",
+            "name": "Connection",
+            "isArray": false
+          },
+          "name": "connection"
+        },
+        "comment": "The Connection the message was received on.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "The Element (root element in a DOM-parsed XML tree) that holds all the information.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The reply.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

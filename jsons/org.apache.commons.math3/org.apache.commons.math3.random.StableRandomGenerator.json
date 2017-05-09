@@ -1,0 +1,133 @@
+[
+  {
+    "signature": "StableRandomGenerator(org.apache.commons.math3.random.RandomGenerator generator,double alpha,double beta)",
+    "name": "StableRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.StableRandomGenerator",
+      "name": "StableRandomGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.StableRandomGenerator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "beta"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "underlying random generator to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "Stability parameter. Must be in range (0, 2]",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "beta"
+        },
+        "comment": "Skewness parameter. Must be in range [-1, 1]",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if generator is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha <= 0",
+          "alpha > 2",
+          "beta < -1",
+          "beta > 1"
+        ],
+        "comment": "if alpha <= 0 or alpha > 2 or beta < -1 or beta > 1",
+        "kind": "THROWS",
+        "condition": "args[1]<=0 || args[2]>1 || args[2]<-1"
+      }
+    ]
+  },
+  {
+    "signature": "nextNormalizedDouble()",
+    "name": "nextNormalizedDouble",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.random.StableRandomGenerator",
+      "name": "StableRandomGenerator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.random.StableRandomGenerator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a random scalar with zero location and unit scale",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,481 @@
+[
+  {
+    "signature": "Invokable(java.lang.reflect.AccessibleObject member)",
+    "name": "Invokable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.reflect.AccessibleObject",
+          "name": "AccessibleObject",
+          "isArray": false
+        },
+        "name": "member"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "from(java.lang.reflect.Method method)",
+    "name": "from",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.reflect.Method",
+          "name": "Method",
+          "isArray": false
+        },
+        "name": "method"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "from(java.lang.reflect.Constructor constructor)",
+    "name": "from",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.reflect.Constructor",
+          "name": "Constructor",
+          "isArray": false
+        },
+        "name": "constructor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isOverridable()",
+    "name": "isOverridable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isVarArgs()",
+    "name": "isVarArgs",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "invoke(java.lang.Object receiver,java.lang.Object[] args)",
+    "name": "invoke",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "R",
+      "name": "R",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "receiver",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "args"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalAccessException",
+          "name": "IllegalAccessException",
+          "isArray": false
+        },
+        "codeTags": [
+          "Constructor"
+        ],
+        "comment": "if this Constructor object enforces Java language access control and the underlying method or constructor is inaccessible.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of actual and formal parameters differ; if an unwrapping conversion for primitive arguments fails; or if, after possible unwrapping, a parameter value cannot be converted to the corresponding formal parameter type by a method invocation conversion.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.reflect.InvocationTargetException",
+          "name": "InvocationTargetException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the underlying method or constructor throws an exception.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getReturnType()",
+    "name": "getReturnType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.TypeToken",
+      "name": "TypeToken",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getParameters()",
+    "name": "getParameters",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableList",
+      "name": "ImmutableList",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getExceptionTypes()",
+    "name": "getExceptionTypes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableList",
+      "name": "ImmutableList",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "returning(java.lang.Class returnType)",
+    "name": "returning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "returnType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "returning(com.google.common.reflect.TypeToken returnType)",
+    "name": "returning",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.reflect.TypeToken",
+          "name": "TypeToken",
+          "isArray": false
+        },
+        "name": "returnType"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getDeclaringClass()",
+    "name": "getDeclaringClass",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Class",
+      "name": "Class",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOwnerType()",
+    "name": "getOwnerType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.reflect.TypeToken",
+      "name": "TypeToken",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "invokeInternal(java.lang.Object receiver,java.lang.Object[] args)",
+    "name": "invokeInternal",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object",
+      "name": "Object",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "receiver",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object[]",
+          "name": "Object[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          }
+        },
+        "name": "args"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGenericParameterTypes()",
+    "name": "getGenericParameterTypes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.reflect.Type[]",
+      "name": "Type[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "java.lang.reflect.Type",
+        "name": "Type",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGenericExceptionTypes()",
+    "name": "getGenericExceptionTypes",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.reflect.Type[]",
+      "name": "Type[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "java.lang.reflect.Type",
+        "name": "Type",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getParameterAnnotations()",
+    "name": "getParameterAnnotations",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.annotation.Annotation[][]",
+      "name": "Annotation[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "java.lang.annotation.Annotation",
+        "name": "Annotation",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGenericReturnType()",
+    "name": "getGenericReturnType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Invokable",
+      "name": "Invokable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Invokable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.reflect.Type",
+      "name": "Type",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "signature": "compose(com.google.common.base.Function function,com.google.common.base.Supplier supplier)",
+    "name": "compose",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Supplier",
+      "name": "Supplier",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "function"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "supplier"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "memoize(com.google.common.base.Supplier delegate)",
+    "name": "memoize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Supplier",
+      "name": "Supplier",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "memoizeWithExpiration(com.google.common.base.Supplier delegate,long duration,java.util.concurrent.TimeUnit unit)",
+    "name": "memoizeWithExpiration",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Supplier",
+      "name": "Supplier",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "delegate"
+      },
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "duration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "duration"
+        },
+        "comment": "the length of time after a value is created that it should stop being returned by subsequent get() calls",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the unit that duration is expressed in",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "duration"
+        ],
+        "comment": "if duration is not positive",
+        "kind": "THROWS",
+        "condition": "(args[1]>0) == false"
+      }
+    ]
+  },
+  {
+    "signature": "ofInstance(java.lang.Object instance)",
+    "name": "ofInstance",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Supplier",
+      "name": "Supplier",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "instance",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "synchronizedSupplier(com.google.common.base.Supplier delegate)",
+    "name": "synchronizedSupplier",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Supplier",
+      "name": "Supplier",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Supplier",
+          "name": "Supplier",
+          "isArray": false
+        },
+        "name": "delegate"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "supplierFunction()",
+    "name": "supplierFunction",
+    "containingClass": {
+      "qualifiedName": "com.google.common.base.Suppliers",
+      "name": "Suppliers",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.base.Suppliers",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Function",
+      "name": "Function",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

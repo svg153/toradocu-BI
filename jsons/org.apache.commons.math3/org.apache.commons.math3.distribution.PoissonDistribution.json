@@ -1,0 +1,679 @@
+[
+  {
+    "signature": "PoissonDistribution(double p)",
+    "name": "PoissonDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the Poisson mean",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0"
+        ],
+        "comment": "if p <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "PoissonDistribution(double p,double epsilon,int maxIterations)",
+    "name": "PoissonDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "epsilon"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Poisson mean.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "epsilon"
+        },
+        "comment": "Convergence criterion for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0"
+        ],
+        "comment": "if p <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "PoissonDistribution(org.apache.commons.math3.random.RandomGenerator rng,double p,double epsilon,int maxIterations)",
+    "name": "PoissonDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "epsilon"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Poisson mean.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "epsilon"
+        },
+        "comment": "Convergence criterion for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "the maximum number of iterations for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0"
+        ],
+        "comment": "if p <= 0.",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "PoissonDistribution(double p,double epsilon)",
+    "name": "PoissonDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "epsilon"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Poisson mean.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "epsilon"
+        },
+        "comment": "Convergence criterion for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "p <= 0"
+        ],
+        "comment": "if p <= 0.",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      }
+    ]
+  },
+  {
+    "signature": "PoissonDistribution(double p,int maxIterations)",
+    "name": "PoissonDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxIterations"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Poisson mean.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "maxIterations"
+        },
+        "comment": "Maximum number of iterations for cumulative probabilities.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMean()",
+    "name": "getMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the mean for the distribution.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "probability(int x)",
+    "name": "probability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "logProbability(int x)",
+    "name": "logProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "cumulativeProbability(int x)",
+    "name": "cumulativeProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "normalApproximateProbability(int x)",
+    "name": "normalApproximateProbability",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Upper bound, inclusive.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the distribution function value calculated using a normal approximation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalMean()",
+    "name": "getNumericalMean",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNumericalVariance()",
+    "name": "getNumericalVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportLowerBound()",
+    "name": "getSupportLowerBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "lower bound of the support (always 0)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSupportUpperBound()",
+    "name": "getSupportUpperBound",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "upper bound of the support (always Integer.MAX_VALUE for positive infinity)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isSupportConnected()",
+    "name": "isSupportConnected",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true",
+      "kind": "RETURN",
+      "condition": "true ? result==true"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.PoissonDistribution",
+      "name": "PoissonDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.PoissonDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a random value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

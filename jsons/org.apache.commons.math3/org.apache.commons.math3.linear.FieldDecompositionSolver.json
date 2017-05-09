@@ -1,0 +1,202 @@
+[
+  {
+    "signature": "solve(org.apache.commons.math3.linear.FieldVector b)",
+    "name": "solve",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+      "name": "FieldDecompositionSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+      "name": "FieldVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+          "name": "FieldVector",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldVector",
+            "name": "FieldVector",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "right-hand side of the equation A × X = B",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a vector X that minimizes the two norm of A × X - B",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrices dimensions do not match.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposed matrix is singular.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "solve(org.apache.commons.math3.linear.FieldMatrix b)",
+    "name": "solve",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+      "name": "FieldDecompositionSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+          "name": "FieldMatrix",
+          "isArray": false
+        },
+        "name": "b"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+            "name": "FieldMatrix",
+            "isArray": false
+          },
+          "name": "b"
+        },
+        "comment": "right-hand side of the equation A × X = B",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a matrix X that minimizes the two norm of A × X - B",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrices dimensions do not match.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposed matrix is singular.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "isNonSingular()",
+    "name": "isNonSingular",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+      "name": "FieldDecompositionSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the decomposed matrix is non-singular",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInverse()",
+    "name": "getInverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+      "name": "FieldDecompositionSolver",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.FieldDecompositionSolver",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.FieldMatrix",
+      "name": "FieldMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "inverse matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the decomposed matrix is singular.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

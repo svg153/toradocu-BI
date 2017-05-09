@@ -1,0 +1,1269 @@
+[
+  {
+    "signature": "Cargo(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "Cargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The AIMain root.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The input stream containing the XML.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a problem was encountered during parsing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "update()",
+    "name": "update",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A reason the planning failed, null if it succeeded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "newCargo(net.sf.freecol.server.ai.TransportableAIObject t,net.sf.freecol.common.model.Unit carrier)",
+    "name": "newCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to transport.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The carrier Unit to perform the transport.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new Cargo.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "on failure of the planning stage.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "newCargo(net.sf.freecol.server.ai.TransportableAIObject t,net.sf.freecol.common.model.Unit carrier,net.sf.freecol.common.model.Location destination,boolean allowFallback)",
+    "name": "newCargo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+          "name": "TransportableAIObject",
+          "isArray": false
+        },
+        "name": "t"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Location",
+          "name": "Location",
+          "isArray": false
+        },
+        "name": "destination"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "allowFallback"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+            "name": "TransportableAIObject",
+            "isArray": false
+          },
+          "name": "t"
+        },
+        "comment": "The TransportableAIObject to transport.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The carrier Unit to perform the transport.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Location",
+            "name": "Location",
+            "isArray": false
+          },
+          "name": "destination"
+        },
+        "comment": "The destination Location for the transportable.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "allowFallback"
+        },
+        "comment": "Allow a fallback destination.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The new Cargo.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "net.sf.freecol.common.FreeColException",
+          "name": "FreeColException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "on failure of the planning stage.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "dump()",
+    "name": "dump",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A reason for failing to reset, or null on succes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportable()",
+    "name": "getTransportable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.TransportableAIObject",
+      "name": "TransportableAIObject",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The TransportableAIObject to transport.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCarrier()",
+    "name": "getCarrier",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Unit",
+      "name": "Unit",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTries()",
+    "name": "getTries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSpaceLeft()",
+    "name": "getSpaceLeft",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setSpaceLeft(int spaceLeft)",
+    "name": "setSpaceLeft",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "spaceLeft"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isValid()",
+    "name": "isValid",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMode()",
+    "name": "getMode",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo.CargoMode",
+      "name": "CargoMode",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getModeString()",
+    "name": "getModeString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTurns()",
+    "name": "getTurns",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isFallback()",
+    "name": "isFallback",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransportTarget()",
+    "name": "getTransportTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCarrierTarget()",
+    "name": "getCarrierTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Location",
+      "name": "Location",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isCarried()",
+    "name": "isCarried",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the transportable is being carried by the carrier.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isCollectable()",
+    "name": "isCollectable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the cargo can be collected.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isDeliverable()",
+    "name": "isDeliverable",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the cargo can be delivered to the target.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isDelivered()",
+    "name": "isDelivered",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the cargo has been delivered.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasPath()",
+    "name": "hasPath",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the carrier can deliver the cargo.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getJoinDirection()",
+    "name": "getJoinDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Direction to join by.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getLeaveDirection()",
+    "name": "getLeaveDirection",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Direction",
+      "name": "Direction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Direction to leave by.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getNewSpace()",
+    "name": "getNewSpace",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The extra space required.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasWrapped()",
+    "name": "hasWrapped",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if wrapped transportables are present.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "couldWrap(net.sf.freecol.server.ai.Cargo other)",
+    "name": "couldWrap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+          "name": "Cargo",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+            "name": "Cargo",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other TransportableAIObject to consider.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the transportables can be wrapped.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "wrap(net.sf.freecol.server.ai.Cargo other)",
+    "name": "wrap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+          "name": "Cargo",
+          "isArray": false
+        },
+        "name": "other"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+            "name": "Cargo",
+            "isArray": false
+          },
+          "name": "other"
+        },
+        "comment": "The other Cargo to wrap.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "unwrap()",
+    "name": "unwrap",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The cargoes that were wrapped.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "retry()",
+    "name": "retry",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if the Cargo should be retried.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "resetTries()",
+    "name": "resetTries",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "isEuropeanTrade(net.sf.freecol.common.model.GoodsType type)",
+    "name": "isEuropeanTrade",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The GoodsType to check.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if this cargo is of the given type and to be collected or delivered to Europe.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "check(net.sf.freecol.server.ai.AIUnit aiCarrier)",
+    "name": "check",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "aiCarrier"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "aiCarrier"
+        },
+        "comment": "The AIUnit version of the carrier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A reason for integrity failure, or null if none.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "canQueueAt(net.sf.freecol.common.model.Unit carrier,int index,java.util.List cargoes)",
+    "name": "canQueueAt",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "carrier"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "cargoes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "carrier"
+        },
+        "comment": "The Unit to queue to.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "The queuing position to test.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "cargoes"
+        },
+        "comment": "A list of Cargos.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if there is space to add the cargo.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toShortString()",
+    "name": "toShortString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A short descriptive string.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toXML(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "toXML",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readFromXML(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readFromXML",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.Cargo",
+      "name": "Cargo",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.Cargo",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"cargo\"",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

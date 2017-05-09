@@ -1,0 +1,2196 @@
+[
+  {
+    "signature": "BlockRealMatrix(int rows,int columns)",
+    "name": "BlockRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rows"
+        },
+        "comment": "the number of rows in the new matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columns"
+        },
+        "comment": "the number of columns in the new matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if row or column dimension is not positive.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "BlockRealMatrix(double[][] rawData)",
+    "name": "BlockRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "rawData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "rawData"
+        },
+        "comment": "data for new matrix, in raw layout",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "blockData"
+        ],
+        "comment": "if the shape of blockData is inconsistent with block layout.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if row or column dimension is not positive.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "BlockRealMatrix(int rows,int columns,double[][] blockData,boolean copyArray)",
+    "name": "BlockRealMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columns"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "blockData"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "copyArray"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rows"
+        },
+        "comment": "Number of rows in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columns"
+        },
+        "comment": "Number of columns in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "blockData"
+        },
+        "comment": "data for new matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "copyArray"
+        },
+        "comment": "Whether the input array will be copied or referenced.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "blockData"
+        ],
+        "comment": "if the shape of blockData is inconsistent with block layout.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if row or column dimension is not positive.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "toBlocksLayout(double[][] rawData)",
+    "name": "toBlocksLayout",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "rawData"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "rawData"
+        },
+        "comment": "Data array in raw layout.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new data array containing the same entries but in blocks layout.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "rawData"
+        ],
+        "comment": "if rawData is not rectangular.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createBlocksLayout(int rows,int columns)",
+    "name": "createBlocksLayout",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columns"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "rows"
+        },
+        "comment": "Number of rows in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "columns"
+        },
+        "comment": "Number of columns in the new matrix.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new data array in blocks layout.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "createMatrix(int rowDimension,int columnDimension)",
+    "name": "createMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "rowDimension"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "columnDimension"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.RealMatrix m)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "add(org.apache.commons.math3.linear.BlockRealMatrix m)",
+    "name": "add",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+          "name": "BlockRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+            "name": "BlockRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be added.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this + m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m"
+        ],
+        "comment": "if m is not the same size as this matrix.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.RealMatrix m)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "subtract(org.apache.commons.math3.linear.BlockRealMatrix m)",
+    "name": "subtract",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+          "name": "BlockRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+            "name": "BlockRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to be subtracted.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this - m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "m"
+        ],
+        "comment": "if m is not the same size as this matrix.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "scalarAdd(double d)",
+    "name": "scalarAdd",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "scalarMultiply(double d)",
+    "name": "scalarMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "d"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.linear.RealMatrix m)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "multiply(org.apache.commons.math3.linear.BlockRealMatrix m)",
+    "name": "multiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+          "name": "BlockRealMatrix",
+          "isArray": false
+        },
+        "name": "m"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+            "name": "BlockRealMatrix",
+            "isArray": false
+          },
+          "name": "m"
+        },
+        "comment": "Matrix to postmultiply by.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "this * m.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrices are not compatible.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getData()",
+    "name": "getData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getNorm()",
+    "name": "getNorm",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getFrobeniusNorm()",
+    "name": "getFrobeniusNorm",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSubMatrix(int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "getSubMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setSubMatrix(double[][] subMatrix,int row,int column)",
+    "name": "setSubMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "subMatrix"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRowMatrix(int row)",
+    "name": "getRowMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRowMatrix(int row,org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "setRowMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRowMatrix(int row,org.apache.commons.math3.linear.BlockRealMatrix matrix)",
+    "name": "setRowMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+          "name": "BlockRealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "row"
+        },
+        "comment": "the row to be set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+            "name": "BlockRealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "row matrix (must have one row and the same number of columns as the instance)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified row index is invalid.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix dimensions do not match one instance row.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getColumnMatrix(int column)",
+    "name": "getColumnMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setColumnMatrix(int column,org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "setColumnMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setColumnMatrix(int column,org.apache.commons.math3.linear.BlockRealMatrix matrix)",
+    "name": "setColumnMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+          "name": "BlockRealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "column"
+        },
+        "comment": "the column to be set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+            "name": "BlockRealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "column matrix (must have one column and the same number of rows as the instance)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the specified column index is invalid.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix dimensions do not match one instance column.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getRowVector(int row)",
+    "name": "getRowVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRowVector(int row,org.apache.commons.math3.linear.RealVector vector)",
+    "name": "setRowVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "vector"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumnVector(int column)",
+    "name": "getColumnVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setColumnVector(int column,org.apache.commons.math3.linear.RealVector vector)",
+    "name": "setColumnVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "vector"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRow(int row)",
+    "name": "getRow",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setRow(int row,double[] array)",
+    "name": "setRow",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumn(int column)",
+    "name": "getColumn",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setColumn(int column,double[] array)",
+    "name": "setColumn",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "array"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEntry(int row,int column)",
+    "name": "getEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setEntry(int row,int column,double value)",
+    "name": "setEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "addToEntry(int row,int column,double increment)",
+    "name": "addToEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "increment"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "multiplyEntry(int row,int column,double factor)",
+    "name": "multiplyEntry",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "row"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "column"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "factor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "transpose()",
+    "name": "transpose",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRowDimension()",
+    "name": "getRowDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getColumnDimension()",
+    "name": "getColumnDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "operate(double[] v)",
+    "name": "operate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "preMultiply(double[] v)",
+    "name": "preMultiply",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInRowOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInRowOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixChangingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixChangingVisitor",
+          "name": "RealMatrixChangingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealMatrixPreservingVisitor visitor,int startRow,int endRow,int startColumn,int endColumn)",
+    "name": "walkInOptimizedOrder",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "name": "BlockRealMatrix",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.BlockRealMatrix",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrixPreservingVisitor",
+          "name": "RealMatrixPreservingVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endRow"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "startColumn"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "endColumn"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

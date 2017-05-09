@@ -1,0 +1,229 @@
+[
+  {
+    "signature": "MixtureMultivariateRealDistribution(java.util.List components)",
+    "name": "MixtureMultivariateRealDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "components"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "components"
+        },
+        "comment": "List of (weight, distribution) pairs from which to sample.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "MixtureMultivariateRealDistribution(org.apache.commons.math3.random.RandomGenerator rng,java.util.List components)",
+    "name": "MixtureMultivariateRealDistribution",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "rng"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.List",
+          "name": "List",
+          "isArray": false
+        },
+        "name": "components"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "rng"
+        },
+        "comment": "Random number generator.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.List",
+            "name": "List",
+            "isArray": false
+          },
+          "name": "components"
+        },
+        "comment": "Distributions from which to sample.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the weights is negative.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if not all components have the same number of variables.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "density(double[] values)",
+    "name": "density",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "sample()",
+    "name": "sample",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "reseedRandomGenerator(long seed)",
+    "name": "reseedRandomGenerator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "seed"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getComponents()",
+    "name": "getComponents",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+      "name": "MixtureMultivariateRealDistribution",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.distribution.MixtureMultivariateRealDistribution",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the component distributions and associated weights.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

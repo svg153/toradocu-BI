@@ -1,0 +1,802 @@
+[
+  {
+    "signature": "Limit(net.sf.freecol.common.model.Specification specification)",
+    "name": "Limit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification to refer to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Limit(net.sf.freecol.common.io.FreeColXMLReader xr,net.sf.freecol.common.model.Specification specification)",
+    "name": "Limit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Specification",
+          "name": "Specification",
+          "isArray": false
+        },
+        "name": "specification"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+            "name": "FreeColXMLReader",
+            "isArray": false
+          },
+          "name": "xr"
+        },
+        "comment": "The FreeColXMLReader to read from.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Specification",
+            "name": "Specification",
+            "isArray": false
+          },
+          "name": "specification"
+        },
+        "comment": "The Specification to refer to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "javax.xml.stream.XMLStreamException",
+          "name": "XMLStreamException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is a problem reading.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Limit(java.lang.String id,net.sf.freecol.common.model.Operand lhs,net.sf.freecol.common.model.Limit.Operator op,net.sf.freecol.common.model.Operand rhs)",
+    "name": "Limit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Operand",
+          "name": "Operand",
+          "isArray": false
+        },
+        "name": "lhs"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Limit.Operator",
+          "name": "Operator",
+          "isArray": false
+        },
+        "name": "op"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Operand",
+          "name": "Operand",
+          "isArray": false
+        },
+        "name": "rhs"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "The object identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Operand",
+            "name": "Operand",
+            "isArray": false
+          },
+          "name": "lhs"
+        },
+        "comment": "The left hand side Operand.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Limit.Operator",
+            "name": "Operator",
+            "isArray": false
+          },
+          "name": "op"
+        },
+        "comment": "The Operator to apply.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Operand",
+            "name": "Operand",
+            "isArray": false
+          },
+          "name": "rhs"
+        },
+        "comment": "The right hand side Operand.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOperator()",
+    "name": "getOperator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit.Operator",
+      "name": "Operator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The Operator of this limit.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setOperator(net.sf.freecol.common.model.Limit.Operator newOperator)",
+    "name": "setOperator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Limit.Operator",
+          "name": "Operator",
+          "isArray": false
+        },
+        "name": "newOperator"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLeftHandSide()",
+    "name": "getLeftHandSide",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Operand",
+      "name": "Operand",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The left hand side Operand.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setLeftHandSide(net.sf.freecol.common.model.Operand newLeftHandSide)",
+    "name": "setLeftHandSide",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Operand",
+          "name": "Operand",
+          "isArray": false
+        },
+        "name": "newLeftHandSide"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Operand",
+            "name": "Operand",
+            "isArray": false
+          },
+          "name": "newLeftHandSide"
+        },
+        "comment": "The new left hand side Operand.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getRightHandSide()",
+    "name": "getRightHandSide",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Operand",
+      "name": "Operand",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The right hand side Operand.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setRightHandSide(net.sf.freecol.common.model.Operand newRightHandSide)",
+    "name": "setRightHandSide",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Operand",
+          "name": "Operand",
+          "isArray": false
+        },
+        "name": "newRightHandSide"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Operand",
+            "name": "Operand",
+            "isArray": false
+          },
+          "name": "newRightHandSide"
+        },
+        "comment": "The new right hand side Operand.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "appliesTo(net.sf.freecol.common.model.FreeColObject object)",
+    "name": "appliesTo",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.FreeColObject",
+          "name": "FreeColObject",
+          "isArray": false
+        },
+        "name": "object"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.FreeColObject",
+            "name": "FreeColObject",
+            "isArray": false
+          },
+          "name": "object"
+        },
+        "comment": "The object to test.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the limit is applicable.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(net.sf.freecol.common.model.Game game)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The Game to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The result of the evaluation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(net.sf.freecol.common.model.Player player)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "player"
+        },
+        "comment": "The Player to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The result of the evaluation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(net.sf.freecol.common.model.Settlement settlement)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Settlement",
+          "name": "Settlement",
+          "isArray": false
+        },
+        "name": "settlement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Settlement",
+            "name": "Settlement",
+            "isArray": false
+          },
+          "name": "settlement"
+        },
+        "comment": "The Settlement to use.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The result of the evaluation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasOperandType(net.sf.freecol.common.model.Operand.OperandType type)",
+    "name": "hasOperandType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Operand.OperandType",
+          "name": "OperandType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Operand.OperandType",
+            "name": "OperandType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The OperandType to check for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the type is present.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Limit",
+      "name": "Limit",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Limit",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"limit\".",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

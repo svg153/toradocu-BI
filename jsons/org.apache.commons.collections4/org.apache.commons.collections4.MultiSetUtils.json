@@ -1,0 +1,224 @@
+[
+  {
+    "signature": "synchronizedMultiSet(org.apache.commons.collections4.MultiSet multiset)",
+    "name": "synchronizedMultiSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSetUtils",
+      "name": "MultiSetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiSetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSet",
+      "name": "MultiSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.MultiSet",
+          "name": "MultiSet",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.MultiSet",
+            "name": "MultiSet",
+            "isArray": false
+          },
+          "name": "multiset"
+        },
+        "comment": "the multiset to synchronize, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a synchronized multiset backed by that multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the MultiSet is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "unmodifiableMultiSet(org.apache.commons.collections4.MultiSet multiset)",
+    "name": "unmodifiableMultiSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSetUtils",
+      "name": "MultiSetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiSetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSet",
+      "name": "MultiSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.MultiSet",
+          "name": "MultiSet",
+          "isArray": false
+        },
+        "name": "multiset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.MultiSet",
+            "name": "MultiSet",
+            "isArray": false
+          },
+          "name": "multiset"
+        },
+        "comment": "the multiset whose unmodifiable view is to be returned, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable view of that multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the MultiSet is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedMultiSet(org.apache.commons.collections4.MultiSet multiset,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedMultiSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSetUtils",
+      "name": "MultiSetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiSetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSet",
+      "name": "MultiSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.MultiSet",
+          "name": "MultiSet",
+          "isArray": false
+        },
+        "name": "multiset"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.MultiSet",
+            "name": "MultiSet",
+            "isArray": false
+          },
+          "name": "multiset"
+        },
+        "comment": "the multiset to predicate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate for the multiset, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a predicated multiset backed by the given multiset",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the MultiSet or Predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      }
+    ]
+  },
+  {
+    "signature": "emptyMultiSet()",
+    "name": "emptyMultiSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSetUtils",
+      "name": "MultiSetUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.MultiSetUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.MultiSet",
+      "name": "MultiSet",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an empty MultiSet",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.EMPTY_MULTISET)"
+    },
+    "throwsTags": []
+  }
+]

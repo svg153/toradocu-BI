@@ -1,0 +1,397 @@
+[
+  {
+    "signature": "PolynomialSplineFunction(double[] knots,org.apache.commons.math3.analysis.polynomials.PolynomialFunction[] polynomials)",
+    "name": "PolynomialSplineFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "knots"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]",
+          "name": "PolynomialFunction[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+            "name": "PolynomialFunction",
+            "isArray": false
+          }
+        },
+        "name": "polynomials"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "knots"
+        },
+        "comment": "Spline segment interval delimiters.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]",
+            "name": "PolynomialFunction[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+              "name": "PolynomialFunction",
+              "isArray": false
+            }
+          },
+          "name": "polynomials"
+        },
+        "comment": "Polynomial functions that make up the spline.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if either of the input arrays is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NumberIsTooSmallException",
+          "name": "NumberIsTooSmallException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if knots has length less than 2.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "polynomials.length != knots.length - 1"
+        ],
+        "comment": "if polynomials.length != knots.length - 1.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NonMonotonicSequenceException",
+          "name": "NonMonotonicSequenceException",
+          "isArray": false
+        },
+        "codeTags": [
+          "knots"
+        ],
+        "comment": "if the knots array is not strictly increasing.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "value(double v)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "v"
+        },
+        "comment": "Point for which the function value should be computed.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "v"
+        ],
+        "comment": "if v is outside of the domain of the spline function (smaller than the smallest knot point or larger than the largest knot point).",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "derivative()",
+    "name": "derivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+      "name": "UnivariateFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the derivative function.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "polynomialSplineDerivative()",
+    "name": "polynomialSplineDerivative",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the derivative function.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getN())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "value(org.apache.commons.math3.analysis.differentiation.DerivativeStructure t)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+      "name": "DerivativeStructure",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.differentiation.DerivativeStructure",
+          "name": "DerivativeStructure",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the number of spline segments.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPolynomials()",
+    "name": "getPolynomials",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction[]",
+      "name": "PolynomialFunction[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialFunction",
+        "name": "PolynomialFunction",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the interpolating polynomials.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getKnots()",
+    "name": "getKnots",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the knot points.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "isValidPoint(double x)",
+    "name": "isValidPoint",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+      "name": "PolynomialSplineFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.polynomials.PolynomialSplineFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "x"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "x"
+        },
+        "comment": "Point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if x is a valid point.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,1225 @@
+[
+  {
+    "signature": "ChiSquareTest()",
+    "name": "ChiSquareTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "chiSquare(double[] expected,long[] observed)",
+    "name": "chiSquare",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "chiSquare test statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays length is less than 2",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTest(double[] expected,long[] observed)",
+    "name": "chiSquareTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays length is less than 2",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTest(double[] expected,long[] observed,double alpha)",
+    "name": "chiSquareTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "expected"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed"
+        },
+        "comment": "array of observed frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "expected"
+        },
+        "comment": "array of expected frequency counts",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed"
+        ],
+        "comment": "if observed has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expected"
+        ],
+        "comment": "if expected has entries that are not strictly positive",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the arrays length is less than 2",
+        "kind": "THROWS",
+        "condition": "args[0].length<2"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha"
+        ],
+        "comment": "if alpha is not in the range (0, 0.5]",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquare(long[][] counts)",
+    "name": "chiSquare",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[][]",
+          "name": "long[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "counts"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[][]",
+            "name": "long[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "counts"
+        },
+        "comment": "array representation of 2-way table",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "chiSquare test statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "counts"
+        ],
+        "comment": "if counts has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTest(long[][] counts)",
+    "name": "chiSquareTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[][]",
+          "name": "long[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "counts"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[][]",
+            "name": "long[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "counts"
+        },
+        "comment": "array representation of 2-way table",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "counts"
+        ],
+        "comment": "if counts has negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTest(long[][] counts,double alpha)",
+    "name": "chiSquareTest",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[][]",
+          "name": "long[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "counts"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[][]",
+            "name": "long[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "counts"
+        },
+        "comment": "array representation of 2-way table",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the array is not rectangular",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "counts"
+        ],
+        "comment": "if counts has any negative entries",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha"
+        ],
+        "comment": "if alpha is not in the range (0, 0.5]",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareDataSetsComparison(long[] observed1,long[] observed2)",
+    "name": "chiSquareDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "chiSquare test statistic",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the length of the arrays does not match",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any entries in observed1 or observed2 are negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at some index is zero for both arrays",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTestDataSetsComparison(long[] observed1,long[] observed2)",
+    "name": "chiSquareTestDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "p-value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the length of the arrays does not match",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any entries in observed1 or observed2 are negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at the same index is zero for both arrays",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs computing the p-value",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "chiSquareTestDataSetsComparison(long[] observed1,long[] observed2,double alpha)",
+    "name": "chiSquareTestDataSetsComparison",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+      "name": "ChiSquareTest",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.inference.ChiSquareTest",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed1"
+      },
+      {
+        "type": {
+          "qualifiedName": "long[]",
+          "name": "long[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          }
+        },
+        "name": "observed2"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "alpha"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed1"
+        },
+        "comment": "array of observed frequency counts of the first data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long[]",
+            "name": "long[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "long",
+              "name": "long",
+              "isArray": false
+            }
+          },
+          "name": "observed2"
+        },
+        "comment": "array of observed frequency counts of the second data set",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "alpha"
+        },
+        "comment": "significance level of the test",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff null hypothesis can be rejected with confidence 1 - alpha",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "the the length of the arrays does not match",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotPositiveException",
+          "name": "NotPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if any entries in observed1 or observed2 are negative",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.ZeroException",
+          "name": "ZeroException",
+          "isArray": false
+        },
+        "codeTags": [
+          "observed1",
+          "observed2"
+        ],
+        "comment": "if either all counts of observed1 or observed2 are zero, or if the count at the same index is zero for both arrays",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.OutOfRangeException",
+          "name": "OutOfRangeException",
+          "isArray": false
+        },
+        "codeTags": [
+          "alpha"
+        ],
+        "comment": "if alpha is not in the range (0, 0.5]",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an error occurs performing the test",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

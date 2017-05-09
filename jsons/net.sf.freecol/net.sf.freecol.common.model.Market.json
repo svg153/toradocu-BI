@@ -1,0 +1,1762 @@
+[
+  {
+    "signature": "Market(net.sf.freecol.common.model.Game game,net.sf.freecol.common.model.Player player)",
+    "name": "Market",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "Market(net.sf.freecol.common.model.Game game,java.lang.String id)",
+    "name": "Market",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Game",
+          "name": "Game",
+          "isArray": false
+        },
+        "name": "game"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "id"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Game",
+            "name": "Game",
+            "isArray": false
+          },
+          "name": "game"
+        },
+        "comment": "The enclosing Game.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "id"
+        },
+        "comment": "The object identifier.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMarketData()",
+    "name": "getMarketData",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Collection",
+      "name": "Collection",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The market data in this market.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMarketData(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getMarketData",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.MarketData",
+      "name": "MarketData",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to look for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The corresponding MarketData, or null if none.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasBeenTraded(net.sf.freecol.common.model.GoodsType type)",
+    "name": "hasBeenTraded",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "The type of goods to consider.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the goods type has been traded.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCostToBuy(net.sf.freecol.common.model.GoodsType type)",
+    "name": "getCostToBuy",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "A GoodsType value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The cost to buy a single unit of the given type of goods.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPaidForSale(net.sf.freecol.common.model.GoodsType type)",
+    "name": "getPaidForSale",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "A GoodsType value.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The price for a single unit of the given type of goods if it is for sale.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addGoodsToMarket(net.sf.freecol.common.model.GoodsType goodsType,int amount)",
+    "name": "addGoodsToMarket",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to add.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the price changes as a result of this addition.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInitialPrice(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getInitialPrice",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get the initial price of.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The initial price.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setInitialPrice(net.sf.freecol.common.model.GoodsType goodsType,int amount)",
+    "name": "setInitialPrice",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to set the initial price of.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The new initial price.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getBidPrice(net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "getBidPrice",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "a GoodsType value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The bid price of the given goods.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSalePrice(net.sf.freecol.common.model.GoodsType type,int amount)",
+    "name": "getSalePrice",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "type"
+        },
+        "comment": "a GoodsType value",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of goods.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The sale price of the given goods.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSalePrice(net.sf.freecol.common.model.Goods goods)",
+    "name": "getSalePrice",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Goods",
+          "name": "Goods",
+          "isArray": false
+        },
+        "name": "goods"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Goods",
+            "name": "Goods",
+            "isArray": false
+          },
+          "name": "goods"
+        },
+        "comment": "a Goods value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "an int value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getArrears(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getArrears",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get arrears for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The arrears.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setArrears(net.sf.freecol.common.model.GoodsType goodsType,int value)",
+    "name": "setArrears",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to set the arrears for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "The amount of arrears to set.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSales(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getSales",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get the sales for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current sales amount.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "modifySales(net.sf.freecol.common.model.GoodsType goodsType,int amount)",
+    "name": "modifySales",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to set the sales for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of sales to add to the current amount.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getIncomeBeforeTaxes(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getIncomeBeforeTaxes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get the income for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current income before taxes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "modifyIncomeBeforeTaxes(net.sf.freecol.common.model.GoodsType goodsType,int amount)",
+    "name": "modifyIncomeBeforeTaxes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to set the income for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of tax income to add to the current amount.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getIncomeAfterTaxes(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getIncomeAfterTaxes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get the income for.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current income after taxes.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "modifyIncomeAfterTaxes(net.sf.freecol.common.model.GoodsType goodsType,int amount)",
+    "name": "modifyIncomeAfterTaxes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "amount"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to set the income for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "amount"
+        },
+        "comment": "The amount of tax income to add to the current amount.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAmountInMarket(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "getAmountInMarket",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to get the amount of.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The current amount of the goods in the market.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasPriceChanged(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "hasPriceChanged",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The type of goods to consider.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the price has changed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "flushPriceChange(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "flushPriceChange",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The type of goods to consider.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "makePriceChangeMessage(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "makePriceChangeMessage",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.ModelMessage",
+      "name": "ModelMessage",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType that has changed price.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "A message describing the change.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "update(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "update",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The GoodsType to update.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getSalePriceComparator()",
+    "name": "getSalePriceComparator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A suitable Comparator.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addTransactionListener(net.sf.freecol.common.model.TransactionListener listener)",
+    "name": "addTransactionListener",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TransactionListener",
+          "name": "TransactionListener",
+          "isArray": false
+        },
+        "name": "listener"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TransactionListener",
+            "name": "TransactionListener",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "The TransactionListener to add.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "removeTransactionListener(net.sf.freecol.common.model.TransactionListener listener)",
+    "name": "removeTransactionListener",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.TransactionListener",
+          "name": "TransactionListener",
+          "isArray": false
+        },
+        "name": "listener"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.TransactionListener",
+            "name": "TransactionListener",
+            "isArray": false
+          },
+          "name": "listener"
+        },
+        "comment": "The TransactionListener to remove.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTransactionListener()",
+    "name": "getTransactionListener",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.TransactionListener[]",
+      "name": "TransactionListener[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "net.sf.freecol.common.model.TransactionListener",
+        "name": "TransactionListener",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An array of all the TransactionListeners added, or an empty array if none found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOwner()",
+    "name": "getOwner",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.Player",
+      "name": "Player",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The owner of this Market.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setOwner(net.sf.freecol.common.model.Player owner)",
+    "name": "setOwner",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "owner"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Player",
+            "name": "Player",
+            "isArray": false
+          },
+          "name": "owner"
+        },
+        "comment": "The Player to own this Market.",
+        "kind": "PARAM",
+        "condition": "args[0].owns(net.sf.freecol.common.model.Ownable)"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getLinkTarget(net.sf.freecol.common.model.Player player)",
+    "name": "getLinkTarget",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.FreeColGameObject",
+      "name": "FreeColGameObject",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Player",
+          "name": "Player",
+          "isArray": false
+        },
+        "name": "player"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeAttributes(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "writeChildren(net.sf.freecol.common.io.FreeColXMLWriter xw)",
+    "name": "writeChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLWriter",
+          "name": "FreeColXMLWriter",
+          "isArray": false
+        },
+        "name": "xw"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readAttributes(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readAttributes",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChildren(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChildren",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "readChild(net.sf.freecol.common.io.FreeColXMLReader xr)",
+    "name": "readChild",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.io.FreeColXMLReader",
+          "name": "FreeColXMLReader",
+          "isArray": false
+        },
+        "name": "xr"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Market",
+      "name": "Market",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Market",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"market\".",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

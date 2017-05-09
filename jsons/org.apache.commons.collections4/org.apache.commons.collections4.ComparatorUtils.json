@@ -1,0 +1,599 @@
+[
+  {
+    "signature": "naturalComparator()",
+    "name": "naturalComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a comparator which uses natural order",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "chainedComparator(java.util.Comparator[] comparators)",
+    "name": "chainedComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator[]",
+          "name": "Comparator[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          }
+        },
+        "name": "comparators"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator[]",
+            "name": "Comparator[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.util.Comparator",
+              "name": "Comparator",
+              "isArray": false
+            }
+          },
+          "name": "comparators"
+        },
+        "comment": "the comparators to use, not null or empty or containing nulls",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false || args[0].length==0"
+      }
+    ],
+    "returnTag": {
+      "comment": "a ComparatorChain formed from the input comparators",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if comparators array is null or contains a null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "chainedComparator(java.util.Collection comparators)",
+    "name": "chainedComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "comparators"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "comparators"
+        },
+        "comment": "the comparators to use, not null or empty or containing nulls",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false || args[0].isEmpty()"
+      }
+    ],
+    "returnTag": {
+      "comment": "a ComparatorChain formed from the input comparators",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if comparators collection is null or contains a null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[0].contains(null)"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ClassCastException",
+          "name": "ClassCastException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the comparators collection contains the wrong object type",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "reversedComparator(java.util.Comparator comparator)",
+    "name": "reversedComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the comparator to reverse",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a comparator that reverses the order of the input comparator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "booleanComparator(boolean trueFirst)",
+    "name": "booleanComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "trueFirst"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "trueFirst"
+        },
+        "comment": "when true, sort true Booleans before false Booleans.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a comparator that sorts booleans",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nullLowComparator(java.util.Comparator comparator)",
+    "name": "nullLowComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the comparator that wants to allow nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a version of that comparator that allows nulls",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "nullHighComparator(java.util.Comparator comparator)",
+    "name": "nullHighComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the comparator that wants to allow nulls",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a version of that comparator that allows nulls",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "transformedComparator(java.util.Comparator comparator,org.apache.commons.collections4.Transformer transformer)",
+    "name": "transformedComparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Transformer",
+          "name": "Transformer",
+          "isArray": false
+        },
+        "name": "transformer"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the sort order to use",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Transformer",
+            "name": "Transformer",
+            "isArray": false
+          },
+          "name": "transformer"
+        },
+        "comment": "the transformer to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a comparator that transforms its input objects before comparing them",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "min(java.lang.Object o1,java.lang.Object o2,java.util.Comparator comparator)",
+    "name": "min",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o2"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o1"
+        },
+        "comment": "the first object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o2"
+        },
+        "comment": "the second object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the sort order to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the smaller of the two objects",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "max(java.lang.Object o1,java.lang.Object o2,java.util.Comparator comparator)",
+    "name": "max",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.ComparatorUtils",
+      "name": "ComparatorUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.ComparatorUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o1"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "o2"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Comparator",
+          "name": "Comparator",
+          "isArray": false
+        },
+        "name": "comparator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o1"
+        },
+        "comment": "the first object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "o2"
+        },
+        "comment": "the second object to compare",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Comparator",
+            "name": "Comparator",
+            "isArray": false
+          },
+          "name": "comparator"
+        },
+        "comment": "the sort order to use",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the larger of the two objects",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

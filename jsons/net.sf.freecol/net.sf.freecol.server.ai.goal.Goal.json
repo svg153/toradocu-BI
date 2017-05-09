@@ -1,0 +1,998 @@
+[
+  {
+    "signature": "Goal(net.sf.freecol.server.ai.AIPlayer p,net.sf.freecol.server.ai.goal.Goal g,float w)",
+    "name": "Goal",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+          "name": "Goal",
+          "isArray": false
+        },
+        "name": "g"
+      },
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "w"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "The AIPlayer this goal belongs to",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+            "name": "Goal",
+            "isArray": false
+          },
+          "name": "g"
+        },
+        "comment": "The parent goal; may be null if we're a direct goal of the AIPlayer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "w"
+        },
+        "comment": "The relativeWeight of this goal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "Goal(net.sf.freecol.server.ai.AIPlayer p,net.sf.freecol.server.ai.goal.Goal g,float w,net.sf.freecol.server.ai.AIUnit u)",
+    "name": "Goal",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+          "name": "AIPlayer",
+          "isArray": false
+        },
+        "name": "p"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+          "name": "Goal",
+          "isArray": false
+        },
+        "name": "g"
+      },
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "w"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIPlayer",
+            "name": "AIPlayer",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "The AIPlayer this goal belongs to",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+            "name": "Goal",
+            "isArray": false
+          },
+          "name": "g"
+        },
+        "comment": "The parent goal; may be null if we're a direct goal of the AIPlayer",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "w"
+        },
+        "comment": "The relativeWeight of this goal",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "An initial AIUnit given to this goal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isFinished()",
+    "name": "isFinished",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true, if the goal is finished, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "cancelGoal()",
+    "name": "cancelGoal",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "A list of all AIUnit being freed up by this action",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "doPlanning()",
+    "name": "doPlanning",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "needsPlanning()",
+    "name": "needsPlanning",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if this Goal or at least one subgoal needs planning, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setNeedsPlanningRecursive(boolean p)",
+    "name": "setNeedsPlanningRecursive",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "Boolean determining whether to set needsPlanning =true or =false",
+        "kind": "PARAM",
+        "condition": "args[0]==true || args[0]==false"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getWeight()",
+    "name": "getWeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The relative weight relativeWeight of this goal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getParentWeight()",
+    "name": "getParentWeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The absolute weight [0;1] of the parent goal, or 1 if a parent goal does not exist",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAbsoluteWeight()",
+    "name": "getAbsoluteWeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The absolute weight [0;1] of this goal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setWeight(float w)",
+    "name": "setWeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "float",
+          "name": "float",
+          "isArray": false
+        },
+        "name": "w"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "float",
+            "name": "float",
+            "isArray": false
+          },
+          "name": "w"
+        },
+        "comment": "A relative weight, should be in range [0;1]",
+        "kind": "PARAM",
+        "condition": "args[0]==0"
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "normalizeSubGoalWeights()",
+    "name": "normalizeSubGoalWeights",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "requestWorker(net.sf.freecol.common.model.GoodsType gt,int minProduction)",
+    "name": "requestWorker",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "gt"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "minProduction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "gt"
+        },
+        "comment": "The GoodsType we're requesting a worker for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "minProduction"
+        },
+        "comment": "The minimum a unit needs to produce to be considered.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addUnit(net.sf.freecol.server.ai.AIUnit u)",
+    "name": "addUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "The AIUnit being added to this goal",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "addUnitToParent(net.sf.freecol.server.ai.AIUnit u)",
+    "name": "addUnitToParent",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "The AIUnit to be added to the parent",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "canYieldUnit(net.sf.freecol.common.model.UnitType ut,net.sf.freecol.server.ai.AIObject o)",
+    "name": "canYieldUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "ut"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+          "name": "AIObject",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "ut"
+        },
+        "comment": "The UnitType wanted by the parent",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+            "name": "AIObject",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "The AIObject (should be AIPlayer or another Goal) calling this",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if this goal or one of its subgoals can yield the specified UnitType, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getYieldedUnitWeight(net.sf.freecol.common.model.UnitType ut,net.sf.freecol.server.ai.AIObject o)",
+    "name": "getYieldedUnitWeight",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "float",
+      "name": "float",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "ut"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+          "name": "AIObject",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "ut"
+        },
+        "comment": "The UnitType wanted by the parent",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+            "name": "AIObject",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "The AIObject (should be AIPlayer or another Goal) calling this",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The absolute weight ([0;1]) of the goal currently owning the unit that would be yielded. Note that the returned value might be 99f if there is no unit to yield. The calling function should use canYieldUnit(UnitType,AIObject) first, or is responsible to sanitize this result itself before trying to yieldUnit(UnitType,AIObject) based on it.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "yieldUnit(net.sf.freecol.common.model.UnitType ut,net.sf.freecol.server.ai.AIObject o)",
+    "name": "yieldUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+      "name": "AIUnit",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "ut"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+          "name": "AIObject",
+          "isArray": false
+        },
+        "name": "o"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "ut"
+        },
+        "comment": "The UnitType wanted by the parent",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIObject",
+            "name": "AIObject",
+            "isArray": false
+          },
+          "name": "o"
+        },
+        "comment": "The AIObject (should be AIPlayer or another Goal) calling this",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The AIUnit with minimal absolute weight. Note that this may be null if no matching unit is found!",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "validateOwnedUnits()",
+    "name": "validateOwnedUnits",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGoalDescription()",
+    "name": "getGoalDescription",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string describing this goal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getDebugDescription()",
+    "name": "getDebugDescription",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string describing this goal",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"aiGoal\"",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOwnedAIUnitsIterator()",
+    "name": "getOwnedAIUnitsIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An Iterator over all AIUnit currently managed by this goal.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSubGoalIterator()",
+    "name": "getSubGoalIterator",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Iterator",
+      "name": "Iterator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "An Iterator over all currently existing subgoals.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "removeUnit(net.sf.freecol.server.ai.AIUnit u)",
+    "name": "removeUnit",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+          "name": "AIUnit",
+          "isArray": false
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIUnit",
+            "name": "AIUnit",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "The AIUnit supposed to be removed from this goal.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "plan()",
+    "name": "plan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.goal.Goal",
+      "name": "Goal",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.goal.Goal",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

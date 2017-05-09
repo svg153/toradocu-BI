@@ -1,0 +1,381 @@
+[
+  {
+    "signature": "hasIntercept()",
+    "name": "hasIntercept",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if constant exists, false otherwise",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getN()",
+    "name": "getN",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "Number of observations",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "addObservation(double[] x,double y)",
+    "name": "addObservation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "the independent variables which form the design matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "y"
+        },
+        "comment": "the dependent or response variable",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x"
+        ],
+        "comment": "if the length of x does not equal the number of independent variables in the model",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addObservations(double[][] x,double[] y)",
+    "name": "addObservations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "a series of observations on the independent variables",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "a series of observations on the dependent variable The length of x and y must be the same",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [
+          "x",
+          "y"
+        ],
+        "comment": "if x is not rectangular, does not match the length of y or does not contain sufficient data to estimate the model",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "clear()",
+    "name": "clear",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "regress()",
+    "name": "regress",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "RegressionResults acts as a container of regression output",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the model is not correctly specified",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is not sufficient data in the model to estimate the regression parameters",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "regress(int[] variablesToInclude)",
+    "name": "regress",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+      "name": "UpdatingMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.UpdatingMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.RegressionResults",
+      "name": "RegressionResults",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int[]",
+          "name": "int[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          }
+        },
+        "name": "variablesToInclude"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int[]",
+            "name": "int[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "int",
+              "name": "int",
+              "isArray": false
+            }
+          },
+          "name": "variablesToInclude"
+        },
+        "comment": "an array of indices of regressors to include",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "RegressionResults acts as a container of regression output",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.stat.regression.ModelSpecificationException",
+          "name": "ModelSpecificationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the model is not correctly specified",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the variablesToInclude array is null or zero length",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

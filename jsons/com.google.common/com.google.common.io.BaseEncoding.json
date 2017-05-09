@@ -1,0 +1,874 @@
+[
+  {
+    "signature": "BaseEncoding()",
+    "name": "BaseEncoding",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "encode(byte[] bytes)",
+    "name": "encode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "encode(byte[] bytes,int off,int len)",
+    "name": "encode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "encodingStream(java.io.Writer writer)",
+    "name": "encodingStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.OutputStream",
+      "name": "OutputStream",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Writer",
+          "name": "Writer",
+          "isArray": false
+        },
+        "name": "writer"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "encodingSink(com.google.common.io.CharSink encodedSink)",
+    "name": "encodingSink",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSink",
+      "name": "ByteSink",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.CharSink",
+          "name": "CharSink",
+          "isArray": false
+        },
+        "name": "encodedSink"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "decode(java.lang.CharSequence chars)",
+    "name": "decode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "chars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the input is not a valid encoded string according to this encoding.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "decodeChecked(java.lang.CharSequence chars)",
+    "name": "decodeChecked",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "byte[]",
+      "name": "byte[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "byte",
+        "name": "byte",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "chars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "com.google.common.io.BaseEncoding.DecodingException",
+          "name": "DecodingException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the input is not a valid encoded string according to this encoding.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "decodingStream(java.io.Reader reader)",
+    "name": "decodingStream",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.InputStream",
+      "name": "InputStream",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Reader",
+          "name": "Reader",
+          "isArray": false
+        },
+        "name": "reader"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "decodingSource(com.google.common.io.CharSource encodedSource)",
+    "name": "decodingSource",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.ByteSource",
+      "name": "ByteSource",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.io.CharSource",
+          "name": "CharSource",
+          "isArray": false
+        },
+        "name": "encodedSource"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "maxEncodedSize(int bytes)",
+    "name": "maxEncodedSize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "bytes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "encodeTo(java.lang.Appendable target,byte[] bytes,int off,int len)",
+    "name": "encodeTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Appendable",
+          "name": "Appendable",
+          "isArray": false
+        },
+        "name": "target"
+      },
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "bytes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "off"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "len"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "maxDecodedSize(int chars)",
+    "name": "maxDecodedSize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "chars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "decodeTo(byte[] target,java.lang.CharSequence chars)",
+    "name": "decodeTo",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "byte[]",
+          "name": "byte[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "byte",
+            "name": "byte",
+            "isArray": false
+          }
+        },
+        "name": "target"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.CharSequence",
+          "name": "CharSequence",
+          "isArray": false
+        },
+        "name": "chars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "padding()",
+    "name": "padding",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.CharMatcher",
+      "name": "CharMatcher",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "omitPadding()",
+    "name": "omitPadding",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "withPadChar(char padChar)",
+    "name": "withPadChar",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "padChar"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this padding character is already used in the alphabet or a separator",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "withSeparator(java.lang.String separator,int n)",
+    "name": "withSeparator",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "separator"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "n"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "n <= 0"
+        ],
+        "comment": "if any alphabet or padding characters appear in the separator string, or if n <= 0",
+        "kind": "THROWS",
+        "condition": "args[1]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if this encoding already uses a separator",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "upperCase()",
+    "name": "upperCase",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the alphabet used by this encoding contains mixed upper- and lower-case characters",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "lowerCase()",
+    "name": "lowerCase",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the alphabet used by this encoding contains mixed upper- and lower-case characters",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "base64()",
+    "name": "base64",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "base64Url()",
+    "name": "base64Url",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "base32()",
+    "name": "base32",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "base32Hex()",
+    "name": "base32Hex",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "base16()",
+    "name": "base16",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "ignoringReader(java.io.Reader delegate,com.google.common.base.CharMatcher toIgnore)",
+    "name": "ignoringReader",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.Reader",
+      "name": "Reader",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Reader",
+          "name": "Reader",
+          "isArray": false
+        },
+        "name": "delegate"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.CharMatcher",
+          "name": "CharMatcher",
+          "isArray": false
+        },
+        "name": "toIgnore"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "separatingAppendable(java.lang.Appendable delegate,java.lang.String separator,int afterEveryChars)",
+    "name": "separatingAppendable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Appendable",
+      "name": "Appendable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Appendable",
+          "name": "Appendable",
+          "isArray": false
+        },
+        "name": "delegate"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "separator"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "afterEveryChars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "separatingWriter(java.io.Writer delegate,java.lang.String separator,int afterEveryChars)",
+    "name": "separatingWriter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.io.BaseEncoding",
+      "name": "BaseEncoding",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.io.BaseEncoding",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.io.Writer",
+      "name": "Writer",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.io.Writer",
+          "name": "Writer",
+          "isArray": false
+        },
+        "name": "delegate"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "separator"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "afterEveryChars"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

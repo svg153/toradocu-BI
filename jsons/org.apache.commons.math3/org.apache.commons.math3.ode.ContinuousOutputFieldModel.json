@@ -1,0 +1,298 @@
+[
+  {
+    "signature": "ContinuousOutputFieldModel()",
+    "name": "ContinuousOutputFieldModel",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "append(org.apache.commons.math3.ode.ContinuousOutputFieldModel model)",
+    "name": "append",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+          "name": "ContinuousOutputFieldModel",
+          "isArray": false
+        },
+        "name": "model"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+            "name": "ContinuousOutputFieldModel",
+            "isArray": false
+          },
+          "name": "model"
+        },
+        "comment": "model to add at the end of the instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the model to append is not compatible with the instance (dimension of the state vector, propagation direction, hole between the dates)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimensions of the states or the number of secondary states do not match",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded during step finalization",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "init(org.apache.commons.math3.ode.FieldODEStateAndDerivative initialState,org.apache.commons.math3.RealFieldElement t)",
+    "name": "init",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "t"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "handleStep(org.apache.commons.math3.ode.sampling.FieldStepInterpolator interpolator,boolean isLast)",
+    "name": "handleStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepInterpolator",
+          "name": "FieldStepInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isLast"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepInterpolator",
+            "name": "FieldStepInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "interpolator for the last accepted step.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isLast"
+        },
+        "comment": "true if the step is the last one",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the number of functions evaluations is exceeded during step finalization",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInitialTime()",
+    "name": "getInitialTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "initial integration time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFinalTime()",
+    "name": "getFinalTime",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "final integration time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInterpolatedState(org.apache.commons.math3.RealFieldElement time)",
+    "name": "getInterpolatedState",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+      "name": "ContinuousOutputFieldModel",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.ContinuousOutputFieldModel",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+      "name": "FieldODEStateAndDerivative",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "time"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "time"
+        },
+        "comment": "time of the interpolated point",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "state at interpolated time",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

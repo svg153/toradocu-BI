@@ -1,0 +1,211 @@
+[
+  {
+    "signature": "CharEscaper()",
+    "name": "CharEscaper",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.CharEscaper",
+      "name": "CharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.CharEscaper",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "escape(java.lang.String string)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.CharEscaper",
+      "name": "CharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.CharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "string"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "string"
+        },
+        "comment": "the literal string to be escaped",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the escaped form of string",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "string"
+        ],
+        "comment": "if string is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "escapeSlow(java.lang.String s,int index)",
+    "name": "escapeSlow",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.CharEscaper",
+      "name": "CharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.CharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "s"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "s"
+        },
+        "comment": "the literal string to be escaped",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index to start escaping from",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the escaped form of string",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[0])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "string"
+        ],
+        "comment": "if string is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "escape(char c)",
+    "name": "escape",
+    "containingClass": {
+      "qualifiedName": "com.google.common.escape.CharEscaper",
+      "name": "CharEscaper",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.escape.CharEscaper",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "char[]",
+      "name": "char[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "char",
+        "name": "char",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "char",
+          "name": "char",
+          "isArray": false
+        },
+        "name": "c"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "char",
+            "name": "char",
+            "isArray": false
+          },
+          "name": "c"
+        },
+        "comment": "the character to escape if necessary",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the replacement characters, or null if no escaping was needed",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "signature": "SingularValueDecomposition(org.apache.commons.math3.linear.RealMatrix matrix)",
+    "name": "SingularValueDecomposition",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+          "name": "RealMatrix",
+          "isArray": false
+        },
+        "name": "matrix"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+            "name": "RealMatrix",
+            "isArray": false
+          },
+          "name": "matrix"
+        },
+        "comment": "Matrix to decompose.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getU()",
+    "name": "getU",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the U matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getUT()",
+    "name": "getUT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the U matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getS()",
+    "name": "getS",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the Σ matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSingularValues()",
+    "name": "getSingularValues",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the diagonal elements of the Σ matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getU())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getV()",
+    "name": "getV",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the V matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getVT()",
+    "name": "getVT",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the V matrix (or null if decomposed matrix is singular)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCovariance(double minSingularValue)",
+    "name": "getCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "minSingularValue"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "minSingularValue"
+        },
+        "comment": "value below which singular values are ignored (a 0 or negative value implies all singular value will be used)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "covariance matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if minSingularValue is larger than the largest singular value, meaning all singular values are ignored",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getNorm()",
+    "name": "getNorm",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "norm",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getU())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getConditionNumber()",
+    "name": "getConditionNumber",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "condition number of the matrix",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getU())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInverseConditionNumber()",
+    "name": "getInverseConditionNumber",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the inverse of the condition number.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getU())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getRank()",
+    "name": "getRank",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "effective numerical matrix rank",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getSolver()",
+    "name": "getSolver",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.linear.SingularValueDecomposition",
+      "name": "SingularValueDecomposition",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.linear.SingularValueDecomposition",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.DecompositionSolver",
+      "name": "DecompositionSolver",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a solver",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getU())"
+    },
+    "throwsTags": []
+  }
+]

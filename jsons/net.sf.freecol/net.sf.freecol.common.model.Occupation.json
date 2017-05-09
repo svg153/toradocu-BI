@@ -1,0 +1,409 @@
+[
+  {
+    "signature": "Occupation(net.sf.freecol.common.model.WorkLocation workLocation,net.sf.freecol.common.model.ProductionType productionType,net.sf.freecol.common.model.GoodsType workType)",
+    "name": "Occupation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Occupation",
+      "name": "Occupation",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Occupation",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "workLocation"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.ProductionType",
+          "name": "ProductionType",
+          "isArray": false
+        },
+        "name": "productionType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "workType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "workLocation"
+        },
+        "comment": "The WorkLocation to work at.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.ProductionType",
+            "name": "ProductionType",
+            "isArray": false
+          },
+          "name": "productionType"
+        },
+        "comment": "The ProductionType to use at the work location.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "workType"
+        },
+        "comment": "The GoodsType to produce at the work location with the production type.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "install(net.sf.freecol.common.model.Unit unit)",
+    "name": "install",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Occupation",
+      "name": "Occupation",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Occupation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to establish.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "True if the unit is installed.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "improve(net.sf.freecol.common.model.Unit unit,net.sf.freecol.common.model.WorkLocation wl,int bestAmount,java.util.Collection workTypes,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "improve",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Occupation",
+      "name": "Occupation",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Occupation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.Unit",
+          "name": "Unit",
+          "isArray": false
+        },
+        "name": "unit"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "wl"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "bestAmount"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "workTypes"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.Unit",
+            "name": "Unit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "The Unit to produce the goods.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "wl"
+        },
+        "comment": "The WorkLocation to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "bestAmount"
+        },
+        "comment": "The best amount of goods produced found so far.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "workTypes"
+        },
+        "comment": "A collection of GoodsType to consider producing.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best amount of production found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "improve(net.sf.freecol.common.model.UnitType unitType,net.sf.freecol.common.model.WorkLocation wl,int bestAmount,java.util.Collection workTypes,net.sf.freecol.common.util.LogBuilder lb)",
+    "name": "improve",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Occupation",
+      "name": "Occupation",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Occupation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.UnitType",
+          "name": "UnitType",
+          "isArray": false
+        },
+        "name": "unitType"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "wl"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "bestAmount"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.Collection",
+          "name": "Collection",
+          "isArray": false
+        },
+        "name": "workTypes"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+          "name": "LogBuilder",
+          "isArray": false
+        },
+        "name": "lb"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.UnitType",
+            "name": "UnitType",
+            "isArray": false
+          },
+          "name": "unitType"
+        },
+        "comment": "The UnitType to produce the goods.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "wl"
+        },
+        "comment": "The WorkLocation to check.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "bestAmount"
+        },
+        "comment": "The best amount of goods produced found so far.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Collection",
+            "name": "Collection",
+            "isArray": false
+          },
+          "name": "workTypes"
+        },
+        "comment": "A collection of GoodsType to consider producing.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.util.LogBuilder",
+            "name": "LogBuilder",
+            "isArray": false
+          },
+          "name": "lb"
+        },
+        "comment": "A LogBuilder to log to.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "The best amount of production found.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.common.model.Occupation",
+      "name": "Occupation",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.common.model.Occupation",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

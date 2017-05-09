@@ -1,0 +1,362 @@
+[
+  {
+    "signature": "EntrySetMapIterator(java.util.Map map)",
+    "name": "EntrySetMapIterator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "map"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.Map",
+            "name": "Map",
+            "isArray": false
+          },
+          "name": "map"
+        },
+        "comment": "the map to iterate over",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasNext()",
+    "name": "hasNext",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "true if the iterator has more elements",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "next()",
+    "name": "next",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the next key in the iteration",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.util.NoSuchElementException",
+          "name": "NoSuchElementException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the iteration is finished",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "remove()",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if remove is not supported by the map",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next()"
+        ],
+        "comment": "if next() has not yet been called",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "remove()",
+          "next()"
+        ],
+        "comment": "if remove() has already been called since the last call to next()",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getKey()",
+    "name": "getKey",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "K",
+      "name": "K",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the current key",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next()"
+        ],
+        "comment": "if next() has not yet been called",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getValue()",
+    "name": "getValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the current value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next()"
+        ],
+        "comment": "if next() has not yet been called",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setValue(java.lang.Object value)",
+    "name": "setValue",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "value"
+        },
+        "comment": "the new value",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the previous value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.UnsupportedOperationException",
+          "name": "UnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if setValue is not supported by the map",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "next()"
+        ],
+        "comment": "if next() has not yet been called",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "remove()",
+          "next()"
+        ],
+        "comment": "if remove() has been called since the last call to next()",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "reset()",
+    "name": "reset",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+      "name": "EntrySetMapIterator",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.iterators.EntrySetMapIterator",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a string version of the iterator",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

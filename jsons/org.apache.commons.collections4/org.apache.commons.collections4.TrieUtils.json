@@ -1,0 +1,61 @@
+[
+  {
+    "signature": "unmodifiableTrie(org.apache.commons.collections4.Trie trie)",
+    "name": "unmodifiableTrie",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.TrieUtils",
+      "name": "TrieUtils",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.TrieUtils",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.Trie",
+      "name": "Trie",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Trie",
+          "name": "Trie",
+          "isArray": false
+        },
+        "name": "trie"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Trie",
+            "name": "Trie",
+            "isArray": false
+          },
+          "name": "trie"
+        },
+        "comment": "the trie to make unmodifiable, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "an unmodifiable trie backed by the given trie",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if trie is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

@@ -1,0 +1,843 @@
+[
+  {
+    "signature": "MapMaker()",
+    "name": "MapMaker",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "keyEquivalence(com.google.common.base.Equivalence equivalence)",
+    "name": "keyEquivalence",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Equivalence",
+          "name": "Equivalence",
+          "isArray": false
+        },
+        "name": "equivalence"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getKeyEquivalence()",
+    "name": "getKeyEquivalence",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Equivalence",
+      "name": "Equivalence",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "initialCapacity(int initialCapacity)",
+    "name": "initialCapacity",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "initialCapacity"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "initialCapacity"
+        ],
+        "comment": "if initialCapacity is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an initial capacity was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getInitialCapacity()",
+    "name": "getInitialCapacity",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "maximumSize(int size)",
+    "name": "maximumSize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "size"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "size"
+        },
+        "comment": "the maximum size of the map",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "size"
+        ],
+        "comment": "if size is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a maximum size was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "concurrencyLevel(int concurrencyLevel)",
+    "name": "concurrencyLevel",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "concurrencyLevel"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "concurrencyLevel"
+        ],
+        "comment": "if concurrencyLevel is nonpositive",
+        "kind": "THROWS",
+        "condition": "args[0]<=0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a concurrency level was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getConcurrencyLevel()",
+    "name": "getConcurrencyLevel",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "weakKeys()",
+    "name": "weakKeys",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the key strength was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setKeyStrength(com.google.common.collect.MapMakerInternalMap.Strength strength)",
+    "name": "setKeyStrength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.MapMakerInternalMap.Strength",
+          "name": "Strength",
+          "isArray": false
+        },
+        "name": "strength"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getKeyStrength()",
+    "name": "getKeyStrength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMakerInternalMap.Strength",
+      "name": "Strength",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "weakValues()",
+    "name": "weakValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the value strength was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "softValues()",
+    "name": "softValues",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the value strength was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setValueStrength(com.google.common.collect.MapMakerInternalMap.Strength strength)",
+    "name": "setValueStrength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.MapMakerInternalMap.Strength",
+          "name": "Strength",
+          "isArray": false
+        },
+        "name": "strength"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getValueStrength()",
+    "name": "getValueStrength",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMakerInternalMap.Strength",
+      "name": "Strength",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "expireAfterWrite(long duration,java.util.concurrent.TimeUnit unit)",
+    "name": "expireAfterWrite",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "duration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "duration"
+        },
+        "comment": "the length of time after an entry is created that it should be automatically removed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the unit that duration is expressed in",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "duration"
+        ],
+        "comment": "if duration is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the time to live or time to idle was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getExpireAfterWriteNanos()",
+    "name": "getExpireAfterWriteNanos",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "expireAfterAccess(long duration,java.util.concurrent.TimeUnit unit)",
+    "name": "expireAfterAccess",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "long",
+          "name": "long",
+          "isArray": false
+        },
+        "name": "duration"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.util.concurrent.TimeUnit",
+          "name": "TimeUnit",
+          "isArray": false
+        },
+        "name": "unit"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "long",
+            "name": "long",
+            "isArray": false
+          },
+          "name": "duration"
+        },
+        "comment": "the length of time after an entry is last accessed that it should be automatically removed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.concurrent.TimeUnit",
+            "name": "TimeUnit",
+            "isArray": false
+          },
+          "name": "unit"
+        },
+        "comment": "the unit that duration is expressed in",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "duration"
+        ],
+        "comment": "if duration is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the time to idle or time to live was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getExpireAfterAccessNanos()",
+    "name": "getExpireAfterAccessNanos",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "long",
+      "name": "long",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getTicker()",
+    "name": "getTicker",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Ticker",
+      "name": "Ticker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "removalListener(com.google.common.collect.MapMaker.RemovalListener listener)",
+    "name": "removalListener",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.GenericMapMaker",
+      "name": "GenericMapMaker",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.MapMaker.RemovalListener",
+          "name": "RemovalListener",
+          "isArray": false
+        },
+        "name": "listener"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a removal listener was already set",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "makeMap()",
+    "name": "makeMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ConcurrentMap",
+      "name": "ConcurrentMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a serializable concurrent map having the requested features",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "makeCustomMap()",
+    "name": "makeCustomMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.MapMakerInternalMap",
+      "name": "MapMakerInternalMap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "makeComputingMap(com.google.common.base.Function computingFunction)",
+    "name": "makeComputingMap",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.concurrent.ConcurrentMap",
+      "name": "ConcurrentMap",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.base.Function",
+          "name": "Function",
+          "isArray": false
+        },
+        "name": "computingFunction"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.base.Function",
+            "name": "Function",
+            "isArray": false
+          },
+          "name": "computingFunction"
+        },
+        "comment": "the function used to compute new values",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a serializable concurrent map having the requested features",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.MapMaker",
+      "name": "MapMaker",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.MapMaker",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

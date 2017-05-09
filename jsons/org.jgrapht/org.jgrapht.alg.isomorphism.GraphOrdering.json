@@ -1,0 +1,509 @@
+[
+  {
+    "signature": "GraphOrdering(org.jgrapht.Graph graph,boolean orderByDegree,boolean cacheEdges)",
+    "name": "GraphOrdering",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.Graph",
+          "name": "Graph",
+          "isArray": false
+        },
+        "name": "graph"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "orderByDegree"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "cacheEdges"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.Graph",
+            "name": "Graph",
+            "isArray": false
+          },
+          "name": "graph"
+        },
+        "comment": "the graph to be ordered",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "orderByDegree"
+        },
+        "comment": "should the vertices be ordered by their degree. This speeds up the VF2 algorithm.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "cacheEdges"
+        },
+        "comment": "if true, the class creates a adjacency matrix and two arrays for incoming and outgoing edges for fast access.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "GraphOrdering(org.jgrapht.Graph graph)",
+    "name": "GraphOrdering",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.jgrapht.Graph",
+          "name": "Graph",
+          "isArray": false
+        },
+        "name": "graph"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.jgrapht.Graph",
+            "name": "Graph",
+            "isArray": false
+          },
+          "name": "graph"
+        },
+        "comment": "the graph to be ordered",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getVertexCount()",
+    "name": "getVertexCount",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "returns the number of vertices in the graph.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getOutEdges(int vertexNumber)",
+    "name": "getOutEdges",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "vertexNumber"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "vertexNumber"
+        },
+        "comment": "the number which identifies the vertex v in this order.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the identifying numbers of all vertices which are connected to v by an edge outgoing from v.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getInEdges(int vertexNumber)",
+    "name": "getInEdges",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "vertexNumber"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "vertexNumber"
+        },
+        "comment": "the number which identifies the vertex v in this order.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the identifying numbers of all vertices which are connected to v by an edge incoming to v.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "hasEdge(int v1Number,int v2Number)",
+    "name": "hasEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "v1Number"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "v2Number"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "v1Number"
+        },
+        "comment": "the number of the first vertex v1",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "v2Number"
+        },
+        "comment": "the number of the second vertex v2",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "exists the edge from v1 to v2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getVertex(int vertexNumber)",
+    "name": "getVertex",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "vertexNumber"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "vertexNumber"
+        },
+        "comment": "the number identifying the vertex v",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "v",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdge(int v1Number,int v2Number)",
+    "name": "getEdge",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "v1Number"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "v2Number"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "v1Number"
+        },
+        "comment": "the number identifying the vertex v1",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "v2Number"
+        },
+        "comment": "the number identifying the vertex v2",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the edge from v1 to v2",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getVertexNumber(java.lang.Object v)",
+    "name": "getVertexNumber",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "v"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEdgeNumbers(java.lang.Object e)",
+    "name": "getEdgeNumbers",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int[]",
+      "name": "int[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "int",
+        "name": "int",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "e"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getGraph()",
+    "name": "getGraph",
+    "containingClass": {
+      "qualifiedName": "org.jgrapht.alg.isomorphism.GraphOrdering",
+      "name": "GraphOrdering",
+      "isArray": false
+    },
+    "targetClass": "org.jgrapht.alg.isomorphism.GraphOrdering",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.jgrapht.Graph",
+      "name": "Graph",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

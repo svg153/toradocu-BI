@@ -1,0 +1,1373 @@
+[
+  {
+    "signature": "Percentile()",
+    "name": "Percentile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "Percentile(double quantile)",
+    "name": "Percentile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "quantile"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "quantile"
+        },
+        "comment": "the quantile",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if p is not greater than 0 and less than or equal to 100",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "Percentile(org.apache.commons.math3.stat.descriptive.rank.Percentile original)",
+    "name": "Percentile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+          "name": "Percentile",
+          "isArray": false
+        },
+        "name": "original"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+            "name": "Percentile",
+            "isArray": false
+          },
+          "name": "original"
+        },
+        "comment": "the Percentile instance to copy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if original is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "Percentile(double quantile,org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType estimationType,org.apache.commons.math3.stat.ranking.NaNStrategy nanStrategy,org.apache.commons.math3.util.KthSelector kthSelector)",
+    "name": "Percentile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "quantile"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType",
+          "name": "EstimationType",
+          "isArray": false
+        },
+        "name": "estimationType"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.ranking.NaNStrategy",
+          "name": "NaNStrategy",
+          "isArray": false
+        },
+        "name": "nanStrategy"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.KthSelector",
+          "name": "KthSelector",
+          "isArray": false
+        },
+        "name": "kthSelector"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "quantile"
+        },
+        "comment": "the quantile to be computed",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType",
+            "name": "EstimationType",
+            "isArray": false
+          },
+          "name": "estimationType"
+        },
+        "comment": "one of the percentile estimation types",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.ranking.NaNStrategy",
+            "name": "NaNStrategy",
+            "isArray": false
+          },
+          "name": "nanStrategy"
+        },
+        "comment": "one of NaNStrategy to handle with NaNs",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.KthSelector",
+            "name": "KthSelector",
+            "isArray": false
+          },
+          "name": "kthSelector"
+        },
+        "comment": "a KthSelector to use for pivoting during search",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if p is not within (0,100]",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if type or NaNStrategy passed is null",
+        "kind": "THROWS",
+        "condition": "args[1]==null || args[2]==null"
+      }
+    ]
+  },
+  {
+    "signature": "setData(double[] values)",
+    "name": "setData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setData(double[] values,int begin,int length)",
+    "name": "setData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "begin"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "length"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "evaluate(double p)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the percentile value to compute",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the value of the statistic applied to the stored data",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if p is not a valid quantile value (p must be greater than 0 and less than or equal to 100)",
+        "kind": "THROWS",
+        "condition": "args[0]>0 && args[0]<=100"
+      }
+    ]
+  },
+  {
+    "signature": "evaluate(double[] values,double p)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "input array of values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the percentile value to compute",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the percentile value or Double.NaN if the array is empty",
+      "kind": "RETURN",
+      "condition": "args[0].length==0 ? result.equals(args[1])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "values"
+        ],
+        "comment": "if values is null or p is invalid",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "evaluate(double[] values,int start,int length)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "start"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "length"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "the input array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "start"
+        },
+        "comment": "index of the first array element to include",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "length"
+        },
+        "comment": "the number of elements to include",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the percentile value",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not valid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "evaluate(double[] values,int begin,int length,double p)",
+    "name": "evaluate",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "begin"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "length"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "array of input values",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "the percentile to compute",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "begin"
+        },
+        "comment": "the first (0-based) element to include in the computation",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "length"
+        },
+        "comment": "the number of array elements to include",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the percentile value",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(args[3])"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameters are not valid or the input array is null",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "medianOf3(double[] work,int begin,int end)",
+    "name": "medianOf3",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "work"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "begin"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "end"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "work"
+        },
+        "comment": "data array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "begin"
+        },
+        "comment": "index of the first element of the slice",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "end"
+        },
+        "comment": "index after the last element of the slice",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the index of the median element chosen between the first, the middle and the last element of the array slice",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getQuantile()",
+    "name": "getQuantile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "quantile set while construction or setQuantile(double)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setQuantile(double p)",
+    "name": "setQuantile",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "p"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "p"
+        },
+        "comment": "a value between 0 < p <= 100",
+        "kind": "PARAM",
+        "condition": "args[0]<=100"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if p is not greater than 0 and less than or equal to 100",
+        "kind": "THROWS",
+        "condition": "(args[0]>0) == false && args[0]<=100"
+      }
+    ]
+  },
+  {
+    "signature": "copy()",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "copy(org.apache.commons.math3.stat.descriptive.rank.Percentile source,org.apache.commons.math3.stat.descriptive.rank.Percentile dest)",
+    "name": "copy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+          "name": "Percentile",
+          "isArray": false
+        },
+        "name": "source"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+          "name": "Percentile",
+          "isArray": false
+        },
+        "name": "dest"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+            "name": "Percentile",
+            "isArray": false
+          },
+          "name": "source"
+        },
+        "comment": "Percentile to copy",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+            "name": "Percentile",
+            "isArray": false
+          },
+          "name": "dest"
+        },
+        "comment": "Percentile to copy to",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathUnsupportedOperationException",
+          "name": "MathUnsupportedOperationException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "always thrown since 3.4",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getWorkArray(double[] values,int begin,int length)",
+    "name": "getWorkArray",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "values"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "begin"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "length"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "values"
+        },
+        "comment": "the array of numbers",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "begin"
+        },
+        "comment": "index to start reading the array",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "length"
+        },
+        "comment": "the length of array to be read from the begin index",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "work array sliced from values in the range [begin,begin+length)",
+      "kind": "RETURN",
+      "condition": "true ? result==args[1]+args[2]"
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalArgumentException",
+          "name": "MathIllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if values or indices are invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getEstimationType()",
+    "name": "getEstimationType",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType",
+      "name": "EstimationType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the estimationType set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "withEstimationType(org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType newEstimationType)",
+    "name": "withEstimationType",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType",
+          "name": "EstimationType",
+          "isArray": false
+        },
+        "name": "newEstimationType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType",
+            "name": "EstimationType",
+            "isArray": false
+          },
+          "name": "newEstimationType"
+        },
+        "comment": "estimation type for the new instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new instance, with changed estimation type",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "when newEstimationType is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getNaNStrategy()",
+    "name": "getNaNStrategy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.ranking.NaNStrategy",
+      "name": "NaNStrategy",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "NaN Handling strategy set during construction",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "withNaNStrategy(org.apache.commons.math3.stat.ranking.NaNStrategy newNaNStrategy)",
+    "name": "withNaNStrategy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.stat.ranking.NaNStrategy",
+          "name": "NaNStrategy",
+          "isArray": false
+        },
+        "name": "newNaNStrategy"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.stat.ranking.NaNStrategy",
+            "name": "NaNStrategy",
+            "isArray": false
+          },
+          "name": "newNaNStrategy"
+        },
+        "comment": "NaN strategy for the new instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new instance, with changed NaN handling strategy",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "when newNaNStrategy is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "getKthSelector()",
+    "name": "getKthSelector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.KthSelector",
+      "name": "KthSelector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the kthSelector set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPivotingStrategy()",
+    "name": "getPivotingStrategy",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.util.PivotingStrategyInterface",
+      "name": "PivotingStrategyInterface",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the pivoting strategy set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "withKthSelector(org.apache.commons.math3.util.KthSelector newKthSelector)",
+    "name": "withKthSelector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.stat.descriptive.rank.Percentile",
+      "name": "Percentile",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.util.KthSelector",
+          "name": "KthSelector",
+          "isArray": false
+        },
+        "name": "newKthSelector"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.util.KthSelector",
+            "name": "KthSelector",
+            "isArray": false
+          },
+          "name": "newKthSelector"
+        },
+        "comment": "KthSelector for the new instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new instance, with changed KthSelector",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "when newKthSelector is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  }
+]

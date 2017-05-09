@@ -1,0 +1,562 @@
+[
+  {
+    "signature": "KalmanFilter(org.apache.commons.math3.filter.ProcessModel process,org.apache.commons.math3.filter.MeasurementModel measurement)",
+    "name": "KalmanFilter",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.filter.ProcessModel",
+          "name": "ProcessModel",
+          "isArray": false
+        },
+        "name": "process"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.filter.MeasurementModel",
+          "name": "MeasurementModel",
+          "isArray": false
+        },
+        "name": "measurement"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.filter.ProcessModel",
+            "name": "ProcessModel",
+            "isArray": false
+          },
+          "name": "process"
+        },
+        "comment": "the model defining the underlying process dynamics",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.filter.MeasurementModel",
+            "name": "MeasurementModel",
+            "isArray": false
+          },
+          "name": "measurement"
+        },
+        "comment": "the model defining the given measurement characteristics",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any of the given inputs is null (except for the control matrix)",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.NonSquareMatrixException",
+          "name": "NonSquareMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the transition matrix is non square",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the column dimension of the transition matrix does not match the dimension of the initial state estimation vector",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.MatrixDimensionMismatchException",
+          "name": "MatrixDimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the matrix dimensions do not fit together",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getStateDimension()",
+    "name": "getStateDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the state dimension",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMeasurementDimension()",
+    "name": "getMeasurementDimension",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the measurement vector dimension",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStateEstimation()",
+    "name": "getStateEstimation",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[]",
+      "name": "double[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the state estimation vector",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getStateEstimationVector()",
+    "name": "getStateEstimationVector",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the state estimation vector",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getErrorCovariance()",
+    "name": "getErrorCovariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double[][]",
+      "name": "double[][]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "double",
+        "name": "double",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the error covariance matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getErrorCovarianceMatrix()",
+    "name": "getErrorCovarianceMatrix",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the error covariance matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "predict()",
+    "name": "predict",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "predict(double[] u)",
+    "name": "predict",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "u"
+        },
+        "comment": "the control vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the control vector does not fit",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "predict(org.apache.commons.math3.linear.RealVector u)",
+    "name": "predict",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "u"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "u"
+        },
+        "comment": "the control vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the control vector does not match",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "correct(double[] z)",
+    "name": "correct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "z"
+        },
+        "comment": "the measurement vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the measurement vector is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the measurement vector does not fit",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the covariance matrix could not be inverted",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "correct(org.apache.commons.math3.linear.RealVector z)",
+    "name": "correct",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.filter.KalmanFilter",
+      "name": "KalmanFilter",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.filter.KalmanFilter",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+          "name": "RealVector",
+          "isArray": false
+        },
+        "name": "z"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+            "name": "RealVector",
+            "isArray": false
+          },
+          "name": "z"
+        },
+        "comment": "the measurement vector",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if the measurement vector is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the measurement vector does not fit",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.linear.SingularMatrixException",
+          "name": "SingularMatrixException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the covariance matrix could not be inverted",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

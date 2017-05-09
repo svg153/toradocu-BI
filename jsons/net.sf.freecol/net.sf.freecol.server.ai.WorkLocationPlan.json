@@ -1,0 +1,315 @@
+[
+  {
+    "signature": "WorkLocationPlan(net.sf.freecol.server.ai.AIMain aiMain,net.sf.freecol.common.model.WorkLocation workLocation,net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "WorkLocationPlan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+          "name": "WorkLocation",
+          "isArray": false
+        },
+        "name": "workLocation"
+      },
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+            "name": "WorkLocation",
+            "isArray": false
+          },
+          "name": "workLocation"
+        },
+        "comment": "The WorkLocation to create a plan for.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The goodsType to be produced on the workLocation using this plan.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "WorkLocationPlan(net.sf.freecol.server.ai.AIMain aiMain,org.w3c.dom.Element element)",
+    "name": "WorkLocationPlan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+          "name": "AIMain",
+          "isArray": false
+        },
+        "name": "aiMain"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.w3c.dom.Element",
+          "name": "Element",
+          "isArray": false
+        },
+        "name": "element"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.server.ai.AIMain",
+            "name": "AIMain",
+            "isArray": false
+          },
+          "name": "aiMain"
+        },
+        "comment": "The main AI-object.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.w3c.dom.Element",
+            "name": "Element",
+            "isArray": false
+          },
+          "name": "element"
+        },
+        "comment": "An Element containing an XML-representation of this object.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getWorkLocation()",
+    "name": "getWorkLocation",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.WorkLocation",
+      "name": "WorkLocation",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The WorkLocation.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getGoodsType()",
+    "name": "getGoodsType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+      "name": "GoodsType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The type of goods.",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target.getIdType())"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setGoodsType(net.sf.freecol.common.model.GoodsType goodsType)",
+    "name": "setGoodsType",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+          "name": "GoodsType",
+          "isArray": false
+        },
+        "name": "goodsType"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "net.sf.freecol.common.model.GoodsType",
+            "name": "GoodsType",
+            "isArray": false
+          },
+          "name": "goodsType"
+        },
+        "comment": "The type of goods.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "isFoodPlan()",
+    "name": "isFoodPlan",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "True if this plan produces food.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLTagName()",
+    "name": "getXMLTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getXMLElementTagName()",
+    "name": "getXMLElementTagName",
+    "containingClass": {
+      "qualifiedName": "net.sf.freecol.server.ai.WorkLocationPlan",
+      "name": "WorkLocationPlan",
+      "isArray": false
+    },
+    "targetClass": "net.sf.freecol.server.ai.WorkLocationPlan",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "\"workLocationPlan\"",
+      "kind": "RETURN",
+      "condition": "true ? result.equals(target)"
+    },
+    "throwsTags": []
+  }
+]

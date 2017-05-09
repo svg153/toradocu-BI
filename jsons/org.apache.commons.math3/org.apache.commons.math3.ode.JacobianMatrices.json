@@ -1,0 +1,692 @@
+[
+  {
+    "signature": "JacobianMatrices(org.apache.commons.math3.ode.FirstOrderDifferentialEquations fode,double[] hY,java.lang.String[] parameters)",
+    "name": "JacobianMatrices",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+          "name": "FirstOrderDifferentialEquations",
+          "isArray": false
+        },
+        "name": "fode"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "hY"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[]",
+          "name": "String[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "parameters"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FirstOrderDifferentialEquations",
+            "name": "FirstOrderDifferentialEquations",
+            "isArray": false
+          },
+          "name": "fode"
+        },
+        "comment": "the primary first order differential equations set to extend",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "hY"
+        },
+        "comment": "step used for finite difference computation with respect to state vector",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[]",
+            "name": "String[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "parameters"
+        },
+        "comment": "parameters to consider for Jacobian matrices processing (may be null if parameters Jacobians is not desired)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "hY"
+        ],
+        "comment": "if there is a dimension mismatch between the steps array hY and the equation dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "JacobianMatrices(org.apache.commons.math3.ode.MainStateJacobianProvider jode,java.lang.String[] parameters)",
+    "name": "JacobianMatrices",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": true,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.MainStateJacobianProvider",
+          "name": "MainStateJacobianProvider",
+          "isArray": false
+        },
+        "name": "jode"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[]",
+          "name": "String[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "parameters"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.MainStateJacobianProvider",
+            "name": "MainStateJacobianProvider",
+            "isArray": false
+          },
+          "name": "jode"
+        },
+        "comment": "the primary first order differential equations set to extend",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[]",
+            "name": "String[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "parameters"
+        },
+        "comment": "parameters to consider for Jacobian matrices processing (may be null if parameters Jacobians is not desired)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "registerVariationalEquations(org.apache.commons.math3.ode.ExpandableStatefulODE expandable)",
+    "name": "registerVariationalEquations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+          "name": "ExpandableStatefulODE",
+          "isArray": false
+        },
+        "name": "expandable"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ExpandableStatefulODE",
+            "name": "ExpandableStatefulODE",
+            "isArray": false
+          },
+          "name": "expandable"
+        },
+        "comment": "expandable set into which variational equations should be registered",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the dimension of the partial state does not match the selected equations set dimension",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices.MismatchedEquations",
+          "name": "MismatchedEquations",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the primary set of the expandable set does not match the one used to build the instance",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "addParameterJacobianProvider(org.apache.commons.math3.ode.ParameterJacobianProvider provider)",
+    "name": "addParameterJacobianProvider",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianProvider",
+          "name": "ParameterJacobianProvider",
+          "isArray": false
+        },
+        "name": "provider"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ParameterJacobianProvider",
+            "name": "ParameterJacobianProvider",
+            "isArray": false
+          },
+          "name": "provider"
+        },
+        "comment": "the parameter Jacobian provider to compute exactly the parameter Jacobian matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setParameterizedODE(org.apache.commons.math3.ode.ParameterizedODE parameterizedOde)",
+    "name": "setParameterizedODE",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.ParameterizedODE",
+          "name": "ParameterizedODE",
+          "isArray": false
+        },
+        "name": "parameterizedOde"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.ParameterizedODE",
+            "name": "ParameterizedODE",
+            "isArray": false
+          },
+          "name": "parameterizedOde"
+        },
+        "comment": "the parameterized ODE to compute the parameter Jacobian matrix using finite differences",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "setParameterStep(java.lang.String parameter,double hP)",
+    "name": "setParameterStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "parameter"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "hP"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "parameter"
+        },
+        "comment": "parameter to consider for Jacobian processing",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "hP"
+        },
+        "comment": "step for Jacobian finite difference computation w.r.t. the specified parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.ode.UnknownParameterException",
+          "name": "UnknownParameterException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the parameter is not supported",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setInitialMainStateJacobian(double[][] dYdY0)",
+    "name": "setInitialMainStateJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dYdY0"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dYdY0"
+        },
+        "comment": "initial Jacobian matrix w.r.t. state",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if matrix dimensions are incorrect",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "setInitialParameterJacobian(java.lang.String pName,double[] dYdP)",
+    "name": "setInitialParameterJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "pName"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dYdP"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "pName"
+        },
+        "comment": "parameter name",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dYdP"
+        },
+        "comment": "initial Jacobian column vector with respect to the parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.ode.UnknownParameterException",
+          "name": "UnknownParameterException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a parameter is not supported",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the column vector does not match state dimension",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "getCurrentMainSetJacobian(double[][] dYdY0)",
+    "name": "getCurrentMainSetJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dYdY0"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dYdY0"
+        },
+        "comment": "current Jacobian matrix with respect to state.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCurrentParameterJacobian(java.lang.String pName,double[] dYdP)",
+    "name": "getCurrentParameterJacobian",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.JacobianMatrices",
+      "name": "JacobianMatrices",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.JacobianMatrices",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "pName"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "dYdP"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "pName"
+        },
+        "comment": "name of the parameter for the computed Jacobian matrix",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "dYdP"
+        },
+        "comment": "current Jacobian matrix with respect to the named parameter",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  }
+]

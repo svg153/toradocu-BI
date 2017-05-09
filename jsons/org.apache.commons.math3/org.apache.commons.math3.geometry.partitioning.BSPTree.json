@@ -1,0 +1,962 @@
+[
+  {
+    "signature": "BSPTree()",
+    "name": "BSPTree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "BSPTree(java.lang.Object attribute)",
+    "name": "BSPTree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "attribute"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "attribute"
+        },
+        "comment": "attribute of the tree (may be null)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "BSPTree(org.apache.commons.math3.geometry.partitioning.SubHyperplane cut,org.apache.commons.math3.geometry.partitioning.BSPTree plus,org.apache.commons.math3.geometry.partitioning.BSPTree minus,java.lang.Object attribute)",
+    "name": "BSPTree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.SubHyperplane",
+          "name": "SubHyperplane",
+          "isArray": false
+        },
+        "name": "cut"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "plus"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "minus"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "attribute"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.SubHyperplane",
+            "name": "SubHyperplane",
+            "isArray": false
+          },
+          "name": "cut"
+        },
+        "comment": "cut sub-hyperplane for the tree",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "plus"
+        },
+        "comment": "plus side sub-tree",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "minus"
+        },
+        "comment": "minus side sub-tree",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "attribute"
+        },
+        "comment": "attribute associated with the node (may be null)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "insertCut(org.apache.commons.math3.geometry.partitioning.Hyperplane hyperplane)",
+    "name": "insertCut",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+          "name": "Hyperplane",
+          "isArray": false
+        },
+        "name": "hyperplane"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.Hyperplane",
+            "name": "Hyperplane",
+            "isArray": false
+          },
+          "name": "hyperplane"
+        },
+        "comment": "hyperplane to insert, it will be chopped in order to fit in the cell defined by the parent nodes of the instance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if a cut sub-hyperplane has been inserted (i.e. if the cell now has two leaf child nodes)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "copySelf()",
+    "name": "copySelf",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "a new tree, copy of the instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCut()",
+    "name": "getCut",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.SubHyperplane",
+      "name": "SubHyperplane",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "cut sub-hyperplane, null if this is a leaf tree",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getPlus()",
+    "name": "getPlus",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "tree on the plus side of the cut hyperplane, null if this is a leaf tree",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getMinus()",
+    "name": "getMinus",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "tree on the minus side of the cut hyperplane, null if this is a leaf tree",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getParent()",
+    "name": "getParent",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "parent node, null if the node has no parents",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setAttribute(java.lang.Object attribute)",
+    "name": "setAttribute",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "attribute"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "attribute"
+        },
+        "comment": "attribute to associate with the node",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getAttribute()",
+    "name": "getAttribute",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Object",
+      "name": "Object",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "attribute associated with the node or null if no attribute has been explicitly set using the setAttribute method",
+      "kind": "RETURN",
+      "condition": "result!=null"
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "visit(org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor visitor)",
+    "name": "visit",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor",
+          "name": "BSPTreeVisitor",
+          "isArray": false
+        },
+        "name": "visitor"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTreeVisitor",
+            "name": "BSPTreeVisitor",
+            "isArray": false
+          },
+          "name": "visitor"
+        },
+        "comment": "object visiting the tree nodes",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getCell(org.apache.commons.math3.geometry.Vector point)",
+    "name": "getCell",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Vector",
+          "name": "Vector",
+          "isArray": false
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.Vector",
+            "name": "Vector",
+            "isArray": false
+          },
+          "name": "point"
+        },
+        "comment": "point to check",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the tree cell to which the point belongs",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCell(org.apache.commons.math3.geometry.Point point,double tolerance)",
+    "name": "getCell",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Point",
+          "name": "Point",
+          "isArray": false
+        },
+        "name": "point"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "tolerance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.Point",
+            "name": "Point",
+            "isArray": false
+          },
+          "name": "point"
+        },
+        "comment": "point to check",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "tolerance"
+        },
+        "comment": "tolerance below which points close to a cut hyperplane are considered to belong to the hyperplane itself",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the tree cell to which the point belongs",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getCloseCuts(org.apache.commons.math3.geometry.Point point,double maxOffset)",
+    "name": "getCloseCuts",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.List",
+      "name": "List",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.Point",
+          "name": "Point",
+          "isArray": false
+        },
+        "name": "point"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "maxOffset"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.Point",
+            "name": "Point",
+            "isArray": false
+          },
+          "name": "point"
+        },
+        "comment": "point to check",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          },
+          "name": "maxOffset"
+        },
+        "comment": "offset below which a cut sub-hyperplane is considered close to the point (in absolute value)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "close cells (may be empty if all cut sub-hyperplanes are farther than maxOffset from the point)",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "merge(org.apache.commons.math3.geometry.partitioning.BSPTree tree,org.apache.commons.math3.geometry.partitioning.BSPTree.LeafMerger leafMerger)",
+    "name": "merge",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "tree"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree.LeafMerger",
+          "name": "LeafMerger",
+          "isArray": false
+        },
+        "name": "leafMerger"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "tree"
+        },
+        "comment": "other tree to merge with the instance (will be unusable after the operation, as well as the instance itself)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree.LeafMerger",
+            "name": "LeafMerger",
+            "isArray": false
+          },
+          "name": "leafMerger"
+        },
+        "comment": "object implementing the final merging phase (this is where the semantic of the operation occurs, generally depending on the attribute of the leaf node)",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new tree, result of instance <op> tree, this value can be ignored if parentTree is not null since all connections have already been established",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "split(org.apache.commons.math3.geometry.partitioning.SubHyperplane sub)",
+    "name": "split",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.SubHyperplane",
+          "name": "SubHyperplane",
+          "isArray": false
+        },
+        "name": "sub"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.SubHyperplane",
+            "name": "SubHyperplane",
+            "isArray": false
+          },
+          "name": "sub"
+        },
+        "comment": "partitioning sub-hyperplane, must be already clipped to the convex region represented by the instance, will be used as the cut sub-hyperplane of the returned tree",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a tree having the specified sub-hyperplane as its cut sub-hyperplane, the two parts of the split instance as its two sub-trees and a null parent",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "insertInTree(org.apache.commons.math3.geometry.partitioning.BSPTree parentTree,boolean isPlusChild)",
+    "name": "insertInTree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "parentTree"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isPlusChild"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "parentTree"
+        },
+        "comment": "parent tree to connect to (may be null)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isPlusChild"
+        },
+        "comment": "if true and if parentTree is not null, the resulting tree should be the plus child of its parent, ignored if parentTree is null",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "insertInTree(org.apache.commons.math3.geometry.partitioning.BSPTree parentTree,boolean isPlusChild,org.apache.commons.math3.geometry.partitioning.BSPTree.VanishingCutHandler vanishingHandler)",
+    "name": "insertInTree",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+          "name": "BSPTree",
+          "isArray": false
+        },
+        "name": "parentTree"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isPlusChild"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree.VanishingCutHandler",
+          "name": "VanishingCutHandler",
+          "isArray": false
+        },
+        "name": "vanishingHandler"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+            "name": "BSPTree",
+            "isArray": false
+          },
+          "name": "parentTree"
+        },
+        "comment": "parent tree to connect to (may be null)",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isPlusChild"
+        },
+        "comment": "if true and if parentTree is not null, the resulting tree should be the plus child of its parent, ignored if parentTree is null",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree.VanishingCutHandler",
+            "name": "VanishingCutHandler",
+            "isArray": false
+          },
+          "name": "vanishingHandler"
+        },
+        "comment": "handler to use for handling very rare corner cases of vanishing cut sub-hyperplanes in internal nodes during merging",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "pruneAroundConvexCell(java.lang.Object cellAttribute,java.lang.Object otherLeafsAttributes,java.lang.Object internalAttributes)",
+    "name": "pruneAroundConvexCell",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.geometry.partitioning.BSPTree",
+      "name": "BSPTree",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "cellAttribute"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "otherLeafsAttributes"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "internalAttributes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "cellAttribute"
+        },
+        "comment": "attribute to set for the leaf node corresponding to the initial instance cell",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "otherLeafsAttributes"
+        },
+        "comment": "attribute to set for the other leaf nodes",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "internalAttributes"
+        },
+        "comment": "attribute to set for the internal nodes",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new tree (the original tree is left untouched) containing a single branch with the cell as a leaf node, and other leaf nodes as the remnants of the pruned branches",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

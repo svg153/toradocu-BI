@@ -1,0 +1,140 @@
+[
+  {
+    "signature": "init(org.apache.commons.math3.ode.FieldODEStateAndDerivative initialState,org.apache.commons.math3.RealFieldElement finalTime)",
+    "name": "init",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+      "name": "FieldStepHandler",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+          "name": "FieldODEStateAndDerivative",
+          "isArray": false
+        },
+        "name": "initialState"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+          "name": "RealFieldElement",
+          "isArray": false
+        },
+        "name": "finalTime"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.FieldODEStateAndDerivative",
+            "name": "FieldODEStateAndDerivative",
+            "isArray": false
+          },
+          "name": "initialState"
+        },
+        "comment": "initial time, state vector and derivative",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.RealFieldElement",
+            "name": "RealFieldElement",
+            "isArray": false
+          },
+          "name": "finalTime"
+        },
+        "comment": "target time for the integration",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "handleStep(org.apache.commons.math3.ode.sampling.FieldStepInterpolator interpolator,boolean isLast)",
+    "name": "handleStep",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+      "name": "FieldStepHandler",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.ode.sampling.FieldStepHandler",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepInterpolator",
+          "name": "FieldStepInterpolator",
+          "isArray": false
+        },
+        "name": "interpolator"
+      },
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "isLast"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.ode.sampling.FieldStepInterpolator",
+            "name": "FieldStepInterpolator",
+            "isArray": false
+          },
+          "name": "interpolator"
+        },
+        "comment": "interpolator for the last accepted step. For efficiency purposes, the various integrators reuse the same object on each call, so if the instance wants to keep it across all calls (for example to provide at the end of the integration a continuous model valid throughout the integration range, as the ContinuousOutputModel class does), it should build a local copy using the clone method of the interpolator and store this copy. Keeping only a reference to the interpolator and reusing it will result in unpredictable behavior (potentially crashing the application).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "boolean",
+            "name": "boolean",
+            "isArray": false
+          },
+          "name": "isLast"
+        },
+        "comment": "true if the step is the last one",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MaxCountExceededException",
+          "name": "MaxCountExceededException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the interpolator throws one because the number of functions evaluations is exceeded",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

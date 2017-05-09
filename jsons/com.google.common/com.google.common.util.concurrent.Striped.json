@@ -1,0 +1,514 @@
+[
+  {
+    "signature": "get(java.lang.Object key)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "L",
+      "name": "L",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Object",
+            "name": "Object",
+            "isArray": false
+          },
+          "name": "key"
+        },
+        "comment": "an arbitrary, non-null key",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the stripe that the passed key corresponds to",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getAt(int index)",
+    "name": "getAt",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "L",
+      "name": "L",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "index"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "index"
+        },
+        "comment": "the index of the stripe to return; must be in [0...size())",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the stripe at the specified index",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "indexFor(java.lang.Object key)",
+    "name": "indexFor",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "key"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "size()",
+    "name": "size",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "bulkGet(java.lang.Iterable keys)",
+    "name": "bulkGet",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.Iterable",
+      "name": "Iterable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Iterable",
+          "name": "Iterable",
+          "isArray": false
+        },
+        "name": "keys"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.Iterable",
+            "name": "Iterable",
+            "isArray": false
+          },
+          "name": "keys"
+        },
+        "comment": "arbitrary non-null keys",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the stripes corresponding to the objects (one per each object, derived by delegating to get(Object); may contain duplicates), in an increasing index order.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lock(int stripes)",
+    "name": "lock",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (locks) required",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<Lock>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lazyWeakLock(int stripes)",
+    "name": "lazyWeakLock",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (locks) required",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<Lock>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "semaphore(int stripes,int permits)",
+    "name": "semaphore",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (semaphores) required",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "permits"
+        },
+        "comment": "the number of permits in each semaphore",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<Semaphore>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lazyWeakSemaphore(int stripes,int permits)",
+    "name": "lazyWeakSemaphore",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "permits"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (semaphores) required",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "permits"
+        },
+        "comment": "the number of permits in each semaphore",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<Semaphore>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "readWriteLock(int stripes)",
+    "name": "readWriteLock",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (locks) required",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<ReadWriteLock>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "lazyWeakReadWriteLock(int stripes)",
+    "name": "lazyWeakReadWriteLock",
+    "containingClass": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.util.concurrent.Striped",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.util.concurrent.Striped",
+      "name": "Striped",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "stripes"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "stripes"
+        },
+        "comment": "the minimum number of stripes (locks) required",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "a new Striped<ReadWriteLock>",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

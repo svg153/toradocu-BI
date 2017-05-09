@@ -1,0 +1,153 @@
+[
+  {
+    "signature": "getPackageName(java.lang.Class clazz)",
+    "name": "getPackageName",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Reflection",
+      "name": "Reflection",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Reflection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "clazz"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getPackageName(java.lang.String classFullName)",
+    "name": "getPackageName",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Reflection",
+      "name": "Reflection",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Reflection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "classFullName"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "initialize(java.lang.Class[] classes)",
+    "name": "initialize",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Reflection",
+      "name": "Reflection",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Reflection",
+    "isVarArgs": true,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class[]",
+          "name": "Class[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.Class",
+            "name": "Class",
+            "isArray": false
+          }
+        },
+        "name": "classes"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.ExceptionInInitializerError",
+          "name": "ExceptionInInitializerError",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if an exception is thrown during initialization of a class",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "newProxy(java.lang.Class interfaceType,java.lang.reflect.InvocationHandler handler)",
+    "name": "newProxy",
+    "containingClass": {
+      "qualifiedName": "com.google.common.reflect.Reflection",
+      "name": "Reflection",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.reflect.Reflection",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "T",
+      "name": "T",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Class",
+          "name": "Class",
+          "isArray": false
+        },
+        "name": "interfaceType"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.reflect.InvocationHandler",
+          "name": "InvocationHandler",
+          "isArray": false
+        },
+        "name": "handler"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "interfaceType"
+        ],
+        "comment": "if interfaceType does not specify the type of a Java interface",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]

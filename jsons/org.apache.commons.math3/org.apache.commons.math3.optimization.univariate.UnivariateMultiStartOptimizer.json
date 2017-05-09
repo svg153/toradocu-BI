@@ -1,0 +1,338 @@
+[
+  {
+    "signature": "UnivariateMultiStartOptimizer(org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer optimizer,int starts,org.apache.commons.math3.random.RandomGenerator generator)",
+    "name": "UnivariateMultiStartOptimizer",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+          "name": "BaseUnivariateOptimizer",
+          "isArray": false
+        },
+        "name": "optimizer"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "starts"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+          "name": "RandomGenerator",
+          "isArray": false
+        },
+        "name": "generator"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.optimization.univariate.BaseUnivariateOptimizer",
+            "name": "BaseUnivariateOptimizer",
+            "isArray": false
+          },
+          "name": "optimizer"
+        },
+        "comment": "Single-start optimizer to wrap.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "starts"
+        },
+        "comment": "Number of starts to perform. If starts == 1, the optimize methods will return the same solution as optimizer would.",
+        "kind": "PARAM",
+        "condition": "args[1]==1"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.RandomGenerator",
+            "name": "RandomGenerator",
+            "isArray": false
+          },
+          "name": "generator"
+        },
+        "comment": "Random generator to use for restarts.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "optimizer",
+          "generator",
+          "null"
+        ],
+        "comment": "if optimizer or generator is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[2]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NotStrictlyPositiveException",
+          "name": "NotStrictlyPositiveException",
+          "isArray": false
+        },
+        "codeTags": [
+          "starts < 1"
+        ],
+        "comment": "if starts < 1.",
+        "kind": "THROWS",
+        "condition": "args[1]<1"
+      }
+    ]
+  },
+  {
+    "signature": "getConvergenceChecker()",
+    "name": "getConvergenceChecker",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.ConvergenceChecker",
+      "name": "ConvergenceChecker",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getMaxEvaluations()",
+    "name": "getMaxEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getEvaluations()",
+    "name": "getEvaluations",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOptima()",
+    "name": "getOptima",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair[]",
+      "name": "UnivariatePointValuePair[]",
+      "isArray": true,
+      "componentType": {
+        "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair",
+        "name": "UnivariatePointValuePair",
+        "isArray": false
+      }
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "an array containing the optima.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.MathIllegalStateException",
+          "name": "MathIllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [
+          "optimize"
+        ],
+        "comment": "if optimize has not been called.",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.UnivariateFunction f,org.apache.commons.math3.optimization.GoalType goal,double min,double max)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goal"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "optimize(int maxEval,org.apache.commons.math3.analysis.UnivariateFunction f,org.apache.commons.math3.optimization.GoalType goal,double min,double max,double startValue)",
+    "name": "optimize",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+      "name": "UnivariateMultiStartOptimizer",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.optimization.univariate.UnivariateMultiStartOptimizer",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair",
+      "name": "UnivariatePointValuePair",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "maxEval"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.analysis.UnivariateFunction",
+          "name": "UnivariateFunction",
+          "isArray": false
+        },
+        "name": "f"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.optimization.GoalType",
+          "name": "GoalType",
+          "isArray": false
+        },
+        "name": "goal"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "min"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "max"
+      },
+      {
+        "type": {
+          "qualifiedName": "double",
+          "name": "double",
+          "isArray": false
+        },
+        "name": "startValue"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

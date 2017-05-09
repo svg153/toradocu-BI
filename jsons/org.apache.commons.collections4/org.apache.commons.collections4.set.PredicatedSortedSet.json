@@ -1,0 +1,347 @@
+[
+  {
+    "signature": "PredicatedSortedSet(java.util.SortedSet set,org.apache.commons.collections4.Predicate predicate)",
+    "name": "PredicatedSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "predicatedSortedSet(java.util.SortedSet set,org.apache.commons.collections4.Predicate predicate)",
+    "name": "predicatedSortedSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.SortedSet",
+          "name": "SortedSet",
+          "isArray": false
+        },
+        "name": "set"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.collections4.Predicate",
+          "name": "Predicate",
+          "isArray": false
+        },
+        "name": "predicate"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.util.SortedSet",
+            "name": "SortedSet",
+            "isArray": false
+          },
+          "name": "set"
+        },
+        "comment": "the set to decorate, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[0]==null) == false"
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.collections4.Predicate",
+            "name": "Predicate",
+            "isArray": false
+          },
+          "name": "predicate"
+        },
+        "comment": "the predicate to use for validation, must not be null",
+        "kind": "PARAM",
+        "condition": "(args[1]==null) == false"
+      }
+    ],
+    "returnTag": {
+      "comment": "a new predicated sorted set.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if set or predicate is null",
+        "kind": "THROWS",
+        "condition": "args[0]==null || args[1]==null"
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the set contains invalid elements",
+        "kind": "THROWS",
+        "condition": "args[0].contains(java.lang.Object)"
+      }
+    ]
+  },
+  {
+    "signature": "decorated()",
+    "name": "decorated",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the decorated sorted set",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "comparator()",
+    "name": "comparator",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.Comparator",
+      "name": "Comparator",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "first()",
+    "name": "first",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "last()",
+    "name": "last",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "E",
+      "name": "E",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "subSet(java.lang.Object fromElement,java.lang.Object toElement)",
+    "name": "subSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "fromElement"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "toElement"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "headSet(java.lang.Object toElement)",
+    "name": "headSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "toElement"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "tailSet(java.lang.Object fromElement)",
+    "name": "tailSet",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.collections4.set.PredicatedSortedSet",
+      "name": "PredicatedSortedSet",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.collections4.set.PredicatedSortedSet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.util.SortedSet",
+      "name": "SortedSet",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "fromElement"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "signature": "type()",
+    "name": "type",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "subtype()",
+    "name": "subtype",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "parameters()",
+    "name": "parameters",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.ImmutableListMultimap",
+      "name": "ImmutableListMultimap",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "charset()",
+    "name": "charset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.base.Optional",
+      "name": "Optional",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalStateException",
+          "name": "IllegalStateException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if multiple charset values have been set for this media type",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.nio.charset.IllegalCharsetNameException",
+          "name": "IllegalCharsetNameException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a charset value is present, but illegal",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "java.nio.charset.UnsupportedCharsetException",
+          "name": "UnsupportedCharsetException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if a charset value is present, but no support is available in this instance of the Java virtual machine",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "withoutParameters()",
+    "name": "withoutParameters",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "withParameters(com.google.common.collect.Multimap parameters)",
+    "name": "withParameters",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Multimap",
+          "name": "Multimap",
+          "isArray": false
+        },
+        "name": "parameters"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if any parameter or value is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "withParameter(java.lang.String attribute,java.lang.String value)",
+    "name": "withParameter",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "attribute"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "value"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "attribute",
+          "value"
+        ],
+        "comment": "if either attribute or value is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "withCharset(java.nio.charset.Charset charset)",
+    "name": "withCharset",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.nio.charset.Charset",
+          "name": "Charset",
+          "isArray": false
+        },
+        "name": "charset"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hasWildcard()",
+    "name": "hasWildcard",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "is(com.google.common.net.MediaType mediaTypeRange)",
+    "name": "is",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.net.MediaType",
+          "name": "MediaType",
+          "isArray": false
+        },
+        "name": "mediaTypeRange"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(java.lang.String type,java.lang.String subtype)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "type"
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if type or subtype is invalid or if a wildcard is used for the type, but not the subtype.",
+        "kind": "THROWS",
+        "condition": "target.is(com.google.common.net.MediaType)"
+      }
+    ]
+  },
+  {
+    "signature": "createApplicationType(java.lang.String subtype)",
+    "name": "createApplicationType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if subtype is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createAudioType(java.lang.String subtype)",
+    "name": "createAudioType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if subtype is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createImageType(java.lang.String subtype)",
+    "name": "createImageType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if subtype is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createTextType(java.lang.String subtype)",
+    "name": "createTextType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if subtype is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "createVideoType(java.lang.String subtype)",
+    "name": "createVideoType",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "subtype"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if subtype is invalid",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "parse(java.lang.String input)",
+    "name": "parse",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "input"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if the input is not parsable",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "equals(java.lang.Object obj)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "hashCode()",
+    "name": "hashCode",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "toString()",
+    "name": "toString",
+    "containingClass": {
+      "qualifiedName": "com.google.common.net.MediaType",
+      "name": "MediaType",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.net.MediaType",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

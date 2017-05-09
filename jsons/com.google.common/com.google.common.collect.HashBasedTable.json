@@ -1,0 +1,416 @@
+[
+  {
+    "signature": "HashBasedTable(java.util.Map backingMap,com.google.common.collect.HashBasedTable.Factory factory)",
+    "name": "HashBasedTable",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.util.Map",
+          "name": "Map",
+          "isArray": false
+        },
+        "name": "backingMap"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.HashBasedTable.Factory",
+          "name": "Factory",
+          "isArray": false
+        },
+        "name": "factory"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create()",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "create(int expectedRows,int expectedCellsPerRow)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedRows"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "expectedCellsPerRow"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "expectedRows"
+        },
+        "comment": "the expected number of distinct row keys",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "expectedCellsPerRow"
+        },
+        "comment": "the expected number of column key / value mappings in each row",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.IllegalArgumentException",
+          "name": "IllegalArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "expectedRows",
+          "expectedCellsPerRow"
+        ],
+        "comment": "if expectedRows or expectedCellsPerRow is negative",
+        "kind": "THROWS",
+        "condition": "args[0]<0 || args[1]<0"
+      }
+    ]
+  },
+  {
+    "signature": "create(com.google.common.collect.Table table)",
+    "name": "create",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.google.common.collect.Table",
+          "name": "Table",
+          "isArray": false
+        },
+        "name": "table"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.google.common.collect.Table",
+            "name": "Table",
+            "isArray": false
+          },
+          "name": "table"
+        },
+        "comment": "the table to copy",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.NullPointerException",
+          "name": "NullPointerException",
+          "isArray": false
+        },
+        "codeTags": [
+          "table"
+        ],
+        "comment": "if any of the row keys, column keys, or values in table is null",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "contains(java.lang.Object rowKey,java.lang.Object columnKey)",
+    "name": "contains",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "rowKey",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "columnKey",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsColumn(java.lang.Object columnKey)",
+    "name": "containsColumn",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "columnKey",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsRow(java.lang.Object rowKey)",
+    "name": "containsRow",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "rowKey",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "containsValue(java.lang.Object value)",
+    "name": "containsValue",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "value",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "get(java.lang.Object rowKey,java.lang.Object columnKey)",
+    "name": "get",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "rowKey",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "columnKey",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "equals(java.lang.Object obj)",
+    "name": "equals",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "obj",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "remove(java.lang.Object rowKey,java.lang.Object columnKey)",
+    "name": "remove",
+    "containingClass": {
+      "qualifiedName": "com.google.common.collect.HashBasedTable",
+      "name": "HashBasedTable",
+      "isArray": false
+    },
+    "targetClass": "com.google.common.collect.HashBasedTable",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "V",
+      "name": "V",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "rowKey",
+        "nullable": true
+      },
+      {
+        "type": {
+          "qualifiedName": "java.lang.Object",
+          "name": "Object",
+          "isArray": false
+        },
+        "name": "columnKey",
+        "nullable": true
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

@@ -1,0 +1,610 @@
+[
+  {
+    "signature": "OptionsDoclet(com.sun.javadoc.RootDoc root,plume.Options options)",
+    "name": "OptionsDoclet",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.sun.javadoc.RootDoc",
+          "name": "RootDoc",
+          "isArray": false
+        },
+        "name": "root"
+      },
+      {
+        "type": {
+          "qualifiedName": "plume.Options",
+          "name": "Options",
+          "isArray": false
+        },
+        "name": "options"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "start(com.sun.javadoc.RootDoc root)",
+    "name": "start",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.sun.javadoc.RootDoc",
+          "name": "RootDoc",
+          "isArray": false
+        },
+        "name": "root"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.sun.javadoc.RootDoc",
+            "name": "RootDoc",
+            "isArray": false
+          },
+          "name": "root"
+        },
+        "comment": "the root document",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true if processing completed without an error",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optionLength(java.lang.String option)",
+    "name": "optionLength",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "int",
+      "name": "int",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String",
+          "name": "String",
+          "isArray": false
+        },
+        "name": "option"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          },
+          "name": "option"
+        },
+        "comment": "the command-line option",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the number of command-line arguments needed when using the option",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "validOptions(java.lang.String[][] options,com.sun.javadoc.DocErrorReporter reporter)",
+    "name": "validOptions",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[][]",
+          "name": "String[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "options"
+      },
+      {
+        "type": {
+          "qualifiedName": "com.sun.javadoc.DocErrorReporter",
+          "name": "DocErrorReporter",
+          "isArray": false
+        },
+        "name": "reporter"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[][]",
+            "name": "String[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "options"
+        },
+        "comment": "the command-line options to be checked: an array of 1- or 2-element arrays",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.sun.javadoc.DocErrorReporter",
+            "name": "DocErrorReporter",
+            "isArray": false
+          },
+          "name": "reporter"
+        },
+        "comment": "where to report errors",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "true iff the command-line options are valid",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "setOptions(java.lang.String[][] options)",
+    "name": "setOptions",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "java.lang.String[][]",
+          "name": "String[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "java.lang.String",
+            "name": "String",
+            "isArray": false
+          }
+        },
+        "name": "options"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "java.lang.String[][]",
+            "name": "String[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "java.lang.String",
+              "name": "String",
+              "isArray": false
+            }
+          },
+          "name": "options"
+        },
+        "comment": "the command-line options to parse: a list of 1- or 2-element arrays",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "write()",
+    "name": "write",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.Exception",
+          "name": "Exception",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is trouble",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "output()",
+    "name": "output",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the user-visible doclet output",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "java.lang.Exception",
+          "name": "Exception",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there is trouble",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  },
+  {
+    "signature": "processJavadoc()",
+    "name": "processJavadoc",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "optionsToHtml()",
+    "name": "optionsToHtml",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "the HTML documentation for the underlying options instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optionsToJavadoc(int padding)",
+    "name": "optionsToJavadoc",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "padding"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "padding"
+        },
+        "comment": "the padding to add in the Javadoc output",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the HTML documentation for the underlying options instance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "optionToHtml(plume.Options.OptionInfo oi,int padding)",
+    "name": "optionToHtml",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "plume.Options.OptionInfo",
+          "name": "OptionInfo",
+          "isArray": false
+        },
+        "name": "oi"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "padding"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "plume.Options.OptionInfo",
+            "name": "OptionInfo",
+            "isArray": false
+          },
+          "name": "oi"
+        },
+        "comment": "the option to describe",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "HTML describing oi",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "javadocToHtml(com.sun.javadoc.Doc doc)",
+    "name": "javadocToHtml",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "java.lang.String",
+      "name": "String",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "com.sun.javadoc.Doc",
+          "name": "Doc",
+          "isArray": false
+        },
+        "name": "doc"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "com.sun.javadoc.Doc",
+            "name": "Doc",
+            "isArray": false
+          },
+          "name": "doc"
+        },
+        "comment": "a Javadoc comment to convert to HTML",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "HTML version of doc",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "getFormatJavadoc()",
+    "name": "getFormatJavadoc",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setFormatJavadoc(boolean val)",
+    "name": "setFormatJavadoc",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "getUseSingleDash()",
+    "name": "getUseSingleDash",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "boolean",
+      "name": "boolean",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "throwsTags": []
+  },
+  {
+    "signature": "setUseSingleDash(boolean val)",
+    "name": "setUseSingleDash",
+    "containingClass": {
+      "qualifiedName": "plume.OptionsDoclet",
+      "name": "OptionsDoclet",
+      "isArray": false
+    },
+    "targetClass": "plume.OptionsDoclet",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "boolean",
+          "name": "boolean",
+          "isArray": false
+        },
+        "name": "val"
+      }
+    ],
+    "paramTags": [],
+    "throwsTags": []
+  }
+]

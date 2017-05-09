@@ -1,0 +1,264 @@
+[
+  {
+    "signature": "newSampleData(double[] y,double[][] x,double[][] covariance)",
+    "name": "newSampleData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "y"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "x"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "covariance"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "y"
+        },
+        "comment": "y values of the sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "x"
+        },
+        "comment": "x values of the sample",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "covariance"
+        },
+        "comment": "array representing the covariance matrix",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "newCovarianceData(double[][] omega)",
+    "name": "newCovarianceData",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "void",
+      "name": "void",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "omega"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "omega"
+        },
+        "comment": "the [n,n] array representing the covariance",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": []
+  },
+  {
+    "signature": "getOmegaInverse()",
+    "name": "getOmegaInverse",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "inverse of the covariance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateBeta()",
+    "name": "calculateBeta",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealVector",
+      "name": "RealVector",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "beta",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateBetaVariance()",
+    "name": "calculateBetaVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "org.apache.commons.math3.linear.RealMatrix",
+      "name": "RealMatrix",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "The beta variance matrix",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  },
+  {
+    "signature": "calculateErrorVariance()",
+    "name": "calculateErrorVariance",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+      "name": "GLSMultipleLinearRegression",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.stat.regression.GLSMultipleLinearRegression",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [],
+    "paramTags": [],
+    "returnTag": {
+      "comment": "error variance",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": []
+  }
+]

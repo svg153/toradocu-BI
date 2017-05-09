@@ -1,0 +1,255 @@
+[
+  {
+    "signature": "MicrosphereInterpolatingFunction(double[][] xval,double[] yval,int brightnessExponent,int microsphereElements,org.apache.commons.math3.random.UnitSphereRandomVectorGenerator rand)",
+    "name": "MicrosphereInterpolatingFunction",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.MicrosphereInterpolatingFunction",
+      "name": "MicrosphereInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.MicrosphereInterpolatingFunction",
+    "isVarArgs": false,
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[][]",
+          "name": "double[][]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "xval"
+      },
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "yval"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "brightnessExponent"
+      },
+      {
+        "type": {
+          "qualifiedName": "int",
+          "name": "int",
+          "isArray": false
+        },
+        "name": "microsphereElements"
+      },
+      {
+        "type": {
+          "qualifiedName": "org.apache.commons.math3.random.UnitSphereRandomVectorGenerator",
+          "name": "UnitSphereRandomVectorGenerator",
+          "isArray": false
+        },
+        "name": "rand"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[][]",
+            "name": "double[][]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "xval"
+        },
+        "comment": "Arguments for the interpolation points. xval[i][0] is the first component of interpolation point i, xval[i][1] is the second component, and so on until xval[i][d-1], the last component of that interpolation point (where dimension is thus the dimension of the sampled space).",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "yval"
+        },
+        "comment": "Values for the interpolation points.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "brightnessExponent"
+        },
+        "comment": "Brightness dimming factor.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "int",
+            "name": "int",
+            "isArray": false
+          },
+          "name": "microsphereElements"
+        },
+        "comment": "Number of surface elements of the microsphere.",
+        "kind": "PARAM",
+        "condition": ""
+      },
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "org.apache.commons.math3.random.UnitSphereRandomVectorGenerator",
+            "name": "UnitSphereRandomVectorGenerator",
+            "isArray": false
+          },
+          "name": "rand"
+        },
+        "comment": "Unit vector generator for creating the microsphere.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [
+          "yval",
+          "xval",
+          "n",
+          "xval[0]",
+          "xval[n]",
+          "dimension"
+        ],
+        "comment": "if the lengths of yval and xval (equal to n, the number of interpolation points) do not match, or the the arrays xval[0] ... xval[n], have lengths different from dimension.",
+        "kind": "THROWS",
+        "condition": ""
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NoDataException",
+          "name": "NoDataException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if there an array has zero-length.",
+        "kind": "THROWS",
+        "condition": "args[0].length==0"
+      },
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.NullArgumentException",
+          "name": "NullArgumentException",
+          "isArray": false
+        },
+        "codeTags": [
+          "null"
+        ],
+        "comment": "if an argument is null.",
+        "kind": "THROWS",
+        "condition": "args[0]==null"
+      }
+    ]
+  },
+  {
+    "signature": "value(double[] point)",
+    "name": "value",
+    "containingClass": {
+      "qualifiedName": "org.apache.commons.math3.analysis.interpolation.MicrosphereInterpolatingFunction",
+      "name": "MicrosphereInterpolatingFunction",
+      "isArray": false
+    },
+    "targetClass": "org.apache.commons.math3.analysis.interpolation.MicrosphereInterpolatingFunction",
+    "isVarArgs": false,
+    "returnType": {
+      "qualifiedName": "double",
+      "name": "double",
+      "isArray": false
+    },
+    "parameters": [
+      {
+        "type": {
+          "qualifiedName": "double[]",
+          "name": "double[]",
+          "isArray": true,
+          "componentType": {
+            "qualifiedName": "double",
+            "name": "double",
+            "isArray": false
+          }
+        },
+        "name": "point"
+      }
+    ],
+    "paramTags": [
+      {
+        "parameter": {
+          "type": {
+            "qualifiedName": "double[]",
+            "name": "double[]",
+            "isArray": true,
+            "componentType": {
+              "qualifiedName": "double",
+              "name": "double",
+              "isArray": false
+            }
+          },
+          "name": "point"
+        },
+        "comment": "Interpolation point.",
+        "kind": "PARAM",
+        "condition": ""
+      }
+    ],
+    "returnTag": {
+      "comment": "the interpolated value.",
+      "kind": "RETURN",
+      "condition": ""
+    },
+    "throwsTags": [
+      {
+        "exception": {
+          "qualifiedName": "org.apache.commons.math3.exception.DimensionMismatchException",
+          "name": "DimensionMismatchException",
+          "isArray": false
+        },
+        "codeTags": [],
+        "comment": "if point dimension does not math sample",
+        "kind": "THROWS",
+        "condition": ""
+      }
+    ]
+  }
+]
