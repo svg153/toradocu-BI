@@ -108,6 +108,9 @@ out_template = {'throws': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}, 'params': {'
 
 
 
+errorfiles = os.getcwd() +  '/errorfiles.txt'
+errorfiles_out = open(errorfiles, 'w')
+
 goaldirpath = os.getcwd() + '/jsons'
 
 goals_out_name = goaldirpath + '_BI.json'
@@ -137,11 +140,14 @@ for file in os.listdir(goaldirpath):
                 # print(classfilepath)
                 # print('-------------------------------------')
 
-
                 with open(classfilepath) as data_file:
 
-
-                    data = json.load(data_file)
+                    try:
+                        data = json.load(data_file)
+                    except json.decoder.JSONDecodeError as e:
+                        line = str(classfilepath) + '\n'
+                        errorfiles_out.write(line)
+                        continue
 
                     classfile_out_name = classfilepath[:-5] + '_BI.json'
 
@@ -261,6 +267,7 @@ goals_out_temp['return']['%c'] = goals_out_temp['return']['c'] / goals_out_temp[
 
 goals_out.write(json.dumps(goals_out_temp, indent=2, sort_keys=True))
 goals_out.close()
+errorfiles_out.close()
 
 
 goals_out_temp['throws']['n'] = 0
@@ -274,3 +281,6 @@ goals_out_temp['return']['c'] = 0
 tiposGraph('throws', goals_out_temp['throws']['tipos'])
 tiposGraph('params', goals_out_temp['params']['tipos'])
 tiposGraph('return', goals_out_temp['return']['tipos'])
+
+
+
