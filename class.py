@@ -329,9 +329,9 @@ for file in os.listdir(goaldirpath):
 
         #%c Gráficos para cada paquete
 
-        cGraph(str(package_name)+'_throws_c', class_c_throws)
-        cGraph(str(package_name)+'_params_c', class_c_params)
-        cGraph(str(package_name)+'_return_c', class_c_return)
+        cGraph(str(package_name)+'_throws_percentage_bars', class_c_throws)
+        cGraph(str(package_name)+'_params_percentage_bars', class_c_params)
+        cGraph(str(package_name)+'_return_percentage_bars', class_c_return)
 
         circularcGraph(str(package_name) + '_throws_circ',package_out_temp['throws']['%c'])
         circularcGraph(str(package_name) + '_params_circ',package_out_temp['throws']['%c'])
@@ -344,9 +344,9 @@ for file in os.listdir(goaldirpath):
 
         # png con el ranking por paquete
 
-        tiposGraph(str(package_name) + '_return_t', package_out_temp['return']['tipos'])
-        tiposGraph(str(package_name) + '_throws_t', package_out_temp['throws']['tipos'])
-        tiposGraph(str(package_name) + '_params_t', package_out_temp['params']['tipos'])
+        tiposGraph(str(package_name) + '_return_flat', package_out_temp['return']['tipos'])
+        tiposGraph(str(package_name) + '_throws_flat', package_out_temp['throws']['tipos'])
+        tiposGraph(str(package_name) + '_params_flat', package_out_temp['params']['tipos'])
 
         package_out_temp['throws']['n'] = 0
         package_out_temp['throws']['c'] = 0
