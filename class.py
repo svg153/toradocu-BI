@@ -6,13 +6,11 @@ import errno
 import json
 import os
 import re
-import matplotlib.pyplot as plt
 from collections import OrderedDict
 from collections import Counter
+from matplotlib import pyplot as plt
 from matplotlib import rcParams
 
-
-import matplotlib.pyplot as plt
 
 
 def silentremove(filename):
@@ -144,17 +142,17 @@ def cGraph(title, dict):
 
 def circularcGraph(title, percentage):
 
-
     labels = 'Recognizes', 'Not recognizes'
+    colors = ['green', 'red']
     sizes = [100*percentage, 100*(1-percentage)]
     explode = (0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
     fig1, ax1 = plt.subplots()
-    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.2f%%',
-            shadow=True, startangle=90)
+    plt.title(title)
+    ax1.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.2f%%', startangle=90)
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-    plt.savefig('jsons_' + title + '.png', dpi=600)
+    fig1.savefig('jsons_' + title + '.png', dpi=600)
 
 
 ######################## MAIN ######################################################
