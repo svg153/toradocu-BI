@@ -1,24 +1,23 @@
 #!/usr/bin/env python3.5
 # -*- coding: utf-8 -*-
 
-import os
-import json
-import errno
 import copy
+import errno
+import json
+import os
 import re
 from collections import Counter
-import matplotlib.pyplot as plt
-from pprint import pprint
 
+import matplotlib.pyplot as plt
 
 
 def silentremove(filename):
     # http://stackoverflow.com/questions/10840533/most-pythonic-way-to-delete-a-file-which-may-not-exist
     try:
         os.remove(filename)
-    except OSError as e: # this would be "except OSError, e:" before Python 2.6
-        if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
-            raise # re-raise exception if a different error occurred
+    except OSError as e:  # this would be "except OSError, e:" before Python 2.6
+        if e.errno != errno.ENOENT:  # errno.ENOENT = no such file or directory
+            raise  # re-raise exception if a different error occurred
 
 
 def paramTagAnalisis(cond):
@@ -32,7 +31,6 @@ def paramTagAnalisis(cond):
                 tipos[o] = tipos[o] + n
             else:
                 tipos.update({o: n})
-
 
     # < y > regex con texto a los lados
     # funciones con regex
@@ -68,11 +66,9 @@ def paramTagAnalisis(cond):
     return tipos
 
 
-
-
 def tiposGraph(title, tipos):
-# http://stackoverflow.com/questions/36009049/plotting-a-graph-from-a-list-of-information-in-python
-# http://matplotlib.org/1.2.1/examples/pylab_examples/barh_demo.html
+    # http://stackoverflow.com/questions/36009049/plotting-a-graph-from-a-list-of-information-in-python
+    # http://matplotlib.org/1.2.1/examples/pylab_examples/barh_demo.html
     data = Counter(tipos)
     xaxis = range(len(data))
 
@@ -83,7 +79,6 @@ def tiposGraph(title, tipos):
     for key, value in data.most_common()[::-1]:
         keys_freq.append(key)
         values_freq.append(value)
-
 
     fig = plt.figure()
 
@@ -98,17 +93,14 @@ def tiposGraph(title, tipos):
     plt.xlabel('ocurs')
 
     fig.tight_layout()
-    fig.savefig('jsons_'+title+'.png', dpi=fig.dpi)
-
+    fig.savefig('jsons_' + title + '.png', dpi=fig.dpi)
 
 
 condname = 'condition'
-out_template = {'throws': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}, 'params': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}, 'return': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}}
+out_template = {'throws': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}, 'params': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}},
+                'return': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}}
 
-
-
-
-errorfiles = os.getcwd() +  '/errorfiles.txt'
+errorfiles = os.getcwd() + '/errorfiles.txt'
 errorfiles_out = open(errorfiles, 'w')
 
 goaldirpath = os.getcwd() + '/jsons'
@@ -119,13 +111,13 @@ goals_out = open(goals_out_name, 'w')
 
 goals_out_temp = copy.deepcopy(out_template)
 
-
 for file in os.listdir(goaldirpath):
     filepath = goaldirpath + os.sep + file
     if os.path.isdir(filepath):
         packagedirpath = filepath
 
         package_out_name = packagedirpath + '_BI.json'
+        package_name = file
         silentremove(package_out_name)
         package_out = open(package_out_name, 'w')
 
@@ -172,13 +164,11 @@ for file in os.listdir(goaldirpath):
                                     goals_out_temp[type]['c'] = goals_out_temp[type]['c'] + 1
                                     # pprint(type + " : " + cond)
                                     classfile_out_temp[type]['tipos'] = paramTagAnalisis(cond)
-                                    package_out_temp[type]['tipos'] = Counter(package_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
-                                    goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
+                                    package_out_temp[type]['tipos'] = Counter(
+                                        package_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
+                                    goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(
+                                        classfile_out_temp[type]['tipos'])
                                     # print(classfilepath + " : " + type + " : " + cond + " : " + str(classfile_out_temp[type]['tipos']))
-
-
-
-
 
                         if 'paramTags' in n and n['paramTags'] != []:
                             type = 'params'
@@ -193,11 +183,10 @@ for file in os.listdir(goaldirpath):
                                     goals_out_temp[type]['c'] = goals_out_temp[type]['c'] + 1
                                     # pprint(type + " : " + cond)
                                     classfile_out_temp[type]['tipos'] = paramTagAnalisis(cond)
-                                    package_out_temp[type]['tipos'] = Counter(package_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
-                                    goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
-
-
-
+                                    package_out_temp[type]['tipos'] = Counter(
+                                        package_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
+                                    goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(
+                                        classfile_out_temp[type]['tipos'])
 
                         if 'returnTag' in n:
                             type = 'return'
@@ -214,19 +203,25 @@ for file in os.listdir(goaldirpath):
                                     cond = cond.split('?')
                                     cond = str(cond[1])
                                 classfile_out_temp[type]['tipos'] = paramTagAnalisis(cond)
-                                package_out_temp[type]['tipos'] = Counter(package_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
-                                goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(classfile_out_temp[type]['tipos'])
+                                package_out_temp[type]['tipos'] = Counter(package_out_temp[type]['tipos']) + Counter(
+                                    classfile_out_temp[type]['tipos'])
+                                goals_out_temp[type]['tipos'] = Counter(goals_out_temp[type]['tipos']) + Counter(
+                                    classfile_out_temp[type]['tipos'])
 
+                    classfile_out_temp['throws']['%c'] = classfile_out_temp['throws']['c'] / \
+                                                         classfile_out_temp['throws']['n'] if \
+                    classfile_out_temp['throws']['n'] != 0 else 0
+                    classfile_out_temp['params']['%c'] = classfile_out_temp['params']['c'] / \
+                                                         classfile_out_temp['params']['n'] if \
+                    classfile_out_temp['params']['n'] != 0 else 0
+                    classfile_out_temp['return']['%c'] = classfile_out_temp['return']['c'] / \
+                                                         classfile_out_temp['return']['n'] if \
+                    classfile_out_temp['return']['n'] != 0 else 0
 
-
-                    classfile_out_temp['throws']['%c'] = classfile_out_temp['throws']['c'] / classfile_out_temp['throws']['n'] if classfile_out_temp['throws']['n'] != 0 else 0
-                    classfile_out_temp['params']['%c'] = classfile_out_temp['params']['c'] / classfile_out_temp['params']['n'] if classfile_out_temp['params']['n'] != 0 else 0
-                    classfile_out_temp['return']['%c'] = classfile_out_temp['return']['c'] / classfile_out_temp['return']['n'] if classfile_out_temp['return']['n'] != 0 else 0
-
+                    #%c Para cada clase.
 
                     classfile_out.write(json.dumps(classfile_out_temp, indent=2, sort_keys=True))
                     classfile_out.close()
-
 
                     classfile_out_temp['throws']['n'] = 0
                     classfile_out_temp['throws']['c'] = 0
@@ -239,16 +234,24 @@ for file in os.listdir(goaldirpath):
             else:
                 continue
 
+        package_out_temp['throws']['%c'] = package_out_temp['throws']['c'] / package_out_temp['throws']['n'] if \
+        package_out_temp['throws']['n'] != 0 else 0
+        package_out_temp['params']['%c'] = package_out_temp['params']['c'] / package_out_temp['params']['n'] if \
+        package_out_temp['params']['n'] != 0 else 0
+        package_out_temp['return']['%c'] = package_out_temp['return']['c'] / package_out_temp['return']['n'] if \
+        package_out_temp['return']['n'] != 0 else 0
 
-
-        package_out_temp['throws']['%c'] = package_out_temp['throws']['c'] / package_out_temp['throws']['n'] if package_out_temp['throws']['n'] != 0 else 0
-        package_out_temp['params']['%c'] = package_out_temp['params']['c'] / package_out_temp['params']['n'] if package_out_temp['params']['n'] != 0 else 0
-        package_out_temp['return']['%c'] = package_out_temp['return']['c'] / package_out_temp['return']['n'] if package_out_temp['return']['n'] != 0 else 0
-
+        #%c Para cada paquete
 
         package_out.write(json.dumps(package_out_temp, indent=2, sort_keys=True))
         package_out.close()
 
+
+        # png con el ranking por paquete
+
+        tiposGraph(str(package_name) + '_return', package_out_temp['return']['tipos'])
+        tiposGraph(str(package_name) + '_throws', package_out_temp['throws']['tipos'])
+        tiposGraph(str(package_name) + '_params', package_out_temp['params']['tipos'])
 
         package_out_temp['throws']['n'] = 0
         package_out_temp['throws']['c'] = 0
@@ -258,17 +261,16 @@ for file in os.listdir(goaldirpath):
         package_out_temp['return']['c'] = 0
 
 
-
-
-goals_out_temp['throws']['%c'] = goals_out_temp['throws']['c'] / goals_out_temp['throws']['n'] if goals_out_temp['throws']['n'] != 0 else 0
-goals_out_temp['params']['%c'] = goals_out_temp['params']['c'] / goals_out_temp['params']['n'] if goals_out_temp['params']['n'] != 0 else 0
-goals_out_temp['return']['%c'] = goals_out_temp['return']['c'] / goals_out_temp['return']['n'] if goals_out_temp['return']['n'] != 0 else 0
-
+goals_out_temp['throws']['%c'] = goals_out_temp['throws']['c'] / goals_out_temp['throws']['n'] if \
+goals_out_temp['throws']['n'] != 0 else 0
+goals_out_temp['params']['%c'] = goals_out_temp['params']['c'] / goals_out_temp['params']['n'] if \
+goals_out_temp['params']['n'] != 0 else 0
+goals_out_temp['return']['%c'] = goals_out_temp['return']['c'] / goals_out_temp['return']['n'] if \
+goals_out_temp['return']['n'] != 0 else 0
 
 goals_out.write(json.dumps(goals_out_temp, indent=2, sort_keys=True))
 goals_out.close()
 errorfiles_out.close()
-
 
 goals_out_temp['throws']['n'] = 0
 goals_out_temp['throws']['c'] = 0
@@ -277,10 +279,6 @@ goals_out_temp['params']['c'] = 0
 goals_out_temp['return']['n'] = 0
 goals_out_temp['return']['c'] = 0
 
-
 tiposGraph('throws', goals_out_temp['throws']['tipos'])
 tiposGraph('params', goals_out_temp['params']['tipos'])
 tiposGraph('return', goals_out_temp['return']['tipos'])
-
-
-
