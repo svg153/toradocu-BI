@@ -163,6 +163,14 @@ out_template = {'throws': {'n': 0, 'c': 0, '%c': 0.0, 'tipos': {}}, 'params': {'
 
 package_c_statistics= {}
 
+all_class_c_throws_out = open(os.getcwd() + '/all_class_c_throws_out.json', 'w')
+all_class_c_params_out = open(os.getcwd() + '/all_class_c_params_out.json', 'w')
+all_class_c_return_out = open(os.getcwd() + '/all_class_c_return_out.json', 'w')
+
+all_class_c_throws = {}
+all_class_c_params = {}
+all_class_c_return = {}
+
 
 errorfiles = os.getcwd() + '/errorfiles.txt'
 errorfiles_out = open(errorfiles, 'w')
@@ -294,6 +302,10 @@ for file in os.listdir(goaldirpath):
                     class_c_throws.update({data_file_name[:-5]:classfile_out_temp['throws']['%c']})
                     class_c_return.update({data_file_name[:-5]:classfile_out_temp['return']['%c']})
 
+                    all_class_c_params.update({data_file_name[:-5]: classfile_out_temp['params']['%c']})
+                    all_class_c_throws.update({data_file_name[:-5]: classfile_out_temp['throws']['%c']})
+                    all_class_c_return.update({data_file_name[:-5]: classfile_out_temp['return']['%c']})
+
                     #%c Para cada clase.
 
                     classfile_out.write(json.dumps(classfile_out_temp, indent=2, sort_keys=True))
@@ -360,6 +372,20 @@ goals_out_temp['params']['%c'] = goals_out_temp['params']['c'] / goals_out_temp[
 goals_out_temp['params']['n'] != 0 else 0
 goals_out_temp['return']['%c'] = goals_out_temp['return']['c'] / goals_out_temp['return']['n'] if \
 goals_out_temp['return']['n'] != 0 else 0
+
+all_class_c_throws_sorted = OrderedDict(sorted(all_class_c_throws.items(), key=lambda item: item[1], reverse=True))
+all_class_c_return_sorted = OrderedDict(sorted(all_class_c_return.items(), key=lambda item: item[1], reverse=True))
+all_class_c_params_sorted = OrderedDict(sorted(all_class_c_params.items(), key=lambda item: item[1], reverse=True))
+
+
+all_class_c_throws_out.write(json.dumps(all_class_c_throws_sorted, indent=2))
+all_class_c_throws_out.close()
+
+all_class_c_return_out.write(json.dumps(all_class_c_return_sorted, indent=2))
+all_class_c_return_out.close()
+
+all_class_c_params_out.write(json.dumps(all_class_c_params_sorted, indent=2))
+all_class_c_params_out.close()
 
 goals_out.write(json.dumps(goals_out_temp, indent=2, sort_keys=True))
 goals_out.close()
